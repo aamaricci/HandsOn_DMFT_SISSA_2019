@@ -3,8 +3,6 @@ FC=gfortran
 EXE1 = 01_build_ham
 EXE2 = 02_diag_test
 
-DIREXE = ./test
-
 ##$ Extends the implicit support of the Makefile to .f90 files
 .SUFFIXES: .f90
 
@@ -18,8 +16,8 @@ ARGS=-llapack -lblas
 
 
 all: $(OBJS)
-	${FC} ${FFLAG} ${OBJS} ${EXE1}.f90 -o ${DIREXE}/${EXE1} ${ARGS}
-	${FC} ${FFLAG} ${OBJS} ${EXE2}.f90 -o ${DIREXE}/${EXE2} ${ARGS}
+	${FC} ${FFLAG} ${OBJS} ${EXE1}.f90 -o ${EXE1} ${ARGS}
+	${FC} ${FFLAG} ${OBJS} ${EXE2}.f90 -o ${EXE2} ${ARGS}
 	@echo ""
 
 
@@ -30,8 +28,8 @@ clean:
 	@rm -fv *.mod
 	@rm -fv *.o
 	@rm -fv *~
-	@rm -fv ${DIREXE}/${EXE1}
-	@rm -fv ${DIREXE}/${EXE2} 
+	@rm -fv ${EXE1} 
+	@rm -fv ${EXE2} 
 	@echo ""
 
 .f90.o:	

@@ -6,19 +6,15 @@ FC=gfortran
 OBJS     = COMMON_VARS.o AUX_FUNX.o
 
 
-#INCS= -I/opt/scifor/gnu/include -I/opt/dmft_tools/gnu/include
-#ARGS= $(shell pkg-config --libs dmft_tools scifor)
-
-
 all: $(OBJS)
-	${FC} ${OBJS} 01_bit_operations.f90 -o ./testing/01_bit_operations ${INCS} ${ARGS}
-	${FC} ${OBJS} 02_build_sectors.f90 -o ./testing/02_build_sectors ${INCS} ${ARGS}
+	${FC} ${OBJS} 01_bit_operations.f90 -o 01_bit_operations ${INCS} ${ARGS}
+	${FC} ${OBJS} 02_build_sectors.f90 -o 02_build_sectors ${INCS} ${ARGS}
 	@echo ""
 
 
 clean: 
 	@echo "Cleaning:"
-	@rm -fv *.mod *.o *~ ./testing/01_bit_operations ./testing/02_build_sectors
+	@rm -fv *.mod *.o *~ 01_bit_operations 02_build_sectors
 	@echo ""
 
 .f90.o:	

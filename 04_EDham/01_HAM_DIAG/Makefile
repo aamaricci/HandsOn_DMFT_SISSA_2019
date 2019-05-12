@@ -1,8 +1,7 @@
 FC=gfortran
 
-EXE1 = 01_build_ham
-EXE2 = 02_lanc_test
-EXE3 = 03_arpack_test
+EXE1 = 01_lanc_test
+EXE2 = 02_arpack_test
 
 DIREXE = ./test
 
@@ -22,8 +21,7 @@ AR_ARGS=$(shell pkg-config --libs arpack)
 
 all: $(OBJS)
 	${FC} ${FFLAG} ${OBJS} ${EXE1}.f90 -o ${DIREXE}/${EXE1} ${ARGS}
-	${FC} ${FFLAG} ${OBJS} ${EXE2}.f90 -o ${DIREXE}/${EXE2} ${ARGS}
-	${FC} ${FFLAG} ${OBJS} ${EXE3}.f90 -o ${DIREXE}/${EXE3} ${AR_INCS} ${AR_ARGS} ${ARGS} 
+	${FC} ${FFLAG} ${OBJS} ${EXE2}.f90 -o ${DIREXE}/${EXE2} ${AR_INCS} ${AR_ARGS} ${ARGS} 
 	@echo ""
 
 

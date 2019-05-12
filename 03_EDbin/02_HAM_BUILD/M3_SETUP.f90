@@ -185,7 +185,7 @@ contains
     integer :: n1,n2
     real(8) :: xh
     integer :: i
-    integer nchoos
+    integer :: nchoos
     xh = 1.d0
     if(n2<0) then
        nchoos = 0
@@ -230,63 +230,6 @@ contains
 
 
 
-
-  ! !+------------------------------------------------------------------+
-  ! !PURPOSE : sort array of integer using random algorithm
-  ! !+------------------------------------------------------------------+
-  ! subroutine sort_array(array)
-  !   integer,dimension(:),intent(inout)      :: array
-  !   integer,dimension(size(array))          :: order
-  !   integer                                 :: i
-  !   forall(i=1:size(array))order(i)=i
-  !   call qsort_sort( array, order, 1, size(array) )
-  !   array=order
-  ! contains
-  !   recursive subroutine qsort_sort( array, order, left, right )
-  !     integer, dimension(:)                 :: array
-  !     integer, dimension(:)                 :: order
-  !     integer                               :: left
-  !     integer                               :: right
-  !     integer                               :: i
-  !     integer                               :: last
-  !     if ( left .ge. right ) return
-  !     call qsort_swap( order, left, qsort_rand(left,right) )
-  !     last = left
-  !     do i = left+1, right
-  !        if ( compare(array(order(i)), array(order(left)) ) .lt. 0 ) then
-  !           last = last + 1
-  !           call qsort_swap( order, last, i )
-  !        endif
-  !     enddo
-  !     call qsort_swap( order, left, last )
-  !     call qsort_sort( array, order, left, last-1 )
-  !     call qsort_sort( array, order, last+1, right )
-  !   end subroutine qsort_sort
-  !   !---------------------------------------------!
-  !   subroutine qsort_swap( order, first, second )
-  !     integer, dimension(:)                 :: order
-  !     integer                               :: first, second
-  !     integer                               :: tmp
-  !     tmp           = order(first)
-  !     order(first)  = order(second)
-  !     order(second) = tmp
-  !   end subroutine qsort_swap
-  !   !---------------------------------------------!
-  !   function qsort_rand( lower, upper )
-  !     implicit none
-  !     integer                               :: lower, upper
-  !     real(8)                               :: r
-  !     integer                               :: qsort_rand
-  !     call random_number(r)
-  !     qsort_rand =  lower + nint(r * (upper-lower))
-  !   end function qsort_rand
-  !   function compare(f,g)
-  !     integer                               :: f,g
-  !     integer                               :: compare
-  !     compare=1
-  !     if(f<g)compare=-1
-  !   end function compare
-  ! end subroutine sort_array
 
 
 

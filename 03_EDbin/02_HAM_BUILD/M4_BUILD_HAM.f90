@@ -1,15 +1,12 @@
-MODULE MATVEC_PRODUCT
+MODULE BUILD_HAM
   USE COMMON_VARS
   USE SPARSE_MATRIX
-  USE LANCZOS
   USE SETUP
   implicit none
 
   private
 
   public :: Build_SpH
-
-  public :: HxV_spH0
 
 
 contains
@@ -130,50 +127,12 @@ contains
 
 
 
-  subroutine HxV_spH0(N,v,Hv)
-    integer                         :: N
-    real(8),dimension(N)            :: v
-    real(8),dimension(N)            :: Hv
-    integer                         :: i,iup,idw,j,jup,jdw,jj
-    !
-    Hv=0d0
-    !
-    do i=1,N
-       do j=1,spH0%row(i)%Size
-          Hv(i) = Hv(i) + spH0%row(i)%vals(j)*v(spH0%row(i)%cols(j))
-       end do
-    end do
-    !
-    do idw=1,DimDw
-       do iup=1,DimUp
-          i = iup + (idw-1)*DimUp
-          do jj=1,spH0dw%row(idw)%Size
-             j     = iup +  (spH0dw%row(idw)%cols(jj)-1)*DimUp
-             Hv(i) = Hv(i) + spH0dw%row(idw)%vals(jj)*V(j)
-          enddo
-       enddo
-    enddo
-    !
-    do idw=1,DimDw
-       do iup=1,DimUp
-          i = iup + (idw-1)*DimUp          
-          do jj=1,spH0up%row(iup)%Size
-             j = spH0up%row(iup)%cols(jj) + (idw-1)*DimUp
-             Hv(i) = Hv(i) + spH0up%row(iup)%vals(jj)*V(j)
-          enddo
-       enddo
-    enddo
-    !
-    return
-  end subroutine HxV_spH0
 
 
 
 
 
-
-
-end module MATVEC_PRODUCT
+end module BUILD_HAM
 
 
 

@@ -1,9 +1,8 @@
 program testLANCZOS_D
   USE COMMON_VARS
-  USE MATVEC_PRODUCT
   USE SPARSE_MATRIX
-  USE LANCZOS
   USE SETUP
+  USE BUILD_HAM    
   implicit none
   !Matrix:
   real(8),allocatable            :: Hmat(:,:),Hup(:,:),Hdw(:,:)
@@ -41,6 +40,7 @@ program testLANCZOS_D
   call sp_spy_matrix(spH0up,"spH0up")
   call sp_spy_matrix(spH0dw,"spH0dw")
   call sp_spy_matrix(Hmat,"Hmat")
+  !
 end program testLANCZOS_D
 
 

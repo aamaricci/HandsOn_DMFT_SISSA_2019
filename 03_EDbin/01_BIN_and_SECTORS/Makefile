@@ -18,7 +18,7 @@ all: $(OBJS)
 
 clean: 
 	@echo "Cleaning:"
-	@rm -f *.mod *.o *~
+	@rm -fv *.mod *.o *~ ./testing/01_bit_operations ./testing/02_build_sectors
 	@echo ""
 
 .f90.o:	

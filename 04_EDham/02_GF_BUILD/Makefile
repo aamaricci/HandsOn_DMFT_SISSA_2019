@@ -5,7 +5,7 @@ EXE2 = 02_lanc_gf
 EXE3 = 03_arpack_gf
 
 
-TARGET=.
+TARGET=test
 ##$ Extends the implicit support of the Makefile to .f90 files
 .SUFFIXES: .f90
 

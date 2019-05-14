@@ -70,7 +70,7 @@ program diag_test
         call eigh(espace(Nup,Ndw)%M,espace(Nup,Ndw)%e)
         print*,espace(Nup,Ndw)%e(1)
 
-        e0(Nup,Ndw)=minval(espace(Nup,Ndw)%e)
+        e0(Nup,Ndw)=minval(espace(Nup,Ndw)%e) !espace(nup,ndw)%e(1)
         !
         deallocate(Hup,Hdw)
         print*,""

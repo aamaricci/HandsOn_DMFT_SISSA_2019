@@ -131,7 +131,9 @@ contains
           endif
        enddo
     enddo
-
+    !
+    call Delete_sector(Hs)
+    !
   end subroutine Build_spH
 
 

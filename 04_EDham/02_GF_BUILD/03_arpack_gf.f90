@@ -170,6 +170,7 @@ program arpack_test
   DeltaMats = 1d0/DeltaMats
   !
   allocate(DeltaReal(size(wreal)))
+  DeltaReal=0d0
   do i=1,size(wreal)
      do ie=1,Ns-1
         DeltaReal(i)=DeltaReal(i) + Vps**2/(dcmplx(wreal(i),0.01d0)-eps(ie))

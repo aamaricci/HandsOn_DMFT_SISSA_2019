@@ -102,8 +102,7 @@ contains
     !
   end subroutine build_sector
 
-  subroutine delete_sector(isector,H)
-    integer                   :: isector
+  subroutine delete_sector(H)
     type(sector_map)          :: H(:)
     call map_deallocate(H)
   end subroutine delete_sector

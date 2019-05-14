@@ -11,7 +11,7 @@ Source codes for the Hands-on DMFT course at SISSA 2019: A.Amaricci & M.Capone
 - [X] **03**: *Bit Operations. Quantum Numbers and States representation. 2nd quantization operators. Hamiltonian construction, sparsity and storage. Determination of the spectrum.*  
 (Mon. 13/5/2019)
 
-- [ ] **04**: *Exact Vs Lanczos Diagonalization. Matrix-Vector products (brief:  MPI parallel case). Saving the spectrum in memory. Green's function evaluation. Kallen-Lehmann summation vs. Lanczos or Krylov method.*   
+- [X] **04**: *Exact Vs Lanczos Diagonalization. Matrix-Vector products (brief:  MPI parallel case). Saving the spectrum in memory. Green's function evaluation. Kallen-Lehmann summation vs. Lanczos or Krylov method.*   
 (Tue. 14/5/2019)
 
 - [ ] **05**: *ED at work I.

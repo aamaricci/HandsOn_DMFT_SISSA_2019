@@ -8,7 +8,8 @@ MODULE MATVEC_PRODUCT
   private
 
   public :: Build_SpH
-
+  public :: Delete_SpH
+  !
   public :: HxV_spH0
 
 
@@ -31,15 +32,21 @@ contains
     integer                       :: impi,impi_up,impi_dw
     integer                       :: iorb,jorb,ispin,jspin,ibath
     integer                       :: kp,k1,k2,k3,k4
-    integer                       :: alfa,beta
+    integer                       :: alfa,beta,ie
     real(8)                       :: sg1,sg2,sg3,sg4
-    real(8)                       :: htmp,htmpup,htmpdw
+    real(8)                       :: htmp,htmpup,htmpdw,deps
     !Hamiltonian hard coded paramters:
-    real(8)                       :: e0,xmu,ran
-    real(8)                       :: ts,Uloc
+    real(8)                       :: xmu
+    real(8)                       :: Vps,Uloc,Eps(Ns-1)
     !
     type(sector_map),dimension(2) :: Hs
     !
+    !< generate Hamiltonian parameters:
+    Vps  = 1d0/sqrt(dble(Ns-1))
+    deps = 2d0/(Ns-1)
+    do ie=1,Ns-1
+       eps(ie) = -1d0 + (ie-1)*deps
+    enddo
     Uloc = 3d0
     !
     call build_sector(Nups,Ndws,Hs)
@@ -56,23 +63,28 @@ contains
     !LOCAL PART
     do i=1,Dim
        iup = iup_index(i,DimUp)
-       idw = idw_index(i,DimDw)
+       idw = idw_index(i,DimUp)
        !
        nup  = bdecomp(Hs(1)%map(iup),Ns)
        ndw  = bdecomp(Hs(2)%map(idw),Ns)
        !
        !Diagonal Elements, i.e. local part
        htmp = 0d0
-       call random_number(e0) !< intrinsic fortran RNG
-       htmp = htmp + e0*(nup(1)+ndw(1))
        htmp = htmp + Uloc*(nup(1)*ndw(1))
        htmp = htmp - 0.5d0*Uloc*(nup(1)+ndw(1)) + 0.25d0*uloc
+       !
+       !> H_Bath: local bath energy contribution.
+       !diagonal bath hamiltonian: +energy of the bath=\sum_a=1,Norb\sum_{l=1,Nbath}\e^a_l n^a_l
+       do kp=1,Ns-1
+          alfa = 1 + kp
+          htmp =htmp + eps(kp)*nup(alfa) !UP
+          htmp =htmp + eps(kp)*ndw(alfa) !DW
+       enddo
        !
        call sp_insert_element(spH0,htmp,i,i)
     enddo
     !
     ! IMP UP <--> BATH UP
-    call random_number(ts) !< intrinsic fortran RNG
     do iup=1,DimUp
        mup  = Hs(1)%map(iup)
        nup  = bdecomp(mup,Ns)
@@ -82,21 +94,20 @@ contains
              call c(1,mup,k1,sg1)
              call cdg(alfa,k1,k2,sg2)
              jup = binary_search(Hs(1)%map,k2)
-             htmp = ts*sg1*sg2
+             htmp = vps*sg1*sg2
              call sp_insert_element(spH0up,htmp,iup,jup)
           endif
           if( (nup(1)==0) .AND. (nup(alfa)==1) )then
              call c(alfa,mup,k1,sg1)
              call cdg(1,k1,k2,sg2)
              jup=binary_search(Hs(1)%map,k2)
-             htmp = ts*sg1*sg2
+             htmp = vps*sg1*sg2
              call sp_insert_element(spH0up,htmp,iup,jup)
           endif
        enddo
     enddo
     !
     !IMP DW <--> BATH DW
-    call random_number(ts) !< intrinsic fortran RNG
     do idw=1,DimDw
        mdw  = Hs(2)%map(idw)
        ndw  = bdecomp(mdw,Ns)
@@ -106,7 +117,7 @@ contains
              call c(1,mdw,k1,sg1)
              call cdg(alfa,k1,k2,sg2)
              jdw=binary_search(Hs(2)%map,k2)
-             htmp=ts*sg1*sg2
+             htmp=vps*sg1*sg2
              call sp_insert_element(spH0dw,htmp,idw,jdw)
           endif
           !
@@ -115,17 +126,23 @@ contains
              call c(alfa,mdw,k1,sg1)
              call cdg(1,k1,k2,sg2)
              jdw=binary_search(Hs(2)%map,k2)
-             htmp=ts*sg1*sg2
+             htmp=vps*sg1*sg2
              call sp_insert_element(spH0dw,htmp,idw,jdw)
           endif
        enddo
     enddo
-
+    !
+    call Delete_sector(Hs)
+    !
   end subroutine Build_spH
 
 
 
-
+  subroutine Delete_spH
+    if(spH0%status)call sp_delete_matrix(spH0)
+    if(spH0dw%status)call sp_delete_matrix(spH0dw)
+    if(spH0up%status)call sp_delete_matrix(spH0up)
+  end subroutine Delete_spH
 
 
 

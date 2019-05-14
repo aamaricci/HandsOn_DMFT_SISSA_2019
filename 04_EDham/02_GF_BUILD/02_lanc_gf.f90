@@ -4,18 +4,21 @@ program lanczos_test
   USE SPARSE_MATRIX
   USE LANCZOS
   USE SETUP
+  USE GF_NORMAL
   !
   !
   implicit none
   !Matrix:
-  real(8),allocatable            :: Hmat(:,:),Hup(:,:),Hdw(:,:)
-  integer                        :: Nprint,N,Nloc
-  real(8),allocatable            :: Eval(:),Eval_old(:)
-  real(8),allocatable            :: Evec(:,:)
+  real(8),allocatable    :: Hmat(:,:),Hup(:,:),Hdw(:,:)
+  integer                :: Nprint,N,Nloc
+  real(8),allocatable    :: Eval(:),Eval_old(:)
+  real(8),allocatable    :: Evec(:,:),Eps(:)
   !Lanczos
-  integer                        :: neigen,nitermax,niter,nblock,Nlanc
-  integer                        :: i,j,k
-  integer                        :: iup,idw,jup,jdw
+  integer                :: neigen,nitermax,niter,nblock,Nlanc
+  integer                :: i,j,k
+  integer                :: iup,idw,jup,jdw,ie
+  real(8)                :: Vps,Deps
+  complex(8),allocatable :: DeltaMats(:),DeltaReal(:)
   !
   !
   !< setup global dimension variables (in COMMON_VARS)
@@ -116,7 +119,7 @@ program lanczos_test
   endif
   !
   open(100,file="lanczos_Eval_D.dat")
-  do i=1,Nprint
+  do i=1,Neigen
      write(100,*)Eval(i)
   end do
   close(100)
@@ -127,11 +130,71 @@ program lanczos_test
   end do
   close(100)
   !
+  call Delete_spH()
+  !
+  !
+  !
+  call build_gf_lanczos(nup,ndw,Eval(1),Evec(:,1))
+  !
+  open(100,file="impGmats_iw.lanc")
+  do i=1,size(wmats)
+     write(100,*)wmats(i),dimag(impGmats(i)),dreal(impGmats(i))
+  enddo
+  close(100)
+  !
+  open(100,file="impGreal_wr.lanc")
+  do i=1,size(wreal)
+     write(100,*)wreal(i),dimag(impGreal(i)),dreal(impGreal(i))
+  enddo
+  close(100)
+  !
+  !
   deallocate(Eval,Evec)  
   print*,""
   !
   !
   !
+  print*,"TESTING AGAINST NON-INTERACTING GF: G0(z) = (z - Delta(z))^-1; Delta(z) = sum Vi^2/(z-ei)"
+  allocate(Eps(Ns-1))
+  Vps  = 1d0/sqrt(dble(Ns-1))
+  deps = 2d0/(Ns-1)
+  do ie=1,Ns-1
+     eps(ie) = -1d0 + (ie-1)*deps
+  enddo
+  !
+  allocate(DeltaMats(size(wmats)))
+  DeltaMats=0d0
+  do i=1,size(wmats)
+     do ie=1,Ns-1
+        DeltaMats(i)=DeltaMats(i) + Vps**2/(dcmplx(0d0,wmats(i))-eps(ie))
+     enddo
+     DeltaMats(i) = dcmplx(0d0,wmats(i)) - DeltaMats(i)
+  enddo
+  DeltaMats = 1d0/DeltaMats
+  !
+  allocate(DeltaReal(size(wreal)))
+  DeltaReal=0d0
+  do i=1,size(wreal)
+     do ie=1,Ns-1
+        DeltaReal(i)=DeltaReal(i) + Vps**2/(dcmplx(wreal(i),eta)-eps(ie))
+     enddo
+     DeltaReal(i) = dcmplx(wreal(i),0.01d0) - DeltaReal(i)
+  enddo
+  DeltaReal = 1d0/DeltaReal
+
+  open(100,file="impGmats_iw.test")
+  do i=1,size(wmats)
+     write(100,*)wmats(i),dimag(impGmats(i)),dreal(DeltaMats(i))
+  enddo
+  close(100)
+  open(100,file="impGreal_wr.test")
+  do i=1,size(wreal)
+     write(100,*)wreal(i),dimag(impGreal(i)),dreal(DeltaReal(i))
+  enddo
+  close(100)
+  !
+  print*,"Test Matsubara:",sum(abs(impGmats-DeltaMats))/size(wmats)
+  print*,"Test RealAxis:",sum(abs(impGreal-DeltaReal))/size(wreal)
 end program lanczos_test
 
 

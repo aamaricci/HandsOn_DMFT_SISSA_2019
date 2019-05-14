@@ -1,7 +1,11 @@
 FC=gfortran
 
-EXE1 = 01_lanc_test
-EXE2 = 02_arpack_test
+EXE1 = 01_diag_test
+EXE2 = 02_lanczos_test
+EXE3 = 03_arpack_test
+
+
+TARGET=./test/
 
 ##$ Extends the implicit support of the Makefile to .f90 files
 .SUFFIXES: .f90
@@ -18,8 +22,9 @@ AR_ARGS=$(shell pkg-config --libs arpack)
 
 
 all: $(OBJS)
-	${FC} ${FFLAG} ${OBJS} ${EXE1}.f90 -o ${EXE1} ${ARGS}
-	${FC} ${FFLAG} ${OBJS} ${EXE2}.f90 -o ${EXE2} ${AR_INCS} ${AR_ARGS} ${ARGS} 
+	${FC} ${FFLAG} ${OBJS} ${EXE1}.f90 -o ${TARGET}/${EXE1} ${ARGS}
+	${FC} ${FFLAG} ${OBJS} ${EXE2}.f90 -o ${TARGET}/${EXE2} ${ARGS}
+	${FC} ${FFLAG} ${OBJS} ${EXE3}.f90 -o ${TARGET}/${EXE3} ${AR_INCS} ${AR_ARGS} ${ARGS}	
 	@echo ""
 
 
@@ -30,8 +35,9 @@ clean:
 	@rm -fv *.mod
 	@rm -fv *.o
 	@rm -fv *~
-	@rm -fv ${EXE1}
-	@rm -fv ${EXE2} 
+	@rm -fv ${TARGET}/${EXE1} 
+	@rm -fv ${TARGET}/${EXE2}
+	@rm -fv ${TARGET}/${EXE3}
 	@echo ""
 
 .f90.o:	

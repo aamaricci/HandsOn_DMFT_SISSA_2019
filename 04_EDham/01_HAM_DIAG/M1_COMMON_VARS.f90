@@ -10,13 +10,19 @@ MODULE COMMON_VARS
   !if no public variables or procedures are defined the module becomes almost useless.
   private
   !
+  !
   !< relevant public variables shared across the codes.
-  integer,public :: Dim                !Sector total dimension
-  integer,public :: DimUp              !sub-sector up dimension
-  integer,public :: DimDw              !sub-sector dw dimnsion
-  integer,public :: Nup                !Number of up spin
-  integer,public :: Ndw                !Number of dw spin
-  integer,public :: Ns                 !Number of levels per spin
+  real(8),parameter,public           :: pi=acos(-1d0),beta=1000d0,eta=0.02d0
+  integer,parameter,public           :: Lmats=2048
+  integer,parameter,public           :: Lreal=2000
+  !
+  integer,public                                      :: Dim                !Sector total dimension
+  integer,public                                      :: DimUp              !sub-sector up dimension
+  integer,public                                      :: DimDw              !sub-sector dw dimnsion
+  integer,public                                      :: Nup                !Number of up spin
+  integer,public                                      :: Ndw                !Number of dw spin
+  integer,public                                      :: Ns                 !Number of levels per spin
+  real(8),public                                      :: Zeta_function !
   !
   !
   !fortran-esque: define a unique interface for different, similar procedure.
@@ -56,24 +62,39 @@ MODULE COMMON_VARS
      module procedure :: map_deallocate_scalar
      module procedure :: map_deallocate_vector
   end interface map_deallocate
-  !
+
+
+
+  type full_espace
+     real(8),dimension(:),allocatable   :: e
+     real(8),dimension(:,:),allocatable :: M
+  end type full_espace
+  type(full_espace),dimension(:,:),allocatable,public :: espace
+
+
   !< PUBLIC all procedures
   public :: eigh
   public :: eye
   public :: kronecker_product
   public :: str
   public :: free_unit
+  public :: linspace
+  public :: arange
+  !  
   public :: sector_map
   public :: map_allocate
   public :: map_deallocate
-
+  !
+  public :: init_espace
+  public :: setup_espace
+  public :: delete_espace
 
 
 contains
 
 
 
-
+  !################################# SECTOR MAPS ################################# 
   subroutine map_allocate_scalar(H,N)
     type(sector_map) :: H
     integer          :: N
@@ -111,6 +132,45 @@ contains
 
 
 
+
+
+
+
+  !################################# HAMILTONIAN EIG-SPACE STRUCTURE #################################
+  subroutine init_espace(Ns)
+    integer :: Ns
+    if(allocated(espace))deallocate(espace)
+    allocate(espace(0:Ns,0:Ns))
+  end subroutine init_espace
+
+  subroutine setup_espace(nup,ndw,Dim)
+    integer :: nup,ndw,dim
+    if(.not.allocated(espace))stop "Espace NOT allocated"
+    allocate(espace(nup,ndw)%e(dim)); espace(nup,ndw)%e = 0d0
+    allocate(espace(nup,ndw)%M(dim,dim)) ; espace(nup,ndw)%M = 0d0
+  end subroutine setup_espace
+
+  subroutine delete_espace
+    integer :: nup,ndw
+    if(allocated(espace))then
+       do nup=0,Ns
+          do ndw=0,Ns
+             deallocate(espace(nup,ndw)%e)
+             deallocate(espace(nup,ndw)%M)
+          end do
+       enddo
+       deallocate(espace)
+    endif
+  end subroutine delete_espace
+
+
+
+
+
+
+
+
+  !################################# LAPACK or LINEAR ALGEBRA #################################
   function eye(n) result(A)
     integer, intent(in) :: n
     real(8)             :: A(n, n)
@@ -121,12 +181,6 @@ contains
     end do
   end function eye
 
-
-
-
-  !-------------------------------------------------------------------------------------------
-  !PURPOSE:  eigenvalue/-vector problem for real symmetric/complex hermitian matrices:
-  !-------------------------------------------------------------------------------------------
   subroutine deigh_simple(M,E,jobz,uplo)
     real(8),dimension(:,:),intent(inout) :: M ! M v = E v/v(i,j) = ith component of jth vec.
     real(8),dimension(:),intent(inout)   :: E ! eigenvalues
@@ -168,9 +222,6 @@ contains
     end if
     deallocate(work)
   end subroutine deigh_simple
-
-
-
 
   subroutine deigh_tridiag(D,U,Ev,Irange,Vrange)
     real(8),dimension(:)                :: d
@@ -265,6 +316,58 @@ contains
 
 
 
+
+
+
+
+
+
+
+
+
+  !################################# MISCELLANEOUS #################################
+  function linspace(start,stop,num,istart,iend,mesh) result(array)
+    real(8)          :: start,stop,step,array(num)
+    integer          :: num,i
+    logical,optional :: istart,iend
+    logical          :: startpoint_,endpoint_
+    real(8),optional :: mesh
+    if(num<0)stop "linspace: N<0, abort."
+    startpoint_=.true.;if(present(istart))startpoint_=istart
+    endpoint_=.true.;if(present(iend))endpoint_=iend
+    if(startpoint_.AND.endpoint_)then
+       if(num<2)stop "linspace: N<2 with both start and end points"
+       step = (stop-start)/real(num-1,8)
+       forall(i=1:num)array(i)=start + real(i-1,8)*step
+    elseif(startpoint_.AND.(.not.endpoint_))then
+       step = (stop-start)/real(num,8)
+       forall(i=1:num)array(i)=start + real(i-1,8)*step
+    elseif(.not.startpoint_.AND.endpoint_)then
+       step = (stop-start)/real(num,8)
+       forall(i=1:num)array(i)=start + real(i,8)*step
+    else
+       step = (stop-start)/real(num+1,8)
+       forall(i=1:num)array(i)=start + real(i,8)*step
+    endif
+    if(present(mesh))mesh=step
+  end function linspace
+
+
+
+  function arange(start,num,iend) result(array)
+    integer          :: start,array(num)
+    integer          :: num,i
+    logical,optional :: iend
+    logical          :: endpoint_
+    if(num<0)stop "arange: N<0, abort."
+    endpoint_=.true.;if(present(iend))endpoint_=iend
+    if(endpoint_)then
+       forall(i=1:num)array(i)=start+i-1
+    else
+       forall(i=1:num-1)array(i)=start+i-1
+    end if
+  end function arange
+
   subroutine assert_shape(A, shap, routine, matname)
     real(8),intent(in)  :: A(:,:)
     integer,intent(in)  :: shap(:)
@@ -275,7 +378,6 @@ contains
        stop "Aborting due to illegal matrix operation"
     end if
   end subroutine assert_shape
-
 
   function free_unit(n) result(unit_)
     integer,optional :: n
@@ -291,13 +393,6 @@ contains
     if(present(n))n=unit_
   end function free_unit
 
-
-
-
-
-
-
-
   function kronecker_product(A,B) result(AxB)
     real(8),intent(in) :: A(:,:), B(:,:)
     integer            :: i,j
@@ -311,11 +406,6 @@ contains
        AxB(1+rowB*(i-1):rowB*i,1+colB*(j-1):colB*j)  =  A(i,j)*B(:,:)
     end forall
   end function kronecker_product
-
-
-
-
-
 
 
   function str_i_to_ch(i4) result(string)
@@ -399,12 +489,6 @@ contains
        endif
     endif
   end function get_w_
-
-
-
-
-
-
 
   subroutine i4_to_s_left ( i4, s )
     !! I4_TO_S_LEFT converts an I4 to a left-justified string.

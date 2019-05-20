@@ -136,13 +136,13 @@ program arpack_test
   !
   open(100,file="impGmats_iw.arpack")
   do i=1,size(wmats)
-     write(100,*)wmats(i),impGmats(i)
+     write(100,*)wmats(i),dimag(impGmats(i)),dreal(impGmats(i))
   enddo
   close(100)
   !
   open(100,file="impGreal_wr.arpack")
   do i=1,size(wreal)
-     write(100,*)wreal(i),impGreal(i)
+     write(100,*)wreal(i),dimag(impGreal(i)),dreal(impGreal(i))
   enddo
   close(100)
 
@@ -173,9 +173,9 @@ program arpack_test
   DeltaReal=0d0
   do i=1,size(wreal)
      do ie=1,Ns-1
-        DeltaReal(i)=DeltaReal(i) + Vps**2/(dcmplx(wreal(i),0.01d0)-eps(ie))
+        DeltaReal(i)=DeltaReal(i) + Vps**2/(dcmplx(wreal(i),eta)-eps(ie))
      enddo
-     DeltaReal(i) = dcmplx(wreal(i),0.01d0) - DeltaReal(i)
+     DeltaReal(i) = dcmplx(wreal(i),eta) - DeltaReal(i)
   enddo
   DeltaReal = 1d0/DeltaReal
 

@@ -1,0 +1,2235 @@
+---------------MPI----------------
+rank:     0of      1 alive
+----------------------------------
+
+ warning scalar in parse_cmd array:   ULOC
+ expecting a comma separated list of:            3
+ wrong dimensions parsing variable:   ULOC
+ expecting a comma separated list of:            3
+Variable ULOC updated to        1.800000000       0.000000000       0.000000000
+ WBAND=1.000000000                             !
+ LE=500                                        !
+ WMIXING=2.500000000E-01                       !
+ NORB=1                                        !Number of impurity orbitals.
+ NBATH=8                                       !Number of bath sites:(normal=>Nbath per orb)(hybrid=>Nbath total)(replica=>Nbath=Nreplica)
+ NSPIN=1                                       !Number of spin degeneracy (max 2)
+ ULOC=1.800000000,0.d0,0.d0                    !Values of the local interaction per orbital (max 3)
+ UST=0.d0                                      !Value of the inter-orbital interaction term
+ JH=0.d0                                       !Hund`s coupling
+ BETA=1000.000000000                           !Inverse temperature, at T=0 is used as a IR cut-off.
+ XMU=0.d0                                      !Chemical potential. If HFMODE=T, xmu=0 indicates half-filling condition.
+ DELTASC=2.000000000E-02                       !Value of the SC symmetry breaking term.
+ NLOOP=100                                     !Max number of DMFT iterations.
+ DMFT_ERROR=1.000000000E-05                    !Error threshold for DMFT convergence
+ SB_FIELD=1.000000000E-01                      !Value of a symmetry breaking field for magnetic solutions.
+ ED_TWIN=T                                     !flag to reduce (T) or not (F,default) the number of visited sector using twin symmetry.
+ NSUCCESS=1                                    !Number of successive iterations below threshold for convergence
+ MPI_COLORS=1                                  !Number of color groups to divide the MPI Communicators into inequivalent sites
+ LMATS=8192                                    !Number of Matsubara frequencies.
+ LREAL=1000                                    !Number of real-axis frequencies.
+ LTAU=1000                                     !Number of imaginary time points.
+ LFIT=1000                                     !Number of Matsubara frequencies used in the \Chi2 fit.
+ NREAD=0.d0                                    !Objective density for fixed density calculations.
+ NERR=1.000000000E-04                          !Error threshold for fixed density calculations.
+ NDELTA=1.000000000E-01                        !Initial step for fixed density calculations.
+ WINI=-5.000000000                             !Smallest real-axis frequency
+ WFIN=5.000000000                              !Largest real-axis frequency
+ CHIFLAG=F                                     !Flag to activate spin susceptibility calculation.
+ JHFLAG=F                                      !Flag to include full SU(2) invariant term: spin-flip, pair-hopping.
+ HFMODE=T                                      !Flag to set the Hartree form of the interaction (n-1/2). see xmu.
+ EPS=1.000000000E-02                           !Broadening on the real-axis.
+ CUTOFF=1.000000000E-09                        !Spectrum cut-off, used to determine the number states to be retained.
+ GS_THRESHOLD=1.000000000E-09                  !Energy threshold for ground state degeneracy loop up
+ HWBAND=2.000000000                            !half-bandwidth for the bath initialization: flat in -hwband:hwband
+ LANC_NSTATES_SECTOR=6                         !Initial number of states per sector to be determined.
+ LANC_NSTATES_TOTAL=1                          !Initial number of total states to be determined.
+ LANC_NSTATES_STEP=2                           !Number of states added to the spectrum at each step.
+ LANC_NCV_FACTOR=3                             !Set the size of the block used in Lanczos-Arpack by multiplying the required Neigen (Ncv=lanc_ncv_factor*Neigen+lanc_ncv_add)
+ LANC_NCV_ADD=5                                !Adds up to the size of the block to prevent it to become too small (Ncv=lanc_ncv_factor*Neigen+lanc_ncv_add)
+ LANC_NITER=512                                !Number of Lanczos iteration in spectrum determination.
+ LANC_NGFITER=200                              !Number of Lanczos iteration in GF determination. Number of momenta.
+ LANC_TOLERANCE=1.000000000E-12                !Tolerance for the Lanczos iterations as used in Arpack and plain lanczos.
+ LANC_DIM_THRESHOLD=256                        !Min dimension threshold to use Lanczos determination of the spectrum rather than Lapack based exact diagonalization.
+ CG_NITER=500                                  !Max. number of Conjugate-Gradient iterations.
+ CG_SCHEME=weiss                               !Conjugate-Gradient fit scheme: delta or weiss.
+ CG_FTOL=1.000000000E-05                       !Conjugate-Gradient tolerance.
+ CG_METHOD=0                                   !Conjugate-Gradient method: 0=NR, 1=minimize, 2=CG+.
+ CG_STOP=0                                     !Conjugate-Gradient stopping condition.
+ CG_EPS=1.000000000E-06                        !Conjugate-Gradient eps tolerance.
+ CG_WEIGHT=0                                   !Conjugate-Gradient weight form: 0=1.0 ,1=1/n , 2=1/w.
+ ED_TYPE=d                                     !Flag to set real or complex Ham: d=symmetric H (real), c=hermitian H (cmplx)
+ ED_MODE=normal                                !Flag to set ED type: normal=normal, superc=superconductive, nonsu2=broken SU(2)
+ ED_PARA=T                                     !Flag to force paramagnetic solution (only used in ed_mode=nonsu2 now).
+ ED_VSF_RATIO=1.000000000E-01                  !Ration of the spin-flip hopping to spin-hold ones in the nonSU2 channel.
+ ED_BATH_NOISE_THR=0.d0                        !Noise added to the impurity hybridization
+ BATH_TYPE=normal                              !flag to set bath type: normal (1bath/imp), hybrid(1bath), replica(1replica/imp)
+ HFILE=hamiltonian                             !File where to retrieve/store the bath parameters.
+ IMPHFILE=inputHLOC.in                         !File read the input local H.
+ LOGFILE=6                                     !LOG unit.
+ ED_VERBOSE=0                                  !Verbosity level: 0=all --> 5:almost nothing on the screen.
+ ED_FILE_SUFFIX=.ed                            !Suffix in the output files.
+ NSIDE=6                                       !
+ FILESIG=LSigma.data                           !
+ FILESELF=LSelf.data                           !
+ MIX_TYPE=0                                    !
+SCIFOR VERSION (GIT): 91579288fdd1713f34bfd1d12b3f2c073c556b27
+CODE VERSION (GIT): f5548ab9c0f5aa74bb39dfd611b27552e90e9bda
+Timestamp: +28 November 2016  10:29:04.691
+ 
+INIT SOLVER FOR 
+Summary:
+--------------------------------------------
+# of levels/spin      =               9
+Total size            =              18
+# of impurities       =               1
+# of bath/impurity    =               8
+# of Bath levels/spin =               8
+Largest Sector(s)    =             126            126
+Number of sectors     =             100
+--------------------------------------------
+ impHloc file not found.
+ impHloc should be defined elsewhere...
+H_local:
+(  0.000,  0.000)
+Required Lanc_nstates_total=1 => set T=0 calculation
+Lanczos ZERO temperature calculation:
+Reading bath from filehamiltonian.restart
+there are        8 lines in +hamiltonian.restart
+Looking into   55 sectors out of  100
+ 
+-----DMFT-loop    1 (max:  100)-----
+            #Ek_l1_s1              Vk_l1_s1
+      -1.950946740271       -0.044822766977
+      -0.338549119923        0.261903842279
+      -0.052600928369        0.129071901592
+      -0.004852746688        0.048927377104
+       0.004827140139        0.048834810937
+       0.052416742365        0.128866876305
+       0.337371659330        0.261632031999
+       1.953850779365       -0.049377165437
+ hamiltonian.used
+Diagonalize impurity H:
+    1-Solving sector:   1, nup: 0, ndw: 0, dim=              1, Lanc Info:   1   1   1
+    2-Solving sector:  11, nup: 1, ndw: 0, dim=              9, Lanc Info:   6   9   9
+    3-Solving sector:  12, nup: 1, ndw: 1, dim=             81, Lanc Info:   6  81  23
+    4-Solving sector:  21, nup: 2, ndw: 0, dim=             36, Lanc Info:   6  36  23
+    5-Solving sector:  22, nup: 2, ndw: 1, dim=            324, Lanc Info:   6 324  23
+    6-Solving sector:  23, nup: 2, ndw: 2, dim=           1296, Lanc Info:   6 512  23
+    7-Solving sector:  31, nup: 3, ndw: 0, dim=             84, Lanc Info:   6  84  23
+    8-Solving sector:  32, nup: 3, ndw: 1, dim=            756, Lanc Info:   6 512  23
+    9-Solving sector:  33, nup: 3, ndw: 2, dim=           3024, Lanc Info:   6 512  23
+   10-Solving sector:  34, nup: 3, ndw: 3, dim=           7056, Lanc Info:   6 512  23
+   11-Solving sector:  41, nup: 4, ndw: 0, dim=            126, Lanc Info:   6 126  23
+   12-Solving sector:  42, nup: 4, ndw: 1, dim=           1134, Lanc Info:   6 512  23
+   13-Solving sector:  43, nup: 4, ndw: 2, dim=           4536, Lanc Info:   6 512  23
+   14-Solving sector:  44, nup: 4, ndw: 3, dim=          10584, Lanc Info:   6 512  23
+   15-Solving sector:  45, nup: 4, ndw: 4, dim=          15876, Lanc Info:   6 512  23
+   16-Solving sector:  51, nup: 5, ndw: 0, dim=            126, Lanc Info:   6 126  23
+   17-Solving sector:  52, nup: 5, ndw: 1, dim=           1134, Lanc Info:   6 512  23
+   18-Solving sector:  53, nup: 5, ndw: 2, dim=           4536, Lanc Info:   6 512  23
+   19-Solving sector:  54, nup: 5, ndw: 3, dim=          10584, Lanc Info:   6 512  23
+   20-Solving sector:  55, nup: 5, ndw: 4, dim=          15876, Lanc Info:   6 512  23
+   21-Solving sector:  56, nup: 5, ndw: 5, dim=          15876, Lanc Info:   6 512  23
+   22-Solving sector:  61, nup: 6, ndw: 0, dim=             84, Lanc Info:   6  84  23
+   23-Solving sector:  62, nup: 6, ndw: 1, dim=            756, Lanc Info:   6 512  23
+   24-Solving sector:  63, nup: 6, ndw: 2, dim=           3024, Lanc Info:   6 512  23
+   25-Solving sector:  64, nup: 6, ndw: 3, dim=           7056, Lanc Info:   6 512  23
+   26-Solving sector:  65, nup: 6, ndw: 4, dim=          10584, Lanc Info:   6 512  23
+   27-Solving sector:  66, nup: 6, ndw: 5, dim=          10584, Lanc Info:   6 512  23
+   28-Solving sector:  67, nup: 6, ndw: 6, dim=           7056, Lanc Info:   6 512  23
+   29-Solving sector:  71, nup: 7, ndw: 0, dim=             36, Lanc Info:   6  36  23
+   30-Solving sector:  72, nup: 7, ndw: 1, dim=            324, Lanc Info:   6 324  23
+   31-Solving sector:  73, nup: 7, ndw: 2, dim=           1296, Lanc Info:   6 512  23
+   32-Solving sector:  74, nup: 7, ndw: 3, dim=           3024, Lanc Info:   6 512  23
+   33-Solving sector:  75, nup: 7, ndw: 4, dim=           4536, Lanc Info:   6 512  23
+   34-Solving sector:  76, nup: 7, ndw: 5, dim=           4536, Lanc Info:   6 512  23
+   35-Solving sector:  77, nup: 7, ndw: 6, dim=           3024, Lanc Info:   6 512  23
+   36-Solving sector:  78, nup: 7, ndw: 7, dim=           1296, Lanc Info:   6 512  23
+   37-Solving sector:  81, nup: 8, ndw: 0, dim=              9, Lanc Info:   6   9   9
+   38-Solving sector:  82, nup: 8, ndw: 1, dim=             81, Lanc Info:   6  81  23
+   39-Solving sector:  83, nup: 8, ndw: 2, dim=            324, Lanc Info:   6 324  23
+   40-Solving sector:  84, nup: 8, ndw: 3, dim=            756, Lanc Info:   6 512  23
+   41-Solving sector:  85, nup: 8, ndw: 4, dim=           1134, Lanc Info:   6 512  23
+   42-Solving sector:  86, nup: 8, ndw: 5, dim=           1134, Lanc Info:   6 512  23
+   43-Solving sector:  87, nup: 8, ndw: 6, dim=            756, Lanc Info:   6 512  23
+   44-Solving sector:  88, nup: 8, ndw: 7, dim=            324, Lanc Info:   6 324  23
+   45-Solving sector:  89, nup: 8, ndw: 8, dim=             81, Lanc Info:   6  81  23
+   46-Solving sector:  91, nup: 9, ndw: 0, dim=              1, Lanc Info:   1   1   1
+   47-Solving sector:  92, nup: 9, ndw: 1, dim=              9, Lanc Info:   6   9   9
+   48-Solving sector:  93, nup: 9, ndw: 2, dim=             36, Lanc Info:   6  36  23
+   49-Solving sector:  94, nup: 9, ndw: 3, dim=             84, Lanc Info:   6  84  23
+   50-Solving sector:  95, nup: 9, ndw: 4, dim=            126, Lanc Info:   6 126  23
+   51-Solving sector:  96, nup: 9, ndw: 5, dim=            126, Lanc Info:   6 126  23
+   52-Solving sector:  97, nup: 9, ndw: 6, dim=             84, Lanc Info:   6  84  23
+   53-Solving sector:  98, nup: 9, ndw: 7, dim=             36, Lanc Info:   6  36  23
+   54-Solving sector:  99, nup: 9, ndw: 8, dim=              9, Lanc Info:   6   9   9
+   55-Solving sector: 100, nup: 9, ndw: 9, dim=              1, Lanc Info:   1   1   1
+Total time [h:m:s.ms]:   0:00:05.876
+# i       E_i           exp(-(E-E0)/T)       nup ndw  Sect     Dim
+  1   -5.396370281206   1.000000000000E+00   5  4    55     15876
+  2   -5.396370281206   1.000000000000E+00   4  5    46     15876
+Egs =     -5.396370281206   5   4
+Egs =     -5.396370281206   4   5
+Z   =      2.000000000000
+dens=    1.000006343158    1.000006343158
+docc=    0.106719349341
+Get impurity Greens functions:
+Get G_l1_s1
+ add particle:  6  4
+ del particle:  4  4
+ add particle:  5  5
+ del particle:  3  5
+Total time [h:m:s.ms]:   0:00:00.729
+Get local Green's function (print mode:1)
+ 
+  +ETA --> fort.6
+  10% |ETA: 0:00:02.544 @28 November 2016  10:29:14
+  20% |ETA: 0:00:01.951
+  30% |ETA: 0:00:01.830
+  40% |ETA: 0:00:01.710
+  50% |ETA: 0:00:01.595 @28 November 2016  10:29:15
+  60% |ETA: 0:00:00.951
+  70% |ETA: 0:00:00.712
+  80% |ETA: 0:00:00.948
+  90% |ETA: 0:00:00.950
+ 100% |ETA: 0:00:00.000
+Total time [h:m:s.ms]:   0:00:02.375
+Gloc matsubara: write spin-orbital diagonal elements.
+Delta//WeissField: write spin-orbital diagonal elements.
+\Chi2 fit with CG-nr and CG-weight: 0 on: weiss
+chi^2|iter=    9.155289272E-05 |    33  <--  Orb1 Spin1
+            #Ek_l1_s1              Vk_l1_s1
+      -1.950950205442       -0.044782084214
+      -0.341645513891        0.242909624993
+      -0.052843822637        0.128004648685
+      -0.004889221757        0.049194250984
+       0.004867745217        0.049117409308
+       0.052705235649        0.127846990479
+       0.340440561934        0.242606636088
+       1.953854955935       -0.049330006984
+ hamiltonian.restart
+[1;91merror=[0m  1.0000000E+00
+=====================================
+Total time [h:m:s.ms]:   0:00:09.440
+ 
+ 
+ 
+-----DMFT-loop    2 (max:  100)-----
+            #Ek_l1_s1              Vk_l1_s1
+      -1.950950205442       -0.044782084214
+      -0.341645513891        0.242909624993
+      -0.052843822637        0.128004648685
+      -0.004889221757        0.049194250984
+       0.004867745217        0.049117409308
+       0.052705235649        0.127846990479
+       0.340440561934        0.242606636088
+       1.953854955935       -0.049330006984
+ hamiltonian.used
+Diagonalize impurity H:
+    1-Solving sector:   1, nup: 0, ndw: 0, dim=              1, Lanc Info:   1   1   1
+    2-Solving sector:  11, nup: 1, ndw: 0, dim=              9, Lanc Info:   6   9   9
+    3-Solving sector:  12, nup: 1, ndw: 1, dim=             81, Lanc Info:   6  81  23
+    4-Solving sector:  21, nup: 2, ndw: 0, dim=             36, Lanc Info:   6  36  23
+    5-Solving sector:  22, nup: 2, ndw: 1, dim=            324, Lanc Info:   6 324  23
+    6-Solving sector:  23, nup: 2, ndw: 2, dim=           1296, Lanc Info:   6 512  23
+    7-Solving sector:  31, nup: 3, ndw: 0, dim=             84, Lanc Info:   6  84  23
+    8-Solving sector:  32, nup: 3, ndw: 1, dim=            756, Lanc Info:   6 512  23
+    9-Solving sector:  33, nup: 3, ndw: 2, dim=           3024, Lanc Info:   6 512  23
+   10-Solving sector:  34, nup: 3, ndw: 3, dim=           7056, Lanc Info:   6 512  23
+   11-Solving sector:  41, nup: 4, ndw: 0, dim=            126, Lanc Info:   6 126  23
+   12-Solving sector:  42, nup: 4, ndw: 1, dim=           1134, Lanc Info:   6 512  23
+   13-Solving sector:  43, nup: 4, ndw: 2, dim=           4536, Lanc Info:   6 512  23
+   14-Solving sector:  44, nup: 4, ndw: 3, dim=          10584, Lanc Info:   6 512  23
+   15-Solving sector:  45, nup: 4, ndw: 4, dim=          15876, Lanc Info:   6 512  23
+   16-Solving sector:  51, nup: 5, ndw: 0, dim=            126, Lanc Info:   6 126  23
+   17-Solving sector:  52, nup: 5, ndw: 1, dim=           1134, Lanc Info:   6 512  23
+   18-Solving sector:  53, nup: 5, ndw: 2, dim=           4536, Lanc Info:   6 512  23
+   19-Solving sector:  54, nup: 5, ndw: 3, dim=          10584, Lanc Info:   6 512  23
+   20-Solving sector:  55, nup: 5, ndw: 4, dim=          15876, Lanc Info:   6 512  23
+   21-Solving sector:  56, nup: 5, ndw: 5, dim=          15876, Lanc Info:   6 512  23
+   22-Solving sector:  61, nup: 6, ndw: 0, dim=             84, Lanc Info:   6  84  23
+   23-Solving sector:  62, nup: 6, ndw: 1, dim=            756, Lanc Info:   6 512  23
+   24-Solving sector:  63, nup: 6, ndw: 2, dim=           3024, Lanc Info:   6 512  23
+   25-Solving sector:  64, nup: 6, ndw: 3, dim=           7056, Lanc Info:   6 512  23
+   26-Solving sector:  65, nup: 6, ndw: 4, dim=          10584, Lanc Info:   6 512  23
+   27-Solving sector:  66, nup: 6, ndw: 5, dim=          10584, Lanc Info:   6 512  23
+   28-Solving sector:  67, nup: 6, ndw: 6, dim=           7056, Lanc Info:   6 512  23
+   29-Solving sector:  71, nup: 7, ndw: 0, dim=             36, Lanc Info:   6  36  23
+   30-Solving sector:  72, nup: 7, ndw: 1, dim=            324, Lanc Info:   6 324  23
+   31-Solving sector:  73, nup: 7, ndw: 2, dim=           1296, Lanc Info:   6 512  23
+   32-Solving sector:  74, nup: 7, ndw: 3, dim=           3024, Lanc Info:   6 512  23
+   33-Solving sector:  75, nup: 7, ndw: 4, dim=           4536, Lanc Info:   6 512  23
+   34-Solving sector:  76, nup: 7, ndw: 5, dim=           4536, Lanc Info:   6 512  23
+   35-Solving sector:  77, nup: 7, ndw: 6, dim=           3024, Lanc Info:   6 512  23
+   36-Solving sector:  78, nup: 7, ndw: 7, dim=           1296, Lanc Info:   6 512  23
+   37-Solving sector:  81, nup: 8, ndw: 0, dim=              9, Lanc Info:   6   9   9
+   38-Solving sector:  82, nup: 8, ndw: 1, dim=             81, Lanc Info:   6  81  23
+   39-Solving sector:  83, nup: 8, ndw: 2, dim=            324, Lanc Info:   6 324  23
+   40-Solving sector:  84, nup: 8, ndw: 3, dim=            756, Lanc Info:   6 512  23
+   41-Solving sector:  85, nup: 8, ndw: 4, dim=           1134, Lanc Info:   6 512  23
+   42-Solving sector:  86, nup: 8, ndw: 5, dim=           1134, Lanc Info:   6 512  23
+   43-Solving sector:  87, nup: 8, ndw: 6, dim=            756, Lanc Info:   6 512  23
+   44-Solving sector:  88, nup: 8, ndw: 7, dim=            324, Lanc Info:   6 324  23
+   45-Solving sector:  89, nup: 8, ndw: 8, dim=             81, Lanc Info:   6  81  23
+   46-Solving sector:  91, nup: 9, ndw: 0, dim=              1, Lanc Info:   1   1   1
+   47-Solving sector:  92, nup: 9, ndw: 1, dim=              9, Lanc Info:   6   9   9
+   48-Solving sector:  93, nup: 9, ndw: 2, dim=             36, Lanc Info:   6  36  23
+   49-Solving sector:  94, nup: 9, ndw: 3, dim=             84, Lanc Info:   6  84  23
+   50-Solving sector:  95, nup: 9, ndw: 4, dim=            126, Lanc Info:   6 126  23
+   51-Solving sector:  96, nup: 9, ndw: 5, dim=            126, Lanc Info:   6 126  23
+   52-Solving sector:  97, nup: 9, ndw: 6, dim=             84, Lanc Info:   6  84  23
+   53-Solving sector:  98, nup: 9, ndw: 7, dim=             36, Lanc Info:   6  36  23
+   54-Solving sector:  99, nup: 9, ndw: 8, dim=              9, Lanc Info:   6   9   9
+   55-Solving sector: 100, nup: 9, ndw: 9, dim=              1, Lanc Info:   1   1   1
+Total time [h:m:s.ms]:   0:00:05.802
+# i       E_i           exp(-(E-E0)/T)       nup ndw  Sect     Dim
+  1   -5.377701941131   1.000000000000E+00   5  4    55     15876
+  2   -5.377701941131   1.000000000000E+00   4  5    46     15876
+Egs =     -5.377701941131   5   4
+Egs =     -5.377701941131   4   5
+Z   =      2.000000000000
+dens=    1.000007621507    1.000007621507
+docc=    0.100112442437
+Get impurity Greens functions:
+Get G_l1_s1
+ add particle:  6  4
+ del particle:  4  4
+ add particle:  5  5
+ del particle:  3  5
+Total time [h:m:s.ms]:   0:00:00.726
+Get local Green's function (print mode:1)
+ 
+  +ETA --> fort.6
+  10% |ETA: 0:00:02.531 @28 November 2016  10:29:23
+  20% |ETA: 0:00:01.944
+  30% |ETA: 0:00:01.832
+  40% |ETA: 0:00:01.713
+  50% |ETA: 0:00:01.594 @28 November 2016  10:29:24
+  60% |ETA: 0:00:00.949
+  70% |ETA: 0:00:00.712
+  80% |ETA: 0:00:00.953
+  90% |ETA: 0:00:00.951
+ 100% |ETA: 0:00:00.000
+Total time [h:m:s.ms]:   0:00:02.379
+Gloc matsubara: write spin-orbital diagonal elements.
+Delta//WeissField: write spin-orbital diagonal elements.
+\Chi2 fit with CG-nr and CG-weight: 0 on: weiss
+chi^2|iter=    9.635224080E-05 |    22  <--  Orb1 Spin1
+            #Ek_l1_s1              Vk_l1_s1
+      -1.950947508635       -0.045036823727
+      -0.342464626532        0.239182779813
+      -0.052164582185        0.126884393954
+      -0.004856500657        0.048947124554
+       0.004837854596        0.048876634758
+       0.052013539255        0.126728942860
+       0.341253907481        0.238876492730
+       1.953851671719       -0.049608630919
+ hamiltonian.restart
+[1;91merror=[0m  2.5726882E-03
+=====================================
+Total time [h:m:s.ms]:   0:00:09.239
+ 
+ 
+ 
+-----DMFT-loop    3 (max:  100)-----
+            #Ek_l1_s1              Vk_l1_s1
+      -1.950949531240       -0.044845769092
+      -0.341850292051        0.241977913698
+      -0.052674012524        0.127724585002
+      -0.004881041482        0.049132469377
+       0.004860272562        0.049057215671
+       0.052532311550        0.127567478574
+       0.340643898321        0.241674100249
+       1.953854134881       -0.049399662968
+ hamiltonian.used
+Diagonalize impurity H:
+    1-Solving sector:   1, nup: 0, ndw: 0, dim=              1, Lanc Info:   1   1   1
+    2-Solving sector:  11, nup: 1, ndw: 0, dim=              9, Lanc Info:   6   9   9
+    3-Solving sector:  12, nup: 1, ndw: 1, dim=             81, Lanc Info:   6  81  23
+    4-Solving sector:  21, nup: 2, ndw: 0, dim=             36, Lanc Info:   6  36  23
+    5-Solving sector:  22, nup: 2, ndw: 1, dim=            324, Lanc Info:   6 324  23
+    6-Solving sector:  23, nup: 2, ndw: 2, dim=           1296, Lanc Info:   6 512  23
+    7-Solving sector:  31, nup: 3, ndw: 0, dim=             84, Lanc Info:   6  84  23
+    8-Solving sector:  32, nup: 3, ndw: 1, dim=            756, Lanc Info:   6 512  23
+    9-Solving sector:  33, nup: 3, ndw: 2, dim=           3024, Lanc Info:   6 512  23
+   10-Solving sector:  34, nup: 3, ndw: 3, dim=           7056, Lanc Info:   6 512  23
+   11-Solving sector:  41, nup: 4, ndw: 0, dim=            126, Lanc Info:   6 126  23
+   12-Solving sector:  42, nup: 4, ndw: 1, dim=           1134, Lanc Info:   6 512  23
+   13-Solving sector:  43, nup: 4, ndw: 2, dim=           4536, Lanc Info:   6 512  23
+   14-Solving sector:  44, nup: 4, ndw: 3, dim=          10584, Lanc Info:   6 512  23
+   15-Solving sector:  45, nup: 4, ndw: 4, dim=          15876, Lanc Info:   6 512  23
+   16-Solving sector:  51, nup: 5, ndw: 0, dim=            126, Lanc Info:   6 126  23
+   17-Solving sector:  52, nup: 5, ndw: 1, dim=           1134, Lanc Info:   6 512  23
+   18-Solving sector:  53, nup: 5, ndw: 2, dim=           4536, Lanc Info:   6 512  23
+   19-Solving sector:  54, nup: 5, ndw: 3, dim=          10584, Lanc Info:   6 512  23
+   20-Solving sector:  55, nup: 5, ndw: 4, dim=          15876, Lanc Info:   6 512  23
+   21-Solving sector:  56, nup: 5, ndw: 5, dim=          15876, Lanc Info:   6 512  23
+   22-Solving sector:  61, nup: 6, ndw: 0, dim=             84, Lanc Info:   6  84  23
+   23-Solving sector:  62, nup: 6, ndw: 1, dim=            756, Lanc Info:   6 512  23
+   24-Solving sector:  63, nup: 6, ndw: 2, dim=           3024, Lanc Info:   6 512  23
+   25-Solving sector:  64, nup: 6, ndw: 3, dim=           7056, Lanc Info:   6 512  23
+   26-Solving sector:  65, nup: 6, ndw: 4, dim=          10584, Lanc Info:   6 512  23
+   27-Solving sector:  66, nup: 6, ndw: 5, dim=          10584, Lanc Info:   6 512  23
+   28-Solving sector:  67, nup: 6, ndw: 6, dim=           7056, Lanc Info:   6 512  23
+   29-Solving sector:  71, nup: 7, ndw: 0, dim=             36, Lanc Info:   6  36  23
+   30-Solving sector:  72, nup: 7, ndw: 1, dim=            324, Lanc Info:   6 324  23
+   31-Solving sector:  73, nup: 7, ndw: 2, dim=           1296, Lanc Info:   6 512  23
+   32-Solving sector:  74, nup: 7, ndw: 3, dim=           3024, Lanc Info:   6 512  23
+   33-Solving sector:  75, nup: 7, ndw: 4, dim=           4536, Lanc Info:   6 512  23
+   34-Solving sector:  76, nup: 7, ndw: 5, dim=           4536, Lanc Info:   6 512  23
+   35-Solving sector:  77, nup: 7, ndw: 6, dim=           3024, Lanc Info:   6 512  23
+   36-Solving sector:  78, nup: 7, ndw: 7, dim=           1296, Lanc Info:   6 512  23
+   37-Solving sector:  81, nup: 8, ndw: 0, dim=              9, Lanc Info:   6   9   9
+   38-Solving sector:  82, nup: 8, ndw: 1, dim=             81, Lanc Info:   6  81  23
+   39-Solving sector:  83, nup: 8, ndw: 2, dim=            324, Lanc Info:   6 324  23
+   40-Solving sector:  84, nup: 8, ndw: 3, dim=            756, Lanc Info:   6 512  23
+   41-Solving sector:  85, nup: 8, ndw: 4, dim=           1134, Lanc Info:   6 512  23
+   42-Solving sector:  86, nup: 8, ndw: 5, dim=           1134, Lanc Info:   6 512  23
+   43-Solving sector:  87, nup: 8, ndw: 6, dim=            756, Lanc Info:   6 512  23
+   44-Solving sector:  88, nup: 8, ndw: 7, dim=            324, Lanc Info:   6 324  23
+   45-Solving sector:  89, nup: 8, ndw: 8, dim=             81, Lanc Info:   6  81  23
+   46-Solving sector:  91, nup: 9, ndw: 0, dim=              1, Lanc Info:   1   1   1
+   47-Solving sector:  92, nup: 9, ndw: 1, dim=              9, Lanc Info:   6   9   9
+   48-Solving sector:  93, nup: 9, ndw: 2, dim=             36, Lanc Info:   6  36  23
+   49-Solving sector:  94, nup: 9, ndw: 3, dim=             84, Lanc Info:   6  84  23
+   50-Solving sector:  95, nup: 9, ndw: 4, dim=            126, Lanc Info:   6 126  23
+   51-Solving sector:  96, nup: 9, ndw: 5, dim=            126, Lanc Info:   6 126  23
+   52-Solving sector:  97, nup: 9, ndw: 6, dim=             84, Lanc Info:   6  84  23
+   53-Solving sector:  98, nup: 9, ndw: 7, dim=             36, Lanc Info:   6  36  23
+   54-Solving sector:  99, nup: 9, ndw: 8, dim=              9, Lanc Info:   6   9   9
+   55-Solving sector: 100, nup: 9, ndw: 9, dim=              1, Lanc Info:   1   1   1
+Total time [h:m:s.ms]:   0:00:05.851
+# i       E_i           exp(-(E-E0)/T)       nup ndw  Sect     Dim
+  1   -5.376270829323   1.000000000000E+00   5  4    55     15876
+  2   -5.376270829323   1.000000000000E+00   4  5    46     15876
+Egs =     -5.376270829323   5   4
+Egs =     -5.376270829323   4   5
+Z   =      2.000000000000
+dens=    1.000008006729    1.000008006729
+docc=    0.099701698527
+Get impurity Greens functions:
+Get G_l1_s1
+ add particle:  6  4
+ del particle:  4  4
+ add particle:  5  5
+ del particle:  3  5
+Total time [h:m:s.ms]:   0:00:00.731
+Get local Green's function (print mode:1)
+ 
+  +ETA --> fort.6
+  10% |ETA: 0:00:02.533 @28 November 2016  10:29:33
+  20% |ETA: 0:00:01.954
+  30% |ETA: 0:00:01.832
+  40% |ETA: 0:00:01.711
+  50% |ETA: 0:00:01.593 @28 November 2016  10:29:34
+  60% |ETA: 0:00:00.953
+  70% |ETA: 0:00:00.716
+  80% |ETA: 0:00:00.956
+  90% |ETA: 0:00:00.956
+ 100% |ETA: 0:00:00.000
+Total time [h:m:s.ms]:   0:00:02.389
+Gloc matsubara: write spin-orbital diagonal elements.
+Delta//WeissField: write spin-orbital diagonal elements.
+\Chi2 fit with CG-nr and CG-weight: 0 on: weiss
+chi^2|iter=    9.686867838E-05 |    13  <--  Orb1 Spin1
+            #Ek_l1_s1              Vk_l1_s1
+      -1.950949145558       -0.044897185805
+      -0.342539479897        0.239812468217
+      -0.051608665438        0.126383741281
+      -0.004816426449        0.048672332675
+       0.004804296860        0.048606572693
+       0.051439819759        0.126222442964
+       0.341337684764        0.239484298428
+       1.953853673283       -0.049454940004
+ hamiltonian.restart
+[1;91merror=[0m  1.7178931E-04
+=====================================
+Total time [h:m:s.ms]:   0:00:09.250
+ 
+ 
+ 
+-----DMFT-loop    4 (max:  100)-----
+            #Ek_l1_s1              Vk_l1_s1
+      -1.950949434819       -0.044858623270
+      -0.342022589013        0.241436552328
+      -0.052407675753        0.127389374072
+      -0.004864887723        0.049017435201
+       0.004846278636        0.048944554926
+       0.052259188602        0.127231219671
+       0.340817344931        0.241126649794
+       1.953854019482       -0.049413482227
+ hamiltonian.used
+Diagonalize impurity H:
+    1-Solving sector:   1, nup: 0, ndw: 0, dim=              1, Lanc Info:   1   1   1
+    2-Solving sector:  11, nup: 1, ndw: 0, dim=              9, Lanc Info:   6   9   9
+    3-Solving sector:  12, nup: 1, ndw: 1, dim=             81, Lanc Info:   6  81  23
+    4-Solving sector:  21, nup: 2, ndw: 0, dim=             36, Lanc Info:   6  36  23
+    5-Solving sector:  22, nup: 2, ndw: 1, dim=            324, Lanc Info:   6 324  23
+    6-Solving sector:  23, nup: 2, ndw: 2, dim=           1296, Lanc Info:   6 512  23
+    7-Solving sector:  31, nup: 3, ndw: 0, dim=             84, Lanc Info:   6  84  23
+    8-Solving sector:  32, nup: 3, ndw: 1, dim=            756, Lanc Info:   6 512  23
+    9-Solving sector:  33, nup: 3, ndw: 2, dim=           3024, Lanc Info:   6 512  23
+   10-Solving sector:  34, nup: 3, ndw: 3, dim=           7056, Lanc Info:   6 512  23
+   11-Solving sector:  41, nup: 4, ndw: 0, dim=            126, Lanc Info:   6 126  23
+   12-Solving sector:  42, nup: 4, ndw: 1, dim=           1134, Lanc Info:   6 512  23
+   13-Solving sector:  43, nup: 4, ndw: 2, dim=           4536, Lanc Info:   6 512  23
+   14-Solving sector:  44, nup: 4, ndw: 3, dim=          10584, Lanc Info:   6 512  23
+   15-Solving sector:  45, nup: 4, ndw: 4, dim=          15876, Lanc Info:   6 512  23
+   16-Solving sector:  51, nup: 5, ndw: 0, dim=            126, Lanc Info:   6 126  23
+   17-Solving sector:  52, nup: 5, ndw: 1, dim=           1134, Lanc Info:   6 512  23
+   18-Solving sector:  53, nup: 5, ndw: 2, dim=           4536, Lanc Info:   6 512  23
+   19-Solving sector:  54, nup: 5, ndw: 3, dim=          10584, Lanc Info:   6 512  23
+   20-Solving sector:  55, nup: 5, ndw: 4, dim=          15876, Lanc Info:   6 512  23
+   21-Solving sector:  56, nup: 5, ndw: 5, dim=          15876, Lanc Info:   6 512  23
+   22-Solving sector:  61, nup: 6, ndw: 0, dim=             84, Lanc Info:   6  84  23
+   23-Solving sector:  62, nup: 6, ndw: 1, dim=            756, Lanc Info:   6 512  23
+   24-Solving sector:  63, nup: 6, ndw: 2, dim=           3024, Lanc Info:   6 512  23
+   25-Solving sector:  64, nup: 6, ndw: 3, dim=           7056, Lanc Info:   6 512  23
+   26-Solving sector:  65, nup: 6, ndw: 4, dim=          10584, Lanc Info:   6 512  23
+   27-Solving sector:  66, nup: 6, ndw: 5, dim=          10584, Lanc Info:   6 512  23
+   28-Solving sector:  67, nup: 6, ndw: 6, dim=           7056, Lanc Info:   6 512  23
+   29-Solving sector:  71, nup: 7, ndw: 0, dim=             36, Lanc Info:   6  36  23
+   30-Solving sector:  72, nup: 7, ndw: 1, dim=            324, Lanc Info:   6 324  23
+   31-Solving sector:  73, nup: 7, ndw: 2, dim=           1296, Lanc Info:   6 512  23
+   32-Solving sector:  74, nup: 7, ndw: 3, dim=           3024, Lanc Info:   6 512  23
+   33-Solving sector:  75, nup: 7, ndw: 4, dim=           4536, Lanc Info:   6 512  23
+   34-Solving sector:  76, nup: 7, ndw: 5, dim=           4536, Lanc Info:   6 512  23
+   35-Solving sector:  77, nup: 7, ndw: 6, dim=           3024, Lanc Info:   6 512  23
+   36-Solving sector:  78, nup: 7, ndw: 7, dim=           1296, Lanc Info:   6 512  23
+   37-Solving sector:  81, nup: 8, ndw: 0, dim=              9, Lanc Info:   6   9   9
+   38-Solving sector:  82, nup: 8, ndw: 1, dim=             81, Lanc Info:   6  81  23
+   39-Solving sector:  83, nup: 8, ndw: 2, dim=            324, Lanc Info:   6 324  23
+   40-Solving sector:  84, nup: 8, ndw: 3, dim=            756, Lanc Info:   6 512  23
+   41-Solving sector:  85, nup: 8, ndw: 4, dim=           1134, Lanc Info:   6 512  23
+   42-Solving sector:  86, nup: 8, ndw: 5, dim=           1134, Lanc Info:   6 512  23
+   43-Solving sector:  87, nup: 8, ndw: 6, dim=            756, Lanc Info:   6 512  23
+   44-Solving sector:  88, nup: 8, ndw: 7, dim=            324, Lanc Info:   6 324  23
+   45-Solving sector:  89, nup: 8, ndw: 8, dim=             81, Lanc Info:   6  81  23
+   46-Solving sector:  91, nup: 9, ndw: 0, dim=              1, Lanc Info:   1   1   1
+   47-Solving sector:  92, nup: 9, ndw: 1, dim=              9, Lanc Info:   6   9   9
+   48-Solving sector:  93, nup: 9, ndw: 2, dim=             36, Lanc Info:   6  36  23
+   49-Solving sector:  94, nup: 9, ndw: 3, dim=             84, Lanc Info:   6  84  23
+   50-Solving sector:  95, nup: 9, ndw: 4, dim=            126, Lanc Info:   6 126  23
+   51-Solving sector:  96, nup: 9, ndw: 5, dim=            126, Lanc Info:   6 126  23
+   52-Solving sector:  97, nup: 9, ndw: 6, dim=             84, Lanc Info:   6  84  23
+   53-Solving sector:  98, nup: 9, ndw: 7, dim=             36, Lanc Info:   6  36  23
+   54-Solving sector:  99, nup: 9, ndw: 8, dim=              9, Lanc Info:   6   9   9
+   55-Solving sector: 100, nup: 9, ndw: 9, dim=              1, Lanc Info:   1   1   1
+Total time [h:m:s.ms]:   0:00:05.739
+# i       E_i           exp(-(E-E0)/T)       nup ndw  Sect     Dim
+  1   -5.374959956117   1.000000000000E+00   5  4    55     15876
+  2   -5.374959956117   1.000000000000E+00   4  5    46     15876
+Egs =     -5.374959956117   5   4
+Egs =     -5.374959956117   4   5
+Z   =      2.000000000000
+dens=    1.000007974047    1.000007974047
+docc=    0.099393178194
+Get impurity Greens functions:
+Get G_l1_s1
+ add particle:  6  4
+ del particle:  4  4
+ add particle:  5  5
+ del particle:  3  5
+Total time [h:m:s.ms]:   0:00:00.734
+Get local Green's function (print mode:1)
+ 
+  +ETA --> fort.6
+  10% |ETA: 0:00:02.539 @28 November 2016  10:29:42
+  20% |ETA: 0:00:01.968
+  30% |ETA: 0:00:01.847
+  40% |ETA: 0:00:01.726
+  50% |ETA: 0:00:01.605 @28 November 2016  10:29:43
+  60% |ETA: 0:00:00.971
+  70% |ETA: 0:00:00.728
+  80% |ETA: 0:00:00.969
+  90% |ETA: 0:00:00.968
+ 100% |ETA: 0:00:00.000
+Total time [h:m:s.ms]:   0:00:02.419
+Gloc matsubara: write spin-orbital diagonal elements.
+Delta//WeissField: write spin-orbital diagonal elements.
+\Chi2 fit with CG-nr and CG-weight: 0 on: weiss
+chi^2|iter=    9.687683268E-05 |    19  <--  Orb1 Spin1
+            #Ek_l1_s1              Vk_l1_s1
+      -1.950946335461       -0.045132234370
+      -0.342591607999        0.238775934964
+      -0.052084759714        0.126730079165
+      -0.004864420788        0.048965626628
+       0.004833611455        0.048876175723
+       0.051966402052        0.126576416171
+       0.341373895722        0.238487589234
+       1.953850237302       -0.049713705267
+ hamiltonian.restart
+[1;91merror=[0m  1.3301234E-04
+=====================================
+Total time [h:m:s.ms]:   0:00:09.202
+ 
+ 
+ 
+-----DMFT-loop    5 (max:  100)-----
+            #Ek_l1_s1              Vk_l1_s1
+      -1.950948659980       -0.044927026045
+      -0.342164843759        0.240771397987
+      -0.052326946743        0.127224550345
+      -0.004864770990        0.049004483058
+       0.004843111841        0.048927460125
+       0.052185991965        0.127067518796
+       0.340956482629        0.240466884654
+       1.953853073937       -0.049488537987
+ hamiltonian.used
+Diagonalize impurity H:
+    1-Solving sector:   1, nup: 0, ndw: 0, dim=              1, Lanc Info:   1   1   1
+    2-Solving sector:  11, nup: 1, ndw: 0, dim=              9, Lanc Info:   6   9   9
+    3-Solving sector:  12, nup: 1, ndw: 1, dim=             81, Lanc Info:   6  81  23
+    4-Solving sector:  21, nup: 2, ndw: 0, dim=             36, Lanc Info:   6  36  23
+    5-Solving sector:  22, nup: 2, ndw: 1, dim=            324, Lanc Info:   6 324  23
+    6-Solving sector:  23, nup: 2, ndw: 2, dim=           1296, Lanc Info:   6 512  23
+    7-Solving sector:  31, nup: 3, ndw: 0, dim=             84, Lanc Info:   6  84  23
+    8-Solving sector:  32, nup: 3, ndw: 1, dim=            756, Lanc Info:   6 512  23
+    9-Solving sector:  33, nup: 3, ndw: 2, dim=           3024, Lanc Info:   6 512  23
+   10-Solving sector:  34, nup: 3, ndw: 3, dim=           7056, Lanc Info:   6 512  23
+   11-Solving sector:  41, nup: 4, ndw: 0, dim=            126, Lanc Info:   6 126  23
+   12-Solving sector:  42, nup: 4, ndw: 1, dim=           1134, Lanc Info:   6 512  23
+   13-Solving sector:  43, nup: 4, ndw: 2, dim=           4536, Lanc Info:   6 512  23
+   14-Solving sector:  44, nup: 4, ndw: 3, dim=          10584, Lanc Info:   6 512  23
+   15-Solving sector:  45, nup: 4, ndw: 4, dim=          15876, Lanc Info:   6 512  23
+   16-Solving sector:  51, nup: 5, ndw: 0, dim=            126, Lanc Info:   6 126  23
+   17-Solving sector:  52, nup: 5, ndw: 1, dim=           1134, Lanc Info:   6 512  23
+   18-Solving sector:  53, nup: 5, ndw: 2, dim=           4536, Lanc Info:   6 512  23
+   19-Solving sector:  54, nup: 5, ndw: 3, dim=          10584, Lanc Info:   6 512  23
+   20-Solving sector:  55, nup: 5, ndw: 4, dim=          15876, Lanc Info:   6 512  23
+   21-Solving sector:  56, nup: 5, ndw: 5, dim=          15876, Lanc Info:   6 512  23
+   22-Solving sector:  61, nup: 6, ndw: 0, dim=             84, Lanc Info:   6  84  23
+   23-Solving sector:  62, nup: 6, ndw: 1, dim=            756, Lanc Info:   6 512  23
+   24-Solving sector:  63, nup: 6, ndw: 2, dim=           3024, Lanc Info:   6 512  23
+   25-Solving sector:  64, nup: 6, ndw: 3, dim=           7056, Lanc Info:   6 512  23
+   26-Solving sector:  65, nup: 6, ndw: 4, dim=          10584, Lanc Info:   6 512  23
+   27-Solving sector:  66, nup: 6, ndw: 5, dim=          10584, Lanc Info:   6 512  23
+   28-Solving sector:  67, nup: 6, ndw: 6, dim=           7056, Lanc Info:   6 512  23
+   29-Solving sector:  71, nup: 7, ndw: 0, dim=             36, Lanc Info:   6  36  23
+   30-Solving sector:  72, nup: 7, ndw: 1, dim=            324, Lanc Info:   6 324  23
+   31-Solving sector:  73, nup: 7, ndw: 2, dim=           1296, Lanc Info:   6 512  23
+   32-Solving sector:  74, nup: 7, ndw: 3, dim=           3024, Lanc Info:   6 512  23
+   33-Solving sector:  75, nup: 7, ndw: 4, dim=           4536, Lanc Info:   6 512  23
+   34-Solving sector:  76, nup: 7, ndw: 5, dim=           4536, Lanc Info:   6 512  23
+   35-Solving sector:  77, nup: 7, ndw: 6, dim=           3024, Lanc Info:   6 512  23
+   36-Solving sector:  78, nup: 7, ndw: 7, dim=           1296, Lanc Info:   6 512  23
+   37-Solving sector:  81, nup: 8, ndw: 0, dim=              9, Lanc Info:   6   9   9
+   38-Solving sector:  82, nup: 8, ndw: 1, dim=             81, Lanc Info:   6  81  23
+   39-Solving sector:  83, nup: 8, ndw: 2, dim=            324, Lanc Info:   6 324  23
+   40-Solving sector:  84, nup: 8, ndw: 3, dim=            756, Lanc Info:   6 512  23
+   41-Solving sector:  85, nup: 8, ndw: 4, dim=           1134, Lanc Info:   6 512  23
+   42-Solving sector:  86, nup: 8, ndw: 5, dim=           1134, Lanc Info:   6 512  23
+   43-Solving sector:  87, nup: 8, ndw: 6, dim=            756, Lanc Info:   6 512  23
+   44-Solving sector:  88, nup: 8, ndw: 7, dim=            324, Lanc Info:   6 324  23
+   45-Solving sector:  89, nup: 8, ndw: 8, dim=             81, Lanc Info:   6  81  23
+   46-Solving sector:  91, nup: 9, ndw: 0, dim=              1, Lanc Info:   1   1   1
+   47-Solving sector:  92, nup: 9, ndw: 1, dim=              9, Lanc Info:   6   9   9
+   48-Solving sector:  93, nup: 9, ndw: 2, dim=             36, Lanc Info:   6  36  23
+   49-Solving sector:  94, nup: 9, ndw: 3, dim=             84, Lanc Info:   6  84  23
+   50-Solving sector:  95, nup: 9, ndw: 4, dim=            126, Lanc Info:   6 126  23
+   51-Solving sector:  96, nup: 9, ndw: 5, dim=            126, Lanc Info:   6 126  23
+   52-Solving sector:  97, nup: 9, ndw: 6, dim=             84, Lanc Info:   6  84  23
+   53-Solving sector:  98, nup: 9, ndw: 7, dim=             36, Lanc Info:   6  36  23
+   54-Solving sector:  99, nup: 9, ndw: 8, dim=              9, Lanc Info:   6   9   9
+   55-Solving sector: 100, nup: 9, ndw: 9, dim=              1, Lanc Info:   1   1   1
+Total time [h:m:s.ms]:   0:00:05.715
+# i       E_i           exp(-(E-E0)/T)       nup ndw  Sect     Dim
+  1   -5.374082700212   1.000000000000E+00   5  4    55     15876
+  2   -5.374082700212   1.000000000000E+00   4  5    46     15876
+Egs =     -5.374082700212   5   4
+Egs =     -5.374082700212   4   5
+Z   =      2.000000000000
+dens=    1.000007773890    1.000007773890
+docc=    0.099114661896
+Get impurity Greens functions:
+Get G_l1_s1
+ add particle:  6  4
+ del particle:  4  4
+ add particle:  5  5
+ del particle:  3  5
+Total time [h:m:s.ms]:   0:00:00.730
+Get local Green's function (print mode:1)
+ 
+  +ETA --> fort.6
+  10% |ETA: 0:00:02.558 @28 November 2016  10:29:51
+  20% |ETA: 0:00:01.965
+  30% |ETA: 0:00:01.836
+  40% |ETA: 0:00:01.713
+  50% |ETA: 0:00:01.598 @28 November 2016  10:29:52
+  60% |ETA: 0:00:00.956
+  70% |ETA: 0:00:00.715
+  80% |ETA: 0:00:00.953
+  90% |ETA: 0:00:00.955
+ 100% |ETA: 0:00:00.000
+Total time [h:m:s.ms]:   0:00:02.387
+Gloc matsubara: write spin-orbital diagonal elements.
+Delta//WeissField: write spin-orbital diagonal elements.
+\Chi2 fit with CG-nr and CG-weight: 0 on: weiss
+chi^2|iter=    9.724827300E-05 |    10  <--  Orb1 Spin1
+            #Ek_l1_s1              Vk_l1_s1
+      -1.950948309101       -0.044968212974
+      -0.342642354619        0.239319334915
+      -0.051581606457        0.126252931604
+      -0.004834595675        0.048735126335
+       0.004804731941        0.048656166301
+       0.051445886199        0.126105068750
+       0.341431006345        0.239024595686
+       1.953852637855       -0.049534122911
+ hamiltonian.restart
+[1;91merror=[0m  1.1657797E-04
+=====================================
+Total time [h:m:s.ms]:   0:00:09.068
+ 
+ 
+ 
+-----DMFT-loop    6 (max:  100)-----
+            #Ek_l1_s1              Vk_l1_s1
+      -1.950948572260       -0.044937322777
+      -0.342284221474        0.240408382219
+      -0.052140611671        0.126981645660
+      -0.004857227161        0.048937143877
+       0.004833516866        0.048859636669
+       0.052000965523        0.126826906285
+       0.341075113558        0.240106312412
+       1.953852964916       -0.049499934218
+ hamiltonian.used
+Diagonalize impurity H:
+    1-Solving sector:   1, nup: 0, ndw: 0, dim=              1, Lanc Info:   1   1   1
+    2-Solving sector:  11, nup: 1, ndw: 0, dim=              9, Lanc Info:   6   9   9
+    3-Solving sector:  12, nup: 1, ndw: 1, dim=             81, Lanc Info:   6  81  23
+    4-Solving sector:  21, nup: 2, ndw: 0, dim=             36, Lanc Info:   6  36  23
+    5-Solving sector:  22, nup: 2, ndw: 1, dim=            324, Lanc Info:   6 324  23
+    6-Solving sector:  23, nup: 2, ndw: 2, dim=           1296, Lanc Info:   6 512  23
+    7-Solving sector:  31, nup: 3, ndw: 0, dim=             84, Lanc Info:   6  84  23
+    8-Solving sector:  32, nup: 3, ndw: 1, dim=            756, Lanc Info:   6 512  23
+    9-Solving sector:  33, nup: 3, ndw: 2, dim=           3024, Lanc Info:   6 512  23
+   10-Solving sector:  34, nup: 3, ndw: 3, dim=           7056, Lanc Info:   6 512  23
+   11-Solving sector:  41, nup: 4, ndw: 0, dim=            126, Lanc Info:   6 126  23
+   12-Solving sector:  42, nup: 4, ndw: 1, dim=           1134, Lanc Info:   6 512  23
+   13-Solving sector:  43, nup: 4, ndw: 2, dim=           4536, Lanc Info:   6 512  23
+   14-Solving sector:  44, nup: 4, ndw: 3, dim=          10584, Lanc Info:   6 512  23
+   15-Solving sector:  45, nup: 4, ndw: 4, dim=          15876, Lanc Info:   6 512  23
+   16-Solving sector:  51, nup: 5, ndw: 0, dim=            126, Lanc Info:   6 126  23
+   17-Solving sector:  52, nup: 5, ndw: 1, dim=           1134, Lanc Info:   6 512  23
+   18-Solving sector:  53, nup: 5, ndw: 2, dim=           4536, Lanc Info:   6 512  23
+   19-Solving sector:  54, nup: 5, ndw: 3, dim=          10584, Lanc Info:   6 512  23
+   20-Solving sector:  55, nup: 5, ndw: 4, dim=          15876, Lanc Info:   6 512  23
+   21-Solving sector:  56, nup: 5, ndw: 5, dim=          15876, Lanc Info:   6 512  23
+   22-Solving sector:  61, nup: 6, ndw: 0, dim=             84, Lanc Info:   6  84  23
+   23-Solving sector:  62, nup: 6, ndw: 1, dim=            756, Lanc Info:   6 512  23
+   24-Solving sector:  63, nup: 6, ndw: 2, dim=           3024, Lanc Info:   6 512  23
+   25-Solving sector:  64, nup: 6, ndw: 3, dim=           7056, Lanc Info:   6 512  23
+   26-Solving sector:  65, nup: 6, ndw: 4, dim=          10584, Lanc Info:   6 512  23
+   27-Solving sector:  66, nup: 6, ndw: 5, dim=          10584, Lanc Info:   6 512  23
+   28-Solving sector:  67, nup: 6, ndw: 6, dim=           7056, Lanc Info:   6 512  23
+   29-Solving sector:  71, nup: 7, ndw: 0, dim=             36, Lanc Info:   6  36  23
+   30-Solving sector:  72, nup: 7, ndw: 1, dim=            324, Lanc Info:   6 324  23
+   31-Solving sector:  73, nup: 7, ndw: 2, dim=           1296, Lanc Info:   6 512  23
+   32-Solving sector:  74, nup: 7, ndw: 3, dim=           3024, Lanc Info:   6 512  23
+   33-Solving sector:  75, nup: 7, ndw: 4, dim=           4536, Lanc Info:   6 512  23
+   34-Solving sector:  76, nup: 7, ndw: 5, dim=           4536, Lanc Info:   6 512  23
+   35-Solving sector:  77, nup: 7, ndw: 6, dim=           3024, Lanc Info:   6 512  23
+   36-Solving sector:  78, nup: 7, ndw: 7, dim=           1296, Lanc Info:   6 512  23
+   37-Solving sector:  81, nup: 8, ndw: 0, dim=              9, Lanc Info:   6   9   9
+   38-Solving sector:  82, nup: 8, ndw: 1, dim=             81, Lanc Info:   6  81  23
+   39-Solving sector:  83, nup: 8, ndw: 2, dim=            324, Lanc Info:   6 324  23
+   40-Solving sector:  84, nup: 8, ndw: 3, dim=            756, Lanc Info:   6 512  23
+   41-Solving sector:  85, nup: 8, ndw: 4, dim=           1134, Lanc Info:   6 512  23
+   42-Solving sector:  86, nup: 8, ndw: 5, dim=           1134, Lanc Info:   6 512  23
+   43-Solving sector:  87, nup: 8, ndw: 6, dim=            756, Lanc Info:   6 512  23
+   44-Solving sector:  88, nup: 8, ndw: 7, dim=            324, Lanc Info:   6 324  23
+   45-Solving sector:  89, nup: 8, ndw: 8, dim=             81, Lanc Info:   6  81  23
+   46-Solving sector:  91, nup: 9, ndw: 0, dim=              1, Lanc Info:   1   1   1
+   47-Solving sector:  92, nup: 9, ndw: 1, dim=              9, Lanc Info:   6   9   9
+   48-Solving sector:  93, nup: 9, ndw: 2, dim=             36, Lanc Info:   6  36  23
+   49-Solving sector:  94, nup: 9, ndw: 3, dim=             84, Lanc Info:   6  84  23
+   50-Solving sector:  95, nup: 9, ndw: 4, dim=            126, Lanc Info:   6 126  23
+   51-Solving sector:  96, nup: 9, ndw: 5, dim=            126, Lanc Info:   6 126  23
+   52-Solving sector:  97, nup: 9, ndw: 6, dim=             84, Lanc Info:   6  84  23
+   53-Solving sector:  98, nup: 9, ndw: 7, dim=             36, Lanc Info:   6  36  23
+   54-Solving sector:  99, nup: 9, ndw: 8, dim=              9, Lanc Info:   6   9   9
+   55-Solving sector: 100, nup: 9, ndw: 9, dim=              1, Lanc Info:   1   1   1
+Total time [h:m:s.ms]:   0:00:05.729
+# i       E_i           exp(-(E-E0)/T)       nup ndw  Sect     Dim
+  1   -5.373195271831   1.000000000000E+00   5  4    55     15876
+  2   -5.373195271831   1.000000000000E+00   4  5    46     15876
+Egs =     -5.373195271831   5   4
+Egs =     -5.373195271831   4   5
+Z   =      2.000000000000
+dens=    1.000007829778    1.000007829778
+docc=    0.098903572000
+Get impurity Greens functions:
+Get G_l1_s1
+ add particle:  6  4
+ del particle:  4  4
+ add particle:  5  5
+ del particle:  3  5
+Total time [h:m:s.ms]:   0:00:00.726
+Get local Green's function (print mode:1)
+ 
+  +ETA --> fort.6
+  10% |ETA: 0:00:02.539 @28 November 2016  10:30:00
+  20% |ETA: 0:00:01.958
+  30% |ETA: 0:00:01.831
+  40% |ETA: 0:00:01.717
+  50% |ETA: 0:00:01.602 @28 November 2016  10:30:01
+  60% |ETA: 0:00:00.962
+  70% |ETA: 0:00:00.721
+  80% |ETA: 0:00:00.963
+  90% |ETA: 0:00:00.966
+ 100% |ETA: 0:00:00.000
+Total time [h:m:s.ms]:   0:00:02.410
+Gloc matsubara: write spin-orbital diagonal elements.
+Delta//WeissField: write spin-orbital diagonal elements.
+\Chi2 fit with CG-nr and CG-weight: 0 on: weiss
+chi^2|iter=    9.735503293E-05 |    14  <--  Orb1 Spin1
+            #Ek_l1_s1              Vk_l1_s1
+      -1.950947582238       -0.045028793773
+      -0.342662498251        0.239089538068
+      -0.051678784355        0.126371969714
+      -0.004817963650        0.048693701520
+       0.004809498926        0.048639127758
+       0.051484529325        0.126195105440
+       0.341464088222        0.238728219255
+       1.953851793359       -0.049597252159
+ hamiltonian.restart
+[1;91merror=[0m  9.1823528E-05
+=====================================
+Total time [h:m:s.ms]:   0:00:09.133
+ 
+ 
+ 
+-----DMFT-loop    7 (max:  100)-----
+            #Ek_l1_s1              Vk_l1_s1
+      -1.950948324755       -0.044960190526
+      -0.342378790669        0.240078671181
+      -0.052025154842        0.126829226674
+      -0.004847411283        0.048876283288
+       0.004827512381        0.048804509441
+       0.051871856474        0.126668956074
+       0.341172357224        0.239761789123
+       1.953852672027       -0.049524263703
+ hamiltonian.used
+Diagonalize impurity H:
+    1-Solving sector:   1, nup: 0, ndw: 0, dim=              1, Lanc Info:   1   1   1
+    2-Solving sector:  11, nup: 1, ndw: 0, dim=              9, Lanc Info:   6   9   9
+    3-Solving sector:  12, nup: 1, ndw: 1, dim=             81, Lanc Info:   6  81  23
+    4-Solving sector:  21, nup: 2, ndw: 0, dim=             36, Lanc Info:   6  36  23
+    5-Solving sector:  22, nup: 2, ndw: 1, dim=            324, Lanc Info:   6 324  23
+    6-Solving sector:  23, nup: 2, ndw: 2, dim=           1296, Lanc Info:   6 512  23
+    7-Solving sector:  31, nup: 3, ndw: 0, dim=             84, Lanc Info:   6  84  23
+    8-Solving sector:  32, nup: 3, ndw: 1, dim=            756, Lanc Info:   6 512  23
+    9-Solving sector:  33, nup: 3, ndw: 2, dim=           3024, Lanc Info:   6 512  23
+   10-Solving sector:  34, nup: 3, ndw: 3, dim=           7056, Lanc Info:   6 512  23
+   11-Solving sector:  41, nup: 4, ndw: 0, dim=            126, Lanc Info:   6 126  23
+   12-Solving sector:  42, nup: 4, ndw: 1, dim=           1134, Lanc Info:   6 512  23
+   13-Solving sector:  43, nup: 4, ndw: 2, dim=           4536, Lanc Info:   6 512  23
+   14-Solving sector:  44, nup: 4, ndw: 3, dim=          10584, Lanc Info:   6 512  23
+   15-Solving sector:  45, nup: 4, ndw: 4, dim=          15876, Lanc Info:   6 512  23
+   16-Solving sector:  51, nup: 5, ndw: 0, dim=            126, Lanc Info:   6 126  23
+   17-Solving sector:  52, nup: 5, ndw: 1, dim=           1134, Lanc Info:   6 512  23
+   18-Solving sector:  53, nup: 5, ndw: 2, dim=           4536, Lanc Info:   6 512  23
+   19-Solving sector:  54, nup: 5, ndw: 3, dim=          10584, Lanc Info:   6 512  23
+   20-Solving sector:  55, nup: 5, ndw: 4, dim=          15876, Lanc Info:   6 512  23
+   21-Solving sector:  56, nup: 5, ndw: 5, dim=          15876, Lanc Info:   6 512  23
+   22-Solving sector:  61, nup: 6, ndw: 0, dim=             84, Lanc Info:   6  84  23
+   23-Solving sector:  62, nup: 6, ndw: 1, dim=            756, Lanc Info:   6 512  23
+   24-Solving sector:  63, nup: 6, ndw: 2, dim=           3024, Lanc Info:   6 512  23
+   25-Solving sector:  64, nup: 6, ndw: 3, dim=           7056, Lanc Info:   6 512  23
+   26-Solving sector:  65, nup: 6, ndw: 4, dim=          10584, Lanc Info:   6 512  23
+   27-Solving sector:  66, nup: 6, ndw: 5, dim=          10584, Lanc Info:   6 512  23
+   28-Solving sector:  67, nup: 6, ndw: 6, dim=           7056, Lanc Info:   6 512  23
+   29-Solving sector:  71, nup: 7, ndw: 0, dim=             36, Lanc Info:   6  36  23
+   30-Solving sector:  72, nup: 7, ndw: 1, dim=            324, Lanc Info:   6 324  23
+   31-Solving sector:  73, nup: 7, ndw: 2, dim=           1296, Lanc Info:   6 512  23
+   32-Solving sector:  74, nup: 7, ndw: 3, dim=           3024, Lanc Info:   6 512  23
+   33-Solving sector:  75, nup: 7, ndw: 4, dim=           4536, Lanc Info:   6 512  23
+   34-Solving sector:  76, nup: 7, ndw: 5, dim=           4536, Lanc Info:   6 512  23
+   35-Solving sector:  77, nup: 7, ndw: 6, dim=           3024, Lanc Info:   6 512  23
+   36-Solving sector:  78, nup: 7, ndw: 7, dim=           1296, Lanc Info:   6 512  23
+   37-Solving sector:  81, nup: 8, ndw: 0, dim=              9, Lanc Info:   6   9   9
+   38-Solving sector:  82, nup: 8, ndw: 1, dim=             81, Lanc Info:   6  81  23
+   39-Solving sector:  83, nup: 8, ndw: 2, dim=            324, Lanc Info:   6 324  23
+   40-Solving sector:  84, nup: 8, ndw: 3, dim=            756, Lanc Info:   6 512  23
+   41-Solving sector:  85, nup: 8, ndw: 4, dim=           1134, Lanc Info:   6 512  23
+   42-Solving sector:  86, nup: 8, ndw: 5, dim=           1134, Lanc Info:   6 512  23
+   43-Solving sector:  87, nup: 8, ndw: 6, dim=            756, Lanc Info:   6 512  23
+   44-Solving sector:  88, nup: 8, ndw: 7, dim=            324, Lanc Info:   6 324  23
+   45-Solving sector:  89, nup: 8, ndw: 8, dim=             81, Lanc Info:   6  81  23
+   46-Solving sector:  91, nup: 9, ndw: 0, dim=              1, Lanc Info:   1   1   1
+   47-Solving sector:  92, nup: 9, ndw: 1, dim=              9, Lanc Info:   6   9   9
+   48-Solving sector:  93, nup: 9, ndw: 2, dim=             36, Lanc Info:   6  36  23
+   49-Solving sector:  94, nup: 9, ndw: 3, dim=             84, Lanc Info:   6  84  23
+   50-Solving sector:  95, nup: 9, ndw: 4, dim=            126, Lanc Info:   6 126  23
+   51-Solving sector:  96, nup: 9, ndw: 5, dim=            126, Lanc Info:   6 126  23
+   52-Solving sector:  97, nup: 9, ndw: 6, dim=             84, Lanc Info:   6  84  23
+   53-Solving sector:  98, nup: 9, ndw: 7, dim=             36, Lanc Info:   6  36  23
+   54-Solving sector:  99, nup: 9, ndw: 8, dim=              9, Lanc Info:   6   9   9
+   55-Solving sector: 100, nup: 9, ndw: 9, dim=              1, Lanc Info:   1   1   1
+Total time [h:m:s.ms]:   0:00:05.773
+# i       E_i           exp(-(E-E0)/T)       nup ndw  Sect     Dim
+  1   -5.372524888996   1.000000000000E+00   5  4    55     15876
+  2   -5.372524888996   1.000000000000E+00   4  5    46     15876
+Egs =     -5.372524888996   5   4
+Egs =     -5.372524888996   4   5
+Z   =      2.000000000000
+dens=    1.000006990711    1.000006990711
+docc=    0.098730508506
+Get impurity Greens functions:
+Get G_l1_s1
+ add particle:  6  4
+ del particle:  4  4
+ add particle:  5  5
+ del particle:  3  5
+Total time [h:m:s.ms]:   0:00:00.727
+Get local Green's function (print mode:1)
+ 
+  +ETA --> fort.6
+  10% |ETA: 0:00:02.531 @28 November 2016  10:30:09
+  20% |ETA: 0:00:01.942
+  30% |ETA: 0:00:01.822
+  40% |ETA: 0:00:01.713
+  50% |ETA: 0:00:01.595 @28 November 2016  10:30:10
+  60% |ETA: 0:00:00.950
+  70% |ETA: 0:00:00.712
+  80% |ETA: 0:00:00.952
+  90% |ETA: 0:00:00.953
+ 100% |ETA: 0:00:00.000
+Total time [h:m:s.ms]:   0:00:02.380
+Gloc matsubara: write spin-orbital diagonal elements.
+Delta//WeissField: write spin-orbital diagonal elements.
+\Chi2 fit with CG-nr and CG-weight: 0 on: weiss
+chi^2|iter=    9.735688100E-05 |    20  <--  Orb1 Spin1
+            #Ek_l1_s1              Vk_l1_s1
+      -1.950944492613       -0.045279999144
+      -0.342734040175        0.238342679835
+      -0.052043769290        0.126616312243
+      -0.004856540827        0.048940337593
+       0.004835916725        0.048864574656
+       0.051899042373        0.126461454295
+       0.341516550446        0.238029303730
+       1.953848016660       -0.049873878984
+ hamiltonian.restart
+[1;91merror=[0m  7.4306399E-05
+=====================================
+Total time [h:m:s.ms]:   0:00:09.200
+ 
+ 
+ 
+-----DMFT-loop    8 (max:  100)-----
+            #Ek_l1_s1              Vk_l1_s1
+      -1.950947366719       -0.045040142681
+      -0.342467603045        0.239644673345
+      -0.052029808454        0.126775998066
+      -0.004849693669        0.048892296864
+       0.004829613467        0.048819525745
+       0.051878652949        0.126617080629
+       0.341258405530        0.239328667775
+       1.953851508185       -0.049611667524
+ hamiltonian.used
+Diagonalize impurity H:
+    1-Solving sector:   1, nup: 0, ndw: 0, dim=              1, Lanc Info:   1   1   1
+    2-Solving sector:  11, nup: 1, ndw: 0, dim=              9, Lanc Info:   6   9   9
+    3-Solving sector:  12, nup: 1, ndw: 1, dim=             81, Lanc Info:   6  81  23
+    4-Solving sector:  21, nup: 2, ndw: 0, dim=             36, Lanc Info:   6  36  23
+    5-Solving sector:  22, nup: 2, ndw: 1, dim=            324, Lanc Info:   6 324  23
+    6-Solving sector:  23, nup: 2, ndw: 2, dim=           1296, Lanc Info:   6 512  23
+    7-Solving sector:  31, nup: 3, ndw: 0, dim=             84, Lanc Info:   6  84  23
+    8-Solving sector:  32, nup: 3, ndw: 1, dim=            756, Lanc Info:   6 512  23
+    9-Solving sector:  33, nup: 3, ndw: 2, dim=           3024, Lanc Info:   6 512  23
+   10-Solving sector:  34, nup: 3, ndw: 3, dim=           7056, Lanc Info:   6 512  23
+   11-Solving sector:  41, nup: 4, ndw: 0, dim=            126, Lanc Info:   6 126  23
+   12-Solving sector:  42, nup: 4, ndw: 1, dim=           1134, Lanc Info:   6 512  23
+   13-Solving sector:  43, nup: 4, ndw: 2, dim=           4536, Lanc Info:   6 512  23
+   14-Solving sector:  44, nup: 4, ndw: 3, dim=          10584, Lanc Info:   6 512  23
+   15-Solving sector:  45, nup: 4, ndw: 4, dim=          15876, Lanc Info:   6 512  23
+   16-Solving sector:  51, nup: 5, ndw: 0, dim=            126, Lanc Info:   6 126  23
+   17-Solving sector:  52, nup: 5, ndw: 1, dim=           1134, Lanc Info:   6 512  23
+   18-Solving sector:  53, nup: 5, ndw: 2, dim=           4536, Lanc Info:   6 512  23
+   19-Solving sector:  54, nup: 5, ndw: 3, dim=          10584, Lanc Info:   6 512  23
+   20-Solving sector:  55, nup: 5, ndw: 4, dim=          15876, Lanc Info:   6 512  23
+   21-Solving sector:  56, nup: 5, ndw: 5, dim=          15876, Lanc Info:   6 512  23
+   22-Solving sector:  61, nup: 6, ndw: 0, dim=             84, Lanc Info:   6  84  23
+   23-Solving sector:  62, nup: 6, ndw: 1, dim=            756, Lanc Info:   6 512  23
+   24-Solving sector:  63, nup: 6, ndw: 2, dim=           3024, Lanc Info:   6 512  23
+   25-Solving sector:  64, nup: 6, ndw: 3, dim=           7056, Lanc Info:   6 512  23
+   26-Solving sector:  65, nup: 6, ndw: 4, dim=          10584, Lanc Info:   6 512  23
+   27-Solving sector:  66, nup: 6, ndw: 5, dim=          10584, Lanc Info:   6 512  23
+   28-Solving sector:  67, nup: 6, ndw: 6, dim=           7056, Lanc Info:   6 512  23
+   29-Solving sector:  71, nup: 7, ndw: 0, dim=             36, Lanc Info:   6  36  23
+   30-Solving sector:  72, nup: 7, ndw: 1, dim=            324, Lanc Info:   6 324  23
+   31-Solving sector:  73, nup: 7, ndw: 2, dim=           1296, Lanc Info:   6 512  23
+   32-Solving sector:  74, nup: 7, ndw: 3, dim=           3024, Lanc Info:   6 512  23
+   33-Solving sector:  75, nup: 7, ndw: 4, dim=           4536, Lanc Info:   6 512  23
+   34-Solving sector:  76, nup: 7, ndw: 5, dim=           4536, Lanc Info:   6 512  23
+   35-Solving sector:  77, nup: 7, ndw: 6, dim=           3024, Lanc Info:   6 512  23
+   36-Solving sector:  78, nup: 7, ndw: 7, dim=           1296, Lanc Info:   6 512  23
+   37-Solving sector:  81, nup: 8, ndw: 0, dim=              9, Lanc Info:   6   9   9
+   38-Solving sector:  82, nup: 8, ndw: 1, dim=             81, Lanc Info:   6  81  23
+   39-Solving sector:  83, nup: 8, ndw: 2, dim=            324, Lanc Info:   6 324  23
+   40-Solving sector:  84, nup: 8, ndw: 3, dim=            756, Lanc Info:   6 512  23
+   41-Solving sector:  85, nup: 8, ndw: 4, dim=           1134, Lanc Info:   6 512  23
+   42-Solving sector:  86, nup: 8, ndw: 5, dim=           1134, Lanc Info:   6 512  23
+   43-Solving sector:  87, nup: 8, ndw: 6, dim=            756, Lanc Info:   6 512  23
+   44-Solving sector:  88, nup: 8, ndw: 7, dim=            324, Lanc Info:   6 324  23
+   45-Solving sector:  89, nup: 8, ndw: 8, dim=             81, Lanc Info:   6  81  23
+   46-Solving sector:  91, nup: 9, ndw: 0, dim=              1, Lanc Info:   1   1   1
+   47-Solving sector:  92, nup: 9, ndw: 1, dim=              9, Lanc Info:   6   9   9
+   48-Solving sector:  93, nup: 9, ndw: 2, dim=             36, Lanc Info:   6  36  23
+   49-Solving sector:  94, nup: 9, ndw: 3, dim=             84, Lanc Info:   6  84  23
+   50-Solving sector:  95, nup: 9, ndw: 4, dim=            126, Lanc Info:   6 126  23
+   51-Solving sector:  96, nup: 9, ndw: 5, dim=            126, Lanc Info:   6 126  23
+   52-Solving sector:  97, nup: 9, ndw: 6, dim=             84, Lanc Info:   6  84  23
+   53-Solving sector:  98, nup: 9, ndw: 7, dim=             36, Lanc Info:   6  36  23
+   54-Solving sector:  99, nup: 9, ndw: 8, dim=              9, Lanc Info:   6   9   9
+   55-Solving sector: 100, nup: 9, ndw: 9, dim=              1, Lanc Info:   1   1   1
+Total time [h:m:s.ms]:   0:00:06.020
+# i       E_i           exp(-(E-E0)/T)       nup ndw  Sect     Dim
+  1   -5.372134926271   1.000000000000E+00   5  4    55     15876
+  2   -5.372134926271   1.000000000000E+00   4  5    46     15876
+Egs =     -5.372134926271   5   4
+Egs =     -5.372134926271   4   5
+Z   =      2.000000000000
+dens=    1.000007274246    1.000007274246
+docc=    0.098569017257
+Get impurity Greens functions:
+Get G_l1_s1
+ add particle:  6  4
+ del particle:  4  4
+ add particle:  5  5
+ del particle:  3  5
+Total time [h:m:s.ms]:   0:00:00.725
+Get local Green's function (print mode:1)
+ 
+  +ETA --> fort.6
+  10% |ETA: 0:00:02.531 @28 November 2016  10:30:19
+  20% |ETA: 0:00:01.958
+  30% |ETA: 0:00:01.835
+  40% |ETA: 0:00:01.713
+  50% |ETA: 0:00:01.593 @28 November 2016  10:30:20
+  60% |ETA: 0:00:00.950
+  70% |ETA: 0:00:00.713
+  80% |ETA: 0:00:00.950
+  90% |ETA: 0:00:00.948
+ 100% |ETA: 0:00:00.000
+Total time [h:m:s.ms]:   0:00:02.371
+Gloc matsubara: write spin-orbital diagonal elements.
+Delta//WeissField: write spin-orbital diagonal elements.
+\Chi2 fit with CG-nr and CG-weight: 0 on: weiss
+chi^2|iter=    9.757847637E-05 |     8  <--  Orb1 Spin1
+            #Ek_l1_s1              Vk_l1_s1
+      -1.950946783504       -0.045093813231
+      -0.342735969797        0.238804713801
+      -0.051649184138        0.126274884293
+      -0.004831904481        0.048746537479
+       0.004810145321        0.048673487628
+       0.051496538530        0.126119969968
+       0.341525177616        0.238488278658
+       1.953850798610       -0.049670322499
+ hamiltonian.restart
+[1;91merror=[0m  6.7106471E-05
+=====================================
+Total time [h:m:s.ms]:   0:00:09.332
+ 
+ 
+ 
+-----DMFT-loop    9 (max:  100)-----
+            #Ek_l1_s1              Vk_l1_s1
+      -1.950947220916       -0.045053560318
+      -0.342534694733        0.239434683459
+      -0.051934652375        0.126650719623
+      -0.004845246372        0.048855857018
+       0.004824746431        0.048783016216
+       0.051783124344        0.126492802964
+       0.341325098551        0.239118570496
+       1.953851330791       -0.049626331268
+ hamiltonian.used
+Diagonalize impurity H:
+    1-Solving sector:   1, nup: 0, ndw: 0, dim=              1, Lanc Info:   1   1   1
+    2-Solving sector:  11, nup: 1, ndw: 0, dim=              9, Lanc Info:   6   9   9
+    3-Solving sector:  12, nup: 1, ndw: 1, dim=             81, Lanc Info:   6  81  23
+    4-Solving sector:  21, nup: 2, ndw: 0, dim=             36, Lanc Info:   6  36  23
+    5-Solving sector:  22, nup: 2, ndw: 1, dim=            324, Lanc Info:   6 324  23
+    6-Solving sector:  23, nup: 2, ndw: 2, dim=           1296, Lanc Info:   6 512  23
+    7-Solving sector:  31, nup: 3, ndw: 0, dim=             84, Lanc Info:   6  84  23
+    8-Solving sector:  32, nup: 3, ndw: 1, dim=            756, Lanc Info:   6 512  23
+    9-Solving sector:  33, nup: 3, ndw: 2, dim=           3024, Lanc Info:   6 512  23
+   10-Solving sector:  34, nup: 3, ndw: 3, dim=           7056, Lanc Info:   6 512  23
+   11-Solving sector:  41, nup: 4, ndw: 0, dim=            126, Lanc Info:   6 126  23
+   12-Solving sector:  42, nup: 4, ndw: 1, dim=           1134, Lanc Info:   6 512  23
+   13-Solving sector:  43, nup: 4, ndw: 2, dim=           4536, Lanc Info:   6 512  23
+   14-Solving sector:  44, nup: 4, ndw: 3, dim=          10584, Lanc Info:   6 512  23
+   15-Solving sector:  45, nup: 4, ndw: 4, dim=          15876, Lanc Info:   6 512  23
+   16-Solving sector:  51, nup: 5, ndw: 0, dim=            126, Lanc Info:   6 126  23
+   17-Solving sector:  52, nup: 5, ndw: 1, dim=           1134, Lanc Info:   6 512  23
+   18-Solving sector:  53, nup: 5, ndw: 2, dim=           4536, Lanc Info:   6 512  23
+   19-Solving sector:  54, nup: 5, ndw: 3, dim=          10584, Lanc Info:   6 512  23
+   20-Solving sector:  55, nup: 5, ndw: 4, dim=          15876, Lanc Info:   6 512  23
+   21-Solving sector:  56, nup: 5, ndw: 5, dim=          15876, Lanc Info:   6 512  23
+   22-Solving sector:  61, nup: 6, ndw: 0, dim=             84, Lanc Info:   6  84  23
+   23-Solving sector:  62, nup: 6, ndw: 1, dim=            756, Lanc Info:   6 512  23
+   24-Solving sector:  63, nup: 6, ndw: 2, dim=           3024, Lanc Info:   6 512  23
+   25-Solving sector:  64, nup: 6, ndw: 3, dim=           7056, Lanc Info:   6 512  23
+   26-Solving sector:  65, nup: 6, ndw: 4, dim=          10584, Lanc Info:   6 512  23
+   27-Solving sector:  66, nup: 6, ndw: 5, dim=          10584, Lanc Info:   6 512  23
+   28-Solving sector:  67, nup: 6, ndw: 6, dim=           7056, Lanc Info:   6 512  23
+   29-Solving sector:  71, nup: 7, ndw: 0, dim=             36, Lanc Info:   6  36  23
+   30-Solving sector:  72, nup: 7, ndw: 1, dim=            324, Lanc Info:   6 324  23
+   31-Solving sector:  73, nup: 7, ndw: 2, dim=           1296, Lanc Info:   6 512  23
+   32-Solving sector:  74, nup: 7, ndw: 3, dim=           3024, Lanc Info:   6 512  23
+   33-Solving sector:  75, nup: 7, ndw: 4, dim=           4536, Lanc Info:   6 512  23
+   34-Solving sector:  76, nup: 7, ndw: 5, dim=           4536, Lanc Info:   6 512  23
+   35-Solving sector:  77, nup: 7, ndw: 6, dim=           3024, Lanc Info:   6 512  23
+   36-Solving sector:  78, nup: 7, ndw: 7, dim=           1296, Lanc Info:   6 512  23
+   37-Solving sector:  81, nup: 8, ndw: 0, dim=              9, Lanc Info:   6   9   9
+   38-Solving sector:  82, nup: 8, ndw: 1, dim=             81, Lanc Info:   6  81  23
+   39-Solving sector:  83, nup: 8, ndw: 2, dim=            324, Lanc Info:   6 324  23
+   40-Solving sector:  84, nup: 8, ndw: 3, dim=            756, Lanc Info:   6 512  23
+   41-Solving sector:  85, nup: 8, ndw: 4, dim=           1134, Lanc Info:   6 512  23
+   42-Solving sector:  86, nup: 8, ndw: 5, dim=           1134, Lanc Info:   6 512  23
+   43-Solving sector:  87, nup: 8, ndw: 6, dim=            756, Lanc Info:   6 512  23
+   44-Solving sector:  88, nup: 8, ndw: 7, dim=            324, Lanc Info:   6 324  23
+   45-Solving sector:  89, nup: 8, ndw: 8, dim=             81, Lanc Info:   6  81  23
+   46-Solving sector:  91, nup: 9, ndw: 0, dim=              1, Lanc Info:   1   1   1
+   47-Solving sector:  92, nup: 9, ndw: 1, dim=              9, Lanc Info:   6   9   9
+   48-Solving sector:  93, nup: 9, ndw: 2, dim=             36, Lanc Info:   6  36  23
+   49-Solving sector:  94, nup: 9, ndw: 3, dim=             84, Lanc Info:   6  84  23
+   50-Solving sector:  95, nup: 9, ndw: 4, dim=            126, Lanc Info:   6 126  23
+   51-Solving sector:  96, nup: 9, ndw: 5, dim=            126, Lanc Info:   6 126  23
+   52-Solving sector:  97, nup: 9, ndw: 6, dim=             84, Lanc Info:   6  84  23
+   53-Solving sector:  98, nup: 9, ndw: 7, dim=             36, Lanc Info:   6  36  23
+   54-Solving sector:  99, nup: 9, ndw: 8, dim=              9, Lanc Info:   6   9   9
+   55-Solving sector: 100, nup: 9, ndw: 9, dim=              1, Lanc Info:   1   1   1
+Total time [h:m:s.ms]:   0:00:05.713
+# i       E_i           exp(-(E-E0)/T)       nup ndw  Sect     Dim
+  1   -5.371660827347   1.000000000000E+00   5  4    55     15876
+  2   -5.371660827347   1.000000000000E+00   4  5    46     15876
+Egs =     -5.371660827347   5   4
+Egs =     -5.371660827347   4   5
+Z   =      2.000000000000
+dens=    1.000007330710    1.000007330710
+docc=    0.098451677177
+Get impurity Greens functions:
+Get G_l1_s1
+ add particle:  6  4
+ del particle:  4  4
+ add particle:  5  5
+ del particle:  3  5
+Total time [h:m:s.ms]:   0:00:00.728
+Get local Green's function (print mode:1)
+ 
+  +ETA --> fort.6
+  10% |ETA: 0:00:02.528 @28 November 2016  10:30:28
+  20% |ETA: 0:00:01.950
+  30% |ETA: 0:00:01.835
+  40% |ETA: 0:00:01.719
+  50% |ETA: 0:00:01.597 @28 November 2016  10:30:29
+  60% |ETA: 0:00:00.959
+  70% |ETA: 0:00:00.719
+  80% |ETA: 0:00:00.956
+  90% |ETA: 0:00:00.955
+ 100% |ETA: 0:00:00.000
+Total time [h:m:s.ms]:   0:00:02.389
+Gloc matsubara: write spin-orbital diagonal elements.
+Delta//WeissField: write spin-orbital diagonal elements.
+\Chi2 fit with CG-nr and CG-weight: 0 on: weiss
+chi^2|iter=    9.760528321E-05 |    14  <--  Orb1 Spin1
+            #Ek_l1_s1              Vk_l1_s1
+      -1.950944748423       -0.045257421101
+      -0.342781540319        0.238392967104
+      -0.051845853412        0.126451381806
+      -0.004842120398        0.048836227673
+       0.004815471036        0.048739444221
+       0.051749810658        0.126335794930
+       0.341549262514        0.238148654816
+       1.953848287876       -0.049852378363
+ hamiltonian.restart
+[1;91merror=[0m  5.1130501E-05
+=====================================
+Total time [h:m:s.ms]:   0:00:09.096
+ 
+ 
+ 
+-----DMFT-loop   10 (max:  100)-----
+            #Ek_l1_s1              Vk_l1_s1
+      -1.950946602792       -0.045104525514
+      -0.342596406130        0.239174254370
+      -0.051912452634        0.126600885169
+      -0.004844464879        0.048850949682
+       0.004822427582        0.048772123217
+       0.051774795922        0.126453550955
+       0.341381139542        0.238876091576
+       1.953850570063       -0.049682843041
+ hamiltonian.used
+Diagonalize impurity H:
+    1-Solving sector:   1, nup: 0, ndw: 0, dim=              1, Lanc Info:   1   1   1
+    2-Solving sector:  11, nup: 1, ndw: 0, dim=              9, Lanc Info:   6   9   9
+    3-Solving sector:  12, nup: 1, ndw: 1, dim=             81, Lanc Info:   6  81  23
+    4-Solving sector:  21, nup: 2, ndw: 0, dim=             36, Lanc Info:   6  36  23
+    5-Solving sector:  22, nup: 2, ndw: 1, dim=            324, Lanc Info:   6 324  23
+    6-Solving sector:  23, nup: 2, ndw: 2, dim=           1296, Lanc Info:   6 512  23
+    7-Solving sector:  31, nup: 3, ndw: 0, dim=             84, Lanc Info:   6  84  23
+    8-Solving sector:  32, nup: 3, ndw: 1, dim=            756, Lanc Info:   6 512  23
+    9-Solving sector:  33, nup: 3, ndw: 2, dim=           3024, Lanc Info:   6 512  23
+   10-Solving sector:  34, nup: 3, ndw: 3, dim=           7056, Lanc Info:   6 512  23
+   11-Solving sector:  41, nup: 4, ndw: 0, dim=            126, Lanc Info:   6 126  23
+   12-Solving sector:  42, nup: 4, ndw: 1, dim=           1134, Lanc Info:   6 512  23
+   13-Solving sector:  43, nup: 4, ndw: 2, dim=           4536, Lanc Info:   6 512  23
+   14-Solving sector:  44, nup: 4, ndw: 3, dim=          10584, Lanc Info:   6 512  23
+   15-Solving sector:  45, nup: 4, ndw: 4, dim=          15876, Lanc Info:   6 512  23
+   16-Solving sector:  51, nup: 5, ndw: 0, dim=            126, Lanc Info:   6 126  23
+   17-Solving sector:  52, nup: 5, ndw: 1, dim=           1134, Lanc Info:   6 512  23
+   18-Solving sector:  53, nup: 5, ndw: 2, dim=           4536, Lanc Info:   6 512  23
+   19-Solving sector:  54, nup: 5, ndw: 3, dim=          10584, Lanc Info:   6 512  23
+   20-Solving sector:  55, nup: 5, ndw: 4, dim=          15876, Lanc Info:   6 512  23
+   21-Solving sector:  56, nup: 5, ndw: 5, dim=          15876, Lanc Info:   6 512  23
+   22-Solving sector:  61, nup: 6, ndw: 0, dim=             84, Lanc Info:   6  84  23
+   23-Solving sector:  62, nup: 6, ndw: 1, dim=            756, Lanc Info:   6 512  23
+   24-Solving sector:  63, nup: 6, ndw: 2, dim=           3024, Lanc Info:   6 512  23
+   25-Solving sector:  64, nup: 6, ndw: 3, dim=           7056, Lanc Info:   6 512  23
+   26-Solving sector:  65, nup: 6, ndw: 4, dim=          10584, Lanc Info:   6 512  23
+   27-Solving sector:  66, nup: 6, ndw: 5, dim=          10584, Lanc Info:   6 512  23
+   28-Solving sector:  67, nup: 6, ndw: 6, dim=           7056, Lanc Info:   6 512  23
+   29-Solving sector:  71, nup: 7, ndw: 0, dim=             36, Lanc Info:   6  36  23
+   30-Solving sector:  72, nup: 7, ndw: 1, dim=            324, Lanc Info:   6 324  23
+   31-Solving sector:  73, nup: 7, ndw: 2, dim=           1296, Lanc Info:   6 512  23
+   32-Solving sector:  74, nup: 7, ndw: 3, dim=           3024, Lanc Info:   6 512  23
+   33-Solving sector:  75, nup: 7, ndw: 4, dim=           4536, Lanc Info:   6 512  23
+   34-Solving sector:  76, nup: 7, ndw: 5, dim=           4536, Lanc Info:   6 512  23
+   35-Solving sector:  77, nup: 7, ndw: 6, dim=           3024, Lanc Info:   6 512  23
+   36-Solving sector:  78, nup: 7, ndw: 7, dim=           1296, Lanc Info:   6 512  23
+   37-Solving sector:  81, nup: 8, ndw: 0, dim=              9, Lanc Info:   6   9   9
+   38-Solving sector:  82, nup: 8, ndw: 1, dim=             81, Lanc Info:   6  81  23
+   39-Solving sector:  83, nup: 8, ndw: 2, dim=            324, Lanc Info:   6 324  23
+   40-Solving sector:  84, nup: 8, ndw: 3, dim=            756, Lanc Info:   6 512  23
+   41-Solving sector:  85, nup: 8, ndw: 4, dim=           1134, Lanc Info:   6 512  23
+   42-Solving sector:  86, nup: 8, ndw: 5, dim=           1134, Lanc Info:   6 512  23
+   43-Solving sector:  87, nup: 8, ndw: 6, dim=            756, Lanc Info:   6 512  23
+   44-Solving sector:  88, nup: 8, ndw: 7, dim=            324, Lanc Info:   6 324  23
+   45-Solving sector:  89, nup: 8, ndw: 8, dim=             81, Lanc Info:   6  81  23
+   46-Solving sector:  91, nup: 9, ndw: 0, dim=              1, Lanc Info:   1   1   1
+   47-Solving sector:  92, nup: 9, ndw: 1, dim=              9, Lanc Info:   6   9   9
+   48-Solving sector:  93, nup: 9, ndw: 2, dim=             36, Lanc Info:   6  36  23
+   49-Solving sector:  94, nup: 9, ndw: 3, dim=             84, Lanc Info:   6  84  23
+   50-Solving sector:  95, nup: 9, ndw: 4, dim=            126, Lanc Info:   6 126  23
+   51-Solving sector:  96, nup: 9, ndw: 5, dim=            126, Lanc Info:   6 126  23
+   52-Solving sector:  97, nup: 9, ndw: 6, dim=             84, Lanc Info:   6  84  23
+   53-Solving sector:  98, nup: 9, ndw: 7, dim=             36, Lanc Info:   6  36  23
+   54-Solving sector:  99, nup: 9, ndw: 8, dim=              9, Lanc Info:   6   9   9
+   55-Solving sector: 100, nup: 9, ndw: 9, dim=              1, Lanc Info:   1   1   1
+Total time [h:m:s.ms]:   0:00:05.729
+# i       E_i           exp(-(E-E0)/T)       nup ndw  Sect     Dim
+  1   -5.371377212465   1.000000000000E+00   5  4    55     15876
+  2   -5.371377212465   1.000000000000E+00   4  5    46     15876
+Egs =     -5.371377212465   5   4
+Egs =     -5.371377212465   4   5
+Z   =      2.000000000000
+dens=    1.000009771738    1.000009771738
+docc=    0.098351744117
+Get impurity Greens functions:
+Get G_l1_s1
+ add particle:  6  4
+ del particle:  4  4
+ add particle:  5  5
+ del particle:  3  5
+Total time [h:m:s.ms]:   0:00:00.728
+Get local Green's function (print mode:1)
+ 
+  +ETA --> fort.6
+  10% |ETA: 0:00:02.533 @28 November 2016  10:30:37
+  20% |ETA: 0:00:01.954
+  30% |ETA: 0:00:01.829
+  40% |ETA: 0:00:01.709
+  50% |ETA: 0:00:01.590 @28 November 2016  10:30:38
+  60% |ETA: 0:00:00.950
+  70% |ETA: 0:00:00.712
+  80% |ETA: 0:00:00.948
+  90% |ETA: 0:00:00.948
+ 100% |ETA: 0:00:00.000
+Total time [h:m:s.ms]:   0:00:02.383
+Gloc matsubara: write spin-orbital diagonal elements.
+Delta//WeissField: write spin-orbital diagonal elements.
+\Chi2 fit with CG-nr and CG-weight: 0 on: weiss
+chi^2|iter=    9.770812786E-05 |    11  <--  Orb1 Spin1
+            #Ek_l1_s1              Vk_l1_s1
+      -1.950945606057       -0.045188758177
+      -0.342784276762        0.238548412240
+      -0.051711625151        0.126324677538
+      -0.004829627742        0.048762521424
+       0.004811691228        0.048690673315
+       0.051551296884        0.126153462826
+       0.341575553831        0.238213738692
+       1.953849379489       -0.049773279801
+ hamiltonian.restart
+[1;91merror=[0m  4.2701169E-05
+=====================================
+Total time [h:m:s.ms]:   0:00:09.081
+ 
+ 
+ 
+-----DMFT-loop   11 (max:  100)-----
+            #Ek_l1_s1              Vk_l1_s1
+      -1.950946353609       -0.045125583680
+      -0.342643373788        0.239017793838
+      -0.051862245764        0.126531833261
+      -0.004840755594        0.048828842617
+       0.004819743493        0.048751760742
+       0.051718921163        0.126378528923
+       0.341429743114        0.238710503355
+       1.953850272419       -0.049705452231
+ hamiltonian.used
+Diagonalize impurity H:
+    1-Solving sector:   1, nup: 0, ndw: 0, dim=              1, Lanc Info:   1   1   1
+    2-Solving sector:  11, nup: 1, ndw: 0, dim=              9, Lanc Info:   6   9   9
+    3-Solving sector:  12, nup: 1, ndw: 1, dim=             81, Lanc Info:   6  81  23
+    4-Solving sector:  21, nup: 2, ndw: 0, dim=             36, Lanc Info:   6  36  23
+    5-Solving sector:  22, nup: 2, ndw: 1, dim=            324, Lanc Info:   6 324  23
+    6-Solving sector:  23, nup: 2, ndw: 2, dim=           1296, Lanc Info:   6 512  23
+    7-Solving sector:  31, nup: 3, ndw: 0, dim=             84, Lanc Info:   6  84  23
+    8-Solving sector:  32, nup: 3, ndw: 1, dim=            756, Lanc Info:   6 512  23
+    9-Solving sector:  33, nup: 3, ndw: 2, dim=           3024, Lanc Info:   6 512  23
+   10-Solving sector:  34, nup: 3, ndw: 3, dim=           7056, Lanc Info:   6 512  23
+   11-Solving sector:  41, nup: 4, ndw: 0, dim=            126, Lanc Info:   6 126  23
+   12-Solving sector:  42, nup: 4, ndw: 1, dim=           1134, Lanc Info:   6 512  23
+   13-Solving sector:  43, nup: 4, ndw: 2, dim=           4536, Lanc Info:   6 512  23
+   14-Solving sector:  44, nup: 4, ndw: 3, dim=          10584, Lanc Info:   6 512  23
+   15-Solving sector:  45, nup: 4, ndw: 4, dim=          15876, Lanc Info:   6 512  23
+   16-Solving sector:  51, nup: 5, ndw: 0, dim=            126, Lanc Info:   6 126  23
+   17-Solving sector:  52, nup: 5, ndw: 1, dim=           1134, Lanc Info:   6 512  23
+   18-Solving sector:  53, nup: 5, ndw: 2, dim=           4536, Lanc Info:   6 512  23
+   19-Solving sector:  54, nup: 5, ndw: 3, dim=          10584, Lanc Info:   6 512  23
+   20-Solving sector:  55, nup: 5, ndw: 4, dim=          15876, Lanc Info:   6 512  23
+   21-Solving sector:  56, nup: 5, ndw: 5, dim=          15876, Lanc Info:   6 512  23
+   22-Solving sector:  61, nup: 6, ndw: 0, dim=             84, Lanc Info:   6  84  23
+   23-Solving sector:  62, nup: 6, ndw: 1, dim=            756, Lanc Info:   6 512  23
+   24-Solving sector:  63, nup: 6, ndw: 2, dim=           3024, Lanc Info:   6 512  23
+   25-Solving sector:  64, nup: 6, ndw: 3, dim=           7056, Lanc Info:   6 512  23
+   26-Solving sector:  65, nup: 6, ndw: 4, dim=          10584, Lanc Info:   6 512  23
+   27-Solving sector:  66, nup: 6, ndw: 5, dim=          10584, Lanc Info:   6 512  23
+   28-Solving sector:  67, nup: 6, ndw: 6, dim=           7056, Lanc Info:   6 512  23
+   29-Solving sector:  71, nup: 7, ndw: 0, dim=             36, Lanc Info:   6  36  23
+   30-Solving sector:  72, nup: 7, ndw: 1, dim=            324, Lanc Info:   6 324  23
+   31-Solving sector:  73, nup: 7, ndw: 2, dim=           1296, Lanc Info:   6 512  23
+   32-Solving sector:  74, nup: 7, ndw: 3, dim=           3024, Lanc Info:   6 512  23
+   33-Solving sector:  75, nup: 7, ndw: 4, dim=           4536, Lanc Info:   6 512  23
+   34-Solving sector:  76, nup: 7, ndw: 5, dim=           4536, Lanc Info:   6 512  23
+   35-Solving sector:  77, nup: 7, ndw: 6, dim=           3024, Lanc Info:   6 512  23
+   36-Solving sector:  78, nup: 7, ndw: 7, dim=           1296, Lanc Info:   6 512  23
+   37-Solving sector:  81, nup: 8, ndw: 0, dim=              9, Lanc Info:   6   9   9
+   38-Solving sector:  82, nup: 8, ndw: 1, dim=             81, Lanc Info:   6  81  23
+   39-Solving sector:  83, nup: 8, ndw: 2, dim=            324, Lanc Info:   6 324  23
+   40-Solving sector:  84, nup: 8, ndw: 3, dim=            756, Lanc Info:   6 512  23
+   41-Solving sector:  85, nup: 8, ndw: 4, dim=           1134, Lanc Info:   6 512  23
+   42-Solving sector:  86, nup: 8, ndw: 5, dim=           1134, Lanc Info:   6 512  23
+   43-Solving sector:  87, nup: 8, ndw: 6, dim=            756, Lanc Info:   6 512  23
+   44-Solving sector:  88, nup: 8, ndw: 7, dim=            324, Lanc Info:   6 324  23
+   45-Solving sector:  89, nup: 8, ndw: 8, dim=             81, Lanc Info:   6  81  23
+   46-Solving sector:  91, nup: 9, ndw: 0, dim=              1, Lanc Info:   1   1   1
+   47-Solving sector:  92, nup: 9, ndw: 1, dim=              9, Lanc Info:   6   9   9
+   48-Solving sector:  93, nup: 9, ndw: 2, dim=             36, Lanc Info:   6  36  23
+   49-Solving sector:  94, nup: 9, ndw: 3, dim=             84, Lanc Info:   6  84  23
+   50-Solving sector:  95, nup: 9, ndw: 4, dim=            126, Lanc Info:   6 126  23
+   51-Solving sector:  96, nup: 9, ndw: 5, dim=            126, Lanc Info:   6 126  23
+   52-Solving sector:  97, nup: 9, ndw: 6, dim=             84, Lanc Info:   6  84  23
+   53-Solving sector:  98, nup: 9, ndw: 7, dim=             36, Lanc Info:   6  36  23
+   54-Solving sector:  99, nup: 9, ndw: 8, dim=              9, Lanc Info:   6   9   9
+   55-Solving sector: 100, nup: 9, ndw: 9, dim=              1, Lanc Info:   1   1   1
+Total time [h:m:s.ms]:   0:00:05.730
+# i       E_i           exp(-(E-E0)/T)       nup ndw  Sect     Dim
+  1   -5.371079689433   1.000000000000E+00   5  4    55     15876
+  2   -5.371079689433   1.000000000000E+00   4  5    46     15876
+Egs =     -5.371079689433   5   4
+Egs =     -5.371079689433   4   5
+Z   =      2.000000000000
+dens=    1.000008510264    1.000008510264
+docc=    0.098269891372
+Get impurity Greens functions:
+Get G_l1_s1
+ add particle:  6  4
+ del particle:  4  4
+ add particle:  5  5
+ del particle:  3  5
+Total time [h:m:s.ms]:   0:00:00.728
+Get local Green's function (print mode:1)
+ 
+  +ETA --> fort.6
+  10% |ETA: 0:00:02.544 @28 November 2016  10:30:46
+  20% |ETA: 0:00:01.962
+  30% |ETA: 0:00:01.832
+  40% |ETA: 0:00:01.711
+  50% |ETA: 0:00:01.594 @28 November 2016  10:30:47
+  60% |ETA: 0:00:00.956
+  70% |ETA: 0:00:00.716
+  80% |ETA: 0:00:00.954
+  90% |ETA: 0:00:00.953
+ 100% |ETA: 0:00:00.000
+Total time [h:m:s.ms]:   0:00:02.391
+Gloc matsubara: write spin-orbital diagonal elements.
+Delta//WeissField: write spin-orbital diagonal elements.
+\Chi2 fit with CG-nr and CG-weight: 0 on: weiss
+chi^2|iter=    9.776829233E-05 |     9  <--  Orb1 Spin1
+            #Ek_l1_s1              Vk_l1_s1
+      -1.950945517411       -0.045196010694
+      -0.342804221775        0.238483288558
+      -0.051684240473        0.126289962355
+      -0.004831714471        0.048765581806
+       0.004811758420        0.048684363565
+       0.051547150088        0.126141748645
+       0.341586936581        0.238183445980
+       1.953849252268       -0.049782770439
+ hamiltonian.restart
+[1;91merror=[0m  3.5134594E-05
+=====================================
+Total time [h:m:s.ms]:   0:00:09.074
+ 
+ 
+ 
+-----DMFT-loop   12 (max:  100)-----
+            #Ek_l1_s1              Vk_l1_s1
+      -1.950946144559       -0.045143190433
+      -0.342683585784        0.238884167518
+      -0.051817744441        0.126471365534
+      -0.004838495313        0.048813027415
+       0.004817747225        0.048734911447
+       0.051675978394        0.126319333854
+       0.341469041481        0.238578739011
+       1.953850017381       -0.049724781783
+ hamiltonian.used
+Diagonalize impurity H:
+    1-Solving sector:   1, nup: 0, ndw: 0, dim=              1, Lanc Info:   1   1   1
+    2-Solving sector:  11, nup: 1, ndw: 0, dim=              9, Lanc Info:   6   9   9
+    3-Solving sector:  12, nup: 1, ndw: 1, dim=             81, Lanc Info:   6  81  23
+    4-Solving sector:  21, nup: 2, ndw: 0, dim=             36, Lanc Info:   6  36  23
+    5-Solving sector:  22, nup: 2, ndw: 1, dim=            324, Lanc Info:   6 324  23
+    6-Solving sector:  23, nup: 2, ndw: 2, dim=           1296, Lanc Info:   6 512  23
+    7-Solving sector:  31, nup: 3, ndw: 0, dim=             84, Lanc Info:   6  84  23
+    8-Solving sector:  32, nup: 3, ndw: 1, dim=            756, Lanc Info:   6 512  23
+    9-Solving sector:  33, nup: 3, ndw: 2, dim=           3024, Lanc Info:   6 512  23
+   10-Solving sector:  34, nup: 3, ndw: 3, dim=           7056, Lanc Info:   6 512  23
+   11-Solving sector:  41, nup: 4, ndw: 0, dim=            126, Lanc Info:   6 126  23
+   12-Solving sector:  42, nup: 4, ndw: 1, dim=           1134, Lanc Info:   6 512  23
+   13-Solving sector:  43, nup: 4, ndw: 2, dim=           4536, Lanc Info:   6 512  23
+   14-Solving sector:  44, nup: 4, ndw: 3, dim=          10584, Lanc Info:   6 512  23
+   15-Solving sector:  45, nup: 4, ndw: 4, dim=          15876, Lanc Info:   6 512  23
+   16-Solving sector:  51, nup: 5, ndw: 0, dim=            126, Lanc Info:   6 126  23
+   17-Solving sector:  52, nup: 5, ndw: 1, dim=           1134, Lanc Info:   6 512  23
+   18-Solving sector:  53, nup: 5, ndw: 2, dim=           4536, Lanc Info:   6 512  23
+   19-Solving sector:  54, nup: 5, ndw: 3, dim=          10584, Lanc Info:   6 512  23
+   20-Solving sector:  55, nup: 5, ndw: 4, dim=          15876, Lanc Info:   6 512  23
+   21-Solving sector:  56, nup: 5, ndw: 5, dim=          15876, Lanc Info:   6 512  23
+   22-Solving sector:  61, nup: 6, ndw: 0, dim=             84, Lanc Info:   6  84  23
+   23-Solving sector:  62, nup: 6, ndw: 1, dim=            756, Lanc Info:   6 512  23
+   24-Solving sector:  63, nup: 6, ndw: 2, dim=           3024, Lanc Info:   6 512  23
+   25-Solving sector:  64, nup: 6, ndw: 3, dim=           7056, Lanc Info:   6 512  23
+   26-Solving sector:  65, nup: 6, ndw: 4, dim=          10584, Lanc Info:   6 512  23
+   27-Solving sector:  66, nup: 6, ndw: 5, dim=          10584, Lanc Info:   6 512  23
+   28-Solving sector:  67, nup: 6, ndw: 6, dim=           7056, Lanc Info:   6 512  23
+   29-Solving sector:  71, nup: 7, ndw: 0, dim=             36, Lanc Info:   6  36  23
+   30-Solving sector:  72, nup: 7, ndw: 1, dim=            324, Lanc Info:   6 324  23
+   31-Solving sector:  73, nup: 7, ndw: 2, dim=           1296, Lanc Info:   6 512  23
+   32-Solving sector:  74, nup: 7, ndw: 3, dim=           3024, Lanc Info:   6 512  23
+   33-Solving sector:  75, nup: 7, ndw: 4, dim=           4536, Lanc Info:   6 512  23
+   34-Solving sector:  76, nup: 7, ndw: 5, dim=           4536, Lanc Info:   6 512  23
+   35-Solving sector:  77, nup: 7, ndw: 6, dim=           3024, Lanc Info:   6 512  23
+   36-Solving sector:  78, nup: 7, ndw: 7, dim=           1296, Lanc Info:   6 512  23
+   37-Solving sector:  81, nup: 8, ndw: 0, dim=              9, Lanc Info:   6   9   9
+   38-Solving sector:  82, nup: 8, ndw: 1, dim=             81, Lanc Info:   6  81  23
+   39-Solving sector:  83, nup: 8, ndw: 2, dim=            324, Lanc Info:   6 324  23
+   40-Solving sector:  84, nup: 8, ndw: 3, dim=            756, Lanc Info:   6 512  23
+   41-Solving sector:  85, nup: 8, ndw: 4, dim=           1134, Lanc Info:   6 512  23
+   42-Solving sector:  86, nup: 8, ndw: 5, dim=           1134, Lanc Info:   6 512  23
+   43-Solving sector:  87, nup: 8, ndw: 6, dim=            756, Lanc Info:   6 512  23
+   44-Solving sector:  88, nup: 8, ndw: 7, dim=            324, Lanc Info:   6 324  23
+   45-Solving sector:  89, nup: 8, ndw: 8, dim=             81, Lanc Info:   6  81  23
+   46-Solving sector:  91, nup: 9, ndw: 0, dim=              1, Lanc Info:   1   1   1
+   47-Solving sector:  92, nup: 9, ndw: 1, dim=              9, Lanc Info:   6   9   9
+   48-Solving sector:  93, nup: 9, ndw: 2, dim=             36, Lanc Info:   6  36  23
+   49-Solving sector:  94, nup: 9, ndw: 3, dim=             84, Lanc Info:   6  84  23
+   50-Solving sector:  95, nup: 9, ndw: 4, dim=            126, Lanc Info:   6 126  23
+   51-Solving sector:  96, nup: 9, ndw: 5, dim=            126, Lanc Info:   6 126  23
+   52-Solving sector:  97, nup: 9, ndw: 6, dim=             84, Lanc Info:   6  84  23
+   53-Solving sector:  98, nup: 9, ndw: 7, dim=             36, Lanc Info:   6  36  23
+   54-Solving sector:  99, nup: 9, ndw: 8, dim=              9, Lanc Info:   6   9   9
+   55-Solving sector: 100, nup: 9, ndw: 9, dim=              1, Lanc Info:   1   1   1
+Total time [h:m:s.ms]:   0:00:05.776
+# i       E_i           exp(-(E-E0)/T)       nup ndw  Sect     Dim
+  1   -5.370832853989   1.000000000000E+00   5  4    55     15876
+  2   -5.370832853989   1.000000000000E+00   4  5    46     15876
+Egs =     -5.370832853989   5   4
+Egs =     -5.370832853989   4   5
+Z   =      2.000000000000
+dens=    1.000008883508    1.000008883508
+docc=    0.098203122392
+Get impurity Greens functions:
+Get G_l1_s1
+ add particle:  6  4
+ del particle:  4  4
+ add particle:  5  5
+ del particle:  3  5
+Total time [h:m:s.ms]:   0:00:00.719
+Get local Green's function (print mode:1)
+ 
+  +ETA --> fort.6
+  10% |ETA: 0:00:02.551 @28 November 2016  10:30:55
+  20% |ETA: 0:00:01.958
+  30% |ETA: 0:00:01.834
+  40% |ETA: 0:00:01.712
+  50% |ETA: 0:00:01.598 @28 November 2016  10:30:56
+  60% |ETA: 0:00:00.956
+  70% |ETA: 0:00:00.715
+  80% |ETA: 0:00:00.952
+  90% |ETA: 0:00:00.952
+ 100% |ETA: 0:00:00.000
+Total time [h:m:s.ms]:   0:00:02.384
+Gloc matsubara: write spin-orbital diagonal elements.
+Delta//WeissField: write spin-orbital diagonal elements.
+\Chi2 fit with CG-nr and CG-weight: 0 on: weiss
+chi^2|iter=    9.775142094E-05 |    16  <--  Orb1 Spin1
+            #Ek_l1_s1              Vk_l1_s1
+      -1.950941512443       -0.045513434191
+      -0.342878408331        0.238012970518
+      -0.052024911172        0.126541522047
+      -0.004856632524        0.048932097182
+       0.004833917353        0.048856458046
+       0.051879707320        0.126388595611
+       0.341654393430        0.237701863258
+       1.953844400137       -0.050128999267
+ hamiltonian.restart
+[1;91merror=[0m  2.8963025E-05
+=====================================
+Total time [h:m:s.ms]:   0:00:09.158
+ 
+ 
+ 
+-----DMFT-loop   13 (max:  100)-----
+            #Ek_l1_s1              Vk_l1_s1
+      -1.950944986530       -0.045235751373
+      -0.342732291421        0.238666368268
+      -0.051869536124        0.126488904663
+      -0.004843029616        0.048842794856
+       0.004821789757        0.048765298097
+       0.051726910625        0.126336649293
+       0.341515379468        0.238359520073
+       1.953848613070       -0.049825836154
+ hamiltonian.used
+Diagonalize impurity H:
+    1-Solving sector:   1, nup: 0, ndw: 0, dim=              1, Lanc Info:   1   1   1
+    2-Solving sector:  11, nup: 1, ndw: 0, dim=              9, Lanc Info:   6   9   9
+    3-Solving sector:  12, nup: 1, ndw: 1, dim=             81, Lanc Info:   6  81  23
+    4-Solving sector:  21, nup: 2, ndw: 0, dim=             36, Lanc Info:   6  36  23
+    5-Solving sector:  22, nup: 2, ndw: 1, dim=            324, Lanc Info:   6 324  23
+    6-Solving sector:  23, nup: 2, ndw: 2, dim=           1296, Lanc Info:   6 512  23
+    7-Solving sector:  31, nup: 3, ndw: 0, dim=             84, Lanc Info:   6  84  23
+    8-Solving sector:  32, nup: 3, ndw: 1, dim=            756, Lanc Info:   6 512  23
+    9-Solving sector:  33, nup: 3, ndw: 2, dim=           3024, Lanc Info:   6 512  23
+   10-Solving sector:  34, nup: 3, ndw: 3, dim=           7056, Lanc Info:   6 512  23
+   11-Solving sector:  41, nup: 4, ndw: 0, dim=            126, Lanc Info:   6 126  23
+   12-Solving sector:  42, nup: 4, ndw: 1, dim=           1134, Lanc Info:   6 512  23
+   13-Solving sector:  43, nup: 4, ndw: 2, dim=           4536, Lanc Info:   6 512  23
+   14-Solving sector:  44, nup: 4, ndw: 3, dim=          10584, Lanc Info:   6 512  23
+   15-Solving sector:  45, nup: 4, ndw: 4, dim=          15876, Lanc Info:   6 512  23
+   16-Solving sector:  51, nup: 5, ndw: 0, dim=            126, Lanc Info:   6 126  23
+   17-Solving sector:  52, nup: 5, ndw: 1, dim=           1134, Lanc Info:   6 512  23
+   18-Solving sector:  53, nup: 5, ndw: 2, dim=           4536, Lanc Info:   6 512  23
+   19-Solving sector:  54, nup: 5, ndw: 3, dim=          10584, Lanc Info:   6 512  23
+   20-Solving sector:  55, nup: 5, ndw: 4, dim=          15876, Lanc Info:   6 512  23
+   21-Solving sector:  56, nup: 5, ndw: 5, dim=          15876, Lanc Info:   6 512  23
+   22-Solving sector:  61, nup: 6, ndw: 0, dim=             84, Lanc Info:   6  84  23
+   23-Solving sector:  62, nup: 6, ndw: 1, dim=            756, Lanc Info:   6 512  23
+   24-Solving sector:  63, nup: 6, ndw: 2, dim=           3024, Lanc Info:   6 512  23
+   25-Solving sector:  64, nup: 6, ndw: 3, dim=           7056, Lanc Info:   6 512  23
+   26-Solving sector:  65, nup: 6, ndw: 4, dim=          10584, Lanc Info:   6 512  23
+   27-Solving sector:  66, nup: 6, ndw: 5, dim=          10584, Lanc Info:   6 512  23
+   28-Solving sector:  67, nup: 6, ndw: 6, dim=           7056, Lanc Info:   6 512  23
+   29-Solving sector:  71, nup: 7, ndw: 0, dim=             36, Lanc Info:   6  36  23
+   30-Solving sector:  72, nup: 7, ndw: 1, dim=            324, Lanc Info:   6 324  23
+   31-Solving sector:  73, nup: 7, ndw: 2, dim=           1296, Lanc Info:   6 512  23
+   32-Solving sector:  74, nup: 7, ndw: 3, dim=           3024, Lanc Info:   6 512  23
+   33-Solving sector:  75, nup: 7, ndw: 4, dim=           4536, Lanc Info:   6 512  23
+   34-Solving sector:  76, nup: 7, ndw: 5, dim=           4536, Lanc Info:   6 512  23
+   35-Solving sector:  77, nup: 7, ndw: 6, dim=           3024, Lanc Info:   6 512  23
+   36-Solving sector:  78, nup: 7, ndw: 7, dim=           1296, Lanc Info:   6 512  23
+   37-Solving sector:  81, nup: 8, ndw: 0, dim=              9, Lanc Info:   6   9   9
+   38-Solving sector:  82, nup: 8, ndw: 1, dim=             81, Lanc Info:   6  81  23
+   39-Solving sector:  83, nup: 8, ndw: 2, dim=            324, Lanc Info:   6 324  23
+   40-Solving sector:  84, nup: 8, ndw: 3, dim=            756, Lanc Info:   6 512  23
+   41-Solving sector:  85, nup: 8, ndw: 4, dim=           1134, Lanc Info:   6 512  23
+   42-Solving sector:  86, nup: 8, ndw: 5, dim=           1134, Lanc Info:   6 512  23
+   43-Solving sector:  87, nup: 8, ndw: 6, dim=            756, Lanc Info:   6 512  23
+   44-Solving sector:  88, nup: 8, ndw: 7, dim=            324, Lanc Info:   6 324  23
+   45-Solving sector:  89, nup: 8, ndw: 8, dim=             81, Lanc Info:   6  81  23
+   46-Solving sector:  91, nup: 9, ndw: 0, dim=              1, Lanc Info:   1   1   1
+   47-Solving sector:  92, nup: 9, ndw: 1, dim=              9, Lanc Info:   6   9   9
+   48-Solving sector:  93, nup: 9, ndw: 2, dim=             36, Lanc Info:   6  36  23
+   49-Solving sector:  94, nup: 9, ndw: 3, dim=             84, Lanc Info:   6  84  23
+   50-Solving sector:  95, nup: 9, ndw: 4, dim=            126, Lanc Info:   6 126  23
+   51-Solving sector:  96, nup: 9, ndw: 5, dim=            126, Lanc Info:   6 126  23
+   52-Solving sector:  97, nup: 9, ndw: 6, dim=             84, Lanc Info:   6  84  23
+   53-Solving sector:  98, nup: 9, ndw: 7, dim=             36, Lanc Info:   6  36  23
+   54-Solving sector:  99, nup: 9, ndw: 8, dim=              9, Lanc Info:   6   9   9
+   55-Solving sector: 100, nup: 9, ndw: 9, dim=              1, Lanc Info:   1   1   1
+Total time [h:m:s.ms]:   0:00:05.753
+# i       E_i           exp(-(E-E0)/T)       nup ndw  Sect     Dim
+  1   -5.370805433125   1.000000000000E+00   5  4    55     15876
+  2   -5.370805433125   1.000000000000E+00   4  5    46     15876
+Egs =     -5.370805433125   5   4
+Egs =     -5.370805433125   4   5
+Z   =      2.000000000000
+dens=    1.000008819514    1.000008819514
+docc=    0.098138048066
+Get impurity Greens functions:
+Get G_l1_s1
+ add particle:  6  4
+ del particle:  4  4
+ add particle:  5  5
+ del particle:  3  5
+Total time [h:m:s.ms]:   0:00:00.729
+Get local Green's function (print mode:1)
+ 
+  +ETA --> fort.6
+  10% |ETA: 0:00:02.544 @28 November 2016  10:31:04
+  20% |ETA: 0:00:01.951
+  30% |ETA: 0:00:01.828
+  40% |ETA: 0:00:01.712
+  50% |ETA: 0:00:01.595 @28 November 2016  10:31:05
+  60% |ETA: 0:00:00.950
+  70% |ETA: 0:00:00.711
+  80% |ETA: 0:00:00.948
+  90% |ETA: 0:00:00.950
+ 100% |ETA: 0:00:00.000
+Total time [h:m:s.ms]:   0:00:02.373
+Gloc matsubara: write spin-orbital diagonal elements.
+Delta//WeissField: write spin-orbital diagonal elements.
+\Chi2 fit with CG-nr and CG-weight: 0 on: weiss
+chi^2|iter=    9.787505555E-05 |     5  <--  Orb1 Spin1
+            #Ek_l1_s1              Vk_l1_s1
+      -1.950944836913       -0.045249172834
+      -0.342813392178        0.238460836534
+      -0.051791738975        0.126243520819
+      -0.004850167970        0.048886708789
+       0.004829335282        0.048812434882
+       0.051642729039        0.126088429166
+       0.341597810664        0.238146865157
+       1.953848435107       -0.049840183134
+ hamiltonian.restart
+[1;91merror=[0m  2.6366759E-05
+=====================================
+Total time [h:m:s.ms]:   0:00:09.046
+ 
+ 
+ 
+-----DMFT-loop   14 (max:  100)-----
+            #Ek_l1_s1              Vk_l1_s1
+      -1.950944949126       -0.045239106738
+      -0.342752566610        0.238614985334
+      -0.051850086837        0.126427558702
+      -0.004844814205        0.048853773340
+       0.004823676138        0.048777082293
+       0.051705865229        0.126274594261
+       0.341535987267        0.238306356344
+       1.953848568579       -0.049829422899
+ hamiltonian.used
+Diagonalize impurity H:
+    1-Solving sector:   1, nup: 0, ndw: 0, dim=              1, Lanc Info:   1   1   1
+    2-Solving sector:  11, nup: 1, ndw: 0, dim=              9, Lanc Info:   6   9   9
+    3-Solving sector:  12, nup: 1, ndw: 1, dim=             81, Lanc Info:   6  81  23
+    4-Solving sector:  21, nup: 2, ndw: 0, dim=             36, Lanc Info:   6  36  23
+    5-Solving sector:  22, nup: 2, ndw: 1, dim=            324, Lanc Info:   6 324  23
+    6-Solving sector:  23, nup: 2, ndw: 2, dim=           1296, Lanc Info:   6 512  23
+    7-Solving sector:  31, nup: 3, ndw: 0, dim=             84, Lanc Info:   6  84  23
+    8-Solving sector:  32, nup: 3, ndw: 1, dim=            756, Lanc Info:   6 512  23
+    9-Solving sector:  33, nup: 3, ndw: 2, dim=           3024, Lanc Info:   6 512  23
+   10-Solving sector:  34, nup: 3, ndw: 3, dim=           7056, Lanc Info:   6 512  23
+   11-Solving sector:  41, nup: 4, ndw: 0, dim=            126, Lanc Info:   6 126  23
+   12-Solving sector:  42, nup: 4, ndw: 1, dim=           1134, Lanc Info:   6 512  23
+   13-Solving sector:  43, nup: 4, ndw: 2, dim=           4536, Lanc Info:   6 512  23
+   14-Solving sector:  44, nup: 4, ndw: 3, dim=          10584, Lanc Info:   6 512  23
+   15-Solving sector:  45, nup: 4, ndw: 4, dim=          15876, Lanc Info:   6 512  23
+   16-Solving sector:  51, nup: 5, ndw: 0, dim=            126, Lanc Info:   6 126  23
+   17-Solving sector:  52, nup: 5, ndw: 1, dim=           1134, Lanc Info:   6 512  23
+   18-Solving sector:  53, nup: 5, ndw: 2, dim=           4536, Lanc Info:   6 512  23
+   19-Solving sector:  54, nup: 5, ndw: 3, dim=          10584, Lanc Info:   6 512  23
+   20-Solving sector:  55, nup: 5, ndw: 4, dim=          15876, Lanc Info:   6 512  23
+   21-Solving sector:  56, nup: 5, ndw: 5, dim=          15876, Lanc Info:   6 512  23
+   22-Solving sector:  61, nup: 6, ndw: 0, dim=             84, Lanc Info:   6  84  23
+   23-Solving sector:  62, nup: 6, ndw: 1, dim=            756, Lanc Info:   6 512  23
+   24-Solving sector:  63, nup: 6, ndw: 2, dim=           3024, Lanc Info:   6 512  23
+   25-Solving sector:  64, nup: 6, ndw: 3, dim=           7056, Lanc Info:   6 512  23
+   26-Solving sector:  65, nup: 6, ndw: 4, dim=          10584, Lanc Info:   6 512  23
+   27-Solving sector:  66, nup: 6, ndw: 5, dim=          10584, Lanc Info:   6 512  23
+   28-Solving sector:  67, nup: 6, ndw: 6, dim=           7056, Lanc Info:   6 512  23
+   29-Solving sector:  71, nup: 7, ndw: 0, dim=             36, Lanc Info:   6  36  23
+   30-Solving sector:  72, nup: 7, ndw: 1, dim=            324, Lanc Info:   6 324  23
+   31-Solving sector:  73, nup: 7, ndw: 2, dim=           1296, Lanc Info:   6 512  23
+   32-Solving sector:  74, nup: 7, ndw: 3, dim=           3024, Lanc Info:   6 512  23
+   33-Solving sector:  75, nup: 7, ndw: 4, dim=           4536, Lanc Info:   6 512  23
+   34-Solving sector:  76, nup: 7, ndw: 5, dim=           4536, Lanc Info:   6 512  23
+   35-Solving sector:  77, nup: 7, ndw: 6, dim=           3024, Lanc Info:   6 512  23
+   36-Solving sector:  78, nup: 7, ndw: 7, dim=           1296, Lanc Info:   6 512  23
+   37-Solving sector:  81, nup: 8, ndw: 0, dim=              9, Lanc Info:   6   9   9
+   38-Solving sector:  82, nup: 8, ndw: 1, dim=             81, Lanc Info:   6  81  23
+   39-Solving sector:  83, nup: 8, ndw: 2, dim=            324, Lanc Info:   6 324  23
+   40-Solving sector:  84, nup: 8, ndw: 3, dim=            756, Lanc Info:   6 512  23
+   41-Solving sector:  85, nup: 8, ndw: 4, dim=           1134, Lanc Info:   6 512  23
+   42-Solving sector:  86, nup: 8, ndw: 5, dim=           1134, Lanc Info:   6 512  23
+   43-Solving sector:  87, nup: 8, ndw: 6, dim=            756, Lanc Info:   6 512  23
+   44-Solving sector:  88, nup: 8, ndw: 7, dim=            324, Lanc Info:   6 324  23
+   45-Solving sector:  89, nup: 8, ndw: 8, dim=             81, Lanc Info:   6  81  23
+   46-Solving sector:  91, nup: 9, ndw: 0, dim=              1, Lanc Info:   1   1   1
+   47-Solving sector:  92, nup: 9, ndw: 1, dim=              9, Lanc Info:   6   9   9
+   48-Solving sector:  93, nup: 9, ndw: 2, dim=             36, Lanc Info:   6  36  23
+   49-Solving sector:  94, nup: 9, ndw: 3, dim=             84, Lanc Info:   6  84  23
+   50-Solving sector:  95, nup: 9, ndw: 4, dim=            126, Lanc Info:   6 126  23
+   51-Solving sector:  96, nup: 9, ndw: 5, dim=            126, Lanc Info:   6 126  23
+   52-Solving sector:  97, nup: 9, ndw: 6, dim=             84, Lanc Info:   6  84  23
+   53-Solving sector:  98, nup: 9, ndw: 7, dim=             36, Lanc Info:   6  36  23
+   54-Solving sector:  99, nup: 9, ndw: 8, dim=              9, Lanc Info:   6   9   9
+   55-Solving sector: 100, nup: 9, ndw: 9, dim=              1, Lanc Info:   1   1   1
+Total time [h:m:s.ms]:   0:00:05.743
+# i       E_i           exp(-(E-E0)/T)       nup ndw  Sect     Dim
+  1   -5.370680141074   1.000000000000E+00   5  4    55     15876
+  2   -5.370680141074   1.000000000000E+00   4  5    46     15876
+Egs =     -5.370680141074   5   4
+Egs =     -5.370680141074   4   5
+Z   =      2.000000000000
+dens=    1.000008640380    1.000008640380
+docc=    0.098099573578
+Get impurity Greens functions:
+Get G_l1_s1
+ add particle:  6  4
+ del particle:  4  4
+ add particle:  5  5
+ del particle:  3  5
+Total time [h:m:s.ms]:   0:00:00.726
+Get local Green's function (print mode:1)
+ 
+  +ETA --> fort.6
+  10% |ETA: 0:00:02.542 @28 November 2016  10:31:13
+  20% |ETA: 0:00:01.958
+  30% |ETA: 0:00:01.831
+  40% |ETA: 0:00:01.717
+  50% |ETA: 0:00:01.598 @28 November 2016  10:31:14
+  60% |ETA: 0:00:00.957
+  70% |ETA: 0:00:00.716
+  80% |ETA: 0:00:00.954
+  90% |ETA: 0:00:00.955
+ 100% |ETA: 0:00:00.000
+Total time [h:m:s.ms]:   0:00:02.390
+Gloc matsubara: write spin-orbital diagonal elements.
+Delta//WeissField: write spin-orbital diagonal elements.
+\Chi2 fit with CG-nr and CG-weight: 0 on: weiss
+chi^2|iter=    9.790148321E-05 |     4  <--  Orb1 Spin1
+            #Ek_l1_s1              Vk_l1_s1
+      -1.950944792328       -0.045252845594
+      -0.342820851965        0.238438295115
+      -0.051783333429        0.126231678586
+      -0.004850268833        0.048884086226
+       0.004830283254        0.048809053145
+       0.051635030749        0.126076862964
+       0.341605033143        0.238124868584
+       1.953848380674       -0.049844220026
+ hamiltonian.restart
+[1;91merror=[0m  1.7397352E-05
+=====================================
+Total time [h:m:s.ms]:   0:00:09.041
+ 
+ 
+ 
+-----DMFT-loop   15 (max:  100)-----
+            #Ek_l1_s1              Vk_l1_s1
+      -1.950944909926       -0.045242541452
+      -0.342769637949        0.238570812780
+      -0.051833398485        0.126378588673
+      -0.004846177862        0.048861351561
+       0.004825327917        0.048785075006
+       0.051688156609        0.126225161437
+       0.341553248736        0.238260984404
+       1.953848521603       -0.049833122181
+ hamiltonian.used
+Diagonalize impurity H:
+    1-Solving sector:   1, nup: 0, ndw: 0, dim=              1, Lanc Info:   1   1   1
+    2-Solving sector:  11, nup: 1, ndw: 0, dim=              9, Lanc Info:   6   9   9
+    3-Solving sector:  12, nup: 1, ndw: 1, dim=             81, Lanc Info:   6  81  23
+    4-Solving sector:  21, nup: 2, ndw: 0, dim=             36, Lanc Info:   6  36  23
+    5-Solving sector:  22, nup: 2, ndw: 1, dim=            324, Lanc Info:   6 324  23
+    6-Solving sector:  23, nup: 2, ndw: 2, dim=           1296, Lanc Info:   6 512  23
+    7-Solving sector:  31, nup: 3, ndw: 0, dim=             84, Lanc Info:   6  84  23
+    8-Solving sector:  32, nup: 3, ndw: 1, dim=            756, Lanc Info:   6 512  23
+    9-Solving sector:  33, nup: 3, ndw: 2, dim=           3024, Lanc Info:   6 512  23
+   10-Solving sector:  34, nup: 3, ndw: 3, dim=           7056, Lanc Info:   6 512  23
+   11-Solving sector:  41, nup: 4, ndw: 0, dim=            126, Lanc Info:   6 126  23
+   12-Solving sector:  42, nup: 4, ndw: 1, dim=           1134, Lanc Info:   6 512  23
+   13-Solving sector:  43, nup: 4, ndw: 2, dim=           4536, Lanc Info:   6 512  23
+   14-Solving sector:  44, nup: 4, ndw: 3, dim=          10584, Lanc Info:   6 512  23
+   15-Solving sector:  45, nup: 4, ndw: 4, dim=          15876, Lanc Info:   6 512  23
+   16-Solving sector:  51, nup: 5, ndw: 0, dim=            126, Lanc Info:   6 126  23
+   17-Solving sector:  52, nup: 5, ndw: 1, dim=           1134, Lanc Info:   6 512  23
+   18-Solving sector:  53, nup: 5, ndw: 2, dim=           4536, Lanc Info:   6 512  23
+   19-Solving sector:  54, nup: 5, ndw: 3, dim=          10584, Lanc Info:   6 512  23
+   20-Solving sector:  55, nup: 5, ndw: 4, dim=          15876, Lanc Info:   6 512  23
+   21-Solving sector:  56, nup: 5, ndw: 5, dim=          15876, Lanc Info:   6 512  23
+   22-Solving sector:  61, nup: 6, ndw: 0, dim=             84, Lanc Info:   6  84  23
+   23-Solving sector:  62, nup: 6, ndw: 1, dim=            756, Lanc Info:   6 512  23
+   24-Solving sector:  63, nup: 6, ndw: 2, dim=           3024, Lanc Info:   6 512  23
+   25-Solving sector:  64, nup: 6, ndw: 3, dim=           7056, Lanc Info:   6 512  23
+   26-Solving sector:  65, nup: 6, ndw: 4, dim=          10584, Lanc Info:   6 512  23
+   27-Solving sector:  66, nup: 6, ndw: 5, dim=          10584, Lanc Info:   6 512  23
+   28-Solving sector:  67, nup: 6, ndw: 6, dim=           7056, Lanc Info:   6 512  23
+   29-Solving sector:  71, nup: 7, ndw: 0, dim=             36, Lanc Info:   6  36  23
+   30-Solving sector:  72, nup: 7, ndw: 1, dim=            324, Lanc Info:   6 324  23
+   31-Solving sector:  73, nup: 7, ndw: 2, dim=           1296, Lanc Info:   6 512  23
+   32-Solving sector:  74, nup: 7, ndw: 3, dim=           3024, Lanc Info:   6 512  23
+   33-Solving sector:  75, nup: 7, ndw: 4, dim=           4536, Lanc Info:   6 512  23
+   34-Solving sector:  76, nup: 7, ndw: 5, dim=           4536, Lanc Info:   6 512  23
+   35-Solving sector:  77, nup: 7, ndw: 6, dim=           3024, Lanc Info:   6 512  23
+   36-Solving sector:  78, nup: 7, ndw: 7, dim=           1296, Lanc Info:   6 512  23
+   37-Solving sector:  81, nup: 8, ndw: 0, dim=              9, Lanc Info:   6   9   9
+   38-Solving sector:  82, nup: 8, ndw: 1, dim=             81, Lanc Info:   6  81  23
+   39-Solving sector:  83, nup: 8, ndw: 2, dim=            324, Lanc Info:   6 324  23
+   40-Solving sector:  84, nup: 8, ndw: 3, dim=            756, Lanc Info:   6 512  23
+   41-Solving sector:  85, nup: 8, ndw: 4, dim=           1134, Lanc Info:   6 512  23
+   42-Solving sector:  86, nup: 8, ndw: 5, dim=           1134, Lanc Info:   6 512  23
+   43-Solving sector:  87, nup: 8, ndw: 6, dim=            756, Lanc Info:   6 512  23
+   44-Solving sector:  88, nup: 8, ndw: 7, dim=            324, Lanc Info:   6 324  23
+   45-Solving sector:  89, nup: 8, ndw: 8, dim=             81, Lanc Info:   6  81  23
+   46-Solving sector:  91, nup: 9, ndw: 0, dim=              1, Lanc Info:   1   1   1
+   47-Solving sector:  92, nup: 9, ndw: 1, dim=              9, Lanc Info:   6   9   9
+   48-Solving sector:  93, nup: 9, ndw: 2, dim=             36, Lanc Info:   6  36  23
+   49-Solving sector:  94, nup: 9, ndw: 3, dim=             84, Lanc Info:   6  84  23
+   50-Solving sector:  95, nup: 9, ndw: 4, dim=            126, Lanc Info:   6 126  23
+   51-Solving sector:  96, nup: 9, ndw: 5, dim=            126, Lanc Info:   6 126  23
+   52-Solving sector:  97, nup: 9, ndw: 6, dim=             84, Lanc Info:   6  84  23
+   53-Solving sector:  98, nup: 9, ndw: 7, dim=             36, Lanc Info:   6  36  23
+   54-Solving sector:  99, nup: 9, ndw: 8, dim=              9, Lanc Info:   6   9   9
+   55-Solving sector: 100, nup: 9, ndw: 9, dim=              1, Lanc Info:   1   1   1
+Total time [h:m:s.ms]:   0:00:05.748
+# i       E_i           exp(-(E-E0)/T)       nup ndw  Sect     Dim
+  1   -5.370575072805   1.000000000000E+00   5  4    55     15876
+  2   -5.370575072805   1.000000000000E+00   4  5    46     15876
+Egs =     -5.370575072805   5   4
+Egs =     -5.370575072805   4   5
+Z   =      2.000000000000
+dens=    1.000008567412    1.000008567412
+docc=    0.098067745803
+Get impurity Greens functions:
+Get G_l1_s1
+ add particle:  6  4
+ del particle:  4  4
+ add particle:  5  5
+ del particle:  3  5
+Total time [h:m:s.ms]:   0:00:00.727
+Get local Green's function (print mode:1)
+ 
+  +ETA --> fort.6
+  10% |ETA: 0:00:02.542 @28 November 2016  10:31:22
+  20% |ETA: 0:00:01.958
+  30% |ETA: 0:00:01.831
+  40% |ETA: 0:00:01.713
+  50% |ETA: 0:00:01.597 @28 November 2016  10:31:23
+  60% |ETA: 0:00:00.955
+  70% |ETA: 0:00:00.714
+  80% |ETA: 0:00:00.954
+  90% |ETA: 0:00:00.956
+ 100% |ETA: 0:00:00.000
+Total time [h:m:s.ms]:   0:00:02.387
+Gloc matsubara: write spin-orbital diagonal elements.
+Delta//WeissField: write spin-orbital diagonal elements.
+\Chi2 fit with CG-nr and CG-weight: 0 on: weiss
+chi^2|iter=    9.792249244E-05 |     4  <--  Orb1 Spin1
+            #Ek_l1_s1              Vk_l1_s1
+      -1.950944741962       -0.045256965424
+      -0.342827881965        0.238416395181
+      -0.051775651425        0.126222539707
+      -0.004850145622        0.048880621429
+       0.004828669933        0.048805742448
+       0.051627781265        0.126068016275
+       0.341611835603        0.238103407954
+       1.953848319293       -0.049848740331
+ hamiltonian.restart
+[1;91merror=[0m  1.4367904E-05
+=====================================
+Total time [h:m:s.ms]:   0:00:09.047
+ 
+ 
+ 
+-----DMFT-loop   16 (max:  100)-----
+            #Ek_l1_s1              Vk_l1_s1
+      -1.950944867935       -0.045246147445
+      -0.342784198953        0.238532208380
+      -0.051818961720        0.126339576431
+      -0.004847169802        0.048866169028
+       0.004826163421        0.048790241867
+       0.051673062773        0.126185875146
+       0.341567895453        0.238221590292
+       1.953848471026       -0.049837026718
+ hamiltonian.used
+Diagonalize impurity H:
+    1-Solving sector:   1, nup: 0, ndw: 0, dim=              1, Lanc Info:   1   1   1
+    2-Solving sector:  11, nup: 1, ndw: 0, dim=              9, Lanc Info:   6   9   9
+    3-Solving sector:  12, nup: 1, ndw: 1, dim=             81, Lanc Info:   6  81  23
+    4-Solving sector:  21, nup: 2, ndw: 0, dim=             36, Lanc Info:   6  36  23
+    5-Solving sector:  22, nup: 2, ndw: 1, dim=            324, Lanc Info:   6 324  23
+    6-Solving sector:  23, nup: 2, ndw: 2, dim=           1296, Lanc Info:   6 512  23
+    7-Solving sector:  31, nup: 3, ndw: 0, dim=             84, Lanc Info:   6  84  23
+    8-Solving sector:  32, nup: 3, ndw: 1, dim=            756, Lanc Info:   6 512  23
+    9-Solving sector:  33, nup: 3, ndw: 2, dim=           3024, Lanc Info:   6 512  23
+   10-Solving sector:  34, nup: 3, ndw: 3, dim=           7056, Lanc Info:   6 512  23
+   11-Solving sector:  41, nup: 4, ndw: 0, dim=            126, Lanc Info:   6 126  23
+   12-Solving sector:  42, nup: 4, ndw: 1, dim=           1134, Lanc Info:   6 512  23
+   13-Solving sector:  43, nup: 4, ndw: 2, dim=           4536, Lanc Info:   6 512  23
+   14-Solving sector:  44, nup: 4, ndw: 3, dim=          10584, Lanc Info:   6 512  23
+   15-Solving sector:  45, nup: 4, ndw: 4, dim=          15876, Lanc Info:   6 512  23
+   16-Solving sector:  51, nup: 5, ndw: 0, dim=            126, Lanc Info:   6 126  23
+   17-Solving sector:  52, nup: 5, ndw: 1, dim=           1134, Lanc Info:   6 512  23
+   18-Solving sector:  53, nup: 5, ndw: 2, dim=           4536, Lanc Info:   6 512  23
+   19-Solving sector:  54, nup: 5, ndw: 3, dim=          10584, Lanc Info:   6 512  23
+   20-Solving sector:  55, nup: 5, ndw: 4, dim=          15876, Lanc Info:   6 512  23
+   21-Solving sector:  56, nup: 5, ndw: 5, dim=          15876, Lanc Info:   6 512  23
+   22-Solving sector:  61, nup: 6, ndw: 0, dim=             84, Lanc Info:   6  84  23
+   23-Solving sector:  62, nup: 6, ndw: 1, dim=            756, Lanc Info:   6 512  23
+   24-Solving sector:  63, nup: 6, ndw: 2, dim=           3024, Lanc Info:   6 512  23
+   25-Solving sector:  64, nup: 6, ndw: 3, dim=           7056, Lanc Info:   6 512  23
+   26-Solving sector:  65, nup: 6, ndw: 4, dim=          10584, Lanc Info:   6 512  23
+   27-Solving sector:  66, nup: 6, ndw: 5, dim=          10584, Lanc Info:   6 512  23
+   28-Solving sector:  67, nup: 6, ndw: 6, dim=           7056, Lanc Info:   6 512  23
+   29-Solving sector:  71, nup: 7, ndw: 0, dim=             36, Lanc Info:   6  36  23
+   30-Solving sector:  72, nup: 7, ndw: 1, dim=            324, Lanc Info:   6 324  23
+   31-Solving sector:  73, nup: 7, ndw: 2, dim=           1296, Lanc Info:   6 512  23
+   32-Solving sector:  74, nup: 7, ndw: 3, dim=           3024, Lanc Info:   6 512  23
+   33-Solving sector:  75, nup: 7, ndw: 4, dim=           4536, Lanc Info:   6 512  23
+   34-Solving sector:  76, nup: 7, ndw: 5, dim=           4536, Lanc Info:   6 512  23
+   35-Solving sector:  77, nup: 7, ndw: 6, dim=           3024, Lanc Info:   6 512  23
+   36-Solving sector:  78, nup: 7, ndw: 7, dim=           1296, Lanc Info:   6 512  23
+   37-Solving sector:  81, nup: 8, ndw: 0, dim=              9, Lanc Info:   6   9   9
+   38-Solving sector:  82, nup: 8, ndw: 1, dim=             81, Lanc Info:   6  81  23
+   39-Solving sector:  83, nup: 8, ndw: 2, dim=            324, Lanc Info:   6 324  23
+   40-Solving sector:  84, nup: 8, ndw: 3, dim=            756, Lanc Info:   6 512  23
+   41-Solving sector:  85, nup: 8, ndw: 4, dim=           1134, Lanc Info:   6 512  23
+   42-Solving sector:  86, nup: 8, ndw: 5, dim=           1134, Lanc Info:   6 512  23
+   43-Solving sector:  87, nup: 8, ndw: 6, dim=            756, Lanc Info:   6 512  23
+   44-Solving sector:  88, nup: 8, ndw: 7, dim=            324, Lanc Info:   6 324  23
+   45-Solving sector:  89, nup: 8, ndw: 8, dim=             81, Lanc Info:   6  81  23
+   46-Solving sector:  91, nup: 9, ndw: 0, dim=              1, Lanc Info:   1   1   1
+   47-Solving sector:  92, nup: 9, ndw: 1, dim=              9, Lanc Info:   6   9   9
+   48-Solving sector:  93, nup: 9, ndw: 2, dim=             36, Lanc Info:   6  36  23
+   49-Solving sector:  94, nup: 9, ndw: 3, dim=             84, Lanc Info:   6  84  23
+   50-Solving sector:  95, nup: 9, ndw: 4, dim=            126, Lanc Info:   6 126  23
+   51-Solving sector:  96, nup: 9, ndw: 5, dim=            126, Lanc Info:   6 126  23
+   52-Solving sector:  97, nup: 9, ndw: 6, dim=             84, Lanc Info:   6  84  23
+   53-Solving sector:  98, nup: 9, ndw: 7, dim=             36, Lanc Info:   6  36  23
+   54-Solving sector:  99, nup: 9, ndw: 8, dim=              9, Lanc Info:   6   9   9
+   55-Solving sector: 100, nup: 9, ndw: 9, dim=              1, Lanc Info:   1   1   1
+Total time [h:m:s.ms]:   0:00:06.048
+# i       E_i           exp(-(E-E0)/T)       nup ndw  Sect     Dim
+  1   -5.370486688229   1.000000000000E+00   5  4    55     15876
+  2   -5.370486688229   1.000000000000E+00   4  5    46     15876
+Egs =     -5.370486688229   5   4
+Egs =     -5.370486688229   4   5
+Z   =      2.000000000000
+dens=    1.000008450252    1.000008450252
+docc=    0.098041156682
+Get impurity Greens functions:
+Get G_l1_s1
+ add particle:  6  4
+ del particle:  4  4
+ add particle:  5  5
+ del particle:  3  5
+Total time [h:m:s.ms]:   0:00:00.727
+Get local Green's function (print mode:1)
+ 
+  +ETA --> fort.6
+  10% |ETA: 0:00:02.528 @28 November 2016  10:31:32
+  20% |ETA: 0:00:01.942
+  30% |ETA: 0:00:01.836
+  40% |ETA: 0:00:01.719
+  50% |ETA: 0:00:01.596 @28 November 2016  10:31:33
+  60% |ETA: 0:00:00.953
+  70% |ETA: 0:00:00.716
+  80% |ETA: 0:00:00.954
+  90% |ETA: 0:00:00.952
+ 100% |ETA: 0:00:00.000
+Total time [h:m:s.ms]:   0:00:02.377
+Gloc matsubara: write spin-orbital diagonal elements.
+Delta//WeissField: write spin-orbital diagonal elements.
+\Chi2 fit with CG-nr and CG-weight: 0 on: weiss
+chi^2|iter=    9.793922616E-05 |     5  <--  Orb1 Spin1
+            #Ek_l1_s1              Vk_l1_s1
+      -1.950944673530       -0.045262510946
+      -0.342834885467        0.238393154313
+      -0.051768017114        0.126218027529
+      -0.004846797084        0.048876409668
+       0.004827528291        0.048800078360
+       0.051621039656        0.126063261804
+       0.341618649752        0.238080297972
+       1.953848236167       -0.049854804225
+ hamiltonian.restart
+[1;91merror=[0m  1.1941152E-05
+=====================================
+Total time [h:m:s.ms]:   0:00:09.339
+ 
+ 
+ 
+-----DMFT-loop   17 (max:  100)-----
+            #Ek_l1_s1              Vk_l1_s1
+      -1.950944819334       -0.045250238320
+      -0.342796870581        0.238497444863
+      -0.051806225568        0.126309189206
+      -0.004847076622        0.048868729188
+       0.004826504639        0.048792700990
+       0.051660056994        0.126155221811
+       0.341580584028        0.238186267212
+       1.953848412311       -0.049841471095
+ hamiltonian.used
+Diagonalize impurity H:
+    1-Solving sector:   1, nup: 0, ndw: 0, dim=              1, Lanc Info:   1   1   1
+    2-Solving sector:  11, nup: 1, ndw: 0, dim=              9, Lanc Info:   6   9   9
+    3-Solving sector:  12, nup: 1, ndw: 1, dim=             81, Lanc Info:   6  81  23
+    4-Solving sector:  21, nup: 2, ndw: 0, dim=             36, Lanc Info:   6  36  23
+    5-Solving sector:  22, nup: 2, ndw: 1, dim=            324, Lanc Info:   6 324  23
+    6-Solving sector:  23, nup: 2, ndw: 2, dim=           1296, Lanc Info:   6 512  23
+    7-Solving sector:  31, nup: 3, ndw: 0, dim=             84, Lanc Info:   6  84  23
+    8-Solving sector:  32, nup: 3, ndw: 1, dim=            756, Lanc Info:   6 512  23
+    9-Solving sector:  33, nup: 3, ndw: 2, dim=           3024, Lanc Info:   6 512  23
+   10-Solving sector:  34, nup: 3, ndw: 3, dim=           7056, Lanc Info:   6 512  23
+   11-Solving sector:  41, nup: 4, ndw: 0, dim=            126, Lanc Info:   6 126  23
+   12-Solving sector:  42, nup: 4, ndw: 1, dim=           1134, Lanc Info:   6 512  23
+   13-Solving sector:  43, nup: 4, ndw: 2, dim=           4536, Lanc Info:   6 512  23
+   14-Solving sector:  44, nup: 4, ndw: 3, dim=          10584, Lanc Info:   6 512  23
+   15-Solving sector:  45, nup: 4, ndw: 4, dim=          15876, Lanc Info:   6 512  23
+   16-Solving sector:  51, nup: 5, ndw: 0, dim=            126, Lanc Info:   6 126  23
+   17-Solving sector:  52, nup: 5, ndw: 1, dim=           1134, Lanc Info:   6 512  23
+   18-Solving sector:  53, nup: 5, ndw: 2, dim=           4536, Lanc Info:   6 512  23
+   19-Solving sector:  54, nup: 5, ndw: 3, dim=          10584, Lanc Info:   6 512  23
+   20-Solving sector:  55, nup: 5, ndw: 4, dim=          15876, Lanc Info:   6 512  23
+   21-Solving sector:  56, nup: 5, ndw: 5, dim=          15876, Lanc Info:   6 512  23
+   22-Solving sector:  61, nup: 6, ndw: 0, dim=             84, Lanc Info:   6  84  23
+   23-Solving sector:  62, nup: 6, ndw: 1, dim=            756, Lanc Info:   6 512  23
+   24-Solving sector:  63, nup: 6, ndw: 2, dim=           3024, Lanc Info:   6 512  23
+   25-Solving sector:  64, nup: 6, ndw: 3, dim=           7056, Lanc Info:   6 512  23
+   26-Solving sector:  65, nup: 6, ndw: 4, dim=          10584, Lanc Info:   6 512  23
+   27-Solving sector:  66, nup: 6, ndw: 5, dim=          10584, Lanc Info:   6 512  23
+   28-Solving sector:  67, nup: 6, ndw: 6, dim=           7056, Lanc Info:   6 512  23
+   29-Solving sector:  71, nup: 7, ndw: 0, dim=             36, Lanc Info:   6  36  23
+   30-Solving sector:  72, nup: 7, ndw: 1, dim=            324, Lanc Info:   6 324  23
+   31-Solving sector:  73, nup: 7, ndw: 2, dim=           1296, Lanc Info:   6 512  23
+   32-Solving sector:  74, nup: 7, ndw: 3, dim=           3024, Lanc Info:   6 512  23
+   33-Solving sector:  75, nup: 7, ndw: 4, dim=           4536, Lanc Info:   6 512  23
+   34-Solving sector:  76, nup: 7, ndw: 5, dim=           4536, Lanc Info:   6 512  23
+   35-Solving sector:  77, nup: 7, ndw: 6, dim=           3024, Lanc Info:   6 512  23
+   36-Solving sector:  78, nup: 7, ndw: 7, dim=           1296, Lanc Info:   6 512  23
+   37-Solving sector:  81, nup: 8, ndw: 0, dim=              9, Lanc Info:   6   9   9
+   38-Solving sector:  82, nup: 8, ndw: 1, dim=             81, Lanc Info:   6  81  23
+   39-Solving sector:  83, nup: 8, ndw: 2, dim=            324, Lanc Info:   6 324  23
+   40-Solving sector:  84, nup: 8, ndw: 3, dim=            756, Lanc Info:   6 512  23
+   41-Solving sector:  85, nup: 8, ndw: 4, dim=           1134, Lanc Info:   6 512  23
+   42-Solving sector:  86, nup: 8, ndw: 5, dim=           1134, Lanc Info:   6 512  23
+   43-Solving sector:  87, nup: 8, ndw: 6, dim=            756, Lanc Info:   6 512  23
+   44-Solving sector:  88, nup: 8, ndw: 7, dim=            324, Lanc Info:   6 324  23
+   45-Solving sector:  89, nup: 8, ndw: 8, dim=             81, Lanc Info:   6  81  23
+   46-Solving sector:  91, nup: 9, ndw: 0, dim=              1, Lanc Info:   1   1   1
+   47-Solving sector:  92, nup: 9, ndw: 1, dim=              9, Lanc Info:   6   9   9
+   48-Solving sector:  93, nup: 9, ndw: 2, dim=             36, Lanc Info:   6  36  23
+   49-Solving sector:  94, nup: 9, ndw: 3, dim=             84, Lanc Info:   6  84  23
+   50-Solving sector:  95, nup: 9, ndw: 4, dim=            126, Lanc Info:   6 126  23
+   51-Solving sector:  96, nup: 9, ndw: 5, dim=            126, Lanc Info:   6 126  23
+   52-Solving sector:  97, nup: 9, ndw: 6, dim=             84, Lanc Info:   6  84  23
+   53-Solving sector:  98, nup: 9, ndw: 7, dim=             36, Lanc Info:   6  36  23
+   54-Solving sector:  99, nup: 9, ndw: 8, dim=              9, Lanc Info:   6   9   9
+   55-Solving sector: 100, nup: 9, ndw: 9, dim=              1, Lanc Info:   1   1   1
+Total time [h:m:s.ms]:   0:00:05.736
+# i       E_i           exp(-(E-E0)/T)       nup ndw  Sect     Dim
+  1   -5.370410406559   1.000000000000E+00   5  4    55     15876
+  2   -5.370410406559   1.000000000000E+00   4  5    46     15876
+Egs =     -5.370410406559   5   4
+Egs =     -5.370410406559   4   5
+Z   =      2.000000000000
+dens=    1.000008465893    1.000008465893
+docc=    0.098018841210
+Get impurity Greens functions:
+Get G_l1_s1
+ add particle:  6  4
+ del particle:  4  4
+ add particle:  5  5
+ del particle:  3  5
+Total time [h:m:s.ms]:   0:00:00.732
+Get local Green's function (print mode:1)
+ 
+  +ETA --> fort.6
+  10% |ETA: 0:00:02.528 @28 November 2016  10:31:41
+  20% |ETA: 0:00:01.945
+  30% |ETA: 0:00:01.834
+  40% |ETA: 0:00:01.716
+  50% |ETA: 0:00:01.595 @28 November 2016  10:31:42
+  60% |ETA: 0:00:00.952
+  70% |ETA: 0:00:00.718
+  80% |ETA: 0:00:00.959
+  90% |ETA: 0:00:00.957
+ 100% |ETA: 0:00:00.000
+Total time [h:m:s.ms]:   0:00:02.389
+Gloc matsubara: write spin-orbital diagonal elements.
+Delta//WeissField: write spin-orbital diagonal elements.
+\Chi2 fit with CG-nr and CG-weight: 0 on: weiss
+chi^2|iter=    9.795378169E-05 |     5  <--  Orb1 Spin1
+            #Ek_l1_s1              Vk_l1_s1
+      -1.950944625928       -0.045266376574
+      -0.342840348182        0.238375730352
+      -0.051762408142        0.126212584896
+      -0.004848443271        0.048873454163
+       0.004826920704        0.048798056690
+       0.051615171933        0.126058288374
+       0.341623934015        0.238063065451
+       1.953848178303       -0.049859034055
+ hamiltonian.restart
+[1;93merror=[0m  9.9751294E-06
+=====================================
+Total time [h:m:s.ms]:   0:00:09.042
+ 
+ 
+ 
+-----DMFT-loop   18 (max:  100)-----
+            #Ek_l1_s1              Vk_l1_s1
+      -1.950944770982       -0.045254272884
+      -0.342807739982        0.238467016236
+      -0.051795271212        0.126285038128
+      -0.004847418284        0.048869910432
+       0.004826608655        0.048794039915
+       0.051648835729        0.126130988452
+       0.341591421525        0.238155466772
+       1.953848353809       -0.049845861835
+ hamiltonian.used
+Diagonalize impurity H:
+    1-Solving sector:   1, nup: 0, ndw: 0, dim=              1, Lanc Info:   1   1   1
+    2-Solving sector:  11, nup: 1, ndw: 0, dim=              9, Lanc Info:   6   9   9
+    3-Solving sector:  12, nup: 1, ndw: 1, dim=             81, Lanc Info:   6  81  23
+    4-Solving sector:  21, nup: 2, ndw: 0, dim=             36, Lanc Info:   6  36  23
+    5-Solving sector:  22, nup: 2, ndw: 1, dim=            324, Lanc Info:   6 324  23
+    6-Solving sector:  23, nup: 2, ndw: 2, dim=           1296, Lanc Info:   6 512  23
+    7-Solving sector:  31, nup: 3, ndw: 0, dim=             84, Lanc Info:   6  84  23
+    8-Solving sector:  32, nup: 3, ndw: 1, dim=            756, Lanc Info:   6 512  23
+    9-Solving sector:  33, nup: 3, ndw: 2, dim=           3024, Lanc Info:   6 512  23
+   10-Solving sector:  34, nup: 3, ndw: 3, dim=           7056, Lanc Info:   6 512  23
+   11-Solving sector:  41, nup: 4, ndw: 0, dim=            126, Lanc Info:   6 126  23
+   12-Solving sector:  42, nup: 4, ndw: 1, dim=           1134, Lanc Info:   6 512  23
+   13-Solving sector:  43, nup: 4, ndw: 2, dim=           4536, Lanc Info:   6 512  23
+   14-Solving sector:  44, nup: 4, ndw: 3, dim=          10584, Lanc Info:   6 512  23
+   15-Solving sector:  45, nup: 4, ndw: 4, dim=          15876, Lanc Info:   6 512  23
+   16-Solving sector:  51, nup: 5, ndw: 0, dim=            126, Lanc Info:   6 126  23
+   17-Solving sector:  52, nup: 5, ndw: 1, dim=           1134, Lanc Info:   6 512  23
+   18-Solving sector:  53, nup: 5, ndw: 2, dim=           4536, Lanc Info:   6 512  23
+   19-Solving sector:  54, nup: 5, ndw: 3, dim=          10584, Lanc Info:   6 512  23
+   20-Solving sector:  55, nup: 5, ndw: 4, dim=          15876, Lanc Info:   6 512  23
+   21-Solving sector:  56, nup: 5, ndw: 5, dim=          15876, Lanc Info:   6 512  23
+   22-Solving sector:  61, nup: 6, ndw: 0, dim=             84, Lanc Info:   6  84  23
+   23-Solving sector:  62, nup: 6, ndw: 1, dim=            756, Lanc Info:   6 512  23
+   24-Solving sector:  63, nup: 6, ndw: 2, dim=           3024, Lanc Info:   6 512  23
+   25-Solving sector:  64, nup: 6, ndw: 3, dim=           7056, Lanc Info:   6 512  23
+   26-Solving sector:  65, nup: 6, ndw: 4, dim=          10584, Lanc Info:   6 512  23
+   27-Solving sector:  66, nup: 6, ndw: 5, dim=          10584, Lanc Info:   6 512  23
+   28-Solving sector:  67, nup: 6, ndw: 6, dim=           7056, Lanc Info:   6 512  23
+   29-Solving sector:  71, nup: 7, ndw: 0, dim=             36, Lanc Info:   6  36  23
+   30-Solving sector:  72, nup: 7, ndw: 1, dim=            324, Lanc Info:   6 324  23
+   31-Solving sector:  73, nup: 7, ndw: 2, dim=           1296, Lanc Info:   6 512  23
+   32-Solving sector:  74, nup: 7, ndw: 3, dim=           3024, Lanc Info:   6 512  23
+   33-Solving sector:  75, nup: 7, ndw: 4, dim=           4536, Lanc Info:   6 512  23
+   34-Solving sector:  76, nup: 7, ndw: 5, dim=           4536, Lanc Info:   6 512  23
+   35-Solving sector:  77, nup: 7, ndw: 6, dim=           3024, Lanc Info:   6 512  23
+   36-Solving sector:  78, nup: 7, ndw: 7, dim=           1296, Lanc Info:   6 512  23
+   37-Solving sector:  81, nup: 8, ndw: 0, dim=              9, Lanc Info:   6   9   9
+   38-Solving sector:  82, nup: 8, ndw: 1, dim=             81, Lanc Info:   6  81  23
+   39-Solving sector:  83, nup: 8, ndw: 2, dim=            324, Lanc Info:   6 324  23
+   40-Solving sector:  84, nup: 8, ndw: 3, dim=            756, Lanc Info:   6 512  23
+   41-Solving sector:  85, nup: 8, ndw: 4, dim=           1134, Lanc Info:   6 512  23
+   42-Solving sector:  86, nup: 8, ndw: 5, dim=           1134, Lanc Info:   6 512  23
+   43-Solving sector:  87, nup: 8, ndw: 6, dim=            756, Lanc Info:   6 512  23
+   44-Solving sector:  88, nup: 8, ndw: 7, dim=            324, Lanc Info:   6 324  23
+   45-Solving sector:  89, nup: 8, ndw: 8, dim=             81, Lanc Info:   6  81  23
+   46-Solving sector:  91, nup: 9, ndw: 0, dim=              1, Lanc Info:   1   1   1
+   47-Solving sector:  92, nup: 9, ndw: 1, dim=              9, Lanc Info:   6   9   9
+   48-Solving sector:  93, nup: 9, ndw: 2, dim=             36, Lanc Info:   6  36  23
+   49-Solving sector:  94, nup: 9, ndw: 3, dim=             84, Lanc Info:   6  84  23
+   50-Solving sector:  95, nup: 9, ndw: 4, dim=            126, Lanc Info:   6 126  23
+   51-Solving sector:  96, nup: 9, ndw: 5, dim=            126, Lanc Info:   6 126  23
+   52-Solving sector:  97, nup: 9, ndw: 6, dim=             84, Lanc Info:   6  84  23
+   53-Solving sector:  98, nup: 9, ndw: 7, dim=             36, Lanc Info:   6  36  23
+   54-Solving sector:  99, nup: 9, ndw: 8, dim=              9, Lanc Info:   6   9   9
+   55-Solving sector: 100, nup: 9, ndw: 9, dim=              1, Lanc Info:   1   1   1
+Total time [h:m:s.ms]:   0:00:05.733
+# i       E_i           exp(-(E-E0)/T)       nup ndw  Sect     Dim
+  1   -5.370346905438   1.000000000000E+00   5  4    55     15876
+  2   -5.370346905438   1.000000000000E+00   4  5    46     15876
+Egs =     -5.370346905438   5   4
+Egs =     -5.370346905438   4   5
+Z   =      2.000000000000
+dens=    1.000008382894    1.000008382894
+docc=    0.098000103675
+Get impurity Greens functions:
+Get G_l1_s1
+ add particle:  6  4
+ del particle:  4  4
+ add particle:  5  5
+ del particle:  3  5
+Total time [h:m:s.ms]:   0:00:00.734
+Get local Green's function (print mode:1)
+ 
+  +ETA --> fort.6
+  10% |ETA: 0:00:02.528 @28 November 2016  10:31:50
+  20% |ETA: 0:00:01.948
+  30% |ETA: 0:00:01.834
+  40% |ETA: 0:00:01.713
+  50% |ETA: 0:00:01.593 @28 November 2016  10:31:51
+  60% |ETA: 0:00:00.948
+  70% |ETA: 0:00:00.713
+  80% |ETA: 0:00:00.950
+  90% |ETA: 0:00:00.948
+ 100% |ETA: 0:00:00.000
+Total time [h:m:s.ms]:   0:00:02.370
+Gloc matsubara: write spin-orbital diagonal elements.
+Delta//WeissField: write spin-orbital diagonal elements.
+\Chi2 fit with CG-nr and CG-weight: 0 on: weiss
+chi^2|iter=    9.796539729E-05 |     4  <--  Orb1 Spin1
+            #Ek_l1_s1              Vk_l1_s1
+      -1.950944560972       -0.045271614757
+      -0.342846024891        0.238356481784
+      -0.051756935439        0.126210549442
+      -0.004847807743        0.048869621701
+       0.004828593994        0.048793132262
+       0.051610098952        0.126056131373
+       0.341629463166        0.238043752320
+       1.953848099533       -0.049864751966
+ hamiltonian.restart
+[1;92merror=[0m  8.3147602E-06
+=====================================
+Total time [h:m:s.ms]:   0:00:09.013
+ 
+ 
+Get local Green's function (print mode:1)
+ 
+  +ETA --> fort.6
+  10% |ETA: 0:00:00.539 @28 November 2016  10:31:52
+  20% |ETA: 0:00:00.959
+  30% |ETA: 0:00:00.830
+  40% |ETA: 0:00:00.713
+  50% |ETA: 0:00:00.596 @28 November 2016  10:31:52
+  60% |ETA: 0:00:00.944
+  70% |ETA: 0:00:00.706
+  80% |ETA: 0:00:00.939
+  90% |ETA: 0:00:00.935
+ 100% |ETA: 0:00:00.000
+Total time [h:m:s.ms]:   0:00:00.292
+Gloc real: write spin-orbital diagonal elements.
+(  0.000,  0.000)
+ 
+Kinetic energy computation
+ 
+  +ETA --> fort.6
+  10% |ETA: 0:00:00.594 @28 November 2016  10:31:52
+  20% |ETA: 0:00:00.528
+  30% |ETA: 0:00:00.924
+  40% |ETA: 0:00:00.792
+  50% |ETA: 0:00:00.660 @28 November 2016  10:31:52
+  60% |ETA: 0:00:00.528
+  70% |ETA: 0:00:00.792
+  80% |ETA: 0:00:00.530
+  90% |ETA: 0:00:00.529
+ 100% |ETA: 0:00:00.000
+Total time [h:m:s.ms]:   0:00:00.331

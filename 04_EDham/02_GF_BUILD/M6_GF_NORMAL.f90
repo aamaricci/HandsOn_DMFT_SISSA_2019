@@ -142,7 +142,7 @@ contains
     !
     type(sector_map)                 :: HI(2),HJ(2)
     !
-    wmats = pi/beta*(2*arange(1,Lmats)-1)
+    wmats = pi/beta*(2*arange(1,Lmats)-1) 
     wreal = linspace(-5d0,5d0,Lreal)    
     !
     !< Build the IN sector (Nup,Ndw). All variables are labelled with i-prefix

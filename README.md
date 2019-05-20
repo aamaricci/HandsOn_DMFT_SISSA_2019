@@ -14,14 +14,14 @@ Source codes for the Hands-on DMFT course at SISSA 2019: A.Amaricci & M.Capone
 - [X] **04**: *Exact Vs Lanczos Diagonalization. Matrix-Vector products (brief:  MPI parallel case). Saving the spectrum in memory. Green's function evaluation. Kallen-Lehmann summation vs. Lanczos or Krylov method.*   
 (Tue. 14/5/2019)
 
-- [ ] **05**: *ED at work I.
+- [X] **05**: *ED at work I.
 Dependencies. Installation (git). Compilation (cmake).
 The general structure of the DMFT-ED code. Decoupling the case dependent part from the impurity problem. structure of the drivers.
 Main input variables.
 First use: Hubbard model 1band on Bethe lattice.* 
 (Wed. 15/5/2019)
 
-- [ ] **06**: *ED at work II.
+- [X] **06**: *ED at work II.
 First run: looking at the results, important quantities and observables. Observations. Mott transition at zero temperature. Analysis of the results. Tuning the inputs to control the quality of the calculations. Tests.*  
 (Mon 20/5/2019)
 

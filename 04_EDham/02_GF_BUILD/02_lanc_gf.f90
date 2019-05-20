@@ -178,7 +178,7 @@ program lanczos_test
      do ie=1,Ns-1
         DeltaReal(i)=DeltaReal(i) + Vps**2/(dcmplx(wreal(i),eta)-eps(ie))
      enddo
-     DeltaReal(i) = dcmplx(wreal(i),0.01d0) - DeltaReal(i)
+     DeltaReal(i) = dcmplx(wreal(i),eta) - DeltaReal(i)
   enddo
   DeltaReal = 1d0/DeltaReal
 

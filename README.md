@@ -25,7 +25,7 @@ First use: Hubbard model 1band on Bethe lattice.*
 First run: looking at the results, important quantities and observables. Observations. Mott transition at zero temperature. Analysis of the results. Tuning the inputs to control the quality of the calculations. Tests.*  
 (Mon 20/5/2019)
 
-- [ ] **07**: *ED at work III.
+- [X] **07**: *ED at work III.
 Multi-orbital case. Driver implementation. Correlation effects and Mott transition in a simple multi-bands model. AFM. Driver implementation. Magnetic transition in a simple case. Real-space extension: how to deal with lattice in-homogeneities. From heterostructure to fully inequivalent lattices with open boundary
 conditions.* 
 (21/5/2019)

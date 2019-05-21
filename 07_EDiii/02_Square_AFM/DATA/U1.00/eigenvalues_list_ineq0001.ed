@@ -1,0 +1,6656 @@
+ #X Sector        Indices
+        1     0     0
+  0.25000000000000000     
+ 
+ #X Sector        Indices
+        2     0     1
+  -2.5273108494823378     
+ 
+ #X Sector        Indices
+        3     0     2
+  -3.4200689775549935     
+ 
+ #X Sector        Indices
+        4     0     3
+  -3.8851777635978033     
+ 
+ #X Sector        Indices
+        5     0     4
+  -4.1569225699865529     
+ 
+ #X Sector        Indices
+        6     0     5
+  -4.3661915370450570     
+ 
+ #X Sector        Indices
+        7     0     6
+  -4.3038242386272367     
+ 
+ #X Sector        Indices
+        8     0     7
+  -3.8107074295569996     
+ 
+ #X Sector        Indices
+        9     1     0
+ -0.63903974754842363     
+ 
+ #X Sector        Indices
+       10     1     1
+  -3.4163504907804758     
+ 
+ #X Sector        Indices
+       11     1     2
+  -4.1912853920110056     
+ 
+ #X Sector        Indices
+       12     1     3
+  -4.5860380045689526     
+ 
+ #X Sector        Indices
+       13     1     4
+  -4.8282987539555826     
+ 
+ #X Sector        Indices
+       14     1     5
+  -5.0316158779284592     
+ 
+ #X Sector        Indices
+       15     1     6
+  -4.9565799078655024     
+ 
+ #X Sector        Indices
+       16     1     7
+  -4.4391342474518023     
+ 
+ #X Sector        Indices
+       17     2     0
+ -0.98608936091506905     
+ 
+ #X Sector        Indices
+       18     2     1
+  -3.7634000651846815     
+ 
+ # Sector        Indices
+       19     2     2
+  -4.4984162420865408     
+ 
+ # Sector        Indices
+       20     2     3
+  -4.8566737100504378     
+ 
+ # Sector        Indices
+       21     2     4
+  -5.0775339220267135     
+ 
+ # Sector        Indices
+       22     2     5
+  -5.2509488583465806     
+ 
+ #X Sector        Indices
+       23     2     6
+  -5.1601668009017789     
+ 
+ #X Sector        Indices
+       24     2     7
+  -4.6175330268630228     
+ 
+ #X Sector        Indices
+       25     3     0
+  -1.0386493523435214     
+ 
+ #X Sector        Indices
+       26     3     1
+  -3.8159600470007371     
+ 
+ # Sector        Indices
+       27     3     2
+  -4.5430955177373544     
+ 
+ # Sector        Indices
+       28     3     3
+  -4.8953532713985828     
+ 
+ # Sector        Indices
+       29     3     4
+  -5.1143423187746100     
+ 
+ # Sector        Indices
+       30     3     5
+  -5.2759248594608446     
+ 
+ #X Sector        Indices
+       31     3     6
+  -5.1807847949628494     
+ 
+ #X Sector        Indices
+       32     3     7
+  -4.6316920250695404     
+ 
+ #X Sector        Indices
+       33     4     0
+ -0.97792428698834122     
+ 
+ #X Sector        Indices
+       34     4     1
+  -3.7552349619259244     
+ 
+ # Sector        Indices
+       35     4     2
+  -4.4648930480842273     
+ 
+ # Sector        Indices
+       36     4     3
+  -4.8020422366777131     
+ 
+ # Sector        Indices
+       37     4     4
+  -5.0175939058499077     
+ 
+ # Sector        Indices
+       38     4     5
+  -5.1134775796850684     
+ 
+ #X Sector        Indices
+       39     4     6
+  -4.9780547847950549     
+ 
+ #X Sector        Indices
+       40     4     7
+  -4.3789496462314332     
+ 
+ #X Sector        Indices
+       41     5     0
+ -0.66160967381201097     
+ 
+ #X Sector        Indices
+       42     5     1
+  -3.4389203435889688     
+ 
+ # Sector        Indices
+       43     5     2
+  -4.1447006509095958     
+ 
+ # Sector        Indices
+       44     5     3
+  -4.4791167113864852     
+ 
+ # Sector        Indices
+       45     5     4
+  -4.6942538256066904     
+ 
+ # Sector        Indices
+       46     5     5
+  -4.7708979460716980     
+ 
+ #X Sector        Indices
+       47     5     6
+  -4.6065296130216984     
+ 
+ #X Sector        Indices
+       48     5     7
+  -3.9018551340851482     
+ 
+ #X Sector        Indices
+       49     6     0
+   8.1022601188998664E-002
+ 
+ #X Sector        Indices
+       50     6     1
+  -2.6962880594719651     
+ 
+ #X Sector        Indices
+       51     6     2
+  -3.3965333192608895     
+ 
+ #X Sector        Indices
+       52     6     3
+  -3.7278947561561266     
+ 
+ #X Sector        Indices
+       53     6     4
+  -3.9426507993125268     
+ 
+ #X Sector        Indices
+       54     6     5
+  -4.0019677007689403     
+ 
+ #X Sector        Indices
+       55     6     6
+  -3.8115467818470896     
+ 
+ #X Sector        Indices
+       56     6     7
+  -2.9796848283680011     
+ 
+ #X Sector        Indices
+       57     7     0
+   2.8105947619400000     
+ 
+ #X Sector        Indices
+       58     7     1
+   3.3284101279033251E-002
+ 
+ #X Sector        Indices
+       59     7     2
+ -0.66696115850989401     
+ 
+ #X Sector        Indices
+       60     7     3
+ -0.99832259540512747     
+ 
+ #X Sector        Indices
+       61     7     4
+  -1.2130786385615231     
+ 
+ #X Sector        Indices
+       62     7     5
+  -1.2723955400179361     
+ 
+ #X Sector        Indices
+       63     7     6
+  -1.0819746210960848     
+ 
+ #X Sector        Indices
+       64     7     7
+ -0.25011266761700046     
+ 
+ #X Sector        Indices
+        1     0     0
+  0.25000000000000000     
+ 
+ #X Sector        Indices
+        2     0     1
+  -2.5273104366571637     
+ 
+ #X Sector        Indices
+        3     0     2
+  -3.3700708444505003     
+ 
+ #X Sector        Indices
+        4     0     3
+  -3.8355948171797927     
+ 
+ #X Sector        Indices
+        5     0     4
+  -4.0349608579088017     
+ 
+ #X Sector        Indices
+        6     0     5
+  -4.1152236427529676     
+ 
+ #X Sector        Indices
+        7     0     6
+  -4.0230033790835504     
+ 
+ #X Sector        Indices
+        8     0     7
+  -3.5387296896202689     
+ 
+ #X Sector        Indices
+        9     1     0
+ -0.66394050685847816     
+ 
+ #X Sector        Indices
+       10     1     1
+  -3.4412509220780003     
+ 
+ #X Sector        Indices
+       11     1     2
+  -4.1675443889429662     
+ 
+ #X Sector        Indices
+       12     1     3
+  -4.5842147873613630     
+ 
+ #X Sector        Indices
+       13     1     4
+  -4.7590717827541233     
+ 
+ #X Sector        Indices
+       14     1     5
+  -4.8347572879616134     
+ 
+ #X Sector        Indices
+       15     1     6
+  -4.7359199456952545     
+ 
+ #X Sector        Indices
+       16     1     7
+  -4.2338420800407173     
+ 
+ #X Sector        Indices
+       17     2     0
+  -1.0745530972695063     
+ 
+ #X Sector        Indices
+       18     2     1
+  -3.8518635021410703     
+ 
+ # Sector        Indices
+       19     2     2
+  -4.5246979267056693     
+ 
+ # Sector        Indices
+       20     2     3
+  -4.8929384601390948     
+ 
+ # Sector        Indices
+       21     2     4
+  -5.0353682008226164     
+ 
+ # Sector        Indices
+       22     2     5
+  -5.1007476694869984     
+ 
+ #X Sector        Indices
+       23     2     6
+  -4.9922303529042704     
+ 
+ #X Sector        Indices
+       24     2     7
+  -4.4698844106605859     
+ 
+ #X Sector        Indices
+       25     3     0
+  -1.1923384409710878     
+ 
+ #X Sector        Indices
+       26     3     1
+  -3.9696488430534926     
+ 
+ # Sector        Indices
+       27     3     2
+  -4.6309957298973146     
+ 
+ # Sector        Indices
+       28     3     3
+  -4.9864254459794566     
+ 
+ # Sector        Indices
+       29     3     4
+  -5.1193542579553819     
+ 
+ # Sector        Indices
+       30     3     5
+  -5.1795861724878236     
+ 
+ #X Sector        Indices
+       31     3     6
+  -5.0675410455193735     
+ 
+ #X Sector        Indices
+       32     3     7
+  -4.5388986174206893     
+ 
+ #X Sector        Indices
+       33     4     0
+  -1.2065820106975702     
+ 
+ #X Sector        Indices
+       34     4     1
+  -3.9838924096989419     
+ 
+ # Sector        Indices
+       35     4     2
+  -4.6317195971979004     
+ 
+ # Sector        Indices
+       36     4     3
+  -4.9653416124881238     
+ 
+ # Sector        Indices
+       37     4     4
+  -5.0781971929839065     
+ 
+ # Sector        Indices
+       38     4     5
+  -5.1140637080846361     
+ 
+ #X Sector        Indices
+       39     4     6
+  -4.9868314057171608     
+ 
+ #X Sector        Indices
+       40     4     7
+  -4.4377715882410840     
+ 
+ #X Sector        Indices
+       41     5     0
+  -1.0554356460310907     
+ 
+ #X Sector        Indices
+       42     5     1
+  -3.8327460435376244     
+ 
+ # Sector        Indices
+       43     5     2
+  -4.4748997298002013     
+ 
+ # Sector        Indices
+       44     5     3
+  -4.7989839247035366     
+ 
+ # Sector        Indices
+       45     5     4
+  -4.9041875673612401     
+ 
+ # Sector        Indices
+       46     5     5
+  -4.9129517945276859     
+ 
+ #X Sector        Indices
+       47     5     6
+  -4.7523692244065749     
+ 
+ #X Sector        Indices
+       48     5     7
+  -4.1194673726170512     
+ 
+ #X Sector        Indices
+       49     6     0
+ -0.49275219524837083     
+ 
+ #X Sector        Indices
+       50     6     1
+  -3.2700625895129551     
+ 
+ #X Sector        Indices
+       51     6     2
+  -3.9032625150029703     
+ 
+ #X Sector        Indices
+       52     6     3
+  -4.2159445022577202     
+ 
+ #X Sector        Indices
+       53     6     4
+  -4.3162049769597539     
+ 
+ #X Sector        Indices
+       54     6     5
+  -4.3011701488295477     
+ 
+ #X Sector        Indices
+       55     6     6
+  -4.0973488659147970     
+ 
+ #X Sector        Indices
+       56     6     7
+  -3.2814818848686400     
+ 
+ #X Sector        Indices
+       57     7     0
+   2.2368199655026308     
+ 
+ #X Sector        Indices
+       58     7     1
+ -0.54049042876195230     
+ 
+ #X Sector        Indices
+       59     7     2
+  -1.1736903542519699     
+ 
+ #X Sector        Indices
+       60     7     3
+  -1.4863723415067176     
+ 
+ #X Sector        Indices
+       61     7     4
+  -1.5866328162087375     
+ 
+ #X Sector        Indices
+       62     7     5
+  -1.5715979880785449     
+ 
+ #X Sector        Indices
+       63     7     6
+  -1.3677767051637932     
+ 
+ #X Sector        Indices
+       64     7     7
+ -0.55190972411763806     
+ 
+ #X Sector        Indices
+        1     0     0
+  0.25000000000000000     
+ 
+ #X Sector        Indices
+        2     0     1
+  -2.5273104196371960     
+ 
+ #X Sector        Indices
+        3     0     2
+  -3.3727085204535610     
+ 
+ #X Sector        Indices
+        4     0     3
+  -3.8341493975289209     
+ 
+ #X Sector        Indices
+        5     0     4
+  -4.0436042570213289     
+ 
+ #X Sector        Indices
+        6     0     5
+  -4.1377584575593866     
+ 
+ #X Sector        Indices
+        7     0     6
+  -4.0253114512041304     
+ 
+ #X Sector        Indices
+        8     0     7
+  -3.5043101514966879     
+ 
+ #X Sector        Indices
+        9     1     0
+ -0.67013368131434248     
+ 
+ #X Sector        Indices
+       10     1     1
+  -3.4474440821157679     
+ 
+ #X Sector        Indices
+       11     1     2
+  -4.1773708425824587     
+ 
+ #X Sector        Indices
+       12     1     3
+  -4.5862115566931942     
+ 
+ #X Sector        Indices
+       13     1     4
+  -4.7723821484150886     
+ 
+ #X Sector        Indices
+       14     1     5
+  -4.8613317483026250     
+ 
+ #X Sector        Indices
+       15     1     6
+  -4.7417505798120008     
+ 
+ #X Sector        Indices
+       16     1     7
+  -4.2033721679010556     
+ 
+ #X Sector        Indices
+       17     2     0
+  -1.0765286006910417     
+ 
+ #X Sector        Indices
+       18     2     1
+  -3.8538389926111272     
+ 
+ # Sector        Indices
+       19     2     2
+  -4.5330082060343848     
+ 
+ # Sector        Indices
+       20     2     3
+  -4.8947309200462978     
+ 
+ # Sector        Indices
+       21     2     4
+  -5.0513898667282122     
+ 
+ # Sector        Indices
+       22     2     5
+  -5.1294873612885672     
+ 
+ #X Sector        Indices
+       23     2     6
+  -5.0007725116836887     
+ 
+ #X Sector        Indices
+       24     2     7
+  -4.4445526684347545     
+ 
+ #X Sector        Indices
+       25     3     0
+  -1.2001098175562215     
+ 
+ #X Sector        Indices
+       26     3     1
+  -3.9774202071912361     
+ 
+ # Sector        Indices
+       27     3     2
+  -4.6461806811502742     
+ 
+ # Sector        Indices
+       28     3     3
+  -4.9967889600456354     
+ 
+ # Sector        Indices
+       29     3     4
+  -5.1454692150192853     
+ 
+ # Sector        Indices
+       30     3     5
+  -5.2187970009131837     
+ 
+ #X Sector        Indices
+       31     3     6
+  -5.0871687478573788     
+ 
+ #X Sector        Indices
+       32     3     7
+  -4.5258414315329940     
+ 
+ #X Sector        Indices
+       33     4     0
+  -1.2189901352311066     
+ 
+ #X Sector        Indices
+       34     4     1
+  -3.9963005214364733     
+ 
+ # Sector        Indices
+       35     4     2
+  -4.6481765127251009     
+ 
+ # Sector        Indices
+       36     4     3
+  -4.9730419398873815     
+ 
+ # Sector        Indices
+       37     4     4
+  -5.0988789464452386     
+ 
+ # Sector        Indices
+       38     4     5
+  -5.1401020315631971     
+ 
+ #X Sector        Indices
+       39     4     6
+  -4.9922778340738025     
+ 
+ #X Sector        Indices
+       40     4     7
+  -4.4107833014466902     
+ 
+ #X Sector        Indices
+       41     5     0
+  -1.0521533662021134     
+ 
+ #X Sector        Indices
+       42     5     1
+  -3.8294637510515743     
+ 
+ # Sector        Indices
+       43     5     2
+  -4.4756025843269596     
+ 
+ # Sector        Indices
+       44     5     3
+  -4.7914686670736391     
+ 
+ # Sector        Indices
+       45     5     4
+  -4.9102401878929367     
+ 
+ # Sector        Indices
+       46     5     5
+  -4.9175503958940334     
+ 
+ #X Sector        Indices
+       47     5     6
+  -4.7330504950773271     
+ 
+ #X Sector        Indices
+       48     5     7
+  -4.0668735554743964     
+ 
+ #X Sector        Indices
+       49     6     0
+ -0.47138305190394825     
+ 
+ #X Sector        Indices
+       50     6     1
+  -3.2486934341554461     
+ 
+ #X Sector        Indices
+       51     6     2
+  -3.8867655835275623     
+ 
+ #X Sector        Indices
+       52     6     3
+  -4.1933379724903448     
+ 
+ #X Sector        Indices
+       53     6     4
+  -4.3079155979142776     
+ 
+ #X Sector        Indices
+       54     6     5
+  -4.2884298685109457     
+ 
+ #X Sector        Indices
+       55     6     6
+  -4.0612932253642686     
+ 
+ #X Sector        Indices
+       56     6     7
+  -3.2256932034006347     
+ 
+ #X Sector        Indices
+       57     7     0
+   2.2581891088470534     
+ 
+ #X Sector        Indices
+       58     7     1
+ -0.51912127340444458     
+ 
+ #X Sector        Indices
+       59     7     2
+  -1.1571934227765572     
+ 
+ #X Sector        Indices
+       60     7     3
+  -1.4637658117393417     
+ 
+ #X Sector        Indices
+       61     7     4
+  -1.5783434371632907     
+ 
+ #X Sector        Indices
+       62     7     5
+  -1.5588577077599421     
+ 
+ #X Sector        Indices
+       63     7     6
+  -1.3317210646132656     
+ 
+ #X Sector        Indices
+       64     7     7
+ -0.49612104264963452     
+ 
+ #X Sector        Indices
+        1     0     0
+  0.25000000000000000     
+ 
+ #X Sector        Indices
+        2     0     1
+  -2.5273104022621955     
+ 
+ #X Sector        Indices
+        3     0     2
+  -3.3750075719952850     
+ 
+ #X Sector        Indices
+        4     0     3
+  -3.8335102307544671     
+ 
+ #X Sector        Indices
+        5     0     4
+  -4.0484426959100102     
+ 
+ #X Sector        Indices
+        6     0     5
+  -4.1551137604830854     
+ 
+ #X Sector        Indices
+        7     0     6
+  -4.0222165544146051     
+ 
+ #X Sector        Indices
+        8     0     7
+  -3.4682231614862866     
+ 
+ #X Sector        Indices
+        9     1     0
+ -0.68359708165592503     
+ 
+ #X Sector        Indices
+       10     1     1
+  -3.4609074680932803     
+ 
+ #X Sector        Indices
+       11     1     2
+  -4.1965785463595342     
+ 
+ #X Sector        Indices
+       12     1     3
+  -4.6012874316241765     
+ 
+ #X Sector        Indices
+       13     1     4
+  -4.7948264119427959     
+ 
+ #X Sector        Indices
+       14     1     5
+  -4.8964947754887724     
+ 
+ #X Sector        Indices
+       15     1     6
+  -4.7562592147520997     
+ 
+ #X Sector        Indices
+       16     1     7
+  -4.1860065141717060     
+ 
+ #X Sector        Indices
+       17     2     0
+  -1.1003423747069976     
+ 
+ #X Sector        Indices
+       18     2     1
+  -3.8776527534302536     
+ 
+ # Sector        Indices
+       19     2     2
+  -4.5627111517949412     
+ 
+ # Sector        Indices
+       20     2     3
+  -4.9196979622824903     
+ 
+ # Sector        Indices
+       21     2     4
+  -5.0852336455624885     
+ 
+ # Sector        Indices
+       22     2     5
+  -5.1760820190016563     
+ 
+ #X Sector        Indices
+       23     2     6
+  -5.0268140862769179     
+ 
+ #X Sector        Indices
+       24     2     7
+  -4.4400503637101769     
+ 
+ #X Sector        Indices
+       25     3     0
+  -1.2332200528600650     
+ 
+ #X Sector        Indices
+       26     3     1
+  -4.0105304297216051     
+ 
+ # Sector        Indices
+       27     3     2
+  -4.6859158518980690     
+ 
+ # Sector        Indices
+       28     3     3
+  -5.0327783294347981     
+ 
+ # Sector        Indices
+       29     3     4
+  -5.1912995488300879     
+ 
+ # Sector        Indices
+       30     3     5
+  -5.2776956999489606     
+ 
+ #X Sector        Indices
+       31     3     6
+  -5.1258235228786626     
+ 
+ #X Sector        Indices
+       32     3     7
+  -4.5346382448690123     
+ 
+ #X Sector        Indices
+       33     4     0
+  -1.2558397666676127     
+ 
+ #X Sector        Indices
+       34     4     1
+  -4.0331501399120722     
+ 
+ # Sector        Indices
+       35     4     2
+  -4.6881677797667045     
+ 
+ # Sector        Indices
+       36     4     3
+  -5.0052561707944614     
+ 
+ # Sector        Indices
+       37     4     4
+  -5.1392048509416322     
+ 
+ # Sector        Indices
+       38     4     5
+  -5.1839221592262312     
+ 
+ #X Sector        Indices
+       39     4     6
+  -5.0136910867008684     
+ 
+ #X Sector        Indices
+       40     4     7
+  -4.4008511270345316     
+ 
+ #X Sector        Indices
+       41     5     0
+  -1.0644824584218224     
+ 
+ #X Sector        Indices
+       42     5     1
+  -3.8417928304189921     
+ 
+ # Sector        Indices
+       43     5     2
+  -4.4908581652886550     
+ 
+ # Sector        Indices
+       44     5     3
+  -4.7992796084071765     
+ 
+ # Sector        Indices
+       45     5     4
+  -4.9273505617360680     
+ 
+ # Sector        Indices
+       46     5     5
+  -4.9314712937104810     
+ 
+ #X Sector        Indices
+       47     5     6
+  -4.7204907042292774     
+ 
+ #X Sector        Indices
+       48     5     7
+  -4.0180117548770680     
+ 
+ #X Sector        Indices
+       49     6     0
+ -0.44500465060960726     
+ 
+ #X Sector        Indices
+       50     6     1
+  -3.2223150206473785     
+ 
+ #X Sector        Indices
+       51     6     2
+  -3.8644515160631387     
+ 
+ #X Sector        Indices
+       52     6     3
+  -4.1655533626892103     
+ 
+ #X Sector        Indices
+       53     6     4
+  -4.2906187564959719     
+ 
+ #X Sector        Indices
+       54     6     5
+  -4.2674535327973313     
+ 
+ #X Sector        Indices
+       55     6     6
+  -4.0171051367299331     
+ 
+ #X Sector        Indices
+       56     6     7
+  -3.1632278120958950     
+ 
+ #X Sector        Indices
+       57     7     0
+   2.2845675101413940     
+ 
+ #X Sector        Indices
+       58     7     1
+ -0.49274285989637656     
+ 
+ #X Sector        Indices
+       59     7     2
+  -1.1348793553121377     
+ 
+ #X Sector        Indices
+       60     7     3
+  -1.4359812019382177     
+ 
+ #X Sector        Indices
+       61     7     4
+  -1.5610465957449748     
+ 
+ #X Sector        Indices
+       62     7     5
+  -1.5378813720463340     
+ 
+ #X Sector        Indices
+       63     7     6
+  -1.2875329759789333     
+ 
+ #X Sector        Indices
+       64     7     7
+ -0.43365565134489259     
+ 
+ #X Sector        Indices
+        1     0     0
+  0.25000000000000000     
+ 
+ #X Sector        Indices
+        2     0     1
+  -2.5273103930671370     
+ 
+ #X Sector        Indices
+        3     0     2
+  -3.3743395344022478     
+ 
+ #X Sector        Indices
+        4     0     3
+  -3.8319122623916213     
+ 
+ #X Sector        Indices
+        5     0     4
+  -4.0513717486930467     
+ 
+ #X Sector        Indices
+        6     0     5
+  -4.1643361063129420     
+ 
+ #X Sector        Indices
+        7     0     6
+  -4.0147356788635991     
+ 
+ #X Sector        Indices
+        8     0     7
+  -3.4382905915233217     
+ 
+ #X Sector        Indices
+        9     1     0
+ -0.68685768616565857     
+ 
+ #X Sector        Indices
+       10     1     1
+  -3.4641680648598512     
+ 
+ #X Sector        Indices
+       11     1     2
+  -4.1990474453828774     
+ 
+ #X Sector        Indices
+       12     1     3
+  -4.6016782708385353     
+ 
+ #X Sector        Indices
+       13     1     4
+  -4.7990060843791440     
+ 
+ #X Sector        Indices
+       14     1     5
+  -4.9077216020941750     
+ 
+ #X Sector        Indices
+       15     1     6
+  -4.7504837657099239     
+ 
+ #X Sector        Indices
+       16     1     7
+  -4.1580618853286078     
+ 
+ #X Sector        Indices
+       17     2     0
+  -1.1023746915528598     
+ 
+ #X Sector        Indices
+       18     2     1
+  -3.8796850633898581     
+ 
+ # Sector        Indices
+       19     2     2
+  -4.5654516652976138     
+ 
+ # Sector        Indices
+       20     2     3
+  -4.9217788558925877     
+ 
+ # Sector        Indices
+       21     2     4
+  -5.0903810696061065     
+ 
+ # Sector        Indices
+       22     2     5
+  -5.1897218269652825     
+ 
+ #X Sector        Indices
+       23     2     6
+  -5.0236598902622438     
+ 
+ #X Sector        Indices
+       24     2     7
+  -4.4156663661028777     
+ 
+ #X Sector        Indices
+       25     3     0
+  -1.2382490400716182     
+ 
+ #X Sector        Indices
+       26     3     1
+  -4.0155594103970103     
+ 
+ # Sector        Indices
+       27     3     2
+  -4.6928672507999769     
+ 
+ # Sector        Indices
+       28     3     3
+  -5.0406946299846265     
+ 
+ # Sector        Indices
+       29     3     4
+  -5.2029920763618076     
+ 
+ # Sector        Indices
+       30     3     5
+  -5.2988801079004126     
+ 
+ #X Sector        Indices
+       31     3     6
+  -5.1306510859618228     
+ 
+ #X Sector        Indices
+       32     3     7
+  -4.5190143250162542     
+ 
+ #X Sector        Indices
+       33     4     0
+  -1.2638066782918220     
+ 
+ #X Sector        Indices
+       34     4     1
+  -4.0411170448183231     
+ 
+ # Sector        Indices
+       35     4     2
+  -4.6951493619793077     
+ 
+ # Sector        Indices
+       36     4     3
+  -5.0105198653284093     
+ 
+ # Sector        Indices
+       37     4     4
+  -5.1453988572419753     
+ 
+ # Sector        Indices
+       38     4     5
+  -5.1931439379409108     
+ 
+ #X Sector        Indices
+       39     4     6
+  -5.0057904460258307     
+ 
+ #X Sector        Indices
+       40     4     7
+  -4.3727786142338418     
+ 
+ #X Sector        Indices
+       41     5     0
+  -1.0625368825828503     
+ 
+ #X Sector        Indices
+       42     5     1
+  -3.8398472480578416     
+ 
+ # Sector        Indices
+       43     5     2
+  -4.4884315233340741     
+ 
+ # Sector        Indices
+       44     5     3
+  -4.7962468969201479     
+ 
+ # Sector        Indices
+       45     5     4
+  -4.9264310417871622     
+ 
+ # Sector        Indices
+       46     5     5
+  -4.9309083534590652     
+ 
+ #X Sector        Indices
+       47     5     6
+  -4.7029729632375936     
+ 
+ #X Sector        Indices
+       48     5     7
+  -3.9833996347296883     
+ 
+ #X Sector        Indices
+       49     6     0
+ -0.44384933191876336     
+ 
+ #X Sector        Indices
+       50     6     1
+  -3.2211596956748934     
+ 
+ #X Sector        Indices
+       51     6     2
+  -3.8630999072501297     
+ 
+ #X Sector        Indices
+       52     6     3
+  -4.1642563997741480     
+ 
+ #X Sector        Indices
+       53     6     4
+  -4.2920029539925597     
+ 
+ #X Sector        Indices
+       54     6     5
+  -4.2661907669987693     
+ 
+ #X Sector        Indices
+       55     6     6
+  -3.9988488383339647     
+ 
+ #X Sector        Indices
+       56     6     7
+  -3.1321399234420850     
+ 
+ #X Sector        Indices
+       57     7     0
+   2.2857228288322382     
+ 
+ #X Sector        Indices
+       58     7     1
+ -0.49158753492389151     
+ 
+ #X Sector        Indices
+       59     7     2
+  -1.1335277464991305     
+ 
+ #X Sector        Indices
+       60     7     3
+  -1.4346842390231429     
+ 
+ #X Sector        Indices
+       61     7     4
+  -1.5624307932415564     
+ 
+ #X Sector        Indices
+       62     7     5
+  -1.5366186062477647     
+ 
+ #X Sector        Indices
+       63     7     6
+  -1.2692766775829665     
+ 
+ #X Sector        Indices
+       64     7     7
+ -0.40256776269108263     
+ 
+ #X Sector        Indices
+        1     0     0
+  0.25000000000000000     
+ 
+ #X Sector        Indices
+        2     0     1
+  -2.5273103855834984     
+ 
+ #X Sector        Indices
+        3     0     2
+  -3.3739097788414973     
+ 
+ #X Sector        Indices
+        4     0     3
+  -3.8305892661576952     
+ 
+ #X Sector        Indices
+        5     0     4
+  -4.0535280370520752     
+ 
+ #X Sector        Indices
+        6     0     5
+  -4.1717967013690718     
+ 
+ #X Sector        Indices
+        7     0     6
+  -4.0080134910867171     
+ 
+ #X Sector        Indices
+        8     0     7
+  -3.4121579236315016     
+ 
+ #X Sector        Indices
+        9     1     0
+ -0.68904338482507677     
+ 
+ #X Sector        Indices
+       10     1     1
+  -3.4663537572148995     
+ 
+ #X Sector        Indices
+       11     1     2
+  -4.2006598021217458     
+ 
+ #X Sector        Indices
+       12     1     3
+  -4.6015972307185695     
+ 
+ #X Sector        Indices
+       13     1     4
+  -4.8017644065135681     
+ 
+ #X Sector        Indices
+       14     1     5
+  -4.9164573182245945     
+ 
+ #X Sector        Indices
+       15     1     6
+  -4.7447391962791716     
+ 
+ #X Sector        Indices
+       16     1     7
+  -4.1332210388678590     
+ 
+ #X Sector        Indices
+       17     2     0
+  -1.1040330394157221     
+ 
+ #X Sector        Indices
+       18     2     1
+  -3.8813434056224305     
+ 
+ # Sector        Indices
+       19     2     2
+  -4.5676201211038157     
+ 
+ # Sector        Indices
+       20     2     3
+  -4.9233533475514832     
+ 
+ # Sector        Indices
+       21     2     4
+  -5.0939874405303707     
+ 
+ # Sector        Indices
+       22     2     5
+  -5.2005222720505806     
+ 
+ #X Sector        Indices
+       23     2     6
+  -5.0200083335366177     
+ 
+ #X Sector        Indices
+       24     2     7
+  -4.3935941136712469     
+ 
+ #X Sector        Indices
+       25     3     0
+  -1.2412700322609862     
+ 
+ #X Sector        Indices
+       26     3     1
+  -4.0185803972165735     
+ 
+ # Sector        Indices
+       27     3     2
+  -4.6973730452916023     
+ 
+ # Sector        Indices
+       28     3     3
+  -5.0458694361968979     
+ 
+ # Sector        Indices
+       29     3     4
+  -5.2108141085598456     
+ 
+ # Sector        Indices
+       30     3     5
+  -5.3146475716760033     
+ 
+ #X Sector        Indices
+       31     3     6
+  -5.1322849551148515     
+ 
+ #X Sector        Indices
+       32     3     7
+  -4.5028443695608100     
+ 
+ #X Sector        Indices
+       33     4     0
+  -1.2688738666601946     
+ 
+ #X Sector        Indices
+       34     4     1
+  -4.0461842277471503     
+ 
+ # Sector        Indices
+       35     4     2
+  -4.6993521193029562     
+ 
+ # Sector        Indices
+       36     4     3
+  -5.0135185179820319     
+ 
+ # Sector        Indices
+       37     4     4
+  -5.1492007438121341     
+ 
+ # Sector        Indices
+       38     4     5
+  -5.1988666541904083     
+ 
+ #X Sector        Indices
+       39     4     6
+  -4.9965649610704963     
+ 
+ #X Sector        Indices
+       40     4     7
+  -4.3461579070006087     
+ 
+ #X Sector        Indices
+       41     5     0
+  -1.0598909030599892     
+ 
+ #X Sector        Indices
+       42     5     1
+  -3.8372012632569188     
+ 
+ # Sector        Indices
+       43     5     2
+  -4.4853915103801896     
+ 
+ # Sector        Indices
+       44     5     3
+  -4.7929548609373587     
+ 
+ # Sector        Indices
+       45     5     4
+  -4.9250221556264746     
+ 
+ # Sector        Indices
+       46     5     5
+  -4.9301624798401882     
+ 
+ #X Sector        Indices
+       47     5     6
+  -4.6874287755888915     
+ 
+ #X Sector        Indices
+       48     5     7
+  -3.9537658216175062     
+ 
+ #X Sector        Indices
+       49     6     0
+ -0.44402757279656929     
+ 
+ #X Sector        Indices
+       50     6     1
+  -3.2213379314491943     
+ 
+ #X Sector        Indices
+       51     6     2
+  -3.8630440878911396     
+ 
+ #X Sector        Indices
+       52     6     3
+  -4.1643960632150767     
+ 
+ #X Sector        Indices
+       53     6     4
+  -4.2944940906093176     
+ 
+ #X Sector        Indices
+       54     6     5
+  -4.2667537189149103     
+ 
+ #X Sector        Indices
+       55     6     6
+  -3.9840352957406173     
+ 
+ #X Sector        Indices
+       56     6     7
+  -3.1061854964280715     
+ 
+ #X Sector        Indices
+       57     7     0
+   2.2855445879544320     
+ 
+ #X Sector        Indices
+       58     7     1
+ -0.49176577069819172     
+ 
+ #X Sector        Indices
+       59     7     2
+  -1.1334719271401370     
+ 
+ #X Sector        Indices
+       60     7     3
+  -1.4348239024640812     
+ 
+ #X Sector        Indices
+       61     7     4
+  -1.5649219298583119     
+ 
+ #X Sector        Indices
+       62     7     5
+  -1.5371815581639141     
+ 
+ #X Sector        Indices
+       63     7     6
+  -1.2544631349896198     
+ 
+ #X Sector        Indices
+       64     7     7
+ -0.37661333567706867     
+ 
+ #X Sector        Indices
+        1     0     0
+  0.25000000000000000     
+ 
+ #X Sector        Indices
+        2     0     1
+  -2.5273103798111878     
+ 
+ #X Sector        Indices
+        3     0     2
+  -3.3738234682612216     
+ 
+ #X Sector        Indices
+        4     0     3
+  -3.8297373396980237     
+ 
+ #X Sector        Indices
+        5     0     4
+  -4.0552657767715825     
+ 
+ #X Sector        Indices
+        6     0     5
+  -4.1776038946628837     
+ 
+ #X Sector        Indices
+        7     0     6
+  -4.0032841437635378     
+ 
+ #X Sector        Indices
+        8     0     7
+  -3.3941234825216990     
+ 
+ #X Sector        Indices
+        9     1     0
+ -0.69965078116943347     
+ 
+ #X Sector        Indices
+       10     1     1
+  -3.4769611489476504     
+ 
+ #X Sector        Indices
+       11     1     2
+  -4.2138890266667621     
+ 
+ #X Sector        Indices
+       12     1     3
+  -4.6154218249717180     
+ 
+ #X Sector        Indices
+       13     1     4
+  -4.8188600022763728     
+ 
+ #X Sector        Indices
+       14     1     5
+  -4.9383333813994437     
+ 
+ #X Sector        Indices
+       15     1     6
+  -4.7562341733887239     
+ 
+ #X Sector        Indices
+       16     1     7
+  -4.1322137637133816     
+ 
+ #X Sector        Indices
+       17     2     0
+  -1.1283509594955206     
+ 
+ #X Sector        Indices
+       18     2     1
+  -3.9056613213878295     
+ 
+ # Sector        Indices
+       19     2     2
+  -4.5934313413934431     
+ 
+ # Sector        Indices
+       20     2     3
+  -4.9491321015686358     
+ 
+ # Sector        Indices
+       21     2     4
+  -5.1219285479730656     
+ 
+ # Sector        Indices
+       22     2     5
+  -5.2343324816347376     
+ 
+ #X Sector        Indices
+       23     2     6
+  -5.0433594804286512     
+ 
+ #X Sector        Indices
+       24     2     7
+  -4.4046155399511502     
+ 
+ #X Sector        Indices
+       25     3     0
+  -1.2734640238436856     
+ 
+ #X Sector        Indices
+       26     3     1
+  -4.0507743845798903     
+ 
+ # Sector        Indices
+       27     3     2
+  -4.7311269735663855     
+ 
+ # Sector        Indices
+       28     3     3
+  -5.0797009907068285     
+ 
+ # Sector        Indices
+       29     3     4
+  -5.2465643815673744     
+ 
+ # Sector        Indices
+       30     3     5
+  -5.3565302681795854     
+ 
+ #X Sector        Indices
+       31     3     6
+  -5.1637163560173098     
+ 
+ #X Sector        Indices
+       32     3     7
+  -4.5219973937198752     
+ 
+ #X Sector        Indices
+       33     4     0
+  -1.3023495707519019     
+ 
+ #X Sector        Indices
+       34     4     1
+  -4.0796599275826946     
+ 
+ # Sector        Indices
+       35     4     2
+  -4.7325473582004420     
+ 
+ # Sector        Indices
+       36     4     3
+  -5.0454292514863655     
+ 
+ # Sector        Indices
+       37     4     4
+  -5.1817757131438604     
+ 
+ # Sector        Indices
+       38     4     5
+  -5.2306806955909213     
+ 
+ #X Sector        Indices
+       39     4     6
+  -5.0155821289810509     
+ 
+ #X Sector        Indices
+       40     4     7
+  -4.3502801070414110     
+ 
+ #X Sector        Indices
+       41     5     0
+  -1.0715283018349502     
+ 
+ #X Sector        Indices
+       42     5     1
+  -3.8488386577749640     
+ 
+ # Sector        Indices
+       43     5     2
+  -4.4965292231469025     
+ 
+ # Sector        Indices
+       44     5     3
+  -4.8029609781138829     
+ 
+ # Sector        Indices
+       45     5     4
+  -4.9363741935183025     
+ 
+ # Sector        Indices
+       46     5     5
+  -4.9379872135796337     
+ 
+ #X Sector        Indices
+       47     5     6
+  -4.6804983550483890     
+ 
+ #X Sector        Indices
+       48     5     7
+  -3.9267037374173968     
+ 
+ #X Sector        Indices
+       49     6     0
+ -0.42101098910837859     
+ 
+ #X Sector        Indices
+       50     6     1
+  -3.1983213437507039     
+ 
+ #X Sector        Indices
+       51     6     2
+  -3.8402828104781603     
+ 
+ #X Sector        Indices
+       52     6     3
+  -4.1415003659205052     
+ 
+ #X Sector        Indices
+       53     6     4
+  -4.2735085020908539     
+ 
+ #X Sector        Indices
+       54     6     5
+  -4.2444165731026473     
+ 
+ #X Sector        Indices
+       55     6     6
+  -3.9508022259098823     
+ 
+ #X Sector        Indices
+       56     6     7
+  -3.0651344716300781     
+ 
+ #X Sector        Indices
+       57     7     0
+   2.3085611716426229     
+ 
+ #X Sector        Indices
+       58     7     1
+ -0.46874918299970192     
+ 
+ #X Sector        Indices
+       59     7     2
+  -1.1107106497271610     
+ 
+ #X Sector        Indices
+       60     7     3
+  -1.4119282051695043     
+ 
+ #X Sector        Indices
+       61     7     4
+  -1.5439363413398488     
+ 
+ #X Sector        Indices
+       62     7     5
+  -1.5148444123516462     
+ 
+ #X Sector        Indices
+       63     7     6
+  -1.2212300651588803     
+ 
+ #X Sector        Indices
+       64     7     7
+ -0.33556231087907573     
+ 
+ #X Sector        Indices
+        1     0     0
+  0.25000000000000000     
+ 
+ #X Sector        Indices
+        2     0     1
+  -2.5273103746672345     
+ 
+ #X Sector        Indices
+        3     0     2
+  -3.3746689879543408     
+ 
+ #X Sector        Indices
+        4     0     3
+  -3.8294479832696227     
+ 
+ #X Sector        Indices
+        5     0     4
+  -4.0571054338384709     
+ 
+ #X Sector        Indices
+        6     0     5
+  -4.1823312894259770     
+ 
+ #X Sector        Indices
+        7     0     6
+  -4.0000193245504310     
+ 
+ #X Sector        Indices
+        8     0     7
+  -3.3800744695542946     
+ 
+ #X Sector        Indices
+        9     1     0
+ -0.70825450757476238     
+ 
+ #X Sector        Indices
+       10     1     1
+  -3.4855648711731342     
+ 
+ #X Sector        Indices
+       11     1     2
+  -4.2259217921245389     
+ 
+ #X Sector        Indices
+       12     1     3
+  -4.6275000999743749     
+ 
+ #X Sector        Indices
+       13     1     4
+  -4.8338964171912844     
+ 
+ #X Sector        Indices
+       14     1     5
+  -4.9567433830256977     
+ 
+ #X Sector        Indices
+       15     1     6
+  -4.7668158931395253     
+ 
+ #X Sector        Indices
+       16     1     7
+  -4.1327209810881982     
+ 
+ #X Sector        Indices
+       17     2     0
+  -1.1496757804636866     
+ 
+ #X Sector        Indices
+       18     2     1
+  -3.9269861384210647     
+ 
+ # Sector        Indices
+       19     2     2
+  -4.6169556361880986     
+ 
+ # Sector        Indices
+       20     2     3
+  -4.9718660285780434     
+ 
+ # Sector        Indices
+       21     2     4
+  -5.1466459753344003     
+ 
+ # Sector        Indices
+       22     2     5
+  -5.2632049123479838     
+ 
+ #X Sector        Indices
+       23     2     6
+  -5.0642470060694045     
+ 
+ #X Sector        Indices
+       24     2     7
+  -4.4154461929662734     
+ 
+ #X Sector        Indices
+       25     3     0
+  -1.3003310974600730     
+ 
+ #X Sector        Indices
+       26     3     1
+  -4.0776414543225483     
+ 
+ # Sector        Indices
+       27     3     2
+  -4.7601298093396691     
+ 
+ # Sector        Indices
+       28     3     3
+  -5.1079332064573748     
+ 
+ # Sector        Indices
+       29     3     4
+  -5.2765369346821949     
+ 
+ # Sector        Indices
+       30     3     5
+  -5.3908617444916711     
+ 
+ #X Sector        Indices
+       31     3     6
+  -5.1900587499111133     
+ 
+ #X Sector        Indices
+       32     3     7
+  -4.5383255080197964     
+ 
+ #X Sector        Indices
+       33     4     0
+  -1.3301563950973447     
+ 
+ #X Sector        Indices
+       34     4     1
+  -4.1074667480986244     
+ 
+ # Sector        Indices
+       35     4     2
+  -4.7611574279244211     
+ 
+ # Sector        Indices
+       36     4     3
+  -5.0726027152655240     
+ 
+ # Sector        Indices
+       37     4     4
+  -5.2097349315926076     
+ 
+ # Sector        Indices
+       38     4     5
+  -5.2584948688434290     
+ 
+ #X Sector        Indices
+       39     4     6
+  -5.0342569219366897     
+ 
+ #X Sector        Indices
+       40     4     7
+  -4.3582006903631214     
+ 
+ #X Sector        Indices
+       41     5     0
+  -1.0899280576360397     
+ 
+ #X Sector        Indices
+       42     5     1
+  -3.8672384098120425     
+ 
+ # Sector        Indices
+       43     5     2
+  -4.5158457552399431     
+ 
+ # Sector        Indices
+       44     5     3
+  -4.8212828830987933     
+ 
+ # Sector        Indices
+       45     5     4
+  -4.9559736920409545     
+ 
+ # Sector        Indices
+       46     5     5
+  -4.9567943371402228     
+ 
+ #X Sector        Indices
+       47     5     6
+  -4.6898967779280829     
+ 
+ #X Sector        Indices
+       48     5     7
+  -3.9253411774990163     
+ 
+ #X Sector        Indices
+       49     6     0
+ -0.43025011553954517     
+ 
+ #X Sector        Indices
+       50     6     1
+  -3.2075604665358197     
+ 
+ #X Sector        Indices
+       51     6     2
+  -3.8506382833403392     
+ 
+ #X Sector        Indices
+       52     6     3
+  -4.1512680811250462     
+ 
+ #X Sector        Indices
+       53     6     4
+  -4.2847912198485485     
+ 
+ #X Sector        Indices
+       54     6     5
+  -4.2547119871691841     
+ 
+ #X Sector        Indices
+       55     6     6
+  -3.9524574454014054     
+ 
+ #X Sector        Indices
+       56     6     7
+  -3.0603245850938388     
+ 
+ #X Sector        Indices
+       57     7     0
+   2.2993220452114564     
+ 
+ #X Sector        Indices
+       58     7     1
+ -0.47798830578482199     
+ 
+ #X Sector        Indices
+       59     7     2
+  -1.1210661225893395     
+ 
+ #X Sector        Indices
+       60     7     3
+  -1.4216959203740498     
+ 
+ #X Sector        Indices
+       61     7     4
+  -1.5552190590975570     
+ 
+ #X Sector        Indices
+       62     7     5
+  -1.5251398264181786     
+ 
+ #X Sector        Indices
+       63     7     6
+  -1.2228852846504044     
+ 
+ #X Sector        Indices
+       64     7     7
+ -0.33075242434283725     
+ 
+ #X Sector        Indices
+        1     0     0
+  0.25000000000000000     
+ 
+ #X Sector        Indices
+        2     0     1
+  -2.5273103708027103     
+ 
+ #X Sector        Indices
+        3     0     2
+  -3.3752501099272090     
+ 
+ #X Sector        Indices
+        4     0     3
+  -3.8294213950367357     
+ 
+ #X Sector        Indices
+        5     0     4
+  -4.0581372292344655     
+ 
+ #X Sector        Indices
+        6     0     5
+  -4.1858914398980502     
+ 
+ #X Sector        Indices
+        7     0     6
+  -3.9979509804594855     
+ 
+ #X Sector        Indices
+        8     0     7
+  -3.3710103539240661     
+ 
+ #X Sector        Indices
+        9     1     0
+ -0.70910631070899943     
+ 
+ #X Sector        Indices
+       10     1     1
+  -3.4864166709778055     
+ 
+ #X Sector        Indices
+       11     1     2
+  -4.2275181771401229     
+ 
+ #X Sector        Indices
+       12     1     3
+  -4.6277978005531546     
+ 
+ #X Sector        Indices
+       13     1     4
+  -4.8352201042936871     
+ 
+ #X Sector        Indices
+       14     1     5
+  -4.9608429618708554     
+ 
+ #X Sector        Indices
+       15     1     6
+  -4.7652034132383285     
+ 
+ #X Sector        Indices
+       16     1     7
+  -4.1242113458479679     
+ 
+ #X Sector        Indices
+       17     2     0
+  -1.1509955089997947     
+ 
+ #X Sector        Indices
+       18     2     1
+  -3.9283058639461839     
+ 
+ # Sector        Indices
+       19     2     2
+  -4.6195884110264842     
+ 
+ # Sector        Indices
+       20     2     3
+  -4.9733766063247318     
+ 
+ # Sector        Indices
+       21     2     4
+  -5.1489652306817515     
+ 
+ # Sector        Indices
+       22     2     5
+  -5.2688307839828328     
+ 
+ #X Sector        Indices
+       23     2     6
+  -5.0641801139999272     
+ 
+ #X Sector        Indices
+       24     2     7
+  -4.4086858648401597     
+ 
+ #X Sector        Indices
+       25     3     0
+  -1.3024067401231365     
+ 
+ #X Sector        Indices
+       26     3     1
+  -4.0797170940685747     
+ 
+ # Sector        Indices
+       27     3     2
+  -4.7638659039815741     
+ 
+ # Sector        Indices
+       28     3     3
+  -5.1109337964471369     
+ 
+ # Sector        Indices
+       29     3     4
+  -5.2805708868454655     
+ 
+ # Sector        Indices
+       30     3     5
+  -5.3984499777329962     
+ 
+ #X Sector        Indices
+       31     3     6
+  -5.1920618449165801     
+ 
+ #X Sector        Indices
+       32     3     7
+  -4.5338295158110071     
+ 
+ #X Sector        Indices
+       33     4     0
+  -1.3328759873886533     
+ 
+ #X Sector        Indices
+       34     4     1
+  -4.1101863375312124     
+ 
+ # Sector        Indices
+       35     4     2
+  -4.7646425133704282     
+ 
+ # Sector        Indices
+       36     4     3
+  -5.0747363668781480     
+ 
+ # Sector        Indices
+       37     4     4
+  -5.2127981286241383     
+ 
+ # Sector        Indices
+       38     4     5
+  -5.2616554672979206     
+ 
+ #X Sector        Indices
+       39     4     6
+  -5.0313641394624788     
+ 
+ #X Sector        Indices
+       40     4     7
+  -4.3488031285743807     
+ 
+ #X Sector        Indices
+       41     5     0
+  -1.0889720671509260     
+ 
+ #X Sector        Indices
+       42     5     1
+  -3.8662824165377767     
+ 
+ # Sector        Indices
+       43     5     2
+  -4.5158665341492963     
+ 
+ # Sector        Indices
+       44     5     3
+  -4.8203358385188428     
+ 
+ # Sector        Indices
+       45     5     4
+  -4.9563570885423811     
+ 
+ # Sector        Indices
+       46     5     5
+  -4.9573660674307503     
+ 
+ #X Sector        Indices
+       47     5     6
+  -4.6848169512104203     
+ 
+ #X Sector        Indices
+       48     5     7
+  -3.9151882323080378     
+ 
+ #X Sector        Indices
+       49     6     0
+ -0.43053713136703392     
+ 
+ #X Sector        Indices
+       50     6     1
+  -3.2078474796385277     
+ 
+ #X Sector        Indices
+       51     6     2
+  -3.8519381656565721     
+ 
+ #X Sector        Indices
+       52     6     3
+  -4.1517464834654074     
+ 
+ #X Sector        Indices
+       53     6     4
+  -4.2867512819281082     
+ 
+ #X Sector        Indices
+       54     6     5
+  -4.2559659146148903     
+ 
+ #X Sector        Indices
+       55     6     6
+  -3.9479147944090491     
+ 
+ #X Sector        Indices
+       56     6     7
+  -3.0515474852910978     
+ 
+ #X Sector        Indices
+       57     7     0
+   2.2990350293839676     
+ 
+ #X Sector        Indices
+       58     7     1
+ -0.47827531888752806     
+ 
+ #X Sector        Indices
+       59     7     2
+  -1.1223660049055719     
+ 
+ #X Sector        Indices
+       60     7     3
+  -1.4221743227144108     
+ 
+ #X Sector        Indices
+       61     7     4
+  -1.5571791211771036     
+ 
+ #X Sector        Indices
+       62     7     5
+  -1.5263937538638899     
+ 
+ #X Sector        Indices
+       63     7     6
+  -1.2183426336580492     
+ 
+ #X Sector        Indices
+       64     7     7
+ -0.32197532454009758     
+ 
+ #X Sector        Indices
+        1     0     0
+  0.25000000000000000     
+ 
+ #X Sector        Indices
+        2     0     1
+  -2.5273103668165811     
+ 
+ #X Sector        Indices
+        3     0     2
+  -3.3760472339318905     
+ 
+ #X Sector        Indices
+        4     0     3
+  -3.8296742259506260     
+ 
+ #X Sector        Indices
+        5     0     4
+  -4.0589263928334320     
+ 
+ #X Sector        Indices
+        6     0     5
+  -4.1886788476056722     
+ 
+ #X Sector        Indices
+        7     0     6
+  -3.9967978755616924     
+ 
+ #X Sector        Indices
+        8     0     7
+  -3.3651230844822151     
+ 
+ #X Sector        Indices
+        9     1     0
+ -0.70969477114939572     
+ 
+ #X Sector        Indices
+       10     1     1
+  -3.4870051279621919     
+ 
+ #X Sector        Indices
+       11     1     2
+  -4.2291729362673811     
+ 
+ #X Sector        Indices
+       12     1     3
+  -4.6282234055686597     
+ 
+ #X Sector        Indices
+       13     1     4
+  -4.8362932478550960     
+ 
+ #X Sector        Indices
+       14     1     5
+  -4.9640810519736434     
+ 
+ #X Sector        Indices
+       15     1     6
+  -4.7644568608577851     
+ 
+ #X Sector        Indices
+       16     1     7
+  -4.1188056421653840     
+ 
+ #X Sector        Indices
+       17     2     0
+  -1.1523690659284354     
+ 
+ #X Sector        Indices
+       18     2     1
+  -3.9296794177201715     
+ 
+ # Sector        Indices
+       19     2     2
+  -4.6225004114889900     
+ 
+ # Sector        Indices
+       20     2     3
+  -4.9750386333857097     
+ 
+ # Sector        Indices
+       21     2     4
+  -5.1512579562888394     
+ 
+ # Sector        Indices
+       22     2     5
+  -5.2736456866507151     
+ 
+ #X Sector        Indices
+       23     2     6
+  -5.0650328318738485     
+ 
+ #X Sector        Indices
+       24     2     7
+  -4.4050090725668687     
+ 
+ #X Sector        Indices
+       25     3     0
+  -1.3043838866354487     
+ 
+ #X Sector        Indices
+       26     3     1
+  -4.0816942374973788     
+ 
+ # Sector        Indices
+       27     3     2
+  -4.7675806821034001     
+ 
+ # Sector        Indices
+       28     3     3
+  -5.1136061148881122     
+ 
+ # Sector        Indices
+       29     3     4
+  -5.2840200419411865     
+ 
+ # Sector        Indices
+       30     3     5
+  -5.4045712403293038     
+ 
+ #X Sector        Indices
+       31     3     6
+  -5.1942890597427001     
+ 
+ #X Sector        Indices
+       32     3     7
+  -4.5316482524802462     
+ 
+ #X Sector        Indices
+       33     4     0
+  -1.3352723231904911     
+ 
+ #X Sector        Indices
+       34     4     1
+  -4.1125826703549579     
+ 
+ # Sector        Indices
+       35     4     2
+  -4.7681687641029020     
+ 
+ # Sector        Indices
+       36     4     3
+  -5.0767466962391481     
+ 
+ # Sector        Indices
+       37     4     4
+  -5.2157370383319064     
+ 
+ # Sector        Indices
+       38     4     5
+  -5.2645301503076407     
+ 
+ #X Sector        Indices
+       39     4     6
+  -5.0299936108406680     
+ 
+ #X Sector        Indices
+       40     4     7
+  -4.3429719906599287     
+ 
+ #X Sector        Indices
+       41     5     0
+  -1.0885852180764992     
+ 
+ #X Sector        Indices
+       42     5     1
+  -3.8658955645434503     
+ 
+ # Sector        Indices
+       43     5     2
+  -4.5167618649050709     
+ 
+ # Sector        Indices
+       44     5     3
+  -4.8199867712353983     
+ 
+ # Sector        Indices
+       45     5     4
+  -4.9572056475443107     
+ 
+ # Sector        Indices
+       46     5     5
+  -4.9583209059338618     
+ 
+ #X Sector        Indices
+       47     5     6
+  -4.6818716359908974     
+ 
+ #X Sector        Indices
+       48     5     7
+  -3.9087135749999540     
+ 
+ #X Sector        Indices
+       49     6     0
+ -0.43080173138452516     
+ 
+ #X Sector        Indices
+       50     6     1
+  -3.2081120767973501     
+ 
+ #X Sector        Indices
+       51     6     2
+  -3.8535112088309607     
+ 
+ #X Sector        Indices
+       52     6     3
+  -4.1521866234201283     
+ 
+ #X Sector        Indices
+       53     6     4
+  -4.2884931775139519     
+ 
+ #X Sector        Indices
+       54     6     5
+  -4.2572048019559574     
+ 
+ #X Sector        Indices
+       55     6     6
+  -3.9452060497497601     
+ 
+ #X Sector        Indices
+       56     6     7
+  -3.0459248158667416     
+ 
+ #X Sector        Indices
+       57     7     0
+   2.2987704293664764     
+ 
+ #X Sector        Indices
+       58     7     1
+ -0.47853991604634805     
+ 
+ #X Sector        Indices
+       59     7     2
+  -1.1239390480799596     
+ 
+ #X Sector        Indices
+       60     7     3
+  -1.4226144626691359     
+ 
+ #X Sector        Indices
+       61     7     4
+  -1.5589210167629461     
+ 
+ #X Sector        Indices
+       62     7     5
+  -1.5276326412049561     
+ 
+ #X Sector        Indices
+       63     7     6
+  -1.2156338889987648     
+ 
+ #X Sector        Indices
+       64     7     7
+ -0.31635265511573829     
+ 
+ #X Sector        Indices
+        1     0     0
+  0.25000000000000000     
+ 
+ #X Sector        Indices
+        2     0     1
+  -2.5273103661797518     
+ 
+ #X Sector        Indices
+        3     0     2
+  -3.3756772303120366     
+ 
+ #X Sector        Indices
+        4     0     3
+  -3.8293636311730710     
+ 
+ #X Sector        Indices
+        5     0     4
+  -4.0593219320829572     
+ 
+ #X Sector        Indices
+        6     0     5
+  -4.1900293517011464     
+ 
+ #X Sector        Indices
+        7     0     6
+  -3.9961097829436207     
+ 
+ #X Sector        Indices
+        8     0     7
+  -3.3639058143428358     
+ 
+ #X Sector        Indices
+        9     1     0
+ -0.71010563535982207     
+ 
+ #X Sector        Indices
+       10     1     1
+  -3.4874159916302925     
+ 
+ #X Sector        Indices
+       11     1     2
+  -4.2293210497051339     
+ 
+ #X Sector        Indices
+       12     1     3
+  -4.6282209905834737     
+ 
+ #X Sector        Indices
+       13     1     4
+  -4.8369382621328558     
+ 
+ #X Sector        Indices
+       14     1     5
+  -4.9658228506787179     
+ 
+ #X Sector        Indices
+       15     1     6
+  -4.7642032187069967     
+ 
+ #X Sector        Indices
+       16     1     7
+  -4.1180168832606219     
+ 
+ #X Sector        Indices
+       17     2     0
+  -1.1535475607293977     
+ 
+ #X Sector        Indices
+       18     2     1
+  -3.9308579120473648     
+ 
+ # Sector        Indices
+       19     2     2
+  -4.6237221110645033     
+ 
+ # Sector        Indices
+       20     2     3
+  -4.9762105892034398     
+ 
+ # Sector        Indices
+       21     2     4
+  -5.1528403426376821     
+ 
+ # Sector        Indices
+       22     2     5
+  -5.2766629658405186     
+ 
+ #X Sector        Indices
+       23     2     6
+  -5.0661442583281300     
+ 
+ #X Sector        Indices
+       24     2     7
+  -4.4055901901409564     
+ 
+ #X Sector        Indices
+       25     3     0
+  -1.3060073295028825     
+ 
+ #X Sector        Indices
+       26     3     1
+  -4.0833176799128372     
+ 
+ # Sector        Indices
+       27     3     2
+  -4.7693829753998269     
+ 
+ # Sector        Indices
+       28     3     3
+  -5.1155048213347269     
+ 
+ # Sector        Indices
+       29     3     4
+  -5.2863768772809534     
+ 
+ # Sector        Indices
+       30     3     5
+  -5.4084948519933445     
+ 
+ #X Sector        Indices
+       31     3     6
+  -5.1963661371037650     
+ 
+ #X Sector        Indices
+       32     3     7
+  -4.5332616833298776     
+ 
+ #X Sector        Indices
+       33     4     0
+  -1.3371817025873058     
+ 
+ #X Sector        Indices
+       34     4     1
+  -4.1144920492737711     
+ 
+ # Sector        Indices
+       35     4     2
+  -4.7698892592864723     
+ 
+ # Sector        Indices
+       36     4     3
+  -5.0782654744011033     
+ 
+ # Sector        Indices
+       37     4     4
+  -5.2174644264736800     
+ 
+ # Sector        Indices
+       38     4     5
+  -5.2661324155355214     
+ 
+ #X Sector        Indices
+       39     4     6
+  -5.0296628115766682     
+ 
+ #X Sector        Indices
+       40     4     7
+  -4.3419405935428506     
+ 
+ #X Sector        Indices
+       41     5     0
+  -1.0884323076778992     
+ 
+ #X Sector        Indices
+       42     5     1
+  -3.8657426536870569     
+ 
+ # Sector        Indices
+       43     5     2
+  -4.5165395072935590     
+ 
+ # Sector        Indices
+       44     5     3
+  -4.8197419387645626     
+ 
+ # Sector        Indices
+       45     5     4
+  -4.9573376858970208     
+ 
+ # Sector        Indices
+       46     5     5
+  -4.9585001615414823     
+ 
+ #X Sector        Indices
+       47     5     6
+  -4.6807687508917750     
+ 
+ #X Sector        Indices
+       48     5     7
+  -3.9071165993100059     
+ 
+ #X Sector        Indices
+       49     6     0
+ -0.43102961452775029     
+ 
+ #X Sector        Indices
+       50     6     1
+  -3.2083399594966844     
+ 
+ #X Sector        Indices
+       51     6     2
+  -3.8537113109376167     
+ 
+ #X Sector        Indices
+       52     6     3
+  -4.1524313368089185     
+ 
+ #X Sector        Indices
+       53     6     4
+  -4.2891844897234863     
+ 
+ #X Sector        Indices
+       54     6     5
+  -4.2575592021101158     
+ 
+ #X Sector        Indices
+       55     6     6
+  -3.9446259825619636     
+ 
+ #X Sector        Indices
+       56     6     7
+  -3.0449354288705868     
+ 
+ #X Sector        Indices
+       57     7     0
+   2.2985425462232514     
+ 
+ #X Sector        Indices
+       58     7     1
+ -0.47876779874568320     
+ 
+ #X Sector        Indices
+       59     7     2
+  -1.1241391501866180     
+ 
+ #X Sector        Indices
+       60     7     3
+  -1.4228591760579292     
+ 
+ #X Sector        Indices
+       61     7     4
+  -1.5596123289724875     
+ 
+ #X Sector        Indices
+       62     7     5
+  -1.5279870413591088     
+ 
+ #X Sector        Indices
+       63     7     6
+  -1.2150538218109561     
+ 
+ #X Sector        Indices
+       64     7     7
+ -0.31536326811958437     
+ 
+ #X Sector        Indices
+        1     0     0
+  0.25000000000000000     
+ 
+ #X Sector        Indices
+        2     0     1
+  -2.5273103651260604     
+ 
+ #X Sector        Indices
+        3     0     2
+  -3.3754082483609720     
+ 
+ #X Sector        Indices
+        4     0     3
+  -3.8292302242231764     
+ 
+ #X Sector        Indices
+        5     0     4
+  -4.0594000052784702     
+ 
+ #X Sector        Indices
+        6     0     5
+  -4.1911108505735477     
+ 
+ #X Sector        Indices
+        7     0     6
+  -3.9954411880053202     
+ 
+ #X Sector        Indices
+        8     0     7
+  -3.3619786375563718     
+ 
+ #X Sector        Indices
+        9     1     0
+ -0.71048100306844386     
+ 
+ #X Sector        Indices
+       10     1     1
+  -3.4877913584310867     
+ 
+ #X Sector        Indices
+       11     1     2
+  -4.2294226060263451     
+ 
+ #X Sector        Indices
+       12     1     3
+  -4.6282023988957643     
+ 
+ #X Sector        Indices
+       13     1     4
+  -4.8370619662775134     
+ 
+ #X Sector        Indices
+       14     1     5
+  -4.9670531504342250     
+ 
+ #X Sector        Indices
+       15     1     6
+  -4.7636716305827473     
+ 
+ #X Sector        Indices
+       16     1     7
+  -4.1162199932922796     
+ 
+ #X Sector        Indices
+       17     2     0
+  -1.1538209341960801     
+ 
+ #X Sector        Indices
+       18     2     1
+  -3.9311312846977096     
+ 
+ # Sector        Indices
+       19     2     2
+  -4.6239908938742964     
+ 
+ # Sector        Indices
+       20     2     3
+  -4.9764165782785499     
+ 
+ # Sector        Indices
+       21     2     4
+  -5.1531088001878445     
+ 
+ # Sector        Indices
+       22     2     5
+  -5.2782709405544459     
+ 
+ #X Sector        Indices
+       23     2     6
+  -5.0660357115560251     
+ 
+ #X Sector        Indices
+       24     2     7
+  -4.4042745476829204     
+ 
+ #X Sector        Indices
+       25     3     0
+  -1.3066012074524733     
+ 
+ #X Sector        Indices
+       26     3     1
+  -4.0839115570740789     
+ 
+ # Sector        Indices
+       27     3     2
+  -4.7701051687512868     
+ 
+ # Sector        Indices
+       28     3     3
+  -5.1162813107484189     
+ 
+ # Sector        Indices
+       29     3     4
+  -5.2872902748142145     
+ 
+ # Sector        Indices
+       30     3     5
+  -5.4108338936022031     
+ 
+ #X Sector        Indices
+       31     3     6
+  -5.1970278983595950     
+ 
+ #X Sector        Indices
+       32     3     7
+  -4.5327725912872188     
+ 
+ #X Sector        Indices
+       33     4     0
+  -1.3379871842349189     
+ 
+ #X Sector        Indices
+       34     4     1
+  -4.1152975301463828     
+ 
+ # Sector        Indices
+       35     4     2
+  -4.7705717343075849     
+ 
+ # Sector        Indices
+       36     4     3
+  -5.0786893965004403     
+ 
+ # Sector        Indices
+       37     4     4
+  -5.2182664695840311     
+ 
+ # Sector        Indices
+       38     4     5
+  -5.2670190770560463     
+ 
+ #X Sector        Indices
+       39     4     6
+  -5.0289045731720643     
+ 
+ #X Sector        Indices
+       40     4     7
+  -4.3401694014901429     
+ 
+ #X Sector        Indices
+       41     5     0
+  -1.0888892946742599     
+ 
+ #X Sector        Indices
+       42     5     1
+  -3.8661996399310818     
+ 
+ # Sector        Indices
+       43     5     2
+  -4.5169727625806999     
+ 
+ # Sector        Indices
+       44     5     3
+  -4.8200281226024284     
+ 
+ # Sector        Indices
+       45     5     4
+  -4.9581433147138121     
+ 
+ # Sector        Indices
+       46     5     5
+  -4.9593978087583457     
+ 
+ #X Sector        Indices
+       47     5     6
+  -4.6802061615078010     
+ 
+ #X Sector        Indices
+       48     5     7
+  -3.9055840148664824     
+ 
+ #X Sector        Indices
+       49     6     0
+ -0.43135818953220728     
+ 
+ #X Sector        Indices
+       50     6     1
+  -3.2086685337642842     
+ 
+ #X Sector        Indices
+       51     6     2
+  -3.8540321533110378     
+ 
+ #X Sector        Indices
+       52     6     3
+  -4.1526248160522909     
+ 
+ #X Sector        Indices
+       53     6     4
+  -4.2899581843861068     
+ 
+ #X Sector        Indices
+       54     6     5
+  -4.2580823333728803     
+ 
+ #X Sector        Indices
+       55     6     6
+  -3.9437796996555341     
+ 
+ #X Sector        Indices
+       56     6     7
+  -3.0433368270885794     
+ 
+ #X Sector        Indices
+       57     7     0
+   2.2982139712187939     
+ 
+ #X Sector        Indices
+       58     7     1
+ -0.47909637301328012     
+ 
+ #X Sector        Indices
+       59     7     2
+  -1.1244599925600365     
+ 
+ #X Sector        Indices
+       60     7     3
+  -1.4230526553012932     
+ 
+ #X Sector        Indices
+       61     7     4
+  -1.5603860236351117     
+ 
+ #X Sector        Indices
+       62     7     5
+  -1.5285101726218870     
+ 
+ #X Sector        Indices
+       63     7     6
+  -1.2142075389045306     
+ 
+ #X Sector        Indices
+       64     7     7
+ -0.31376466633757705     
+ 
+ #X Sector        Indices
+        1     0     0
+  0.25000000000000000     
+ 
+ #X Sector        Indices
+        2     0     1
+  -2.5273103651197451     
+ 
+ #X Sector        Indices
+        3     0     2
+  -3.3754142397720552     
+ 
+ #X Sector        Indices
+        4     0     3
+  -3.8290835862607091     
+ 
+ #X Sector        Indices
+        5     0     4
+  -4.0598487063409445     
+ 
+ #X Sector        Indices
+        6     0     5
+  -4.1918249398104122     
+ 
+ #X Sector        Indices
+        7     0     6
+  -3.9953358237612946     
+ 
+ #X Sector        Indices
+        8     0     7
+  -3.3618797333484611     
+ 
+ #X Sector        Indices
+        9     1     0
+ -0.71065087352540146     
+ 
+ #X Sector        Indices
+       10     1     1
+  -3.4879612288859785     
+ 
+ #X Sector        Indices
+       11     1     2
+  -4.2297007675732852     
+ 
+ #X Sector        Indices
+       12     1     3
+  -4.6283045270588365     
+ 
+ #X Sector        Indices
+       13     1     4
+  -4.8377399396803646     
+ 
+ #X Sector        Indices
+       14     1     5
+  -4.9680641139115469     
+ 
+ #X Sector        Indices
+       15     1     6
+  -4.7639084570556971     
+ 
+ #X Sector        Indices
+       16     1     7
+  -4.1164641839327540     
+ 
+ #X Sector        Indices
+       17     2     0
+  -1.1548086158963291     
+ 
+ #X Sector        Indices
+       18     2     1
+  -3.9321189664058838     
+ 
+ # Sector        Indices
+       19     2     2
+  -4.6251834221000276     
+ 
+ # Sector        Indices
+       20     2     3
+  -4.9775323970344667     
+ 
+ # Sector        Indices
+       21     2     4
+  -5.1546014773127542     
+ 
+ # Sector        Indices
+       22     2     5
+  -5.2802736141640949     
+ 
+ #X Sector        Indices
+       23     2     6
+  -5.0673151759059447     
+ 
+ #X Sector        Indices
+       24     2     7
+  -4.4055326592369255     
+ 
+ #X Sector        Indices
+       25     3     0
+  -1.3078031587263279     
+ 
+ #X Sector        Indices
+       26     3     1
+  -4.0851135083585888     
+ 
+ # Sector        Indices
+       27     3     2
+  -4.7715463793363657     
+ 
+ # Sector        Indices
+       28     3     3
+  -5.1177116765647090     
+ 
+ # Sector        Indices
+       29     3     4
+  -5.2890866040406266     
+ 
+ # Sector        Indices
+       30     3     5
+  -5.4132080017042306     
+ 
+ #X Sector        Indices
+       31     3     6
+  -5.1987064976892752     
+ 
+ #X Sector        Indices
+       32     3     7
+  -4.5344555827734494     
+ 
+ #X Sector        Indices
+       33     4     0
+  -1.3393186652239435     
+ 
+ #X Sector        Indices
+       34     4     1
+  -4.1166290111175936     
+ 
+ # Sector        Indices
+       35     4     2
+  -4.7719320904151550     
+ 
+ # Sector        Indices
+       36     4     3
+  -5.0800243367297107     
+ 
+ # Sector        Indices
+       37     4     4
+  -5.2195790973629332     
+ 
+ # Sector        Indices
+       38     4     5
+  -5.2681244770596329     
+ 
+ #X Sector        Indices
+       39     4     6
+  -5.0292140706316335     
+ 
+ #X Sector        Indices
+       40     4     7
+  -4.3402113343630431     
+ 
+ #X Sector        Indices
+       41     5     0
+  -1.0886398401852724     
+ 
+ #X Sector        Indices
+       42     5     1
+  -3.8659501854299529     
+ 
+ # Sector        Indices
+       43     5     2
+  -4.5168000155539660     
+ 
+ # Sector        Indices
+       44     5     3
+  -4.8199369874715057     
+ 
+ # Sector        Indices
+       45     5     4
+  -4.9580915850098455     
+ 
+ # Sector        Indices
+       46     5     5
+  -4.9593322615982558     
+ 
+ #X Sector        Indices
+       47     5     6
+  -4.6797971910917218     
+ 
+ #X Sector        Indices
+       48     5     7
+  -3.9050514233196956     
+ 
+ #X Sector        Indices
+       49     6     0
+ -0.43138528224058353     
+ 
+ #X Sector        Indices
+       50     6     1
+  -3.2086956264638791     
+ 
+ #X Sector        Indices
+       51     6     2
+  -3.8541552251378279     
+ 
+ #X Sector        Indices
+       52     6     3
+  -4.1528848425855314     
+ 
+ #X Sector        Indices
+       53     6     4
+  -4.2902831865640838     
+ 
+ #X Sector        Indices
+       54     6     5
+  -4.2582439278511721     
+ 
+ #X Sector        Indices
+       55     6     6
+  -3.9438345433390416     
+ 
+ #X Sector        Indices
+       56     6     7
+  -3.0432650155890464     
+ 
+ #X Sector        Indices
+       57     7     0
+   2.2981868785104176     
+ 
+ #X Sector        Indices
+       58     7     1
+ -0.47912346571287812     
+ 
+ #X Sector        Indices
+       59     7     2
+  -1.1245830643868255     
+ 
+ #X Sector        Indices
+       60     7     3
+  -1.4233126818345416     
+ 
+ #X Sector        Indices
+       61     7     4
+  -1.5607110258130803     
+ 
+ #X Sector        Indices
+       62     7     5
+  -1.5286717671001726     
+ 
+ #X Sector        Indices
+       63     7     6
+  -1.2142623825880394     
+ 
+ #X Sector        Indices
+       64     7     7
+ -0.31369285483804399     
+ 
+ #X Sector        Indices
+        1     0     0
+  0.25000000000000000     
+ 
+ #X Sector        Indices
+        2     0     1
+  -2.5273103651051274     
+ 
+ #X Sector        Indices
+        3     0     2
+  -3.3754172521973946     
+ 
+ #X Sector        Indices
+        4     0     3
+  -3.8289807806634260     
+ 
+ #X Sector        Indices
+        5     0     4
+  -4.0601606550615879     
+ 
+ #X Sector        Indices
+        6     0     5
+  -4.1923240306682352     
+ 
+ #X Sector        Indices
+        7     0     6
+  -3.9952614575876533     
+ 
+ #X Sector        Indices
+        8     0     7
+  -3.3617932328350264     
+ 
+ #X Sector        Indices
+        9     1     0
+ -0.71084733675471867     
+ 
+ #X Sector        Indices
+       10     1     1
+  -3.4881576921009563     
+ 
+ #X Sector        Indices
+       11     1     2
+  -4.2299003580623893     
+ 
+ #X Sector        Indices
+       12     1     3
+  -4.6283069005581412     
+ 
+ #X Sector        Indices
+       13     1     4
+  -4.8381023129850531     
+ 
+ #X Sector        Indices
+       14     1     5
+  -4.9686561479235394     
+ 
+ #X Sector        Indices
+       15     1     6
+  -4.7639430046481399     
+ 
+ #X Sector        Indices
+       16     1     7
+  -4.1164596435520293     
+ 
+ #X Sector        Indices
+       17     2     0
+  -1.1549616376481560     
+ 
+ #X Sector        Indices
+       18     2     1
+  -3.9322719881523938     
+ 
+ # Sector        Indices
+       19     2     2
+  -4.6254520044524634     
+ 
+ # Sector        Indices
+       20     2     3
+  -4.9777219562845296     
+ 
+ # Sector        Indices
+       21     2     4
+  -5.1550391808906841     
+ 
+ # Sector        Indices
+       22     2     5
+  -5.2810634863343822     
+ 
+ #X Sector        Indices
+       23     2     6
+  -5.0675939367952161     
+ 
+ #X Sector        Indices
+       24     2     7
+  -4.4057767384118867     
+ 
+ #X Sector        Indices
+       25     3     0
+  -1.3081179637554701     
+ 
+ #X Sector        Indices
+       26     3     1
+  -4.0854283133890279     
+ 
+ # Sector        Indices
+       27     3     2
+  -4.7720329780047495     
+ 
+ # Sector        Indices
+       28     3     3
+  -5.1181892145321592     
+ 
+ # Sector        Indices
+       29     3     4
+  -5.2898222886376187     
+ 
+ # Sector        Indices
+       30     3     5
+  -5.4143458787194145     
+ 
+ #X Sector        Indices
+       31     3     6
+  -5.1993551273247407     
+ 
+ #X Sector        Indices
+       32     3     7
+  -4.5350911055069680     
+ 
+ #X Sector        Indices
+       33     4     0
+  -1.3397333711239492     
+ 
+ #X Sector        Indices
+       34     4     1
+  -4.1170437169989311     
+ 
+ # Sector        Indices
+       35     4     2
+  -4.7723700682359578     
+ 
+ # Sector        Indices
+       36     4     3
+  -5.0804500354084912     
+ 
+ # Sector        Indices
+       37     4     4
+  -5.2199970456180358     
+ 
+ # Sector        Indices
+       38     4     5
+  -5.2685475768498282     
+ 
+ #X Sector        Indices
+       39     4     6
+  -5.0292104586174284     
+ 
+ #X Sector        Indices
+       40     4     7
+  -4.3402038539575534     
+ 
+ #X Sector        Indices
+       41     5     0
+  -1.0888676650658289     
+ 
+ #X Sector        Indices
+       42     5     1
+  -3.8661780102980714     
+ 
+ # Sector        Indices
+       43     5     2
+  -4.5170943806247692     
+ 
+ # Sector        Indices
+       44     5     3
+  -4.8202957695662638     
+ 
+ # Sector        Indices
+       45     5     4
+  -4.9584827162874054     
+ 
+ # Sector        Indices
+       46     5     5
+  -4.9597653077423987     
+ 
+ #X Sector        Indices
+       47     5     6
+  -4.6800068302924256     
+ 
+ #X Sector        Indices
+       48     5     7
+  -3.9051570336223049     
+ 
+ #X Sector        Indices
+       49     6     0
+ -0.43154060130759170     
+ 
+ #X Sector        Indices
+       50     6     1
+  -3.2088509455185497     
+ 
+ #X Sector        Indices
+       51     6     2
+  -3.8543783873314439     
+ 
+ #X Sector        Indices
+       52     6     3
+  -4.1532014876642531     
+ 
+ #X Sector        Indices
+       53     6     4
+  -4.2906484169685308     
+ 
+ #X Sector        Indices
+       54     6     5
+  -4.2584962656064702     
+ 
+ #X Sector        Indices
+       55     6     6
+  -3.9439986675905394     
+ 
+ #X Sector        Indices
+       56     6     7
+  -3.0433338341426186     
+ 
+ #X Sector        Indices
+       57     7     0
+   2.2980315594434098     
+ 
+ #X Sector        Indices
+       58     7     1
+ -0.47927878476754698     
+ 
+ #X Sector        Indices
+       59     7     2
+  -1.1248062265804402     
+ 
+ #X Sector        Indices
+       60     7     3
+  -1.4236293269132552     
+ 
+ #X Sector        Indices
+       61     7     4
+  -1.5610762562175393     
+ 
+ #X Sector        Indices
+       62     7     5
+  -1.5289241048554747     
+ 
+ #X Sector        Indices
+       63     7     6
+  -1.2144265068395381     
+ 
+ #X Sector        Indices
+       64     7     7
+ -0.31376167339161665     
+ 
+ #X Sector        Indices
+        1     0     0
+  0.25000000000000000     
+ 
+ #X Sector        Indices
+        2     0     1
+  -2.5273103650771152     
+ 
+ #X Sector        Indices
+        3     0     2
+  -3.3754191609348743     
+ 
+ #X Sector        Indices
+        4     0     3
+  -3.8289096906454896     
+ 
+ #X Sector        Indices
+        5     0     4
+  -4.0603755698693815     
+ 
+ #X Sector        Indices
+        6     0     5
+  -4.1926729894606298     
+ 
+ #X Sector        Indices
+        7     0     6
+  -3.9952080555482627     
+ 
+ #X Sector        Indices
+        8     0     7
+  -3.3617138183049433     
+ 
+ #X Sector        Indices
+        9     1     0
+ -0.71098532072817455     
+ 
+ #X Sector        Indices
+       10     1     1
+  -3.4882956760490198     
+ 
+ #X Sector        Indices
+       11     1     2
+  -4.2300425095392358     
+ 
+ #X Sector        Indices
+       12     1     3
+  -4.6283131896756329     
+ 
+ #X Sector        Indices
+       13     1     4
+  -4.8383580586005461     
+ 
+ #X Sector        Indices
+       14     1     5
+  -4.9690754810070175     
+ 
+ #X Sector        Indices
+       15     1     6
+  -4.7639708638103935     
+ 
+ #X Sector        Indices
+       16     1     7
+  -4.1164439014002046     
+ 
+ #X Sector        Indices
+       17     2     0
+  -1.1550821064986818     
+ 
+ #X Sector        Indices
+       18     2     1
+  -3.9323924569849016     
+ 
+ # Sector        Indices
+       19     2     2
+  -4.6256543581595784     
+ 
+ # Sector        Indices
+       20     2     3
+  -4.9778693038978465     
+ 
+ # Sector        Indices
+       21     2     4
+  -5.1553597531586774     
+ 
+ # Sector        Indices
+       22     2     5
+  -5.2816324713320206     
+ 
+ #X Sector        Indices
+       23     2     6
+  -5.0678030161016725     
+ 
+ #X Sector        Indices
+       24     2     7
+  -4.4059460033028630     
+ 
+ #X Sector        Indices
+       25     3     0
+  -1.3083518357447175     
+ 
+ #X Sector        Indices
+       26     3     1
+  -4.0856621853648312     
+ 
+ # Sector        Indices
+       27     3     2
+  -4.7723860315129762     
+ 
+ # Sector        Indices
+       28     3     3
+  -5.1185339646906813     
+ 
+ # Sector        Indices
+       29     3     4
+  -5.2903464981355768     
+ 
+ # Sector        Indices
+       30     3     5
+  -5.4151525210318496     
+ 
+ #X Sector        Indices
+       31     3     6
+  -5.1998165704378367     
+ 
+ #X Sector        Indices
+       32     3     7
+  -4.5355274693717105     
+ 
+ #X Sector        Indices
+       33     4     0
+  -1.3400366610983161     
+ 
+ #X Sector        Indices
+       34     4     1
+  -4.1173470069469555     
+ 
+ # Sector        Indices
+       35     4     2
+  -4.7726901811370013     
+ 
+ # Sector        Indices
+       36     4     3
+  -5.0807595535325447     
+ 
+ # Sector        Indices
+       37     4     4
+  -5.2203045381621997     
+ 
+ # Sector        Indices
+       38     4     5
+  -5.2688520264712340     
+ 
+ #X Sector        Indices
+       39     4     6
+  -5.0292080360084030     
+ 
+ #X Sector        Indices
+       40     4     7
+  -4.3401799784616273     
+ 
+ #X Sector        Indices
+       41     5     0
+  -1.0890206879960409     
+ 
+ #X Sector        Indices
+       42     5     1
+  -3.8663310332064063     
+ 
+ # Sector        Indices
+       43     5     2
+  -4.5172943407243542     
+ 
+ # Sector        Indices
+       44     5     3
+  -4.8205381810913934     
+ 
+ # Sector        Indices
+       45     5     4
+  -4.9587512402599430     
+ 
+ # Sector        Indices
+       46     5     5
+  -4.9600623275655318     
+ 
+ #X Sector        Indices
+       47     5     6
+  -4.6801375969803063     
+ 
+ #X Sector        Indices
+       48     5     7
+  -3.9052037621179827     
+ 
+ #X Sector        Indices
+       49     6     0
+ -0.43164472142724680     
+ 
+ #X Sector        Indices
+       50     6     1
+  -3.2089550656166721     
+ 
+ #X Sector        Indices
+       51     6     2
+  -3.8545305726850909     
+ 
+ #X Sector        Indices
+       52     6     3
+  -4.1534163349283455     
+ 
+ #X Sector        Indices
+       53     6     4
+  -4.2909008523043823     
+ 
+ #X Sector        Indices
+       54     6     5
+  -4.2586704525002457     
+ 
+ #X Sector        Indices
+       55     6     6
+  -3.9440980740821239     
+ 
+ #X Sector        Indices
+       56     6     7
+  -3.0433585397321905     
+ 
+ #X Sector        Indices
+       57     7     0
+   2.2979274393237548     
+ 
+ #X Sector        Indices
+       58     7     1
+ -0.47938290486566731     
+ 
+ #X Sector        Indices
+       59     7     2
+  -1.1249584119340914     
+ 
+ #X Sector        Indices
+       60     7     3
+  -1.4238441741773540     
+ 
+ #X Sector        Indices
+       61     7     4
+  -1.5613286915533793     
+ 
+ #X Sector        Indices
+       62     7     5
+  -1.5290982917492548     
+ 
+ #X Sector        Indices
+       63     7     6
+  -1.2145259133311255     
+ 
+ #X Sector        Indices
+       64     7     7
+ -0.31378637898118855     
+ 
+ #X Sector        Indices
+        1     0     0
+  0.25000000000000000     
+ 
+ #X Sector        Indices
+        2     0     1
+  -2.5273103650432471     
+ 
+ #X Sector        Indices
+        3     0     2
+  -3.3754216943125255     
+ 
+ #X Sector        Indices
+        4     0     3
+  -3.8288613326333754     
+ 
+ #X Sector        Indices
+        5     0     4
+  -4.0605227479002641     
+ 
+ #X Sector        Indices
+        6     0     5
+  -4.1929188600560163     
+ 
+ #X Sector        Indices
+        7     0     6
+  -3.9951687633511126     
+ 
+ #X Sector        Indices
+        8     0     7
+  -3.3616376138382722     
+ 
+ #X Sector        Indices
+        9     1     0
+ -0.71116784330751370     
+ 
+ #X Sector        Indices
+       10     1     1
+  -3.4884781986078996     
+ 
+ #X Sector        Indices
+       11     1     2
+  -4.2303579288080497     
+ 
+ #X Sector        Indices
+       12     1     3
+  -4.6286521007442749     
+ 
+ #X Sector        Indices
+       13     1     4
+  -4.8389328033393708     
+ 
+ #X Sector        Indices
+       14     1     5
+  -4.9697753166259222     
+ 
+ #X Sector        Indices
+       15     1     6
+  -4.7644141227525765     
+ 
+ #X Sector        Indices
+       16     1     7
+  -4.1168784020919187     
+ 
+ #X Sector        Indices
+       17     2     0
+  -1.1560778762668404     
+ 
+ #X Sector        Indices
+       18     2     1
+  -3.9333882267328701     
+ 
+ # Sector        Indices
+       19     2     2
+  -4.6267398514771481     
+ 
+ # Sector        Indices
+       20     2     3
+  -4.9789435380229818     
+ 
+ # Sector        Indices
+       21     2     4
+  -5.1565749193677028     
+ 
+ # Sector        Indices
+       22     2     5
+  -5.2830306766265620     
+ 
+ #X Sector        Indices
+       23     2     6
+  -5.0689493423244913     
+ 
+ #X Sector        Indices
+       24     2     7
+  -4.4070551090963139     
+ 
+ #X Sector        Indices
+       25     3     0
+  -1.3094473880491273     
+ 
+ #X Sector        Indices
+       26     3     1
+  -4.0867577376474715     
+ 
+ # Sector        Indices
+       27     3     2
+  -4.7735617511917825     
+ 
+ # Sector        Indices
+       28     3     3
+  -5.1197026781520778     
+ 
+ # Sector        Indices
+       29     3     4
+  -5.2916401905675956     
+ 
+ # Sector        Indices
+       30     3     5
+  -5.4166486220853685     
+ 
+ #X Sector        Indices
+       31     3     6
+  -5.2010670057898345     
+ 
+ #X Sector        Indices
+       32     3     7
+  -4.5367459036681774     
+ 
+ #X Sector        Indices
+       33     4     0
+  -1.3411737833321091     
+ 
+ #X Sector        Indices
+       34     4     1
+  -4.1184841291516676     
+ 
+ # Sector        Indices
+       35     4     2
+  -4.7738392293564278     
+ 
+ # Sector        Indices
+       36     4     3
+  -5.0818943273725017     
+ 
+ # Sector        Indices
+       37     4     4
+  -5.2214380630003783     
+ 
+ # Sector        Indices
+       38     4     5
+  -5.2698239018929574     
+ 
+ #X Sector        Indices
+       39     4     6
+  -5.0298102077736626     
+ 
+ #X Sector        Indices
+       40     4     7
+  -4.3405247809215322     
+ 
+ #X Sector        Indices
+       41     5     0
+  -1.0889878973345191     
+ 
+ #X Sector        Indices
+       42     5     1
+  -3.8662982425158789     
+ 
+ # Sector        Indices
+       43     5     2
+  -4.5172782906977655     
+ 
+ # Sector        Indices
+       44     5     3
+  -4.8205358398088514     
+ 
+ # Sector        Indices
+       45     5     4
+  -4.9587689104565884     
+ 
+ # Sector        Indices
+       46     5     5
+  -4.9600167012972678     
+ 
+ #X Sector        Indices
+       47     5     6
+  -4.6799133190347302     
+ 
+ #X Sector        Indices
+       48     5     7
+  -3.9048636483025581     
+ 
+ #X Sector        Indices
+       49     6     0
+ -0.43169730328535100     
+ 
+ #X Sector        Indices
+       50     6     1
+  -3.2090076474495577     
+ 
+ #X Sector        Indices
+       51     6     2
+  -3.8546180126972089     
+ 
+ #X Sector        Indices
+       52     6     3
+  -4.1535449719761921     
+ 
+ #X Sector        Indices
+       53     6     4
+  -4.2910600783172654     
+ 
+ #X Sector        Indices
+       54     6     5
+  -4.2587751383980192     
+ 
+ #X Sector        Indices
+       55     6     6
+  -3.9441358614360338     
+ 
+ #X Sector        Indices
+       56     6     7
+  -3.0433349171236226     
+ 
+ #X Sector        Indices
+       57     7     0
+   2.2978748574656507     
+ 
+ #X Sector        Indices
+       58     7     1
+ -0.47943548669855590     
+ 
+ #X Sector        Indices
+       59     7     2
+  -1.1250458519462136     
+ 
+ #X Sector        Indices
+       60     7     3
+  -1.4239728112251870     
+ 
+ #X Sector        Indices
+       61     7     4
+  -1.5614879175662864     
+ 
+ #X Sector        Indices
+       62     7     5
+  -1.5292029776470197     
+ 
+ #X Sector        Indices
+       63     7     6
+  -1.2145637006850354     
+ 
+ #X Sector        Indices
+       64     7     7
+ -0.31376275637262196     
+ 
+ #X Sector        Indices
+        1     0     0
+  0.25000000000000000     
+ 
+ #X Sector        Indices
+        2     0     1
+  -2.5273103635497129     
+ 
+ #X Sector        Indices
+        3     0     2
+  -3.3755883791552006     
+ 
+ #X Sector        Indices
+        4     0     3
+  -3.8290538210023759     
+ 
+ #X Sector        Indices
+        5     0     4
+  -4.0603409764271490     
+ 
+ #X Sector        Indices
+        6     0     5
+  -4.1934296560158781     
+ 
+ #X Sector        Indices
+        7     0     6
+  -3.9949192605770070     
+ 
+ #X Sector        Indices
+        8     0     7
+  -3.3592487880507571     
+ 
+ #X Sector        Indices
+        9     1     0
+ -0.71125639550634367     
+ 
+ #X Sector        Indices
+       10     1     1
+  -3.4885667495437653     
+ 
+ #X Sector        Indices
+       11     1     2
+  -4.2306174786741977     
+ 
+ #X Sector        Indices
+       12     1     3
+  -4.6288490220416074     
+ 
+ #X Sector        Indices
+       13     1     4
+  -4.8387687756772575     
+ 
+ #X Sector        Indices
+       14     1     5
+  -4.9703384841185212     
+ 
+ #X Sector        Indices
+       15     1     6
+  -4.7641685491174588     
+ 
+ #X Sector        Indices
+       16     1     7
+  -4.1145427660595848     
+ 
+ #X Sector        Indices
+       17     2     0
+  -1.1561690019961985     
+ 
+ #X Sector        Indices
+       18     2     1
+  -3.9334793513165467     
+ 
+ # Sector        Indices
+       19     2     2
+  -4.6270375360303140     
+ 
+ # Sector        Indices
+       20     2     3
+  -4.9791141767862257     
+ 
+ # Sector        Indices
+       21     2     4
+  -5.1564491887601793     
+ 
+ # Sector        Indices
+       22     2     5
+  -5.2836763935844182     
+ 
+ #X Sector        Indices
+       23     2     6
+  -5.0687413482786727     
+ 
+ #X Sector        Indices
+       24     2     7
+  -4.4048248382529476     
+ 
+ #X Sector        Indices
+       25     3     0
+  -1.3095974888739750     
+ 
+ #X Sector        Indices
+       26     3     1
+  -4.0869078373489618     
+ 
+ # Sector        Indices
+       27     3     2
+  -4.7739337164378304     
+ 
+ # Sector        Indices
+       28     3     3
+  -5.1199488991972002     
+ 
+ # Sector        Indices
+       29     3     4
+  -5.2916248337376741     
+ 
+ # Sector        Indices
+       30     3     5
+  -5.4174071439202196     
+ 
+ #X Sector        Indices
+       31     3     6
+  -5.2009681854180041     
+ 
+ #X Sector        Indices
+       32     3     7
+  -4.5346426687804309     
+ 
+ #X Sector        Indices
+       33     4     0
+  -1.3413583439904324     
+ 
+ #X Sector        Indices
+       34     4     1
+  -4.1186686887694686     
+ 
+ # Sector        Indices
+       35     4     2
+  -4.7741901590774152     
+ 
+ # Sector        Indices
+       36     4     3
+  -5.0819402295613481     
+ 
+ # Sector        Indices
+       37     4     4
+  -5.2218949415456315     
+ 
+ # Sector        Indices
+       38     4     5
+  -5.2703138870094843     
+ 
+ #X Sector        Indices
+       39     4     6
+  -5.0293121494466027     
+ 
+ #X Sector        Indices
+       40     4     7
+  -4.3381729992390294     
+ 
+ #X Sector        Indices
+       41     5     0
+  -1.0890802659177388     
+ 
+ #X Sector        Indices
+       42     5     1
+  -3.8663906100759098     
+ 
+ # Sector        Indices
+       43     5     2
+  -4.5175520635890507     
+ 
+ # Sector        Indices
+       44     5     3
+  -4.8205048044508043     
+ 
+ # Sector        Indices
+       45     5     4
+  -4.9592148117514654     
+ 
+ # Sector        Indices
+       46     5     5
+  -4.9604901623626896     
+ 
+ #X Sector        Indices
+       47     5     6
+  -4.6791483345661744     
+ 
+ #X Sector        Indices
+       48     5     7
+  -3.9025608267424432     
+ 
+ #X Sector        Indices
+       49     6     0
+ -0.43173859428520839     
+ 
+ #X Sector        Indices
+       50     6     1
+  -3.2090489374501474     
+ 
+ #X Sector        Indices
+       51     6     2
+  -3.8548389534736449     
+ 
+ #X Sector        Indices
+       52     6     3
+  -4.1534479425037105     
+ 
+ #X Sector        Indices
+       53     6     4
+  -4.2914718052552043     
+ 
+ #X Sector        Indices
+       54     6     5
+  -4.2591400025972810     
+ 
+ #X Sector        Indices
+       55     6     6
+  -3.9430145204012854     
+ 
+ #X Sector        Indices
+       56     6     7
+  -3.0409873823359654     
+ 
+ #X Sector        Indices
+       57     7     0
+   2.2978335664657932     
+ 
+ #X Sector        Indices
+       58     7     1
+ -0.47947677669914968     
+ 
+ #X Sector        Indices
+       59     7     2
+  -1.1252667927226456     
+ 
+ #X Sector        Indices
+       60     7     3
+  -1.4238757817527194     
+ 
+ #X Sector        Indices
+       61     7     4
+  -1.5618996445041982     
+ 
+ #X Sector        Indices
+       62     7     5
+  -1.5295678418462750     
+ 
+ #X Sector        Indices
+       63     7     6
+  -1.2134423596502830     
+ 
+ #X Sector        Indices
+       64     7     7
+ -0.31141522158496349     
+ 
+ #X Sector        Indices
+        1     0     0
+  0.25000000000000000     
+ 
+ #X Sector        Indices
+        2     0     1
+  -2.5273103635074623     
+ 
+ #X Sector        Indices
+        3     0     2
+  -3.3755857517037722     
+ 
+ #X Sector        Indices
+        4     0     3
+  -3.8290266090449263     
+ 
+ #X Sector        Indices
+        5     0     4
+  -4.0604134846231048     
+ 
+ #X Sector        Indices
+        6     0     5
+  -4.1935405030721329     
+ 
+ #X Sector        Indices
+        7     0     6
+  -3.9948466642031688     
+ 
+ #X Sector        Indices
+        8     0     7
+  -3.3591727930619202     
+ 
+ #X Sector        Indices
+        9     1     0
+ -0.71128656057728645     
+ 
+ #X Sector        Indices
+       10     1     1
+  -3.4885969145775109     
+ 
+ #X Sector        Indices
+       11     1     2
+  -4.2306542477831721     
+ 
+ #X Sector        Indices
+       12     1     3
+  -4.6288317803874088     
+ 
+ #X Sector        Indices
+       13     1     4
+  -4.8388468703919134     
+ 
+ #X Sector        Indices
+       14     1     5
+  -4.9704637544802761     
+ 
+ #X Sector        Indices
+       15     1     6
+  -4.7641134338507598     
+ 
+ #X Sector        Indices
+       16     1     7
+  -4.1144811470134428     
+ 
+ #X Sector        Indices
+       17     2     0
+  -1.1562015944987418     
+ 
+ #X Sector        Indices
+       18     2     1
+  -3.9335119437859780     
+ 
+ # Sector        Indices
+       19     2     2
+  -4.6271024934147631     
+ 
+ # Sector        Indices
+       20     2     3
+  -4.9791385398807328     
+ 
+ # Sector        Indices
+       21     2     4
+  -5.1565435926879291     
+ 
+ # Sector        Indices
+       22     2     5
+  -5.2838439494157807     
+ 
+ #X Sector        Indices
+       23     2     6
+  -5.0687367366749854     
+ 
+ #X Sector        Indices
+       24     2     7
+  -4.4048142940023096     
+ 
+ #X Sector        Indices
+       25     3     0
+  -1.3096735677882150     
+ 
+ #X Sector        Indices
+       26     3     1
+  -4.0869839162326569     
+ 
+ # Sector        Indices
+       27     3     2
+  -4.7740608355414089     
+ 
+ # Sector        Indices
+       28     3     3
+  -5.1200551160226508     
+ 
+ # Sector        Indices
+       29     3     4
+  -5.2918073347031465     
+ 
+ # Sector        Indices
+       30     3     5
+  -5.4176749457406350     
+ 
+ #X Sector        Indices
+       31     3     6
+  -5.2010694093417378     
+ 
+ #X Sector        Indices
+       32     3     7
+  -4.5347442412889274     
+ 
+ #X Sector        Indices
+       33     4     0
+  -1.3414596063716118     
+ 
+ #X Sector        Indices
+       34     4     1
+  -4.1187699511168603     
+ 
+ # Sector        Indices
+       35     4     2
+  -4.7743076910066531     
+ 
+ # Sector        Indices
+       36     4     3
+  -5.0820330505730471     
+ 
+ # Sector        Indices
+       37     4     4
+  -5.2219888457439936     
+ 
+ # Sector        Indices
+       38     4     5
+  -5.2704055024589147     
+ 
+ #X Sector        Indices
+       39     4     6
+  -5.0292524883094529     
+ 
+ #X Sector        Indices
+       40     4     7
+  -4.3381223113813707     
+ 
+ #X Sector        Indices
+       41     5     0
+  -1.0891440347908365     
+ 
+ #X Sector        Indices
+       42     5     1
+  -3.8664543789169850     
+ 
+ # Sector        Indices
+       43     5     2
+  -4.5176428133117081     
+ 
+ # Sector        Indices
+       44     5     3
+  -4.8205891563880980     
+ 
+ # Sector        Indices
+       45     5     4
+  -4.9593078228955942     
+ 
+ # Sector        Indices
+       46     5     5
+  -4.9605847479106764     
+ 
+ #X Sector        Indices
+       47     5     6
+  -4.6791319865730436     
+ 
+ #X Sector        Indices
+       48     5     7
+  -3.9025254883062961     
+ 
+ #X Sector        Indices
+       49     6     0
+ -0.43178553866568803     
+ 
+ #X Sector        Indices
+       50     6     1
+  -3.2090958817992727     
+ 
+ #X Sector        Indices
+       51     6     2
+  -3.8549144905720434     
+ 
+ #X Sector        Indices
+       52     6     3
+  -4.1535251778787536     
+ 
+ #X Sector        Indices
+       53     6     4
+  -4.2915607627504553     
+ 
+ #X Sector        Indices
+       54     6     5
+  -4.2591950820596001     
+ 
+ #X Sector        Indices
+       55     6     6
+  -3.9429941797968207     
+ 
+ #X Sector        Indices
+       56     6     7
+  -3.0409583317276083     
+ 
+ #X Sector        Indices
+       57     7     0
+   2.2977866220853134     
+ 
+ #X Sector        Indices
+       58     7     1
+ -0.47952372104827473     
+ 
+ #X Sector        Indices
+       59     7     2
+  -1.1253423298210417     
+ 
+ #X Sector        Indices
+       60     7     3
+  -1.4239530171277606     
+ 
+ #X Sector        Indices
+       61     7     4
+  -1.5619886019994484     
+ 
+ #X Sector        Indices
+       62     7     5
+  -1.5296229213085946     
+ 
+ #X Sector        Indices
+       63     7     6
+  -1.2134220190458185     
+ 
+ #X Sector        Indices
+       64     7     7
+ -0.31138617097660592     
+ 
+ #X Sector        Indices
+        1     0     0
+  0.25000000000000000     
+ 
+ #X Sector        Indices
+        2     0     1
+  -2.5273103634740703     
+ 
+ #X Sector        Indices
+        3     0     2
+  -3.3755884530055793     
+ 
+ #X Sector        Indices
+        4     0     3
+  -3.8290100078192291     
+ 
+ #X Sector        Indices
+        5     0     4
+  -4.0604633775779071     
+ 
+ #X Sector        Indices
+        6     0     5
+  -4.1936193052363979     
+ 
+ #X Sector        Indices
+        7     0     6
+  -3.9947893919936890     
+ 
+ #X Sector        Indices
+        8     0     7
+  -3.3590994537079073     
+ 
+ #X Sector        Indices
+        9     1     0
+ -0.71220671910018174     
+ 
+ #X Sector        Indices
+       10     1     1
+  -3.4895170731031633     
+ 
+ #X Sector        Indices
+       11     1     2
+  -4.2319741121468279     
+ 
+ #X Sector        Indices
+       12     1     3
+  -4.6304383899568160     
+ 
+ #X Sector        Indices
+       13     1     4
+  -4.8406910585940803     
+ 
+ #X Sector        Indices
+       14     1     5
+  -4.9723571927908150     
+ 
+ #X Sector        Indices
+       15     1     6
+  -4.7659261980683212     
+ 
+ #X Sector        Indices
+       16     1     7
+  -4.1163714331873296     
+ 
+ #X Sector        Indices
+       17     2     0
+  -1.1592338199262107     
+ 
+ #X Sector        Indices
+       18     2     1
+  -3.9365441691969227     
+ 
+ # Sector        Indices
+       19     2     2
+  -4.6302434168065361     
+ 
+ # Sector        Indices
+       20     2     3
+  -4.9823195164764362     
+ 
+ # Sector        Indices
+       21     2     4
+  -5.1598380299269397     
+ 
+ # Sector        Indices
+       22     2     5
+  -5.2872043314579864     
+ 
+ #X Sector        Indices
+       23     2     6
+  -5.0719821819824924     
+ 
+ #X Sector        Indices
+       24     2     7
+  -4.4080656414526160     
+ 
+ #X Sector        Indices
+       25     3     0
+  -1.3129646260027168     
+ 
+ #X Sector        Indices
+       26     3     1
+  -4.0902749744211171     
+ 
+ # Sector        Indices
+       27     3     2
+  -4.7773857266349449     
+ 
+ # Sector        Indices
+       28     3     3
+  -5.1233580463163140     
+ 
+ # Sector        Indices
+       29     3     4
+  -5.2951675521511774     
+ 
+ # Sector        Indices
+       30     3     5
+  -5.4210969011962673     
+ 
+ #X Sector        Indices
+       31     3     6
+  -5.2043669821321865     
+ 
+ #X Sector        Indices
+       32     3     7
+  -4.5380329979506273     
+ 
+ #X Sector        Indices
+       33     4     0
+  -1.3447525315561912     
+ 
+ #X Sector        Indices
+       34     4     1
+  -4.1220628762750202     
+ 
+ # Sector        Indices
+       35     4     2
+  -4.7776155474237827     
+ 
+ # Sector        Indices
+       36     4     3
+  -5.0853050529147286     
+ 
+ # Sector        Indices
+       37     4     4
+  -5.2252574479940854     
+ 
+ # Sector        Indices
+       38     4     5
+  -5.2733634673037422     
+ 
+ #X Sector        Indices
+       39     4     6
+  -5.0318122309863327     
+ 
+ #X Sector        Indices
+       40     4     7
+  -4.3402507651815423     
+ 
+ #X Sector        Indices
+       41     5     0
+  -1.0903958681631514     
+ 
+ #X Sector        Indices
+       42     5     1
+  -3.8677062122582671     
+ 
+ # Sector        Indices
+       43     5     2
+  -4.5188857441655585     
+ 
+ # Sector        Indices
+       44     5     3
+  -4.8217914657343712     
+ 
+ # Sector        Indices
+       45     5     4
+  -4.9605139623722581     
+ 
+ # Sector        Indices
+       46     5     5
+  -4.9615895550434086     
+ 
+ #X Sector        Indices
+       47     5     6
+  -4.6798888253521138     
+ 
+ #X Sector        Indices
+       48     5     7
+  -3.9029572575335236     
+ 
+ #X Sector        Indices
+       49     6     0
+ -0.43219441224411426     
+ 
+ #X Sector        Indices
+       50     6     1
+  -3.2095047553532714     
+ 
+ #X Sector        Indices
+       51     6     2
+  -3.8553500460915107     
+ 
+ #X Sector        Indices
+       52     6     3
+  -4.1539546236105336     
+ 
+ #X Sector        Indices
+       53     6     4
+  -4.2920011042956263     
+ 
+ #X Sector        Indices
+       54     6     5
+  -4.2596118351054457     
+ 
+ #X Sector        Indices
+       55     6     6
+  -3.9433411110445817     
+ 
+ #X Sector        Indices
+       56     6     7
+  -3.0412938659520226     
+ 
+ #X Sector        Indices
+       57     7     0
+   2.2973777485068871     
+ 
+ #X Sector        Indices
+       58     7     1
+ -0.47993259460227095     
+ 
+ #X Sector        Indices
+       59     7     2
+  -1.1257778853405114     
+ 
+ #X Sector        Indices
+       60     7     3
+  -1.4243824628595465     
+ 
+ #X Sector        Indices
+       61     7     4
+  -1.5624289435446312     
+ 
+ #X Sector        Indices
+       62     7     5
+  -1.5300396743544413     
+ 
+ #X Sector        Indices
+       63     7     6
+  -1.2137689502935753     
+ 
+ #X Sector        Indices
+       64     7     7
+ -0.31172170520102060     
+ 
+ #X Sector        Indices
+        1     0     0
+  0.25000000000000000     
+ 
+ #X Sector        Indices
+        2     0     1
+  -2.5273103627552480     
+ 
+ #X Sector        Indices
+        3     0     2
+  -3.3757253041769215     
+ 
+ #X Sector        Indices
+        4     0     3
+  -3.8290907845406963     
+ 
+ #X Sector        Indices
+        5     0     4
+  -4.0604869694274921     
+ 
+ #X Sector        Indices
+        6     0     5
+  -4.1937281990302191     
+ 
+ #X Sector        Indices
+        7     0     6
+  -3.9946037320442951     
+ 
+ #X Sector        Indices
+        8     0     7
+  -3.3584195568626196     
+ 
+ #X Sector        Indices
+        9     1     0
+ -0.71793470700272921     
+ 
+ #X Sector        Indices
+       10     1     1
+  -3.4952450605331946     
+ 
+ #X Sector        Indices
+       11     1     2
+  -4.2397192410193592     
+ 
+ #X Sector        Indices
+       12     1     3
+  -4.6394986285280329     
+ 
+ #X Sector        Indices
+       13     1     4
+  -4.8504819579178857     
+ 
+ #X Sector        Indices
+       14     1     5
+  -4.9822910867078924     
+ 
+ #X Sector        Indices
+       15     1     6
+  -4.7757752125616619     
+ 
+ #X Sector        Indices
+       16     1     7
+  -4.1261261399402915     
+ 
+ #X Sector        Indices
+       17     2     0
+  -1.1739312085932962     
+ 
+ #X Sector        Indices
+       18     2     1
+  -3.9512415573205448     
+ 
+ # Sector        Indices
+       19     2     2
+  -4.6455121115649405     
+ 
+ # Sector        Indices
+       20     2     3
+  -4.9977452669288676     
+ 
+ # Sector        Indices
+       21     2     4
+  -5.1756633428707444     
+ 
+ # Sector        Indices
+       22     2     5
+  -5.3031805988912577     
+ 
+ #X Sector        Indices
+       23     2     6
+  -5.0877279557821620     
+ 
+ #X Sector        Indices
+       24     2     7
+  -4.4234979349349937     
+ 
+ #X Sector        Indices
+       25     3     0
+  -1.3305665561977409     
+ 
+ #X Sector        Indices
+       26     3     1
+  -4.1078769040410732     
+ 
+ # Sector        Indices
+       27     3     2
+  -4.7952115335286232     
+ 
+ # Sector        Indices
+       28     3     3
+  -5.1409745005084702     
+ 
+ # Sector        Indices
+       29     3     4
+  -5.3128552848921151     
+ 
+ # Sector        Indices
+       30     3     5
+  -5.4388603770051986     
+ 
+ #X Sector        Indices
+       31     3     6
+  -5.2218101014412541     
+ 
+ #X Sector        Indices
+       32     3     7
+  -4.5550266233681915     
+ 
+ #X Sector        Indices
+       33     4     0
+  -1.3623914490282008     
+ 
+ #X Sector        Indices
+       34     4     1
+  -4.1397017932035824     
+ 
+ # Sector        Indices
+       35     4     2
+  -4.7954623794777946     
+ 
+ # Sector        Indices
+       36     4     3
+  -5.1028940272195049     
+ 
+ # Sector        Indices
+       37     4     4
+  -5.2429315760832340     
+ 
+ # Sector        Indices
+       38     4     5
+  -5.2907244381190051     
+ 
+ #X Sector        Indices
+       39     4     6
+  -5.0484687822407635     
+ 
+ #X Sector        Indices
+       40     4     7
+  -4.3558784143862601     
+ 
+ #X Sector        Indices
+       41     5     0
+  -1.1047055093997278     
+ 
+ #X Sector        Indices
+       42     5     1
+  -3.8820158529382764     
+ 
+ # Sector        Indices
+       43     5     2
+  -4.5332844417797329     
+ 
+ # Sector        Indices
+       44     5     3
+  -4.8358313817496414     
+ 
+ # Sector        Indices
+       45     5     4
+  -4.9746241503262940     
+ 
+ # Sector        Indices
+       46     5     5
+  -4.9747192764773507     
+ 
+ #X Sector        Indices
+       47     5     6
+  -4.6916764944766376     
+ 
+ #X Sector        Indices
+       48     5     7
+  -3.9118995304263056     
+ 
+ #X Sector        Indices
+       49     6     0
+ -0.43714445517244943     
+ 
+ #X Sector        Indices
+       50     6     1
+  -3.2144547977540365     
+ 
+ #X Sector        Indices
+       51     6     2
+  -3.8605166505063244     
+ 
+ #X Sector        Indices
+       52     6     3
+  -4.1588847166545584     
+ 
+ #X Sector        Indices
+       53     6     4
+  -4.2970228548701908     
+ 
+ #X Sector        Indices
+       54     6     5
+  -4.2646092154044792     
+ 
+ #X Sector        Indices
+       55     6     6
+  -3.9478653251721738     
+ 
+ #X Sector        Indices
+       56     6     7
+  -3.0455640120350700     
+ 
+ #X Sector        Indices
+       57     7     0
+   2.2924277055785520     
+ 
+ #X Sector        Indices
+       58     7     1
+ -0.48488263700303130     
+ 
+ #X Sector        Indices
+       59     7     2
+  -1.1309444897553269     
+ 
+ #X Sector        Indices
+       60     7     3
+  -1.4293125559035693     
+ 
+ #X Sector        Indices
+       61     7     4
+  -1.5674506941191881     
+ 
+ #X Sector        Indices
+       62     7     5
+  -1.5350370546534777     
+ 
+ #X Sector        Indices
+       63     7     6
+  -1.2182931644211754     
+ 
+ #X Sector        Indices
+       64     7     7
+ -0.31599185128406759     
+ 
+ #X Sector        Indices
+        1     0     0
+  0.25000000000000000     
+ 
+ #X Sector        Indices
+        2     0     1
+  -2.5273103627233882     
+ 
+ #X Sector        Indices
+        3     0     2
+  -3.3757500630215560     
+ 
+ #X Sector        Indices
+        4     0     3
+  -3.8290940491498855     
+ 
+ #X Sector        Indices
+        5     0     4
+  -4.0605278264166484     
+ 
+ #X Sector        Indices
+        6     0     5
+  -4.1937965372611803     
+ 
+ #X Sector        Indices
+        7     0     6
+  -3.9946098280060021     
+ 
+ #X Sector        Indices
+        8     0     7
+  -3.3583822545915574     
+ 
+ #X Sector        Indices
+        9     1     0
+ -0.72437492441781448     
+ 
+ #X Sector        Indices
+       10     1     1
+  -3.5016852781142398     
+ 
+ #X Sector        Indices
+       11     1     2
+  -4.2485077682071486     
+ 
+ #X Sector        Indices
+       12     1     3
+  -4.6501284156973366     
+ 
+ #X Sector        Indices
+       13     1     4
+  -4.8620841735326321     
+ 
+ #X Sector        Indices
+       14     1     5
+  -4.9940008832088010     
+ 
+ #X Sector        Indices
+       15     1     6
+  -4.7877170960134228     
+ 
+ #X Sector        Indices
+       16     1     7
+  -4.1385368153331434     
+ 
+ #X Sector        Indices
+       17     2     0
+  -1.1934475436920111     
+ 
+ #X Sector        Indices
+       18     2     1
+  -3.9707578924839733     
+ 
+ # Sector        Indices
+       19     2     2
+  -4.6658824050510557     
+ 
+ # Sector        Indices
+       20     2     3
+  -5.0190025483709837     
+ 
+ # Sector        Indices
+       21     2     4
+  -5.1978493788196900     
+ 
+ # Sector        Indices
+       22     2     5
+  -5.3256059783657603     
+ 
+ #X Sector        Indices
+       23     2     6
+  -5.1103453086013326     
+ 
+ #X Sector        Indices
+       24     2     7
+  -4.4464781857564066     
+ 
+ #X Sector        Indices
+       25     3     0
+  -1.3583483129447655     
+ 
+ #X Sector        Indices
+       26     3     1
+  -4.1356586607722283     
+ 
+ # Sector        Indices
+       27     3     2
+  -4.8230666781401581     
+ 
+ # Sector        Indices
+       28     3     3
+  -5.1688320251096460     
+ 
+ # Sector        Indices
+       29     3     4
+  -5.3407641291435386     
+ 
+ # Sector        Indices
+       30     3     5
+  -5.4668254942090648     
+ 
+ #X Sector        Indices
+       31     3     6
+  -5.2497285113397014     
+ 
+ #X Sector        Indices
+       32     3     7
+  -4.5829202278484376     
+ 
+ #X Sector        Indices
+       33     4     0
+  -1.3903552797822947     
+ 
+ #X Sector        Indices
+       34     4     1
+  -4.1676656239342726     
+ 
+ # Sector        Indices
+       35     4     2
+  -4.8234412500726878     
+ 
+ # Sector        Indices
+       36     4     3
+  -5.1308384182209270     
+ 
+ # Sector        Indices
+       37     4     4
+  -5.2708719962749173     
+ 
+ # Sector        Indices
+       38     4     5
+  -5.3181145392758351     
+ 
+ #X Sector        Indices
+       39     4     6
+  -5.0752294675423713     
+ 
+ #X Sector        Indices
+       40     4     7
+  -4.3816055708931581     
+ 
+ #X Sector        Indices
+       41     5     0
+  -1.1274706717626160     
+ 
+ #X Sector        Indices
+       42     5     1
+  -3.9047810152509816     
+ 
+ # Sector        Indices
+       43     5     2
+  -4.5558980381357612     
+ 
+ # Sector        Indices
+       44     5     3
+  -4.8582759990996411     
+ 
+ # Sector        Indices
+       45     5     4
+  -4.9970509489500881     
+ 
+ # Sector        Indices
+       46     5     5
+  -4.9958269862316156     
+ 
+ #X Sector        Indices
+       47     5     6
+  -4.7115043238227106     
+ 
+ #X Sector        Indices
+       48     5     7
+  -3.9283180952294465     
+ 
+ #X Sector        Indices
+       49     6     0
+ -0.44777569439924370     
+ 
+ #X Sector        Indices
+       50     6     1
+  -3.2250860369597127     
+ 
+ #X Sector        Indices
+       51     6     2
+  -3.8711760745759940     
+ 
+ #X Sector        Indices
+       52     6     3
+  -4.1695406098634047     
+ 
+ #X Sector        Indices
+       53     6     4
+  -4.3076920296384049     
+ 
+ #X Sector        Indices
+       54     6     5
+  -4.2752730244250099     
+ 
+ #X Sector        Indices
+       55     6     6
+  -3.9584973993838584     
+ 
+ #X Sector        Indices
+       56     6     7
+  -3.0561579489908013     
+ 
+ #X Sector        Indices
+       57     7     0
+   2.2817964663517580     
+ 
+ #X Sector        Indices
+       58     7     1
+ -0.49551387620870929     
+ 
+ #X Sector        Indices
+       59     7     2
+  -1.1416039138249934     
+ 
+ #X Sector        Indices
+       60     7     3
+  -1.4399684491124114     
+ 
+ #X Sector        Indices
+       61     7     4
+  -1.5781198688873974     
+ 
+ #X Sector        Indices
+       62     7     5
+  -1.5457008636740102     
+ 
+ #X Sector        Indices
+       63     7     6
+  -1.2289252386328546     
+ 
+ #X Sector        Indices
+       64     7     7
+ -0.32658578823979934     
+ 
+ #X Sector        Indices
+        1     0     0
+  0.25000000000000000     
+ 
+ #X Sector        Indices
+        2     0     1
+  -2.5273103627153821     
+ 
+ #X Sector        Indices
+        3     0     2
+  -3.3757196951496264     
+ 
+ #X Sector        Indices
+        4     0     3
+  -3.8290771555868828     
+ 
+ #X Sector        Indices
+        5     0     4
+  -4.0605497602689979     
+ 
+ #X Sector        Indices
+        6     0     5
+  -4.1938271183310727     
+ 
+ #X Sector        Indices
+        7     0     6
+  -3.9946263803464062     
+ 
+ #X Sector        Indices
+        8     0     7
+  -3.3583859507091143     
+ 
+ #X Sector        Indices
+        9     1     0
+ -0.72444610897274020     
+ 
+ #X Sector        Indices
+       10     1     1
+  -3.5017564626628173     
+ 
+ #X Sector        Indices
+       11     1     2
+  -4.2485570693615760     
+ 
+ #X Sector        Indices
+       12     1     3
+  -4.6501786209199905     
+ 
+ #X Sector        Indices
+       13     1     4
+  -4.8621783109295000     
+ 
+ #X Sector        Indices
+       14     1     5
+  -4.9941064805860425     
+ 
+ #X Sector        Indices
+       15     1     6
+  -4.7878099648034897     
+ 
+ #X Sector        Indices
+       16     1     7
+  -4.1386158415933583     
+ 
+ #X Sector        Indices
+       17     2     0
+  -1.1935451320635444     
+ 
+ #X Sector        Indices
+       18     2     1
+  -3.9708554808487664     
+ 
+ # Sector        Indices
+       19     2     2
+  -4.6659528310019969     
+ 
+ # Sector        Indices
+       20     2     3
+  -5.0190448420073972     
+ 
+ # Sector        Indices
+       21     2     4
+  -5.1979093113836425     
+ 
+ # Sector        Indices
+       22     2     5
+  -5.3256824209356335     
+ 
+ #X Sector        Indices
+       23     2     6
+  -5.1104047363348313     
+ 
+ #X Sector        Indices
+       24     2     7
+  -4.4465125257451001     
+ 
+ #X Sector        Indices
+       25     3     0
+  -1.3584666585586185     
+ 
+ #X Sector        Indices
+       26     3     1
+  -4.1357770063829555     
+ 
+ # Sector        Indices
+       27     3     2
+  -4.8231868473854442     
+ 
+ # Sector        Indices
+       28     3     3
+  -5.1689470960698713     
+ 
+ # Sector        Indices
+       29     3     4
+  -5.3409109794969867     
+ 
+ # Sector        Indices
+       30     3     5
+  -5.4669959106858466     
+ 
+ #X Sector        Indices
+       31     3     6
+  -5.2498857270533774     
+ 
+ #X Sector        Indices
+       32     3     7
+  -4.5830565206778973     
+ 
+ #X Sector        Indices
+       33     4     0
+  -1.3904339249920710     
+ 
+ #X Sector        Indices
+       34     4     1
+  -4.1677442691384998     
+ 
+ # Sector        Indices
+       35     4     2
+  -4.8235126819849965     
+ 
+ # Sector        Indices
+       36     4     3
+  -5.1309031819887778     
+ 
+ # Sector        Indices
+       37     4     4
+  -5.2709375688076650     
+ 
+ # Sector        Indices
+       38     4     5
+  -5.3182349076780007     
+ 
+ #X Sector        Indices
+       39     4     6
+  -5.0753546806941987     
+ 
+ #X Sector        Indices
+       40     4     7
+  -4.3817197780055830     
+ 
+ #X Sector        Indices
+       41     5     0
+  -1.1275224753490571     
+ 
+ #X Sector        Indices
+       42     5     1
+  -3.9048328188316805     
+ 
+ # Sector        Indices
+       43     5     2
+  -4.5559419263843015     
+ 
+ # Sector        Indices
+       44     5     3
+  -4.8583130419908702     
+ 
+ # Sector        Indices
+       45     5     4
+  -4.9970887556337349     
+ 
+ # Sector        Indices
+       46     5     5
+  -4.9958875288655378     
+ 
+ #X Sector        Indices
+       47     5     6
+  -4.7115708740400457     
+ 
+ #X Sector        Indices
+       48     5     7
+  -3.9283774436164447     
+ 
+ #X Sector        Indices
+       49     6     0
+ -0.44783082850127287     
+ 
+ #X Sector        Indices
+       50     6     1
+  -3.2251411710562126     
+ 
+ #X Sector        Indices
+       51     6     2
+  -3.8712252307871791     
+ 
+ #X Sector        Indices
+       52     6     3
+  -4.1695852363469275     
+ 
+ #X Sector        Indices
+       53     6     4
+  -4.3077379809871594     
+ 
+ #X Sector        Indices
+       54     6     5
+  -4.2753329258610133     
+ 
+ #X Sector        Indices
+       55     6     6
+  -3.9585675013255144     
+ 
+ #X Sector        Indices
+       56     6     7
+  -3.0562167792103878     
+ 
+ #X Sector        Indices
+       57     7     0
+   2.2817413322497284     
+ 
+ #X Sector        Indices
+       58     7     1
+ -0.49556901030521372     
+ 
+ #X Sector        Indices
+       59     7     2
+  -1.1416530700361769     
+ 
+ #X Sector        Indices
+       60     7     3
+  -1.4400130755959175     
+ 
+ #X Sector        Indices
+       61     7     4
+  -1.5781658202361686     
+ 
+ #X Sector        Indices
+       62     7     5
+  -1.5457607651100143     
+ 
+ #X Sector        Indices
+       63     7     6
+  -1.2289953405745091     
+ 
+ #X Sector        Indices
+       64     7     7
+ -0.32664461845938586     
+ 
+ #X Sector        Indices
+        1     0     0
+  0.25000000000000000     
+ 
+ #X Sector        Indices
+        2     0     1
+  -2.5273103626577988     
+ 
+ #X Sector        Indices
+        3     0     2
+  -3.3757685585214143     
+ 
+ #X Sector        Indices
+        4     0     3
+  -3.8290900861305510     
+ 
+ #X Sector        Indices
+        5     0     4
+  -4.0605851400033144     
+ 
+ #X Sector        Indices
+        6     0     5
+  -4.1938945062268997     
+ 
+ #X Sector        Indices
+        7     0     6
+  -3.9946400979114500     
+ 
+ #X Sector        Indices
+        8     0     7
+  -3.3583418624098336     
+ 
+ #X Sector        Indices
+        9     1     0
+ -0.72472070059233318     
+ 
+ #X Sector        Indices
+       10     1     1
+  -3.5020310542350281     
+ 
+ #X Sector        Indices
+       11     1     2
+  -4.2489221678761684     
+ 
+ #X Sector        Indices
+       12     1     3
+  -4.6505229375997885     
+ 
+ #X Sector        Indices
+       13     1     4
+  -4.8625498562899789     
+ 
+ #X Sector        Indices
+       14     1     5
+  -4.9945138871423955     
+ 
+ #X Sector        Indices
+       15     1     6
+  -4.7881641485111555     
+ 
+ #X Sector        Indices
+       16     1     7
+  -4.1389136056754250     
+ 
+ #X Sector        Indices
+       17     2     0
+  -1.1938269098809522     
+ 
+ #X Sector        Indices
+       18     2     1
+  -3.9711372586169671     
+ 
+ # Sector        Indices
+       19     2     2
+  -4.6662766177686663     
+ 
+ # Sector        Indices
+       20     2     3
+  -5.0193232052898207     
+ 
+ # Sector        Indices
+       21     2     4
+  -5.1981845878689095     
+ 
+ # Sector        Indices
+       22     2     5
+  -5.3259989763189894     
+ 
+ #X Sector        Indices
+       23     2     6
+  -5.1106639773570004     
+ 
+ #X Sector        Indices
+       24     2     7
+  -4.4467118177740428     
+ 
+ #X Sector        Indices
+       25     3     0
+  -1.3588244056204890     
+ 
+ #X Sector        Indices
+       26     3     1
+  -4.1361347533993111     
+ 
+ # Sector        Indices
+       27     3     2
+  -4.8236080142579336     
+ 
+ # Sector        Indices
+       28     3     3
+  -5.1693414073028165     
+ 
+ # Sector        Indices
+       29     3     4
+  -5.3413087242049215     
+ 
+ # Sector        Indices
+       30     3     5
+  -5.4674387189254636     
+ 
+ #X Sector        Indices
+       31     3     6
+  -5.2502722452477046     
+ 
+ #X Sector        Indices
+       32     3     7
+  -4.5833838287994322     
+ 
+ #X Sector        Indices
+       33     4     0
+  -1.3907680592687894     
+ 
+ #X Sector        Indices
+       34     4     1
+  -4.1680784033700711     
+ 
+ # Sector        Indices
+       35     4     2
+  -4.8238923601729349     
+ 
+ # Sector        Indices
+       36     4     3
+  -5.1312684581553656     
+ 
+ # Sector        Indices
+       37     4     4
+  -5.2713156278309121     
+ 
+ # Sector        Indices
+       38     4     5
+  -5.3186086622979234     
+ 
+ #X Sector        Indices
+       39     4     6
+  -5.0756560851251686     
+ 
+ #X Sector        Indices
+       40     4     7
+  -4.3819390626926911     
+ 
+ #X Sector        Indices
+       41     5     0
+  -1.1277037560780920     
+ 
+ #X Sector        Indices
+       42     5     1
+  -3.9050140995159324     
+ 
+ # Sector        Indices
+       43     5     2
+  -4.5561675829031101     
+ 
+ # Sector        Indices
+       44     5     3
+  -4.8585284937833064     
+ 
+ # Sector        Indices
+       45     5     4
+  -4.9973209764524436     
+ 
+ # Sector        Indices
+       46     5     5
+  -4.9961269946660458     
+ 
+ #X Sector        Indices
+       47     5     6
+  -4.7117589875693398     
+ 
+ #X Sector        Indices
+       48     5     7
+  -3.9285247245412389     
+ 
+ #X Sector        Indices
+       49     6     0
+ -0.44798194915095274     
+ 
+ #X Sector        Indices
+       50     6     1
+  -3.2252922916616975     
+ 
+ #X Sector        Indices
+       51     6     2
+  -3.8714192343889349     
+ 
+ #X Sector        Indices
+       52     6     3
+  -4.1697715979024528     
+ 
+ #X Sector        Indices
+       53     6     4
+  -4.3079428057579774     
+ 
+ #X Sector        Indices
+       54     6     5
+  -4.2755344493332244     
+ 
+ #X Sector        Indices
+       55     6     6
+  -3.9587156631376841     
+ 
+ #X Sector        Indices
+       56     6     7
+  -3.0563238115607860     
+ 
+ #X Sector        Indices
+       57     7     0
+   2.2815902116000486     
+ 
+ #X Sector        Indices
+       58     7     1
+ -0.49572013091070000     
+ 
+ #X Sector        Indices
+       59     7     2
+  -1.1418470736379318     
+ 
+ #X Sector        Indices
+       60     7     3
+  -1.4401994371514415     
+ 
+ #X Sector        Indices
+       61     7     4
+  -1.5783706450069728     
+ 
+ #X Sector        Indices
+       62     7     5
+  -1.5459622885822228     
+ 
+ #X Sector        Indices
+       63     7     6
+  -1.2291435023866830     
+ 
+ #X Sector        Indices
+       64     7     7
+ -0.32675165080978452     
+ 
+ #X Sector        Indices
+        1     0     0
+  0.25000000000000000     
+ 
+ #X Sector        Indices
+        2     0     1
+  -2.5273103606483276     
+ 
+ #X Sector        Indices
+        3     0     2
+  -3.3767120616480781     
+ 
+ #X Sector        Indices
+        4     0     3
+  -3.8297149465382359     
+ 
+ #X Sector        Indices
+        5     0     4
+  -4.0605826243328007     
+ 
+ #X Sector        Indices
+        6     0     5
+  -4.1944685331450975     
+ 
+ #X Sector        Indices
+        7     0     6
+  -3.9944064493125540     
+ 
+ #X Sector        Indices
+        8     0     7
+  -3.3554055635254114     
+ 
+ #X Sector        Indices
+        9     1     0
+ -0.72472753242565358     
+ 
+ #X Sector        Indices
+       10     1     1
+  -3.5020378843455906     
+ 
+ #X Sector        Indices
+       11     1     2
+  -4.2500496614846313     
+ 
+ #X Sector        Indices
+       12     1     3
+  -4.6509540947666066     
+ 
+ #X Sector        Indices
+       13     1     4
+  -4.8625652267554349     
+ 
+ #X Sector        Indices
+       14     1     5
+  -4.9950887136666058     
+ 
+ #X Sector        Indices
+       15     1     6
+  -4.7878671224746929     
+ 
+ #X Sector        Indices
+       16     1     7
+  -4.1359805985161175     
+ 
+ #X Sector        Indices
+       17     2     0
+  -1.1938505410897129     
+ 
+ #X Sector        Indices
+       18     2     1
+  -3.9711608882592446     
+ 
+ # Sector        Indices
+       19     2     2
+  -4.6674902776464764     
+ 
+ # Sector        Indices
+       20     2     3
+  -5.0195242136418523     
+ 
+ # Sector        Indices
+       21     2     4
+  -5.1982822175558665     
+ 
+ # Sector        Indices
+       22     2     5
+  -5.3265763663352832     
+ 
+ #X Sector        Indices
+       23     2     6
+  -5.1102880570007345     
+ 
+ #X Sector        Indices
+       24     2     7
+  -4.4437798290348178     
+ 
+ #X Sector        Indices
+       25     3     0
+  -1.3588475192631007     
+ 
+ #X Sector        Indices
+       26     3     1
+  -4.1361578655066094     
+ 
+ # Sector        Indices
+       27     3     2
+  -4.8248300965994302     
+ 
+ # Sector        Indices
+       28     3     3
+  -5.1695157652168318     
+ 
+ # Sector        Indices
+       29     3     4
+  -5.3414580794394189     
+ 
+ # Sector        Indices
+       30     3     5
+  -5.4680306030021599     
+ 
+ #X Sector        Indices
+       31     3     6
+  -5.2498954282278421     
+ 
+ #X Sector        Indices
+       32     3     7
+  -4.5804687308437204     
+ 
+ #X Sector        Indices
+       33     4     0
+  -1.3907735423047698     
+ 
+ #X Sector        Indices
+       34     4     1
+  -4.1680838849871025     
+ 
+ # Sector        Indices
+       35     4     2
+  -4.8250817974669893     
+ 
+ # Sector        Indices
+       36     4     3
+  -5.1312461109041489     
+ 
+ # Sector        Indices
+       37     4     4
+  -5.2718641661915902     
+ 
+ # Sector        Indices
+       38     4     5
+  -5.3191643572904672     
+ 
+ #X Sector        Indices
+       39     4     6
+  -5.0750523136283734     
+ 
+ #X Sector        Indices
+       40     4     7
+  -4.3790025043411074     
+ 
+ #X Sector        Indices
+       41     5     0
+  -1.1276992389240628     
+ 
+ #X Sector        Indices
+       42     5     1
+  -3.9050095809641907     
+ 
+ # Sector        Indices
+       43     5     2
+  -4.5573407655020262     
+ 
+ # Sector        Indices
+       44     5     3
+  -4.8584854485963485     
+ 
+ # Sector        Indices
+       45     5     4
+  -4.9978630504011630     
+ 
+ # Sector        Indices
+       46     5     5
+  -4.9966610472102682     
+ 
+ #X Sector        Indices
+       47     5     6
+  -4.7107195042515047     
+ 
+ #X Sector        Indices
+       48     5     7
+  -3.9255921459504877     
+ 
+ #X Sector        Indices
+       49     6     0
+ -0.44796897858999934     
+ 
+ #X Sector        Indices
+       50     6     1
+  -3.2252793197324796     
+ 
+ #X Sector        Indices
+       51     6     2
+  -3.8725725949553000     
+ 
+ #X Sector        Indices
+       52     6     3
+  -4.1697131435299060     
+ 
+ #X Sector        Indices
+       53     6     4
+  -4.3084737381582530     
+ 
+ #X Sector        Indices
+       54     6     5
+  -4.2760333823598717     
+ 
+ #X Sector        Indices
+       55     6     6
+  -3.9573060585260929     
+ 
+ #X Sector        Indices
+       56     6     7
+  -3.0533745421154102     
+ 
+ #X Sector        Indices
+       57     7     0
+   2.2816031821610023     
+ 
+ #X Sector        Indices
+       58     7     1
+ -0.49570715898147505     
+ 
+ #X Sector        Indices
+       59     7     2
+  -1.1430004342043019     
+ 
+ #X Sector        Indices
+       60     7     3
+  -1.4401409827789022     
+ 
+ #X Sector        Indices
+       61     7     4
+  -1.5789015774072495     
+ 
+ #X Sector        Indices
+       62     7     5
+  -1.5464612216088760     
+ 
+ #X Sector        Indices
+       63     7     6
+  -1.2277338977750851     
+ 
+ #X Sector        Indices
+       64     7     7
+ -0.32380238136440909     
+ 
+ #X Sector        Indices
+        1     0     0
+  0.25000000000000000     
+ 
+ #X Sector        Indices
+        2     0     1
+  -2.5273103606434955     
+ 
+ #X Sector        Indices
+        3     0     2
+  -3.3767085116373705     
+ 
+ #X Sector        Indices
+        4     0     3
+  -3.8297133896600357     
+ 
+ #X Sector        Indices
+        5     0     4
+  -4.0605841587335068     
+ 
+ #X Sector        Indices
+        6     0     5
+  -4.1944719875940297     
+ 
+ #X Sector        Indices
+        7     0     6
+  -3.9943976277280155     
+ 
+ #X Sector        Indices
+        8     0     7
+  -3.3553916138694158     
+ 
+ #X Sector        Indices
+        9     1     0
+ -0.72473414203880504     
+ 
+ #X Sector        Indices
+       10     1     1
+  -3.5020444939544539     
+ 
+ #X Sector        Indices
+       11     1     2
+  -4.2500525327706304     
+ 
+ #X Sector        Indices
+       12     1     3
+  -4.6509556295070373     
+ 
+ #X Sector        Indices
+       13     1     4
+  -4.8625702054133582     
+ 
+ #X Sector        Indices
+       14     1     5
+  -4.9950958446298745     
+ 
+ #X Sector        Indices
+       15     1     6
+  -4.7878628512342676     
+ 
+ #X Sector        Indices
+       16     1     7
+  -4.1359707171385374     
+ 
+ #X Sector        Indices
+       17     2     0
+  -1.1938670339317001     
+ 
+ #X Sector        Indices
+       18     2     1
+  -3.9711773810973767     
+ 
+ # Sector        Indices
+       19     2     2
+  -4.6675043729977874     
+ 
+ # Sector        Indices
+       20     2     3
+  -5.0195330811622831     
+ 
+ # Sector        Indices
+       21     2     4
+  -5.1982910098045245     
+ 
+ # Sector        Indices
+       22     2     5
+  -5.3265873318706705     
+ 
+ #X Sector        Indices
+       23     2     6
+  -5.1102878362852540     
+ 
+ #X Sector        Indices
+       24     2     7
+  -4.4437716898334552     
+ 
+ #X Sector        Indices
+       25     3     0
+  -1.3588633567191528     
+ 
+ #X Sector        Indices
+       26     3     1
+  -4.1361737029592991     
+ 
+ # Sector        Indices
+       27     3     2
+  -4.8248472617897127     
+ 
+ # Sector        Indices
+       28     3     3
+  -5.1695306314891862     
+ 
+ # Sector        Indices
+       29     3     4
+  -5.3414748597517825     
+ 
+ # Sector        Indices
+       30     3     5
+  -5.4680501958564740     
+ 
+ #X Sector        Indices
+       31     3     6
+  -5.2499045515634126     
+ 
+ #X Sector        Indices
+       32     3     7
+  -4.5804704255273370     
+ 
+ #X Sector        Indices
+       33     4     0
+  -1.3907758247841351     
+ 
+ #X Sector        Indices
+       34     4     1
+  -4.1680861674628336     
+ 
+ # Sector        Indices
+       35     4     2
+  -4.8250833603065315     
+ 
+ # Sector        Indices
+       36     4     3
+  -5.1312439554055951     
+ 
+ # Sector        Indices
+       37     4     4
+  -5.2718626787134326     
+ 
+ # Sector        Indices
+       38     4     5
+  -5.3191595829484868     
+ 
+ #X Sector        Indices
+       39     4     6
+  -5.0750417134131620     
+ 
+ #X Sector        Indices
+       40     4     7
+  -4.3789862038786049     
+ 
+ #X Sector        Indices
+       41     5     0
+  -1.1276943517568854     
+ 
+ #X Sector        Indices
+       42     5     1
+  -3.9050046937935372     
+ 
+ # Sector        Indices
+       43     5     2
+  -4.5573361398222989     
+ 
+ # Sector        Indices
+       44     5     3
+  -4.8584781274332007     
+ 
+ # Sector        Indices
+       45     5     4
+  -4.9978567408279453     
+ 
+ # Sector        Indices
+       46     5     5
+  -4.9966506770209760     
+ 
+ #X Sector        Indices
+       47     5     6
+  -4.7107094847299109     
+ 
+ #X Sector        Indices
+       48     5     7
+  -3.9255771165028874     
+ 
+ #X Sector        Indices
+       49     6     0
+ -0.44795890554273504     
+ 
+ #X Sector        Indices
+       50     6     1
+  -3.2252692466817554     
+ 
+ #X Sector        Indices
+       51     6     2
+  -3.8725627700736620     
+ 
+ #X Sector        Indices
+       52     6     3
+  -4.1697006760462099     
+ 
+ #X Sector        Indices
+       53     6     4
+  -4.3084623401271553     
+ 
+ #X Sector        Indices
+       54     6     5
+  -4.2760132583274295     
+ 
+ #X Sector        Indices
+       55     6     6
+  -3.9572880877378180     
+ 
+ #X Sector        Indices
+       56     6     7
+  -3.0533505194121524     
+ 
+ #X Sector        Indices
+       57     7     0
+   2.2816132552082662     
+ 
+ #X Sector        Indices
+       58     7     1
+ -0.49569708593075335     
+ 
+ #X Sector        Indices
+       59     7     2
+  -1.1429906093226609     
+ 
+ #X Sector        Indices
+       60     7     3
+  -1.4401285152952159     
+ 
+ #X Sector        Indices
+       61     7     4
+  -1.5788901793761552     
+ 
+ #X Sector        Indices
+       62     7     5
+  -1.5464410975764307     
+ 
+ #X Sector        Indices
+       63     7     6
+  -1.2277159269868145     
+ 
+ #X Sector        Indices
+       64     7     7
+ -0.32377835866114957     
+ 
+ #X Sector        Indices
+        1     0     0
+  0.25000000000000000     
+ 
+ #X Sector        Indices
+        2     0     1
+  -2.5273103606387561     
+ 
+ #X Sector        Indices
+        3     0     2
+  -3.3767078685930754     
+ 
+ #X Sector        Indices
+        4     0     3
+  -3.8297132882335569     
+ 
+ #X Sector        Indices
+        5     0     4
+  -4.0605843682334433     
+ 
+ #X Sector        Indices
+        6     0     5
+  -4.1944737579121600     
+ 
+ #X Sector        Indices
+        7     0     6
+  -3.9943898928481714     
+ 
+ #X Sector        Indices
+        8     0     7
+  -3.3553799156082471     
+ 
+ #X Sector        Indices
+        9     1     0
+ -0.72480094766380554     
+ 
+ #X Sector        Indices
+       10     1     1
+  -3.5021112995763182     
+ 
+ #X Sector        Indices
+       11     1     2
+  -4.2501287604407008     
+ 
+ #X Sector        Indices
+       12     1     3
+  -4.6510369031944618     
+ 
+ #X Sector        Indices
+       13     1     4
+  -4.8626545605081084     
+ 
+ #X Sector        Indices
+       14     1     5
+  -4.9951820268355220     
+ 
+ #X Sector        Indices
+       15     1     6
+  -4.7879407989236968     
+ 
+ #X Sector        Indices
+       16     1     7
+  -4.1360452726792172     
+ 
+ #X Sector        Indices
+       17     2     0
+  -1.1939725993003820     
+ 
+ #X Sector        Indices
+       18     2     1
+  -3.9712829464625896     
+ 
+ # Sector        Indices
+       19     2     2
+  -4.6676127696725151     
+ 
+ # Sector        Indices
+       20     2     3
+  -5.0196412945939253     
+ 
+ # Sector        Indices
+       21     2     4
+  -5.1984011922300573     
+ 
+ # Sector        Indices
+       22     2     5
+  -5.3266995788284373     
+ 
+ #X Sector        Indices
+       23     2     6
+  -5.1103923902208246     
+ 
+ #X Sector        Indices
+       24     2     7
+  -4.4438718932408401     
+ 
+ #X Sector        Indices
+       25     3     0
+  -1.3589832990704340     
+ 
+ #X Sector        Indices
+       26     3     1
+  -4.1362936453070045     
+ 
+ # Sector        Indices
+       27     3     2
+  -4.8249682959828739     
+ 
+ # Sector        Indices
+       28     3     3
+  -5.1696492276075752     
+ 
+ # Sector        Indices
+       29     3     4
+  -5.3415931874675495     
+ 
+ # Sector        Indices
+       30     3     5
+  -5.4681700580593624     
+ 
+ #X Sector        Indices
+       31     3     6
+  -5.2500162894644902     
+ 
+ #X Sector        Indices
+       32     3     7
+  -4.5805767627569818     
+ 
+ #X Sector        Indices
+       33     4     0
+  -1.3908841922579864     
+ 
+ #X Sector        Indices
+       34     4     1
+  -4.1681945349331500     
+ 
+ # Sector        Indices
+       35     4     2
+  -4.8251918153059892     
+ 
+ # Sector        Indices
+       36     4     3
+  -5.1313484274119059     
+ 
+ # Sector        Indices
+       37     4     4
+  -5.2719675826852788     
+ 
+ # Sector        Indices
+       38     4     5
+  -5.3192470541783159     
+ 
+ #X Sector        Indices
+       39     4     6
+  -5.0751158483725254     
+ 
+ #X Sector        Indices
+       40     4     7
+  -4.3790462354552719     
+ 
+ #X Sector        Indices
+       41     5     0
+  -1.1277565668913843     
+ 
+ #X Sector        Indices
+       42     5     1
+  -3.9050669089247267     
+ 
+ # Sector        Indices
+       43     5     2
+  -4.5574000254323677     
+ 
+ # Sector        Indices
+       44     5     3
+  -4.8585400149108420     
+ 
+ # Sector        Indices
+       45     5     4
+  -4.9979197820480925     
+ 
+ # Sector        Indices
+       46     5     5
+  -4.9967107026001809     
+ 
+ #X Sector        Indices
+       47     5     6
+  -4.7107695090707100     
+ 
+ #X Sector        Indices
+       48     5     7
+  -3.9256317429715093     
+ 
+ #X Sector        Indices
+       49     6     0
+ -0.44798985279040698     
+ 
+ #X Sector        Indices
+       50     6     1
+  -3.2253001939260764     
+ 
+ #X Sector        Indices
+       51     6     2
+  -3.8725949030268811     
+ 
+ #X Sector        Indices
+       52     6     3
+  -4.1697304875455199     
+ 
+ #X Sector        Indices
+       53     6     4
+  -4.3084933010917394     
+ 
+ #X Sector        Indices
+       54     6     5
+  -4.2760364813495855     
+ 
+ #X Sector        Indices
+       55     6     6
+  -3.9573118810038532     
+ 
+ #X Sector        Indices
+       56     6     7
+  -3.0533697683986558     
+ 
+ #X Sector        Indices
+       57     7     0
+   2.2815823079605941     
+ 
+ #X Sector        Indices
+       58     7     1
+ -0.49572803317507630     
+ 
+ #X Sector        Indices
+       59     7     2
+  -1.1430227422758787     
+ 
+ #X Sector        Indices
+       60     7     3
+  -1.4401583267945366     
+ 
+ #X Sector        Indices
+       61     7     4
+  -1.5789211403407413     
+ 
+ #X Sector        Indices
+       62     7     5
+  -1.5464643205985800     
+ 
+ #X Sector        Indices
+       63     7     6
+  -1.2277397202528517     
+ 
+ #X Sector        Indices
+       64     7     7
+ -0.32379760764765342     
+ 

@@ -1,0 +1,1012 @@
+ wrong dimensions parsing variable:   ULOC
+ expecting a comma separated list of:            5
+SCIFOR VERSION (GIT): f51d8963e73e1a7f5e05ca328195b114bbdf41ec
+Timestamp: +21 May 2019  10:19:34.212
+ 
+CODE VERSION: 30030ed680c7b62ac87f0fc221aa358a61913d81
+Timestamp: +21 May 2019  10:19:34.213
+ 
+ Build H(k)    :         441
+ # of SO-bands :           2
+Using Reciprocal Lattice vectors:
+bk_x = [  6.2832  0.0000  0.0000]
+bk_y = [  0.0000  6.2832  0.0000]
+bk_z = [  0.0000  0.0000  6.2832]
+Get local Realaxis Green's function (no print)
+Direct Inversion algorithm:
+ 
+  +ETA --> fort.6
+  10% |ETA: 0:00:00.616 @21 May 2019  10:19:34
+  20% |ETA: 0:00:00.557
+  30% |ETA: 0:00:00.977
+  40% |ETA: 0:00:00.835
+  50% |ETA: 0:00:00.696 @21 May 2019  10:19:34
+  60% |ETA: 0:00:00.561
+  70% |ETA: 0:00:00.842
+  80% |ETA: 0:00:00.560
+  90% |ETA: 0:00:00.560
+ 100% |ETA: 0:00:00.000
+Total time [h:m:s.ms]:   0:00:00.702
+dos_Hk real: write spin-orbital diagonal elements.
+Using Reciprocal Lattice vectors:
+bk_x = [  6.2832  0.0000  0.0000]
+bk_y = [  0.0000  6.2832  0.0000]
+bk_z = [  0.0000  0.0000  6.2832]
+ Solving model along the path:
+Point1: [ 0.0000 0.0000]
+Point2: [ 3.1416 0.0000]
+Point3: [ 3.1416 3.1416]
+Point4: [ 0.0000 0.0000]
+INIT SOLVER FOR 
+Summary:
+--------------------------------------------
+# of levels/spin      =               8
+Total size            =              16
+# of impurities       =               2
+# of bath/impurity    =               3
+# of Bath levels/spin =               6
+Number of sectors     =              81
+Ns_Orb                =               8
+Ns_Ud                 =               1
+Largest Sector(s)     =       70        70                4900
+--------------------------------------------
+Required Lanc_nstates_total=1 => set T=0 calculation
+Lanczos ZERO temperature calculation:
+Updated impHloc:
+  1.000    0.000
+  0.000   -1.000
+ 
+Reading bath from filehamiltonian.restart
+there are        3 lines in +hamiltonian.restart
+Looking into     45 sectors out of        81
+
+-----DMFT-loop    1 (max:  100)-----
+Updated impHloc:
+  1.000    0.000
+  0.000   -1.000
+ 
+            #Ek_l1_s1              Vk_l1_s1             #Ek_l2_s1              Vk_l2_s1
+      -1.040334784434        0.302456208294       -2.654586719089        0.329181546395
+      -0.377466232905       -0.164995327640        0.346848886793       -0.146386705136
+       2.763558277641        0.338339623014        0.967179212168       -0.307194717513
+Diagonalize impurity H:
+         1-Solving sector:        1, nup:  0, ndw:  0, dims=     1     1                   1
+Total time [h:m:s.ms]:   0:00:00.000
+         2-Solving sector:       10, nup:  1, ndw:  0, dims=     8     1                   8
+Total time [h:m:s.ms]:   0:00:00.000
+         3-Solving sector:       11, nup:  1, ndw:  1, dims=     8     8                  64
+Total time [h:m:s.ms]:   0:00:00.001
+         4-Solving sector:       19, nup:  2, ndw:  0, dims=    28     1                  28
+Total time [h:m:s.ms]:   0:00:00.000
+         5-Solving sector:       20, nup:  2, ndw:  1, dims=    28     8                 224
+Total time [h:m:s.ms]:   0:00:00.020
+         6-Solving sector:       21, nup:  2, ndw:  2, dims=    28    28                 784, Lanc Info:     1   512    10
+Total time [h:m:s.ms]:   0:00:00.004
+         7-Solving sector:       28, nup:  3, ndw:  0, dims=    56     1                  56
+Total time [h:m:s.ms]:   0:00:00.000
+         8-Solving sector:       29, nup:  3, ndw:  1, dims=    56     8                 448, Lanc Info:     1   448    10
+Total time [h:m:s.ms]:   0:00:00.002
+         9-Solving sector:       30, nup:  3, ndw:  2, dims=    56    28                1568, Lanc Info:     1   512    10
+Total time [h:m:s.ms]:   0:00:00.008
+        10-Solving sector:       31, nup:  3, ndw:  3, dims=    56    56                3136, Lanc Info:     1   512    10
+Total time [h:m:s.ms]:   0:00:00.021
+        11-Solving sector:       37, nup:  4, ndw:  0, dims=    70     1                  70
+Total time [h:m:s.ms]:   0:00:00.002
+        12-Solving sector:       38, nup:  4, ndw:  1, dims=    70     8                 560, Lanc Info:     1   512    10
+Total time [h:m:s.ms]:   0:00:00.002
+        13-Solving sector:       39, nup:  4, ndw:  2, dims=    70    28                1960, Lanc Info:     1   512    10
+Total time [h:m:s.ms]:   0:00:00.009
+        14-Solving sector:       40, nup:  4, ndw:  3, dims=    70    56                3920, Lanc Info:     1   512    10
+Total time [h:m:s.ms]:   0:00:00.021
+        15-Solving sector:       41, nup:  4, ndw:  4, dims=    70    70                4900, Lanc Info:     1   512    10
+Total time [h:m:s.ms]:   0:00:00.030
+        16-Solving sector:       46, nup:  5, ndw:  0, dims=    56     1                  56
+Total time [h:m:s.ms]:   0:00:00.001
+        17-Solving sector:       47, nup:  5, ndw:  1, dims=    56     8                 448, Lanc Info:     1   448    10
+Total time [h:m:s.ms]:   0:00:00.002
+        18-Solving sector:       48, nup:  5, ndw:  2, dims=    56    28                1568, Lanc Info:     1   512    10
+Total time [h:m:s.ms]:   0:00:00.007
+        19-Solving sector:       49, nup:  5, ndw:  3, dims=    56    56                3136, Lanc Info:     1   512    10
+Total time [h:m:s.ms]:   0:00:00.014
+        20-Solving sector:       50, nup:  5, ndw:  4, dims=    56    70                3920, Lanc Info:     1   512    10
+Total time [h:m:s.ms]:   0:00:00.023
+        21-Solving sector:       51, nup:  5, ndw:  5, dims=    56    56                3136, Lanc Info:     1   512    10
+Total time [h:m:s.ms]:   0:00:00.020
+        22-Solving sector:       55, nup:  6, ndw:  0, dims=    28     1                  28
+Total time [h:m:s.ms]:   0:00:00.001
+        23-Solving sector:       56, nup:  6, ndw:  1, dims=    28     8                 224
+Total time [h:m:s.ms]:   0:00:00.019
+        24-Solving sector:       57, nup:  6, ndw:  2, dims=    28    28                 784, Lanc Info:     1   512    10
+Total time [h:m:s.ms]:   0:00:00.004
+        25-Solving sector:       58, nup:  6, ndw:  3, dims=    28    56                1568, Lanc Info:     1   512    10
+Total time [h:m:s.ms]:   0:00:00.007
+        26-Solving sector:       59, nup:  6, ndw:  4, dims=    28    70                1960, Lanc Info:     1   512    10
+Total time [h:m:s.ms]:   0:00:00.010
+        27-Solving sector:       60, nup:  6, ndw:  5, dims=    28    56                1568, Lanc Info:     1   512    10
+Total time [h:m:s.ms]:   0:00:00.008
+        28-Solving sector:       61, nup:  6, ndw:  6, dims=    28    28                 784, Lanc Info:     1   512    10
+Total time [h:m:s.ms]:   0:00:00.004
+        29-Solving sector:       64, nup:  7, ndw:  0, dims=     8     1                   8
+Total time [h:m:s.ms]:   0:00:00.000
+        30-Solving sector:       65, nup:  7, ndw:  1, dims=     8     8                  64
+Total time [h:m:s.ms]:   0:00:00.001
+        31-Solving sector:       66, nup:  7, ndw:  2, dims=     8    28                 224
+Total time [h:m:s.ms]:   0:00:00.019
+        32-Solving sector:       67, nup:  7, ndw:  3, dims=     8    56                 448, Lanc Info:     1   448    10
+Total time [h:m:s.ms]:   0:00:00.003
+        33-Solving sector:       68, nup:  7, ndw:  4, dims=     8    70                 560, Lanc Info:     1   512    10
+Total time [h:m:s.ms]:   0:00:00.003
+        34-Solving sector:       69, nup:  7, ndw:  5, dims=     8    56                 448, Lanc Info:     1   448    10
+Total time [h:m:s.ms]:   0:00:00.002
+        35-Solving sector:       70, nup:  7, ndw:  6, dims=     8    28                 224
+Total time [h:m:s.ms]:   0:00:00.019
+        36-Solving sector:       71, nup:  7, ndw:  7, dims=     8     8                  64
+Total time [h:m:s.ms]:   0:00:00.000
+        37-Solving sector:       73, nup:  8, ndw:  0, dims=     1     1                   1
+Total time [h:m:s.ms]:   0:00:00.000
+        38-Solving sector:       74, nup:  8, ndw:  1, dims=     1     8                   8
+Total time [h:m:s.ms]:   0:00:00.000
+        39-Solving sector:       75, nup:  8, ndw:  2, dims=     1    28                  28
+Total time [h:m:s.ms]:   0:00:00.000
+        40-Solving sector:       76, nup:  8, ndw:  3, dims=     1    56                  56
+Total time [h:m:s.ms]:   0:00:00.001
+        41-Solving sector:       77, nup:  8, ndw:  4, dims=     1    70                  70
+Total time [h:m:s.ms]:   0:00:00.001
+        42-Solving sector:       78, nup:  8, ndw:  5, dims=     1    56                  56
+Total time [h:m:s.ms]:   0:00:00.001
+        43-Solving sector:       79, nup:  8, ndw:  6, dims=     1    28                  28
+Total time [h:m:s.ms]:   0:00:00.000
+        44-Solving sector:       80, nup:  8, ndw:  7, dims=     1     8                   8
+Total time [h:m:s.ms]:   0:00:00.000
+        45-Solving sector:       81, nup:  8, ndw:  8, dims=     1     1                   1
+Total time [h:m:s.ms]:   0:00:00.000
+Total time [h:m:s.ms]:   0:00:00.297
+#     i               E_i       exp(-(E-E0)/T)       Sect       Dim    Indices:
+     1  -11.025275447926   1.000000000000E+00         49      3136   5   3
+     2  -11.025275447926   1.000000000000E+00         33      3136   3   5
+Egs =    -11.025275447926   5   3
+Egs =    -11.025275447926   3   5
+Z   =      2.000000000000
+Get impurity Greens functions:
+Get G_l1_s1
+ add particle:    58
+ del particle:    40
+ add particle:    42
+ del particle:    24
+Total time [h:m:s.ms]:   0:00:00.093
+Get G_l2_s1
+ add particle:    58
+ del particle:    40
+ add particle:    42
+ del particle:    24
+Total time [h:m:s.ms]:   0:00:00.098
+dens=    0.999913309894    1.000189351260    2.000102661155
+docc=    0.007514318011    0.007626323869
+<Hint>  =   -2.698306125627
+<V>     =    0.914499291309
+<E0>    =   -0.000276041366
+<Ehf>   =   -3.612805416935
+Dust    =    0.015308490060
+Dund    =    0.984701971543
+Get local Matsubara Green's function (no print)
+ 
+  +ETA --> fort.6
+  10% |ETA: 0:00:01.580 @21 May 2019  10:19:38
+  20% |ETA: 0:00:01.512
+  30% |ETA: 0:00:00.893
+  40% |ETA: 0:00:00.763
+  50% |ETA: 0:00:00.637 @21 May 2019  10:19:39
+  60% |ETA: 0:00:00.509
+  70% |ETA: 0:00:00.763
+  80% |ETA: 0:00:00.509
+  90% |ETA: 0:00:00.509
+ 100% |ETA: 0:00:00.000
+Total time [h:m:s.ms]:   0:00:01.277
+Gloc matsubara: write spin-orbital diagonal elements.
+\Chi2 fit with CG-nr and CG-weight: 1 on: weiss
+chi^2|iter=    2.615516000E-08 |    27  <--  Orb1 Spin1
+chi^2|iter=    2.010651601E-08 |    76  <--  Orb2 Spin1
+            #Ek_l1_s1              Vk_l1_s1             #Ek_l2_s1              Vk_l2_s1
+      -1.056499431467        0.314703909861       -2.760570870105        0.329949826412
+      -0.384194006586       -0.128193543031        0.427086525855       -0.148027312821
+       2.766399019801        0.329066571612        1.119881923313       -0.308637166182
+[1;91merror=[0m  1.0000000E+00
+=====================================
+Total time [h:m:s.ms]:   0:00:02.009
+
+
+
+-----DMFT-loop    2 (max:  100)-----
+Updated impHloc:
+  1.000    0.000
+  0.000   -1.000
+ 
+            #Ek_l1_s1              Vk_l1_s1             #Ek_l2_s1              Vk_l2_s1
+      -1.056499431467        0.314703909861       -2.760570870105        0.329949826412
+      -0.384194006586       -0.128193543031        0.427086525855       -0.148027312821
+       2.766399019801        0.329066571612        1.119881923313       -0.308637166182
+Diagonalize impurity H:
+         1-Solving sector:        1, nup:  0, ndw:  0, dims=     1     1                   1
+Total time [h:m:s.ms]:   0:00:00.000
+         2-Solving sector:       10, nup:  1, ndw:  0, dims=     8     1                   8
+Total time [h:m:s.ms]:   0:00:00.000
+         3-Solving sector:       11, nup:  1, ndw:  1, dims=     8     8                  64
+Total time [h:m:s.ms]:   0:00:00.001
+         4-Solving sector:       19, nup:  2, ndw:  0, dims=    28     1                  28
+Total time [h:m:s.ms]:   0:00:00.000
+         5-Solving sector:       20, nup:  2, ndw:  1, dims=    28     8                 224
+Total time [h:m:s.ms]:   0:00:00.020
+         6-Solving sector:       21, nup:  2, ndw:  2, dims=    28    28                 784, Lanc Info:     1   512    10
+Total time [h:m:s.ms]:   0:00:00.004
+         7-Solving sector:       28, nup:  3, ndw:  0, dims=    56     1                  56
+Total time [h:m:s.ms]:   0:00:00.001
+         8-Solving sector:       29, nup:  3, ndw:  1, dims=    56     8                 448, Lanc Info:     1   448    10
+Total time [h:m:s.ms]:   0:00:00.002
+         9-Solving sector:       30, nup:  3, ndw:  2, dims=    56    28                1568, Lanc Info:     1   512    10
+Total time [h:m:s.ms]:   0:00:00.008
+        10-Solving sector:       31, nup:  3, ndw:  3, dims=    56    56                3136, Lanc Info:     1   512    10
+Total time [h:m:s.ms]:   0:00:00.020
+        11-Solving sector:       37, nup:  4, ndw:  0, dims=    70     1                  70
+Total time [h:m:s.ms]:   0:00:00.001
+        12-Solving sector:       38, nup:  4, ndw:  1, dims=    70     8                 560, Lanc Info:     1   512    10
+Total time [h:m:s.ms]:   0:00:00.003
+        13-Solving sector:       39, nup:  4, ndw:  2, dims=    70    28                1960, Lanc Info:     1   512    10
+Total time [h:m:s.ms]:   0:00:00.009
+        14-Solving sector:       40, nup:  4, ndw:  3, dims=    70    56                3920, Lanc Info:     1   512    10
+Total time [h:m:s.ms]:   0:00:00.021
+        15-Solving sector:       41, nup:  4, ndw:  4, dims=    70    70                4900, Lanc Info:     1   512    10
+Total time [h:m:s.ms]:   0:00:00.027
+        16-Solving sector:       46, nup:  5, ndw:  0, dims=    56     1                  56
+Total time [h:m:s.ms]:   0:00:00.001
+        17-Solving sector:       47, nup:  5, ndw:  1, dims=    56     8                 448, Lanc Info:     1   448    10
+Total time [h:m:s.ms]:   0:00:00.002
+        18-Solving sector:       48, nup:  5, ndw:  2, dims=    56    28                1568, Lanc Info:     1   512    10
+Total time [h:m:s.ms]:   0:00:00.006
+        19-Solving sector:       49, nup:  5, ndw:  3, dims=    56    56                3136, Lanc Info:     1   512    10
+Total time [h:m:s.ms]:   0:00:00.014
+        20-Solving sector:       50, nup:  5, ndw:  4, dims=    56    70                3920, Lanc Info:     1   512    10
+Total time [h:m:s.ms]:   0:00:00.022
+        21-Solving sector:       51, nup:  5, ndw:  5, dims=    56    56                3136, Lanc Info:     1   512    10
+Total time [h:m:s.ms]:   0:00:00.019
+        22-Solving sector:       55, nup:  6, ndw:  0, dims=    28     1                  28
+Total time [h:m:s.ms]:   0:00:00.001
+        23-Solving sector:       56, nup:  6, ndw:  1, dims=    28     8                 224
+Total time [h:m:s.ms]:   0:00:00.019
+        24-Solving sector:       57, nup:  6, ndw:  2, dims=    28    28                 784, Lanc Info:     1   512    10
+Total time [h:m:s.ms]:   0:00:00.003
+        25-Solving sector:       58, nup:  6, ndw:  3, dims=    28    56                1568, Lanc Info:     1   512    10
+Total time [h:m:s.ms]:   0:00:00.006
+        26-Solving sector:       59, nup:  6, ndw:  4, dims=    28    70                1960, Lanc Info:     1   512    10
+Total time [h:m:s.ms]:   0:00:00.009
+        27-Solving sector:       60, nup:  6, ndw:  5, dims=    28    56                1568, Lanc Info:     1   512    10
+Total time [h:m:s.ms]:   0:00:00.007
+        28-Solving sector:       61, nup:  6, ndw:  6, dims=    28    28                 784, Lanc Info:     1   512    10
+Total time [h:m:s.ms]:   0:00:00.003
+        29-Solving sector:       64, nup:  7, ndw:  0, dims=     8     1                   8
+Total time [h:m:s.ms]:   0:00:00.000
+        30-Solving sector:       65, nup:  7, ndw:  1, dims=     8     8                  64
+Total time [h:m:s.ms]:   0:00:00.001
+        31-Solving sector:       66, nup:  7, ndw:  2, dims=     8    28                 224
+Total time [h:m:s.ms]:   0:00:00.018
+        32-Solving sector:       67, nup:  7, ndw:  3, dims=     8    56                 448, Lanc Info:     1   448    10
+Total time [h:m:s.ms]:   0:00:00.002
+        33-Solving sector:       68, nup:  7, ndw:  4, dims=     8    70                 560, Lanc Info:     1   512    10
+Total time [h:m:s.ms]:   0:00:00.003
+        34-Solving sector:       69, nup:  7, ndw:  5, dims=     8    56                 448, Lanc Info:     1   448    10
+Total time [h:m:s.ms]:   0:00:00.002
+        35-Solving sector:       70, nup:  7, ndw:  6, dims=     8    28                 224
+Total time [h:m:s.ms]:   0:00:00.020
+        36-Solving sector:       71, nup:  7, ndw:  7, dims=     8     8                  64
+Total time [h:m:s.ms]:   0:00:00.001
+        37-Solving sector:       73, nup:  8, ndw:  0, dims=     1     1                   1
+Total time [h:m:s.ms]:   0:00:00.000
+        38-Solving sector:       74, nup:  8, ndw:  1, dims=     1     8                   8
+Total time [h:m:s.ms]:   0:00:00.000
+        39-Solving sector:       75, nup:  8, ndw:  2, dims=     1    28                  28
+Total time [h:m:s.ms]:   0:00:00.000
+        40-Solving sector:       76, nup:  8, ndw:  3, dims=     1    56                  56
+Total time [h:m:s.ms]:   0:00:00.001
+        41-Solving sector:       77, nup:  8, ndw:  4, dims=     1    70                  70
+Total time [h:m:s.ms]:   0:00:00.001
+        42-Solving sector:       78, nup:  8, ndw:  5, dims=     1    56                  56
+Total time [h:m:s.ms]:   0:00:00.000
+        43-Solving sector:       79, nup:  8, ndw:  6, dims=     1    28                  28
+Total time [h:m:s.ms]:   0:00:00.001
+        44-Solving sector:       80, nup:  8, ndw:  7, dims=     1     8                   8
+Total time [h:m:s.ms]:   0:00:00.000
+        45-Solving sector:       81, nup:  8, ndw:  8, dims=     1     1                   1
+Total time [h:m:s.ms]:   0:00:00.000
+Total time [h:m:s.ms]:   0:00:00.286
+#     i               E_i       exp(-(E-E0)/T)       Sect       Dim    Indices:
+     1  -11.278643807381   1.000000000000E+00         49      3136   5   3
+     2  -11.278643807381   1.000000000000E+00         33      3136   3   5
+Egs =    -11.278643807381   5   3
+Egs =    -11.278643807381   3   5
+Z   =      2.000000000000
+Get impurity Greens functions:
+Get G_l1_s1
+ add particle:    58
+ del particle:    40
+ add particle:    42
+ del particle:    24
+Total time [h:m:s.ms]:   0:00:00.093
+Get G_l2_s1
+ add particle:    58
+ del particle:    40
+ add particle:    42
+ del particle:    24
+Total time [h:m:s.ms]:   0:00:00.098
+dens=    0.999832293551    1.000204455436    2.000036748986
+docc=    0.007010865356    0.007238721408
+<Hint>  =   -2.701964929472
+<V>     =    0.910644398763
+<E0>    =   -0.000372161885
+<Ehf>   =   -3.612609328235
+Dust    =    0.014391268480
+Dund    =    0.985565467471
+Get local Matsubara Green's function (no print)
+ 
+  +ETA --> fort.6
+  10% |ETA: 0:00:01.563 @21 May 2019  10:19:40
+  20% |ETA: 0:00:01.502
+  30% |ETA: 0:00:00.880
+  40% |ETA: 0:00:00.756
+  50% |ETA: 0:00:00.629 @21 May 2019  10:19:41
+  60% |ETA: 0:00:00.500
+  70% |ETA: 0:00:00.753
+  80% |ETA: 0:00:00.503
+  90% |ETA: 0:00:00.504
+ 100% |ETA: 0:00:00.000
+Total time [h:m:s.ms]:   0:00:01.269
+Gloc matsubara: write spin-orbital diagonal elements.
+\Chi2 fit with CG-nr and CG-weight: 1 on: weiss
+chi^2|iter=    2.859261449E-08 |    23  <--  Orb1 Spin1
+chi^2|iter=    2.036083615E-08 |    23  <--  Orb2 Spin1
+            #Ek_l1_s1              Vk_l1_s1             #Ek_l2_s1              Vk_l2_s1
+      -1.042319744006        0.316465588437       -2.768783377702        0.329517930747
+      -0.411711193431       -0.122288598789        0.461005627559       -0.144931600249
+       2.771991095373        0.328650199021        1.100096932547       -0.309072313957
+[1;91merror=[0m  4.2029230E-04
+=====================================
+Total time [h:m:s.ms]:   0:00:01.932
+
+
+
+-----DMFT-loop    3 (max:  100)-----
+Updated impHloc:
+  1.000    0.000
+  0.000   -1.000
+ 
+            #Ek_l1_s1              Vk_l1_s1             #Ek_l2_s1              Vk_l2_s1
+      -1.052954509602        0.315144329505       -2.762623997004        0.329841852496
+      -0.391073303297       -0.126717306971        0.435566301281       -0.147253384678
+       2.767797038694        0.328962478464        1.114935675621       -0.308745953126
+Diagonalize impurity H:
+         1-Solving sector:        1, nup:  0, ndw:  0, dims=     1     1                   1
+Total time [h:m:s.ms]:   0:00:00.000
+         2-Solving sector:       10, nup:  1, ndw:  0, dims=     8     1                   8
+Total time [h:m:s.ms]:   0:00:00.000
+         3-Solving sector:       11, nup:  1, ndw:  1, dims=     8     8                  64
+Total time [h:m:s.ms]:   0:00:00.001
+         4-Solving sector:       19, nup:  2, ndw:  0, dims=    28     1                  28
+Total time [h:m:s.ms]:   0:00:00.000
+         5-Solving sector:       20, nup:  2, ndw:  1, dims=    28     8                 224
+Total time [h:m:s.ms]:   0:00:00.020
+         6-Solving sector:       21, nup:  2, ndw:  2, dims=    28    28                 784, Lanc Info:     1   512    10
+Total time [h:m:s.ms]:   0:00:00.004
+         7-Solving sector:       28, nup:  3, ndw:  0, dims=    56     1                  56
+Total time [h:m:s.ms]:   0:00:00.001
+         8-Solving sector:       29, nup:  3, ndw:  1, dims=    56     8                 448, Lanc Info:     1   448    10
+Total time [h:m:s.ms]:   0:00:00.002
+         9-Solving sector:       30, nup:  3, ndw:  2, dims=    56    28                1568, Lanc Info:     1   512    10
+Total time [h:m:s.ms]:   0:00:00.008
+        10-Solving sector:       31, nup:  3, ndw:  3, dims=    56    56                3136, Lanc Info:     1   512    10
+Total time [h:m:s.ms]:   0:00:00.019
+        11-Solving sector:       37, nup:  4, ndw:  0, dims=    70     1                  70
+Total time [h:m:s.ms]:   0:00:00.001
+        12-Solving sector:       38, nup:  4, ndw:  1, dims=    70     8                 560, Lanc Info:     1   512    10
+Total time [h:m:s.ms]:   0:00:00.002
+        13-Solving sector:       39, nup:  4, ndw:  2, dims=    70    28                1960, Lanc Info:     1   512    10
+Total time [h:m:s.ms]:   0:00:00.010
+        14-Solving sector:       40, nup:  4, ndw:  3, dims=    70    56                3920, Lanc Info:     1   512    10
+Total time [h:m:s.ms]:   0:00:00.020
+        15-Solving sector:       41, nup:  4, ndw:  4, dims=    70    70                4900, Lanc Info:     1   512    10
+Total time [h:m:s.ms]:   0:00:00.027
+        16-Solving sector:       46, nup:  5, ndw:  0, dims=    56     1                  56
+Total time [h:m:s.ms]:   0:00:00.001
+        17-Solving sector:       47, nup:  5, ndw:  1, dims=    56     8                 448, Lanc Info:     1   448    10
+Total time [h:m:s.ms]:   0:00:00.002
+        18-Solving sector:       48, nup:  5, ndw:  2, dims=    56    28                1568, Lanc Info:     1   512    10
+Total time [h:m:s.ms]:   0:00:00.007
+        19-Solving sector:       49, nup:  5, ndw:  3, dims=    56    56                3136, Lanc Info:     1   512    10
+Total time [h:m:s.ms]:   0:00:00.014
+        20-Solving sector:       50, nup:  5, ndw:  4, dims=    56    70                3920, Lanc Info:     1   512    10
+Total time [h:m:s.ms]:   0:00:00.022
+        21-Solving sector:       51, nup:  5, ndw:  5, dims=    56    56                3136, Lanc Info:     1   512    10
+Total time [h:m:s.ms]:   0:00:00.020
+        22-Solving sector:       55, nup:  6, ndw:  0, dims=    28     1                  28
+Total time [h:m:s.ms]:   0:00:00.000
+        23-Solving sector:       56, nup:  6, ndw:  1, dims=    28     8                 224
+Total time [h:m:s.ms]:   0:00:00.020
+        24-Solving sector:       57, nup:  6, ndw:  2, dims=    28    28                 784, Lanc Info:     1   512    10
+Total time [h:m:s.ms]:   0:00:00.003
+        25-Solving sector:       58, nup:  6, ndw:  3, dims=    28    56                1568, Lanc Info:     1   512    10
+Total time [h:m:s.ms]:   0:00:00.007
+        26-Solving sector:       59, nup:  6, ndw:  4, dims=    28    70                1960, Lanc Info:     1   512    10
+Total time [h:m:s.ms]:   0:00:00.010
+        27-Solving sector:       60, nup:  6, ndw:  5, dims=    28    56                1568, Lanc Info:     1   512    10
+Total time [h:m:s.ms]:   0:00:00.008
+        28-Solving sector:       61, nup:  6, ndw:  6, dims=    28    28                 784, Lanc Info:     1   512    10
+Total time [h:m:s.ms]:   0:00:00.004
+        29-Solving sector:       64, nup:  7, ndw:  0, dims=     8     1                   8
+Total time [h:m:s.ms]:   0:00:00.000
+        30-Solving sector:       65, nup:  7, ndw:  1, dims=     8     8                  64
+Total time [h:m:s.ms]:   0:00:00.001
+        31-Solving sector:       66, nup:  7, ndw:  2, dims=     8    28                 224
+Total time [h:m:s.ms]:   0:00:00.019
+        32-Solving sector:       67, nup:  7, ndw:  3, dims=     8    56                 448, Lanc Info:     1   448    10
+Total time [h:m:s.ms]:   0:00:00.002
+        33-Solving sector:       68, nup:  7, ndw:  4, dims=     8    70                 560, Lanc Info:     1   512    10
+Total time [h:m:s.ms]:   0:00:00.002
+        34-Solving sector:       69, nup:  7, ndw:  5, dims=     8    56                 448, Lanc Info:     1   448    10
+Total time [h:m:s.ms]:   0:00:00.002
+        35-Solving sector:       70, nup:  7, ndw:  6, dims=     8    28                 224
+Total time [h:m:s.ms]:   0:00:00.019
+        36-Solving sector:       71, nup:  7, ndw:  7, dims=     8     8                  64
+Total time [h:m:s.ms]:   0:00:00.001
+        37-Solving sector:       73, nup:  8, ndw:  0, dims=     1     1                   1
+Total time [h:m:s.ms]:   0:00:00.000
+        38-Solving sector:       74, nup:  8, ndw:  1, dims=     1     8                   8
+Total time [h:m:s.ms]:   0:00:00.000
+        39-Solving sector:       75, nup:  8, ndw:  2, dims=     1    28                  28
+Total time [h:m:s.ms]:   0:00:00.001
+        40-Solving sector:       76, nup:  8, ndw:  3, dims=     1    56                  56
+Total time [h:m:s.ms]:   0:00:00.000
+        41-Solving sector:       77, nup:  8, ndw:  4, dims=     1    70                  70
+Total time [h:m:s.ms]:   0:00:00.001
+        42-Solving sector:       78, nup:  8, ndw:  5, dims=     1    56                  56
+Total time [h:m:s.ms]:   0:00:00.001
+        43-Solving sector:       79, nup:  8, ndw:  6, dims=     1    28                  28
+Total time [h:m:s.ms]:   0:00:00.000
+        44-Solving sector:       80, nup:  8, ndw:  7, dims=     1     8                   8
+Total time [h:m:s.ms]:   0:00:00.000
+        45-Solving sector:       81, nup:  8, ndw:  8, dims=     1     1                   1
+Total time [h:m:s.ms]:   0:00:00.000
+Total time [h:m:s.ms]:   0:00:00.289
+#     i               E_i       exp(-(E-E0)/T)       Sect       Dim    Indices:
+     1  -11.289288458909   1.000000000000E+00         49      3136   5   3
+     2  -11.289288458909   1.000000000000E+00         33      3136   3   5
+Egs =    -11.289288458909   5   3
+Egs =    -11.289288458909   3   5
+Z   =      2.000000000000
+Get impurity Greens functions:
+Get G_l1_s1
+ add particle:    58
+ del particle:    40
+ add particle:    42
+ del particle:    24
+Total time [h:m:s.ms]:   0:00:00.093
+Get G_l2_s1
+ add particle:    58
+ del particle:    40
+ add particle:    42
+ del particle:    24
+Total time [h:m:s.ms]:   0:00:00.093
+dens=    0.999831755832    1.000202313923    2.000034069755
+docc=    0.007000453354    0.007226144104
+<Hint>  =   -2.702057217524
+<V>     =    0.910544139997
+<E0>    =   -0.000370558091
+<Ehf>   =   -3.612601357522
+Dust    =    0.014367665526
+Dund    =    0.985586679114
+Get local Matsubara Green's function (no print)
+ 
+  +ETA --> fort.6
+  10% |ETA: 0:00:01.558 @21 May 2019  10:19:42
+  20% |ETA: 0:00:00.992
+  30% |ETA: 0:00:00.870
+  40% |ETA: 0:00:00.748
+  50% |ETA: 0:00:00.624 @21 May 2019  10:19:43
+  60% |ETA: 0:00:00.500
+  70% |ETA: 0:00:00.750
+  80% |ETA: 0:00:00.500
+  90% |ETA: 0:00:00.501
+ 100% |ETA: 0:00:00.000
+Total time [h:m:s.ms]:   0:00:01.255
+Gloc matsubara: write spin-orbital diagonal elements.
+\Chi2 fit with CG-nr and CG-weight: 1 on: weiss
+chi^2|iter=    2.888993919E-08 |    23  <--  Orb1 Spin1
+chi^2|iter=    2.032450250E-08 |    24  <--  Orb2 Spin1
+            #Ek_l1_s1              Vk_l1_s1             #Ek_l2_s1              Vk_l2_s1
+      -1.041704352120        0.316288158752       -2.770595421165        0.329602770898
+      -0.414703927570       -0.122560019197        0.463302895661       -0.145038569770
+       2.773240392613        0.328705068226        1.099207851184       -0.308990170328
+[1;91merror=[0m  1.4527359E-05
+=====================================
+Total time [h:m:s.ms]:   0:00:01.915
+
+
+
+-----DMFT-loop    4 (max:  100)-----
+Updated impHloc:
+  1.000    0.000
+  0.000   -1.000
+ 
+            #Ek_l1_s1              Vk_l1_s1             #Ek_l2_s1              Vk_l2_s1
+      -1.050141970231        0.315430286817       -2.764616853045        0.329782082096
+      -0.396980959365       -0.125677985027        0.442500449876       -0.146699680951
+       2.769157877174        0.328898125904        1.111003719512       -0.308807007426
+Diagonalize impurity H:
+         1-Solving sector:        1, nup:  0, ndw:  0, dims=     1     1                   1
+Total time [h:m:s.ms]:   0:00:00.000
+         2-Solving sector:       10, nup:  1, ndw:  0, dims=     8     1                   8
+Total time [h:m:s.ms]:   0:00:00.000
+         3-Solving sector:       11, nup:  1, ndw:  1, dims=     8     8                  64
+Total time [h:m:s.ms]:   0:00:00.001
+         4-Solving sector:       19, nup:  2, ndw:  0, dims=    28     1                  28
+Total time [h:m:s.ms]:   0:00:00.001
+         5-Solving sector:       20, nup:  2, ndw:  1, dims=    28     8                 224
+Total time [h:m:s.ms]:   0:00:00.019
+         6-Solving sector:       21, nup:  2, ndw:  2, dims=    28    28                 784, Lanc Info:     1   512    10
+Total time [h:m:s.ms]:   0:00:00.003
+         7-Solving sector:       28, nup:  3, ndw:  0, dims=    56     1                  56
+Total time [h:m:s.ms]:   0:00:00.000
+         8-Solving sector:       29, nup:  3, ndw:  1, dims=    56     8                 448, Lanc Info:     1   448    10
+Total time [h:m:s.ms]:   0:00:00.002
+         9-Solving sector:       30, nup:  3, ndw:  2, dims=    56    28                1568, Lanc Info:     1   512    10
+Total time [h:m:s.ms]:   0:00:00.007
+        10-Solving sector:       31, nup:  3, ndw:  3, dims=    56    56                3136, Lanc Info:     1   512    10
+Total time [h:m:s.ms]:   0:00:00.019
+        11-Solving sector:       37, nup:  4, ndw:  0, dims=    70     1                  70
+Total time [h:m:s.ms]:   0:00:00.001
+        12-Solving sector:       38, nup:  4, ndw:  1, dims=    70     8                 560, Lanc Info:     1   512    10
+Total time [h:m:s.ms]:   0:00:00.002
+        13-Solving sector:       39, nup:  4, ndw:  2, dims=    70    28                1960, Lanc Info:     1   512    10
+Total time [h:m:s.ms]:   0:00:00.010
+        14-Solving sector:       40, nup:  4, ndw:  3, dims=    70    56                3920, Lanc Info:     1   512    10
+Total time [h:m:s.ms]:   0:00:00.020
+        15-Solving sector:       41, nup:  4, ndw:  4, dims=    70    70                4900, Lanc Info:     1   512    10
+Total time [h:m:s.ms]:   0:00:00.029
+        16-Solving sector:       46, nup:  5, ndw:  0, dims=    56     1                  56
+Total time [h:m:s.ms]:   0:00:00.001
+        17-Solving sector:       47, nup:  5, ndw:  1, dims=    56     8                 448, Lanc Info:     1   448    10
+Total time [h:m:s.ms]:   0:00:00.002
+        18-Solving sector:       48, nup:  5, ndw:  2, dims=    56    28                1568, Lanc Info:     1   512    10
+Total time [h:m:s.ms]:   0:00:00.007
+        19-Solving sector:       49, nup:  5, ndw:  3, dims=    56    56                3136, Lanc Info:     1   512    10
+Total time [h:m:s.ms]:   0:00:00.014
+        20-Solving sector:       50, nup:  5, ndw:  4, dims=    56    70                3920, Lanc Info:     1   512    10
+Total time [h:m:s.ms]:   0:00:00.022
+        21-Solving sector:       51, nup:  5, ndw:  5, dims=    56    56                3136, Lanc Info:     1   512    10
+Total time [h:m:s.ms]:   0:00:00.019
+        22-Solving sector:       55, nup:  6, ndw:  0, dims=    28     1                  28
+Total time [h:m:s.ms]:   0:00:00.000
+        23-Solving sector:       56, nup:  6, ndw:  1, dims=    28     8                 224
+Total time [h:m:s.ms]:   0:00:00.019
+        24-Solving sector:       57, nup:  6, ndw:  2, dims=    28    28                 784, Lanc Info:     1   512    10
+Total time [h:m:s.ms]:   0:00:00.003
+        25-Solving sector:       58, nup:  6, ndw:  3, dims=    28    56                1568, Lanc Info:     1   512    10
+Total time [h:m:s.ms]:   0:00:00.006
+        26-Solving sector:       59, nup:  6, ndw:  4, dims=    28    70                1960, Lanc Info:     1   512    10
+Total time [h:m:s.ms]:   0:00:00.010
+        27-Solving sector:       60, nup:  6, ndw:  5, dims=    28    56                1568, Lanc Info:     1   512    10
+Total time [h:m:s.ms]:   0:00:00.008
+        28-Solving sector:       61, nup:  6, ndw:  6, dims=    28    28                 784, Lanc Info:     1   512    10
+Total time [h:m:s.ms]:   0:00:00.004
+        29-Solving sector:       64, nup:  7, ndw:  0, dims=     8     1                   8
+Total time [h:m:s.ms]:   0:00:00.000
+        30-Solving sector:       65, nup:  7, ndw:  1, dims=     8     8                  64
+Total time [h:m:s.ms]:   0:00:00.001
+        31-Solving sector:       66, nup:  7, ndw:  2, dims=     8    28                 224
+Total time [h:m:s.ms]:   0:00:00.020
+        32-Solving sector:       67, nup:  7, ndw:  3, dims=     8    56                 448, Lanc Info:     1   448    10
+Total time [h:m:s.ms]:   0:00:00.003
+        33-Solving sector:       68, nup:  7, ndw:  4, dims=     8    70                 560, Lanc Info:     1   512    10
+Total time [h:m:s.ms]:   0:00:00.003
+        34-Solving sector:       69, nup:  7, ndw:  5, dims=     8    56                 448, Lanc Info:     1   448    10
+Total time [h:m:s.ms]:   0:00:00.002
+        35-Solving sector:       70, nup:  7, ndw:  6, dims=     8    28                 224
+Total time [h:m:s.ms]:   0:00:00.020
+        36-Solving sector:       71, nup:  7, ndw:  7, dims=     8     8                  64
+Total time [h:m:s.ms]:   0:00:00.001
+        37-Solving sector:       73, nup:  8, ndw:  0, dims=     1     1                   1
+Total time [h:m:s.ms]:   0:00:00.000
+        38-Solving sector:       74, nup:  8, ndw:  1, dims=     1     8                   8
+Total time [h:m:s.ms]:   0:00:00.000
+        39-Solving sector:       75, nup:  8, ndw:  2, dims=     1    28                  28
+Total time [h:m:s.ms]:   0:00:00.000
+        40-Solving sector:       76, nup:  8, ndw:  3, dims=     1    56                  56
+Total time [h:m:s.ms]:   0:00:00.000
+        41-Solving sector:       77, nup:  8, ndw:  4, dims=     1    70                  70
+Total time [h:m:s.ms]:   0:00:00.002
+        42-Solving sector:       78, nup:  8, ndw:  5, dims=     1    56                  56
+Total time [h:m:s.ms]:   0:00:00.000
+        43-Solving sector:       79, nup:  8, ndw:  6, dims=     1    28                  28
+Total time [h:m:s.ms]:   0:00:00.000
+        44-Solving sector:       80, nup:  8, ndw:  7, dims=     1     8                   8
+Total time [h:m:s.ms]:   0:00:00.000
+        45-Solving sector:       81, nup:  8, ndw:  8, dims=     1     1                   1
+Total time [h:m:s.ms]:   0:00:00.000
+Total time [h:m:s.ms]:   0:00:00.291
+#     i               E_i       exp(-(E-E0)/T)       Sect       Dim    Indices:
+     1  -11.299366293288   1.000000000000E+00         49      3136   5   3
+     2  -11.299366293288   1.000000000000E+00         33      3136   3   5
+Egs =    -11.299366293288   5   3
+Egs =    -11.299366293288   3   5
+Z   =      2.000000000000
+Get impurity Greens functions:
+Get G_l1_s1
+ add particle:    58
+ del particle:    40
+ add particle:    42
+ del particle:    24
+Total time [h:m:s.ms]:   0:00:00.095
+Get G_l2_s1
+ add particle:    58
+ del particle:    40
+ add particle:    42
+ del particle:    24
+Total time [h:m:s.ms]:   0:00:00.096
+dens=    0.999832063920    1.000199748886    2.000031812806
+docc=    0.006992781030    0.007215935428
+<Hint>  =   -2.702128632167
+<V>     =    0.910466010930
+<E0>    =   -0.000367684966
+<Ehf>   =   -3.612594643097
+Dust    =    0.014349304311
+Dund    =    0.985603008993
+Get local Matsubara Green's function (no print)
+ 
+  +ETA --> fort.6
+  10% |ETA: 0:00:01.563 @21 May 2019  10:19:44
+  20% |ETA: 0:00:01.510
+  30% |ETA: 0:00:00.893
+  40% |ETA: 0:00:00.768
+  50% |ETA: 0:00:00.637 @21 May 2019  10:19:45
+  60% |ETA: 0:00:00.508
+  70% |ETA: 0:00:00.760
+  80% |ETA: 0:00:00.507
+  90% |ETA: 0:00:00.506
+ 100% |ETA: 0:00:00.000
+Total time [h:m:s.ms]:   0:00:01.270
+Gloc matsubara: write spin-orbital diagonal elements.
+\Chi2 fit with CG-nr and CG-weight: 1 on: weiss
+chi^2|iter=    2.900203791E-08 |    23  <--  Orb1 Spin1
+chi^2|iter=    2.026933459E-08 |    24  <--  Orb2 Spin1
+            #Ek_l1_s1              Vk_l1_s1             #Ek_l2_s1              Vk_l2_s1
+      -1.041598309925        0.316087102495       -2.772463655105        0.329714540663
+      -0.417593881194       -0.122973622317        0.465418353968       -0.145250896968
+       2.774628964389        0.328777713162        1.098562192974       -0.308848897670
+[1;91merror=[0m  1.0785383E-05
+=====================================
+Total time [h:m:s.ms]:   0:00:01.939
+
+
+
+-----DMFT-loop    5 (max:  100)-----
+Updated impHloc:
+  1.000    0.000
+  0.000   -1.000
+ 
+            #Ek_l1_s1              Vk_l1_s1             #Ek_l2_s1              Vk_l2_s1
+      -1.048006055155        0.315594490736       -2.766578553560        0.329765196738
+      -0.402134189822       -0.125001894350        0.448229925899       -0.146337484955
+       2.770525648978        0.328868022719        1.107893337877       -0.308817479987
+Diagonalize impurity H:
+         1-Solving sector:        1, nup:  0, ndw:  0, dims=     1     1                   1
+Total time [h:m:s.ms]:   0:00:00.000
+         2-Solving sector:       10, nup:  1, ndw:  0, dims=     8     1                   8
+Total time [h:m:s.ms]:   0:00:00.000
+         3-Solving sector:       11, nup:  1, ndw:  1, dims=     8     8                  64
+Total time [h:m:s.ms]:   0:00:00.000
+         4-Solving sector:       19, nup:  2, ndw:  0, dims=    28     1                  28
+Total time [h:m:s.ms]:   0:00:00.000
+         5-Solving sector:       20, nup:  2, ndw:  1, dims=    28     8                 224
+Total time [h:m:s.ms]:   0:00:00.020
+         6-Solving sector:       21, nup:  2, ndw:  2, dims=    28    28                 784, Lanc Info:     1   512    10
+Total time [h:m:s.ms]:   0:00:00.004
+         7-Solving sector:       28, nup:  3, ndw:  0, dims=    56     1                  56
+Total time [h:m:s.ms]:   0:00:00.001
+         8-Solving sector:       29, nup:  3, ndw:  1, dims=    56     8                 448, Lanc Info:     1   448    10
+Total time [h:m:s.ms]:   0:00:00.002
+         9-Solving sector:       30, nup:  3, ndw:  2, dims=    56    28                1568, Lanc Info:     1   512    10
+Total time [h:m:s.ms]:   0:00:00.008
+        10-Solving sector:       31, nup:  3, ndw:  3, dims=    56    56                3136, Lanc Info:     1   512    10
+Total time [h:m:s.ms]:   0:00:00.020
+        11-Solving sector:       37, nup:  4, ndw:  0, dims=    70     1                  70
+Total time [h:m:s.ms]:   0:00:00.001
+        12-Solving sector:       38, nup:  4, ndw:  1, dims=    70     8                 560, Lanc Info:     1   512    10
+Total time [h:m:s.ms]:   0:00:00.003
+        13-Solving sector:       39, nup:  4, ndw:  2, dims=    70    28                1960, Lanc Info:     1   512    10
+Total time [h:m:s.ms]:   0:00:00.009
+        14-Solving sector:       40, nup:  4, ndw:  3, dims=    70    56                3920, Lanc Info:     1   512    10
+Total time [h:m:s.ms]:   0:00:00.021
+        15-Solving sector:       41, nup:  4, ndw:  4, dims=    70    70                4900, Lanc Info:     1   512    10
+Total time [h:m:s.ms]:   0:00:00.026
+        16-Solving sector:       46, nup:  5, ndw:  0, dims=    56     1                  56
+Total time [h:m:s.ms]:   0:00:00.001
+        17-Solving sector:       47, nup:  5, ndw:  1, dims=    56     8                 448, Lanc Info:     1   448    10
+Total time [h:m:s.ms]:   0:00:00.002
+        18-Solving sector:       48, nup:  5, ndw:  2, dims=    56    28                1568, Lanc Info:     1   512    10
+Total time [h:m:s.ms]:   0:00:00.007
+        19-Solving sector:       49, nup:  5, ndw:  3, dims=    56    56                3136, Lanc Info:     1   512    10
+Total time [h:m:s.ms]:   0:00:00.014
+        20-Solving sector:       50, nup:  5, ndw:  4, dims=    56    70                3920, Lanc Info:     1   512    10
+Total time [h:m:s.ms]:   0:00:00.021
+        21-Solving sector:       51, nup:  5, ndw:  5, dims=    56    56                3136, Lanc Info:     1   512    10
+Total time [h:m:s.ms]:   0:00:00.020
+        22-Solving sector:       55, nup:  6, ndw:  0, dims=    28     1                  28
+Total time [h:m:s.ms]:   0:00:00.000
+        23-Solving sector:       56, nup:  6, ndw:  1, dims=    28     8                 224
+Total time [h:m:s.ms]:   0:00:00.020
+        24-Solving sector:       57, nup:  6, ndw:  2, dims=    28    28                 784, Lanc Info:     1   512    10
+Total time [h:m:s.ms]:   0:00:00.003
+        25-Solving sector:       58, nup:  6, ndw:  3, dims=    28    56                1568, Lanc Info:     1   512    10
+Total time [h:m:s.ms]:   0:00:00.007
+        26-Solving sector:       59, nup:  6, ndw:  4, dims=    28    70                1960, Lanc Info:     1   512    10
+Total time [h:m:s.ms]:   0:00:00.010
+        27-Solving sector:       60, nup:  6, ndw:  5, dims=    28    56                1568, Lanc Info:     1   512    10
+Total time [h:m:s.ms]:   0:00:00.007
+        28-Solving sector:       61, nup:  6, ndw:  6, dims=    28    28                 784, Lanc Info:     1   512    10
+Total time [h:m:s.ms]:   0:00:00.003
+        29-Solving sector:       64, nup:  7, ndw:  0, dims=     8     1                   8
+Total time [h:m:s.ms]:   0:00:00.001
+        30-Solving sector:       65, nup:  7, ndw:  1, dims=     8     8                  64
+Total time [h:m:s.ms]:   0:00:00.001
+        31-Solving sector:       66, nup:  7, ndw:  2, dims=     8    28                 224
+Total time [h:m:s.ms]:   0:00:00.018
+        32-Solving sector:       67, nup:  7, ndw:  3, dims=     8    56                 448, Lanc Info:     1   448    10
+Total time [h:m:s.ms]:   0:00:00.002
+        33-Solving sector:       68, nup:  7, ndw:  4, dims=     8    70                 560, Lanc Info:     1   512    10
+Total time [h:m:s.ms]:   0:00:00.003
+        34-Solving sector:       69, nup:  7, ndw:  5, dims=     8    56                 448, Lanc Info:     1   448    10
+Total time [h:m:s.ms]:   0:00:00.002
+        35-Solving sector:       70, nup:  7, ndw:  6, dims=     8    28                 224
+Total time [h:m:s.ms]:   0:00:00.019
+        36-Solving sector:       71, nup:  7, ndw:  7, dims=     8     8                  64
+Total time [h:m:s.ms]:   0:00:00.001
+        37-Solving sector:       73, nup:  8, ndw:  0, dims=     1     1                   1
+Total time [h:m:s.ms]:   0:00:00.000
+        38-Solving sector:       74, nup:  8, ndw:  1, dims=     1     8                   8
+Total time [h:m:s.ms]:   0:00:00.000
+        39-Solving sector:       75, nup:  8, ndw:  2, dims=     1    28                  28
+Total time [h:m:s.ms]:   0:00:00.001
+        40-Solving sector:       76, nup:  8, ndw:  3, dims=     1    56                  56
+Total time [h:m:s.ms]:   0:00:00.001
+        41-Solving sector:       77, nup:  8, ndw:  4, dims=     1    70                  70
+Total time [h:m:s.ms]:   0:00:00.001
+        42-Solving sector:       78, nup:  8, ndw:  5, dims=     1    56                  56
+Total time [h:m:s.ms]:   0:00:00.001
+        43-Solving sector:       79, nup:  8, ndw:  6, dims=     1    28                  28
+Total time [h:m:s.ms]:   0:00:00.000
+        44-Solving sector:       80, nup:  8, ndw:  7, dims=     1     8                   8
+Total time [h:m:s.ms]:   0:00:00.000
+        45-Solving sector:       81, nup:  8, ndw:  8, dims=     1     1                   1
+Total time [h:m:s.ms]:   0:00:00.001
+Total time [h:m:s.ms]:   0:00:00.287
+#     i               E_i       exp(-(E-E0)/T)       Sect       Dim    Indices:
+     1  -11.309251728822   1.000000000000E+00         49      3136   5   3
+     2  -11.309251728822   1.000000000000E+00         33      3136   3   5
+Egs =    -11.309251728822   5   3
+Egs =    -11.309251728822   3   5
+Z   =      2.000000000000
+Get impurity Greens functions:
+Get G_l1_s1
+ add particle:    58
+ del particle:    40
+ add particle:    42
+ del particle:    24
+Total time [h:m:s.ms]:   0:00:00.092
+Get G_l2_s1
+ add particle:    58
+ del particle:    40
+ add particle:    42
+ del particle:    24
+Total time [h:m:s.ms]:   0:00:00.094
+dens=    0.999832887267    1.000197213386    2.000030100652
+docc=    0.006987106219    0.007207734239
+<Hint>  =   -2.702184139496
+<V>     =    0.910405409944
+<E0>    =   -0.000364326119
+<Ehf>   =   -3.612589549440
+Dust    =    0.014335046261
+Dund    =    0.985615733816
+Get local Matsubara Green's function (no print)
+ 
+  +ETA --> fort.6
+  10% |ETA: 0:00:01.567 @21 May 2019  10:19:46
+  20% |ETA: 0:00:01.506
+  30% |ETA: 0:00:00.877
+  40% |ETA: 0:00:00.748
+  50% |ETA: 0:00:00.622 @21 May 2019  10:19:46
+  60% |ETA: 0:00:00.996
+  70% |ETA: 0:00:00.745
+  80% |ETA: 0:00:00.994
+  90% |ETA: 0:00:00.996
+ 100% |ETA: 0:00:00.000
+Total time [h:m:s.ms]:   0:00:01.250
+Gloc matsubara: write spin-orbital diagonal elements.
+\Chi2 fit with CG-nr and CG-weight: 1 on: weiss
+chi^2|iter=    2.892758874E-08 |    25  <--  Orb1 Spin1
+chi^2|iter=    2.017017433E-08 |    24  <--  Orb2 Spin1
+            #Ek_l1_s1              Vk_l1_s1             #Ek_l2_s1              Vk_l2_s1
+      -1.041953080582        0.315822658332       -2.774551116303        0.329818876216
+      -0.420770531148       -0.123567729914        0.467510031248       -0.145553781657
+       2.776334838308        0.328808141696        1.098110055384       -0.308656582672
+[1;93merror=[0m  8.0860138E-06
+=====================================
+Total time [h:m:s.ms]:   0:00:01.910
+
+
+
+-----DMFT-loop    6 (max:  100)-----
+Updated impHloc:
+  1.000    0.000
+  0.000   -1.000
+ 
+            #Ek_l1_s1              Vk_l1_s1             #Ek_l2_s1              Vk_l2_s1
+      -1.046492811511        0.315651532635       -2.768571694246        0.329778616607
+      -0.406793275154       -0.124643353241        0.453049952237       -0.146141559131
+       2.771977946310        0.328853052463        1.105447517254       -0.308777255658
+Diagonalize impurity H:
+         1-Solving sector:        1, nup:  0, ndw:  0, dims=     1     1                   1
+Total time [h:m:s.ms]:   0:00:00.000
+         2-Solving sector:       10, nup:  1, ndw:  0, dims=     8     1                   8
+Total time [h:m:s.ms]:   0:00:00.000
+         3-Solving sector:       11, nup:  1, ndw:  1, dims=     8     8                  64
+Total time [h:m:s.ms]:   0:00:00.000
+         4-Solving sector:       19, nup:  2, ndw:  0, dims=    28     1                  28
+Total time [h:m:s.ms]:   0:00:00.000
+         5-Solving sector:       20, nup:  2, ndw:  1, dims=    28     8                 224
+Total time [h:m:s.ms]:   0:00:00.019
+         6-Solving sector:       21, nup:  2, ndw:  2, dims=    28    28                 784, Lanc Info:     1   512    10
+Total time [h:m:s.ms]:   0:00:00.004
+         7-Solving sector:       28, nup:  3, ndw:  0, dims=    56     1                  56
+Total time [h:m:s.ms]:   0:00:00.001
+         8-Solving sector:       29, nup:  3, ndw:  1, dims=    56     8                 448, Lanc Info:     1   448    10
+Total time [h:m:s.ms]:   0:00:00.002
+         9-Solving sector:       30, nup:  3, ndw:  2, dims=    56    28                1568, Lanc Info:     1   512    10
+Total time [h:m:s.ms]:   0:00:00.009
+        10-Solving sector:       31, nup:  3, ndw:  3, dims=    56    56                3136, Lanc Info:     1   512    10
+Total time [h:m:s.ms]:   0:00:00.018
+        11-Solving sector:       37, nup:  4, ndw:  0, dims=    70     1                  70
+Total time [h:m:s.ms]:   0:00:00.001
+        12-Solving sector:       38, nup:  4, ndw:  1, dims=    70     8                 560, Lanc Info:     1   512    10
+Total time [h:m:s.ms]:   0:00:00.003
+        13-Solving sector:       39, nup:  4, ndw:  2, dims=    70    28                1960, Lanc Info:     1   512    10
+Total time [h:m:s.ms]:   0:00:00.009
+        14-Solving sector:       40, nup:  4, ndw:  3, dims=    70    56                3920, Lanc Info:     1   512    10
+Total time [h:m:s.ms]:   0:00:00.020
+        15-Solving sector:       41, nup:  4, ndw:  4, dims=    70    70                4900, Lanc Info:     1   512    10
+Total time [h:m:s.ms]:   0:00:00.027
+        16-Solving sector:       46, nup:  5, ndw:  0, dims=    56     1                  56
+Total time [h:m:s.ms]:   0:00:00.001
+        17-Solving sector:       47, nup:  5, ndw:  1, dims=    56     8                 448, Lanc Info:     1   448    10
+Total time [h:m:s.ms]:   0:00:00.002
+        18-Solving sector:       48, nup:  5, ndw:  2, dims=    56    28                1568, Lanc Info:     1   512    10
+Total time [h:m:s.ms]:   0:00:00.006
+        19-Solving sector:       49, nup:  5, ndw:  3, dims=    56    56                3136, Lanc Info:     1   512    10
+Total time [h:m:s.ms]:   0:00:00.014
+        20-Solving sector:       50, nup:  5, ndw:  4, dims=    56    70                3920, Lanc Info:     1   512    10
+Total time [h:m:s.ms]:   0:00:00.021
+        21-Solving sector:       51, nup:  5, ndw:  5, dims=    56    56                3136, Lanc Info:     1   512    10
+Total time [h:m:s.ms]:   0:00:00.020
+        22-Solving sector:       55, nup:  6, ndw:  0, dims=    28     1                  28
+Total time [h:m:s.ms]:   0:00:00.000
+        23-Solving sector:       56, nup:  6, ndw:  1, dims=    28     8                 224
+Total time [h:m:s.ms]:   0:00:00.019
+        24-Solving sector:       57, nup:  6, ndw:  2, dims=    28    28                 784, Lanc Info:     1   512    10
+Total time [h:m:s.ms]:   0:00:00.003
+        25-Solving sector:       58, nup:  6, ndw:  3, dims=    28    56                1568, Lanc Info:     1   512    10
+Total time [h:m:s.ms]:   0:00:00.007
+        26-Solving sector:       59, nup:  6, ndw:  4, dims=    28    70                1960, Lanc Info:     1   512    10
+Total time [h:m:s.ms]:   0:00:00.009
+        27-Solving sector:       60, nup:  6, ndw:  5, dims=    28    56                1568, Lanc Info:     1   512    10
+Total time [h:m:s.ms]:   0:00:00.008
+        28-Solving sector:       61, nup:  6, ndw:  6, dims=    28    28                 784, Lanc Info:     1   512    10
+Total time [h:m:s.ms]:   0:00:00.003
+        29-Solving sector:       64, nup:  7, ndw:  0, dims=     8     1                   8
+Total time [h:m:s.ms]:   0:00:00.000
+        30-Solving sector:       65, nup:  7, ndw:  1, dims=     8     8                  64
+Total time [h:m:s.ms]:   0:00:00.000
+        31-Solving sector:       66, nup:  7, ndw:  2, dims=     8    28                 224
+Total time [h:m:s.ms]:   0:00:00.019
+        32-Solving sector:       67, nup:  7, ndw:  3, dims=     8    56                 448, Lanc Info:     1   448    10
+Total time [h:m:s.ms]:   0:00:00.002
+        33-Solving sector:       68, nup:  7, ndw:  4, dims=     8    70                 560, Lanc Info:     1   512    10
+Total time [h:m:s.ms]:   0:00:00.002
+        34-Solving sector:       69, nup:  7, ndw:  5, dims=     8    56                 448, Lanc Info:     1   448    10
+Total time [h:m:s.ms]:   0:00:00.003
+        35-Solving sector:       70, nup:  7, ndw:  6, dims=     8    28                 224
+Total time [h:m:s.ms]:   0:00:00.019
+        36-Solving sector:       71, nup:  7, ndw:  7, dims=     8     8                  64
+Total time [h:m:s.ms]:   0:00:00.001
+        37-Solving sector:       73, nup:  8, ndw:  0, dims=     1     1                   1
+Total time [h:m:s.ms]:   0:00:00.000
+        38-Solving sector:       74, nup:  8, ndw:  1, dims=     1     8                   8
+Total time [h:m:s.ms]:   0:00:00.000
+        39-Solving sector:       75, nup:  8, ndw:  2, dims=     1    28                  28
+Total time [h:m:s.ms]:   0:00:00.000
+        40-Solving sector:       76, nup:  8, ndw:  3, dims=     1    56                  56
+Total time [h:m:s.ms]:   0:00:00.001
+        41-Solving sector:       77, nup:  8, ndw:  4, dims=     1    70                  70
+Total time [h:m:s.ms]:   0:00:00.001
+        42-Solving sector:       78, nup:  8, ndw:  5, dims=     1    56                  56
+Total time [h:m:s.ms]:   0:00:00.001
+        43-Solving sector:       79, nup:  8, ndw:  6, dims=     1    28                  28
+Total time [h:m:s.ms]:   0:00:00.000
+        44-Solving sector:       80, nup:  8, ndw:  7, dims=     1     8                   8
+Total time [h:m:s.ms]:   0:00:00.000
+        45-Solving sector:       81, nup:  8, ndw:  8, dims=     1     1                   1
+Total time [h:m:s.ms]:   0:00:00.000
+Total time [h:m:s.ms]:   0:00:00.288
+#     i               E_i       exp(-(E-E0)/T)       Sect       Dim    Indices:
+     1  -11.319472316555   1.000000000000E+00         49      3136   5   3
+     2  -11.319472316555   1.000000000000E+00         33      3136   3   5
+Egs =    -11.319472316555   5   3
+Egs =    -11.319472316555   3   5
+Z   =      2.000000000000
+Get impurity Greens functions:
+Get G_l1_s1
+ add particle:    58
+ del particle:    40
+ add particle:    42
+ del particle:    24
+Total time [h:m:s.ms]:   0:00:00.093
+Get G_l2_s1
+ add particle:    58
+ del particle:    40
+ add particle:    42
+ del particle:    24
+Total time [h:m:s.ms]:   0:00:00.095
+dens=    0.999834654714    1.000194517693    2.000029172407
+docc=    0.006982739975    0.007200745020
+<Hint>  =   -2.702230574276
+<V>     =    0.910356213634
+<E0>    =   -0.000359862979
+<Ehf>   =   -3.612586787910
+Dust    =    0.014323365457
+Dund    =    0.985626639263
+Get local Matsubara Green's function (no print)
+ 
+  +ETA --> fort.6
+  10% |ETA: 0:00:01.580 @21 May 2019  10:19:48
+  20% |ETA: 0:00:01.514
+  30% |ETA: 0:00:00.900
+  40% |ETA: 0:00:00.772
+  50% |ETA: 0:00:00.643 @21 May 2019  10:19:48
+  60% |ETA: 0:00:00.515
+  70% |ETA: 0:00:00.769
+  80% |ETA: 0:00:00.510
+  90% |ETA: 0:00:00.510
+ 100% |ETA: 0:00:00.000
+Total time [h:m:s.ms]:   0:00:01.281
+Gloc matsubara: write spin-orbital diagonal elements.
+\Chi2 fit with CG-nr and CG-weight: 1 on: weiss
+chi^2|iter=    3.282240601E-09 |    64  <--  Orb1 Spin1
+chi^2|iter=    2.006911924E-08 |    18  <--  Orb2 Spin1
+            #Ek_l1_s1              Vk_l1_s1             #Ek_l2_s1              Vk_l2_s1
+      -1.229002692523        0.298078392343       -2.776523101373        0.329999847823
+      -0.527178991965       -0.178738027427        0.469346046178       -0.145676776238
+       2.916960267683        0.342029047795        1.097948277242       -0.308679937292
+[1;92merror=[0m  6.2168087E-06
+=====================================
+Total time [h:m:s.ms]:   0:00:01.979
+
+
+Get local Realaxis Green's function (no print)
+ 
+  +ETA --> fort.6
+  10% |ETA: 0:00:00.519 @21 May 2019  10:19:49
+  20% |ETA: 0:00:00.941
+  30% |ETA: 0:00:00.829
+  40% |ETA: 0:00:00.709
+  50% |ETA: 0:00:00.593 @21 May 2019  10:19:49
+  60% |ETA: 0:00:00.948
+  70% |ETA: 0:00:00.714
+  80% |ETA: 0:00:00.955
+  90% |ETA: 0:00:00.955
+ 100% |ETA: 0:00:00.000
+Total time [h:m:s.ms]:   0:00:00.598
+Gloc real: write spin-orbital diagonal elements.

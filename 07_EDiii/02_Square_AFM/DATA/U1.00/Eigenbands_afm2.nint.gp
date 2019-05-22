@@ -1,4 +1,4 @@
- set term wxt
+ #set term wxt
  #set terminal pngcairo size 350,262 enhanced font 'Verdana,10'
  #set out 'Eigenbands_afm2.nint.png'
  

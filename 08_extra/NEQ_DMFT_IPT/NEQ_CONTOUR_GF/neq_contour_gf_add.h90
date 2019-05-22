@@ -1,0 +1,235 @@
+!C(t,t')=A(t,t') + B(t,t'), with t=t_max && t'=0,t_max
+subroutine add_kb_contour_gf_main(params,ak,A,bk,B,C)
+  type(kb_contour_gf)     :: A,B,C
+  real(8)                 :: ak,bk
+  type(kb_contour_params) :: params
+  integer                 :: N,L
+  !
+  N   = params%Ntime
+  L   = params%Ntau
+  !
+  call check_kb_contour_gf(params,A,"add_kb_contour_gf_main") 
+  call check_kb_contour_gf(params,B,"add_kb_contour_gf_main")
+  call check_kb_contour_gf(params,C,"add_kb_contour_gf_main")
+  !
+  C%less(:,:) = ak*A%less(:,:) + bk*B%less(:,:)
+  C%ret(:,:)  = ak*A%ret(:,:)  + bk*B%ret(:,:)
+  C%lmix(:,0:)= ak*A%lmix(:,0:)+ bk*B%lmix(:,0:)
+  C%mats(0:)  = ak*A%mats(0:)  + bk*B%mats(0:)
+  C%iw(:)     = ak*A%iw(:)     + bk*B%iw(:)
+  !
+end subroutine  add_kb_contour_gf_main
+
+subroutine add_kb_contour_gf_Nlk_main(params,ak,A,bk,B,C)
+  type(kb_contour_gf),dimension(:) :: A,B,C ![Nlk]
+  type(kb_contour_params)                  :: params
+  real(8)                                  :: ak,bk
+  integer                                  :: N,L
+  !
+  Nlk   = size(A,1)
+  !
+  N   = params%Ntime
+  L   = params%Ntau
+  !
+  call check_kb_contour_gf(params,A,"add_kb_contour_gf_Nlk_main") 
+  call check_kb_contour_gf(params,B,"add_kb_contour_gf_Nlk_main")
+  call check_kb_contour_gf(params,C,"add_kb_contour_gf_Nlk_main")
+  !
+  do ilk=1,Nlk
+     C(ilk)%less(:,:) = ak*A(ilk)%less(:,:) + bk*B(ilk)%less(:,:)
+     C(ilk)%ret(:,:)  = ak*A(ilk)%ret(:,:)  + bk*B(ilk)%ret(:,:)
+     C(ilk)%lmix(:,0:)= ak*A(ilk)%lmix(:,0:)+ bk*B(ilk)%lmix(:,0:)
+     C(ilk)%mats(0:)  = ak*A(ilk)%mats(0:)  + bk*B(ilk)%mats(0:)
+     C(ilk)%iw(:)     = ak*A(ilk)%iw(:)     + bk*B(ilk)%iw(:)
+  enddo
+  !
+end subroutine  add_kb_contour_gf_Nlk_main
+
+subroutine add_kb_contour_gf_Nso(params,ak,A,bk,B,C)
+  type(kb_contour_gf),dimension(:,:,:,:) :: A,B,C ![Nspin][Nspin][Norb][Norb]
+  type(kb_contour_params)                :: params
+  real(8)                                :: ak,bk
+  integer                                :: N,L
+  !
+  Nspin = size(A,1)
+  Norb  = size(A,3)
+  !
+  N   = params%Ntime
+  L   = params%Ntau
+  !
+  call check_kb_contour_gf(params,A,"add_kb_contour_gf_Nso") 
+  call check_kb_contour_gf(params,B,"add_kb_contour_gf_Nso")
+  call check_kb_contour_gf(params,C,"add_kb_contour_gf_Nso")
+  !
+  do ispin=1,Nspin
+     do jspin=1,Nspin
+        do iorb=1,Norb
+           do jorb=1,Norb
+              C(ispin,jspin,iorb,jorb)%less(:,:) = ak*A(ispin,jspin,iorb,jorb)%less(:,:) + bk*B(ispin,jspin,iorb,jorb)%less(:,:)
+              C(ispin,jspin,iorb,jorb)%ret(:,:)  = ak*A(ispin,jspin,iorb,jorb)%ret(:,:)  + bk*B(ispin,jspin,iorb,jorb)%ret(:,:)
+              C(ispin,jspin,iorb,jorb)%lmix(:,0:)= ak*A(ispin,jspin,iorb,jorb)%lmix(:,0:)+ bk*B(ispin,jspin,iorb,jorb)%lmix(:,0:)
+              C(ispin,jspin,iorb,jorb)%mats(0:)  = ak*A(ispin,jspin,iorb,jorb)%mats(0:)  + bk*B(ispin,jspin,iorb,jorb)%mats(0:)
+              C(ispin,jspin,iorb,jorb)%iw(:)     = ak*A(ispin,jspin,iorb,jorb)%iw(:)     + bk*B(ispin,jspin,iorb,jorb)%iw(:)
+           enddo
+        enddo
+     enddo
+  enddo
+  !
+end subroutine  add_kb_contour_gf_Nso
+
+subroutine add_kb_contour_gf_Nlk_Nso(params,ak,A,bk,B,C)
+  type(kb_contour_gf),dimension(:,:,:,:,:) :: A,B,C ![Nlk,Nspin,Nspin,Norb,Norb]
+  type(kb_contour_params)                  :: params
+  real(8)                                  :: ak,bk
+  integer                                  :: N,L
+  !
+  Nlk   = size(A,1)
+  Nspin = size(A,2)
+  Norb  = size(A,4)
+  !
+  N   = params%Ntime
+  L   = params%Ntau
+  !
+  call check_kb_contour_gf(params,A,"add_kb_contour_gf_Nlk_Nso") 
+  call check_kb_contour_gf(params,B,"add_kb_contour_gf_Nlk_Nso")
+  call check_kb_contour_gf(params,C,"add_kb_contour_gf_Nlk_Nso")
+  !
+  do ilk=1,Nlk
+     do ispin=1,Nspin
+        do jspin=1,Nspin
+           do iorb=1,Norb
+              do jorb=1,Norb
+                 C(ilk,ispin,jspin,iorb,jorb)%less(:,:) = ak*A(ilk,ispin,jspin,iorb,jorb)%less(:,:) + bk*B(ilk,ispin,jspin,iorb,jorb)%less(:,:)
+                 C(ilk,ispin,jspin,iorb,jorb)%ret(:,:)  = ak*A(ilk,ispin,jspin,iorb,jorb)%ret(:,:)  + bk*B(ilk,ispin,jspin,iorb,jorb)%ret(:,:)
+                 C(ilk,ispin,jspin,iorb,jorb)%lmix(:,0:)= ak*A(ilk,ispin,jspin,iorb,jorb)%lmix(:,0:)+ bk*B(ilk,ispin,jspin,iorb,jorb)%lmix(:,0:)
+                 C(ilk,ispin,jspin,iorb,jorb)%mats(0:)  = ak*A(ilk,ispin,jspin,iorb,jorb)%mats(0:)  + bk*B(ilk,ispin,jspin,iorb,jorb)%mats(0:)
+                 C(ilk,ispin,jspin,iorb,jorb)%iw(:)     = ak*A(ilk,ispin,jspin,iorb,jorb)%iw(:)     + bk*B(ilk,ispin,jspin,iorb,jorb)%iw(:)
+              enddo
+           enddo
+        enddo
+     enddo
+  enddo
+  !
+end subroutine  add_kb_contour_gf_Nlk_Nso
+
+
+
+
+
+
+
+
+
+
+subroutine add_kb_contour_dgf_main(params,ak,A,bk,B,C)
+  type(kb_contour_dgf)    :: A,B,C
+  real(8)                 :: ak,bk
+  type(kb_contour_params) :: params
+  integer                 :: N,L
+  !
+  N   = params%Nt                 !<== work with the ACTUAL size of the contour
+  L   = params%Ntau
+  !
+  call check_kb_contour_gf(params,A,"add_kb_contour_dgf_main") 
+  call check_kb_contour_gf(params,B,"add_kb_contour_dgf_main")
+  call check_kb_contour_gf(params,C,"add_kb_contour_dgf_main")
+  !
+  C%less(:) = ak*A%less(:) + bk*B%less(:)
+  C%ret(:)  = ak*A%ret(:)  + bk*B%ret(:)  
+  C%lmix(0:)= ak*A%lmix(0:)+ bk*B%lmix(0:)
+  !
+end subroutine add_kb_contour_dgf_main
+
+subroutine add_kb_contour_dgf_Nlk_main(params,ak,A,bk,B,C)
+  type(kb_contour_dgf),dimension(:) :: A,B,C ![Nlk]
+  type(kb_contour_params)                  :: params
+  real(8)                                  :: ak,bk
+  integer                                  :: N,L
+  !
+  Nlk   = size(A,1)
+  !
+  N   = params%Ntime
+  L   = params%Ntau
+  !
+  call check_kb_contour_gf(params,A,"add_kb_contour_dgf_Nlk_main") 
+  call check_kb_contour_gf(params,B,"add_kb_contour_dgf_Nlk_main")
+  call check_kb_contour_gf(params,C,"add_kb_contour_dgf_Nlk_main")
+  !
+  do ilk=1,Nlk
+     C(ilk)%less(:) = ak*A(ilk)%less(:) + bk*B(ilk)%less(:)
+     C(ilk)%ret(:)  = ak*A(ilk)%ret(:)  + bk*B(ilk)%ret(:)
+     C(ilk)%lmix(0:)= ak*A(ilk)%lmix(0:)+ bk*B(ilk)%lmix(0:)
+  enddo
+  !
+end subroutine  add_kb_contour_dgf_Nlk_main
+
+subroutine add_kb_contour_dgf_Nso(params,ak,A,bk,B,C)
+  type(kb_contour_dgf),dimension(:,:,:,:) :: A,B,C ![Nspin,Nspin,Norb,Norb]
+  type(kb_contour_params)                :: params
+  real(8)                 :: ak,bk
+  integer                                :: N,L
+  integer                                :: Nspin,Norb
+  integer                                :: ispin,jspin,iorb,jorb
+  !
+  Nspin = size(A,1)
+  Norb  = size(A,3)
+  !
+  N   = params%Ntime
+  L   = params%Ntau
+  !
+  call check_kb_contour_gf(params,A,"add_kb_contour_dgf_Nso") 
+  call check_kb_contour_gf(params,B,"add_kb_contour_dgf_Nso")
+  call check_kb_contour_gf(params,C,"add_kb_contour_dgf_Nso")
+  !
+  do ispin=1,Nspin
+     do jspin=1,Nspin
+        do iorb=1,Norb
+           do jorb=1,Norb
+              C(ispin,jspin,iorb,jorb)%less(:) = ak*A(ispin,jspin,iorb,jorb)%less(:) + bk*B(ispin,jspin,iorb,jorb)%less(:)
+              C(ispin,jspin,iorb,jorb)%ret(:)  = ak*A(ispin,jspin,iorb,jorb)%ret(:)  + bk*B(ispin,jspin,iorb,jorb)%ret(:)
+              C(ispin,jspin,iorb,jorb)%lmix(0:)= ak*A(ispin,jspin,iorb,jorb)%lmix(0:)+ bk*B(ispin,jspin,iorb,jorb)%lmix(0:)
+           enddo
+        enddo
+     enddo
+  enddo
+  !
+end subroutine  add_kb_contour_dgf_Nso
+
+subroutine add_kb_contour_dgf_Nlk_Nso(params,ak,A,bk,B,C)
+  type(kb_contour_dgf),dimension(:,:,:,:,:) :: A,B,C ![Nlk,Nspin,Nspin,Norb,Norb]
+  type(kb_contour_params)                  :: params
+  real(8)                                  :: ak,bk
+  integer                                  :: N,L
+  !
+  Nlk   = size(A,1)
+  Nspin = size(A,2)
+  Norb  = size(A,4)
+  !
+  N   = params%Ntime
+  L   = params%Ntau
+  !
+  call check_kb_contour_gf(params,A,"add_kb_contour_dgf_Nlk_Nso") 
+  call check_kb_contour_gf(params,B,"add_kb_contour_dgf_Nlk_Nso")
+  call check_kb_contour_gf(params,C,"add_kb_contour_dgf_Nlk_Nso")
+  !
+  do ilk=1,Nlk
+     do ispin=1,Nspin
+        do jspin=1,Nspin
+           do iorb=1,Norb
+              do jorb=1,Norb
+                 C(ilk,ispin,jspin,iorb,jorb)%less(:) = ak*A(ilk,ispin,jspin,iorb,jorb)%less(:) + bk*B(ilk,ispin,jspin,iorb,jorb)%less(:)
+                 C(ilk,ispin,jspin,iorb,jorb)%ret(:)  = ak*A(ilk,ispin,jspin,iorb,jorb)%ret(:)  + bk*B(ilk,ispin,jspin,iorb,jorb)%ret(:)
+                 C(ilk,ispin,jspin,iorb,jorb)%lmix(0:)= ak*A(ilk,ispin,jspin,iorb,jorb)%lmix(0:)+ bk*B(ilk,ispin,jspin,iorb,jorb)%lmix(0:)
+              enddo
+           enddo
+        enddo
+     enddo
+  enddo
+  !
+end subroutine  add_kb_contour_dgf_Nlk_Nso
+
+
+
+
+
+

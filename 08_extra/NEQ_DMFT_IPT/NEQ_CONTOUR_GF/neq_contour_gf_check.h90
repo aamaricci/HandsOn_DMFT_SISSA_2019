@@ -1,0 +1,194 @@
+subroutine check_kb_contour_gf_main(params,G,pname,gname)
+  type(kb_contour_gf)       :: G
+  type(kb_contour_params)   :: params
+  integer                   :: N,L,Lf
+  character(len=*),optional :: pname,gname
+  character(len=100)        :: pname_,gname_
+  !
+  pname_="check_kb_contour_gf_main";if(present(pname))pname_=reg(pname)
+  gname_="kb_contour_gf";if(present(gname))gname_=reg(gname)
+  !
+  N=params%Ntime              !<== check size at maximum time
+  L=params%Ntau
+  !
+  if(.not.G%status)then
+     write(*,"(A)")"check_kb_contour_gf_main: "//str(gname_)//" not allocated"
+     stop
+  endif
+  call assert_shape(G%less,[N,N],reg(pname_),str(gname_)//"%less")
+  call assert_shape(G%ret,[N,N],reg(pname_),str(gname_)//"%ret")
+  call assert_shape(G%lmix,[N,L+1],reg(pname_),str(gname_)//"%lmix")
+  call assert_shape(G%mats,[L+1],reg(pname_),str(gname_)//"%mats")
+end subroutine check_kb_contour_gf_main
+
+subroutine check_kb_contour_gf_Nlk_main(params,G,pname,gname)
+  type(kb_contour_gf)       :: G(:) !![Nlk]
+  type(kb_contour_params)   :: params
+  integer                   :: N,L,Lf
+  character(len=*),optional :: pname,gname
+  character(len=100)        :: pname_,gname_
+  !
+  pname_="check_kb_contour_gf_Nlk_main";if(present(pname))pname_=reg(pname)
+  gname_="kb_contour_gf";if(present(gname))gname_=reg(gname)
+  !
+  Nlk   = size(G,1)
+  do ilk=1,Nlk
+     call check_kb_contour_gf_main(params,G(ilk),trim(pname_),trim(gname_))
+  enddo
+end subroutine check_kb_contour_gf_Nlk_main
+
+subroutine check_kb_contour_gf_Nso(params,G,pname,gname)
+  type(kb_contour_gf)       :: G(:,:,:,:) !![Nspin,Nspin,Norb,Norb]
+  type(kb_contour_params)   :: params
+  integer                   :: N,L,Lf
+  character(len=*),optional :: pname,gname
+  character(len=100)        :: pname_,gname_
+  !
+  pname_="check_kb_contour_gf_Nso";if(present(pname))pname_=reg(pname)
+  gname_="kb_contour_gf";if(present(gname))gname_=reg(gname)
+  !
+  Nspin = size(G,1)
+  Norb  = size(G,3)
+  call assert_shape_kb_contour_gf(G,[Nspin,Nspin,Norb,Norb],reg(pname_),reg(gname_))
+  !
+  do ispin=1,Nspin
+     do jspin=1,Nspin
+        do iorb=1,Norb
+           do jorb=1,Norb
+              call check_kb_contour_gf_main(params,G(ispin,jspin,iorb,jorb),trim(pname_),trim(gname_))
+           enddo
+        enddo
+     enddo
+  enddo
+end subroutine check_kb_contour_gf_Nso
+
+subroutine check_kb_contour_gf_Nlk_Nso(params,G,pname,gname)
+  type(kb_contour_gf)       :: G(:,:,:,:,:) !![Nlk,Nspin,Nspin,Norb,Norb]
+  type(kb_contour_params)   :: params
+  integer                   :: N,L,Lf
+  character(len=*),optional :: pname,gname
+  character(len=100)        :: pname_,gname_
+  !
+  pname_="check_kb_contour_gf_Nlk_Nso";if(present(pname))pname_=reg(pname)
+  gname_="kb_contour_gf";if(present(gname))gname_=reg(gname)
+  !
+  Nlk   = size(G,1)
+  Nspin = size(G,2)
+  Norb  = size(G,4)
+  call assert_shape_kb_contour_gf(G,[Nlk,Nspin,Nspin,Norb,Norb],reg(pname_),reg(gname_))
+  !
+  do ilk=1,Nlk
+     do ispin=1,Nspin
+        do jspin=1,Nspin
+           do iorb=1,Norb
+              do jorb=1,Norb
+                 call check_kb_contour_gf_main(params,G(ilk,ispin,jspin,iorb,jorb),trim(pname_),trim(gname_))
+              enddo
+           enddo
+        enddo
+     enddo
+  enddo
+end subroutine check_kb_contour_gf_Nlk_Nso
+
+
+
+
+
+
+
+
+
+
+
+
+subroutine check_kb_contour_dgf_main(params,dG,pname,gname)
+  type(kb_contour_dgf)      :: dG
+  type(kb_contour_params)   :: params
+  integer                   :: N,L
+  character(len=*),optional :: pname,gname
+  character(len=100)        :: pname_,gname_
+  !
+  pname_="check_kb_contour_dgf";if(present(pname))pname_=reg(pname)
+  gname_="kb_contour_dgf";if(present(gname))gname_=reg(gname)
+  !
+  N=params%Ntime              !<== check size at maximum time
+  L=params%Ntau
+  !
+  if(.not.dG%status)then
+     write(*,"(A)")"check_kb_contour_dgf_main: "//str(gname_)//" not allocated"
+     stop
+  endif
+  call assert_shape(dG%less,[N],reg(pname_),str(gname_)//"%less")
+  call assert_shape(dG%ret,[N],reg(pname_),str(gname_)//"%ret")
+  call assert_shape(dG%lmix,[L+1],reg(pname_),str(gname_)//"%lmix")
+end subroutine check_kb_contour_dgf_main
+
+subroutine check_kb_contour_dgf_Nlk_main(params,dG,pname,gname)
+  type(kb_contour_dgf)       :: dG(:) !![Nlk]
+  type(kb_contour_params)   :: params
+  integer                   :: N,L,Lf
+  character(len=*),optional :: pname,gname
+  character(len=100)        :: pname_,gname_
+  !
+  pname_="check_kb_contour_dgf_Nlk_main";if(present(pname))pname_=reg(pname)
+  gname_="kb_contour_dgf";if(present(gname))gname_=reg(gname)
+  !
+  Nlk   = size(dG)
+  do ilk=1,Nlk
+     call check_kb_contour_dgf_main(params,dG(ilk),trim(pname_),trim(gname_))
+  enddo
+end subroutine check_kb_contour_dgf_Nlk_main
+
+subroutine check_kb_contour_dgf_Nso(params,dG,pname,gname)
+  type(kb_contour_dgf)      :: dG(:,:,:,:) !![Nspin,Nspin,Norb,Norb]
+  type(kb_contour_params)   :: params
+  integer                   :: N,L,Lf,Nspin,Norb
+  integer                   :: ispin,jspin,iorb,jorb
+  character(len=*),optional :: pname,gname
+  character(len=100)        :: pname_,gname_
+  !
+  pname_="check_kb_contour_dgf_Nso";if(present(pname))pname_=reg(pname)
+  gname_="kb_contour_dgf";if(present(gname))gname_=reg(gname)
+  !
+  Nspin = size(dG,1)
+  Norb  = size(dG,3)
+  if(any( shape(dG) /= [Nspin,Nspin,Norb,Norb] ) ) stop "ERROR check_kb_contour_dgf_Nso: shape[dG] != [Nspin,Nspin,Norb,Norb]"
+  !
+  do ispin=1,Nspin
+     do jspin=1,Nspin
+        do iorb=1,Norb
+           do jorb=1,Norb
+              call check_kb_contour_dgf_main(params,dG(ispin,jspin,iorb,jorb),trim(pname_),trim(gname_))
+           enddo
+        enddo
+     enddo
+  enddo
+end subroutine check_kb_contour_dgf_Nso
+
+subroutine check_kb_contour_dgf_Nlk_Nso(params,dG,pname,gname)
+  type(kb_contour_dgf)      :: dG(:,:,:,:,:) !![Nlk,Nspin,Nspin,Norb,Norb]
+  type(kb_contour_params)   :: params
+  integer                   :: N,L,Lf
+  character(len=*),optional :: pname,gname
+  character(len=100)        :: pname_,gname_
+  !
+  pname_="check_kb_contour_dgf_Nlk_Nso";if(present(pname))pname_=reg(pname)
+  gname_="kb_contour_dgf";if(present(gname))gname_=reg(gname)
+  !
+  Nlk   = size(dG,1)
+  Nspin = size(dG,2)
+  Norb  = size(dG,4)
+  if(any( shape(dG) /= [Nlk,Nspin,Nspin,Norb,Norb] ) ) stop "ERROR check_kb_contour_dgf_Nlk_Nso: shape[dG] != [Nlk,Nspin,Nspin,Norb,Norb]"
+  !
+  do ilk=1,Nlk
+     do ispin=1,Nspin
+        do jspin=1,Nspin
+           do iorb=1,Norb
+              do jorb=1,Norb
+                 call check_kb_contour_dgf_main(params,dG(ilk,ispin,jspin,iorb,jorb),trim(pname_),trim(gname_))
+              enddo
+           enddo
+        enddo
+     enddo
+  enddo
+end subroutine check_kb_contour_dgf_Nlk_Nso

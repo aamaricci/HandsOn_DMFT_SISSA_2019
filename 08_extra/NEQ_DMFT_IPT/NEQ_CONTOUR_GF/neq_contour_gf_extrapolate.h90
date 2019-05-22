@@ -1,0 +1,59 @@
+subroutine extrapolate_kb_contour_gf_main(params,g)
+  type(kb_contour_params) :: params
+  type(kb_contour_gf)     :: g
+  integer                 :: i,j,k,N,L
+  if(.not.g%status)     stop "extrapolate_kb_contour_gf: g is not allocated"
+  if(.not.params%status)stop "extrapolate_kb_contour_gf: params is not allocated"
+  N = params%Nt
+  L = params%Ntau
+  select case(N)
+  case(1)
+     return
+  case(2)
+     !GUESS G AT THE NEXT STEP, GIVEN THE INITIAL CONDITIONS
+     do j=1,N
+        g%ret(N,j) =g%ret(1,1)
+        g%less(N,j)=g%less(1,1)
+     end do
+     do i=1,N-1
+        g%less(i,N)=g%less(1,1)
+     end do
+     do j=0,L
+        g%lmix(N,j)=g%lmix(1,j)
+     end do
+  case default
+     !EXTEND G FROM THE [N-1,N-1] TO THE [N,N] SQUARE TO START DMFT
+     !USING QUADRATIC EXTRAPOLATION
+     do k=1,N-1
+        g%less(N,k)=2.d0*g%less(N-1,k)-g%less(N-2,k)
+        g%less(k,N)=2.d0*g%less(k,N-1)-g%less(k,N-2)
+     end do
+     g%less(N,N)=2.d0*g%less(N-1,N-1)-g%less(N-2,N-2)
+     !
+     do k=0,L
+        g%lmix(N,k)=2.d0*g%lmix(N-1,k)-g%lmix(N-2,k)
+     end do
+     !
+     g%ret(N,N)=-xi
+     do k=1,N-2
+        g%ret(N,k)=2.d0*g%ret(N-1,k)-g%ret(N-2,k)
+     end do
+     g%ret(N,N-1)=0.5d0*(g%ret(N,N)+g%ret(N,N-2))
+  end select
+end subroutine extrapolate_kb_contour_gf_main
+
+subroutine extrapolate_kb_contour_gf_Nso(params,g)
+  type(kb_contour_params) :: params
+  type(kb_contour_gf)     :: g(:,:,:,:) ![Nspin,Nspin,Norb,Norb]
+  integer                 :: Nspin,Norb
+  integer                 :: ispin,jspin,iorb,jorb
+  do ispin=1,Nspin
+     do jspin=1,Nspin
+        do iorb=1,Norb
+           do jorb=1,Norb
+              call extrapolate_kb_contour_gf_main(params,g(ispin,jspin,iorb,jorb))
+           enddo
+        enddo
+     enddo
+  enddo
+end subroutine extrapolate_kb_contour_gf_Nso

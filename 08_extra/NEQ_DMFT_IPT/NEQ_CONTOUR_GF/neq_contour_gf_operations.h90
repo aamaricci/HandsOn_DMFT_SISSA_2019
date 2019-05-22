@@ -1,0 +1,280 @@
+function kb_contour_gf_sum_main(A,B) result(C)
+  type(kb_contour_gf),intent(in) :: A
+  type(kb_contour_gf),intent(in) :: B
+  type(kb_contour_gf)            :: C
+  integer :: N,L
+  !
+  N = kb_contour_N
+  L = kb_contour_L
+  !
+  C%mats(0:)     = A%mats(0:) + B%mats(0:)
+  C%iw(:)        = A%iw(:)    + B%iw(:)
+  C%ret(N,1:N)   = A%ret(N,1:N)   + B%ret(N,1:N)
+  C%less(N,1:N)  = A%less(N,1:N)  + B%less(N,1:N)
+  C%less(1:N-1,N)= -conjg(A%less(N,1:N-1))  - conjg(B%less(N,1:N-1))
+  C%lmix(N,0:)   = A%lmix(N,0:)   + B%lmix(N,0:)
+end function kb_contour_gf_sum_main
+
+function kb_contour_gf_sum_Nso(A,B) result(C)
+  type(kb_contour_gf),intent(in) :: A(:,:,:,:)
+  type(kb_contour_gf),intent(in) :: B(size(A,1),size(A,2),size(A,3),size(A,4))
+  type(kb_contour_gf)            :: C(size(A,1),size(A,2),size(A,3),size(A,4))
+  integer                        :: N,L
+  integer                        :: i1,i2,i3,i4
+  !
+  N = kb_contour_N
+  L = kb_contour_L
+  !
+  forall(i1=1:size(A,1), i2=1:size(A,2), i3=1:size(A,3), i4=1:size(A,4))
+     C(i1,i2,i3,i4)%mats(0:)     = A(i1,i2,i3,i4)%mats(0:) + B(i1,i2,i3,i4)%mats(0:)
+     C(i1,i2,i3,i4)%iw(:)        = A(i1,i2,i3,i4)%iw(:)    + B(i1,i2,i3,i4)%iw(:)
+     C(i1,i2,i3,i4)%ret(N,1:N)   = A(i1,i2,i3,i4)%ret(N,1:N)   + B(i1,i2,i3,i4)%ret(N,1:N)
+     C(i1,i2,i3,i4)%less(N,1:N)  = A(i1,i2,i3,i4)%less(N,1:N)  + B(i1,i2,i3,i4)%less(N,1:N)
+     C(i1,i2,i3,i4)%less(1:N-1,N)= -conjg(A(i1,i2,i3,i4)%less(N,1:N-1))  - conjg(B(i1,i2,i3,i4)%less(N,1:N-1))
+     C(i1,i2,i3,i4)%lmix(N,0:)   = A(i1,i2,i3,i4)%lmix(N,0:)   + B(i1,i2,i3,i4)%lmix(N,0:)
+  end forall
+end function kb_contour_gf_sum_Nso
+
+
+
+
+
+
+
+
+function kb_contour_gf_add_main(A,B) result(C)
+  type(kb_contour_gf),intent(in) :: A
+  type(kb_contour_gf),intent(in) :: B
+  type(kb_contour_gf)            :: C
+  integer :: N,L
+  !
+  N = kb_contour_N
+  L = kb_contour_L
+  !
+  C%less(:,:) = A%less(:,:) + B%less(:,:)
+  C%ret(:,:)  = A%ret(:,:)  + B%ret(:,:)
+  C%lmix(:,0:)= A%lmix(:,0:)+ B%lmix(:,0:)
+  C%mats(0:)  = A%mats(0:)  + B%mats(0:)
+  C%iw(:)     = A%iw(:)     + B%iw(:)
+end function kb_contour_gf_add_main
+
+function kb_contour_gf_add_Nso(A,B) result(C)
+  type(kb_contour_gf),intent(in) :: A(:,:,:,:)
+  type(kb_contour_gf),intent(in) :: B(size(A,1),size(A,2),size(A,3),size(A,4))
+  type(kb_contour_gf)            :: C(size(A,1),size(A,2),size(A,3),size(A,4))
+  integer                        :: N,L
+  integer                        :: i1,i2,i3,i4
+  !
+  N = kb_contour_N
+  L = kb_contour_L
+  !
+  forall(i1=1:size(A,1), i2=1:size(A,2), i3=1:size(A,3), i4=1:size(A,4))
+     C(i1,i2,i3,i4)%less(:,:) = A(i1,i2,i3,i4)%less(:,:) + B(i1,i2,i3,i4)%less(:,:)
+     C(i1,i2,i3,i4)%ret(:,:)  = A(i1,i2,i3,i4)%ret(:,:)  + B(i1,i2,i3,i4)%ret(:,:)
+     C(i1,i2,i3,i4)%lmix(:,0:)= A(i1,i2,i3,i4)%lmix(:,0:)+ B(i1,i2,i3,i4)%lmix(:,0:)
+     C(i1,i2,i3,i4)%mats(0:)  = A(i1,i2,i3,i4)%mats(0:)  + B(i1,i2,i3,i4)%mats(0:)
+     C(i1,i2,i3,i4)%iw(:)     = A(i1,i2,i3,i4)%iw(:)     + B(i1,i2,i3,i4)%iw(:)
+  end forall
+end function kb_contour_gf_add_Nso
+
+
+
+
+
+
+subroutine kb_contour_gf_equality_gf_scalar_main(A,C)
+  type(kb_contour_gf),intent(inout) :: A
+  complex(8),intent(in)             :: C
+  A%less(:,:)  = C
+  A%ret(:,:)   = C
+  A%lmix(:,0:) = C
+  A%mats(0:)   = C
+  A%iw(:)      = C
+end subroutine kb_contour_gf_equality_gf_scalar_main
+!
+subroutine kb_contour_gf_equality_gf_scalar_Nso(A,C)
+  type(kb_contour_gf),intent(inout) :: A(:,:,:,:)
+  complex(8),intent(in)             :: C
+  integer                           :: i1,i2,i3,i4
+  forall(i1=1:size(A,1), i2=1:size(A,2), i3=1:size(A,3), i4=1:size(A,4))
+     A(i1,i2,i3,i4)%less(:,:)  = C
+     A(i1,i2,i3,i4)%ret(:,:)   = C
+     A(i1,i2,i3,i4)%lmix(:,0:) = C
+     A(i1,i2,i3,i4)%mats(0:)   = C
+     A(i1,i2,i3,i4)%iw(:)      = C
+  end forall
+end subroutine kb_contour_gf_equality_gf_scalar_Nso
+
+
+
+
+
+subroutine kb_contour_gf_equality_gf_gf_main(A,B)
+  type(kb_contour_gf),intent(inout) :: A
+  type(kb_contour_gf),intent(in)    :: B
+  A%less(:,:)  = B%less(:,:)
+  A%ret(:,:)   = B%ret(:,:)
+  A%lmix(:,0:) = B%lmix(:,0:)
+  A%mats(0:)   = B%mats(0:)
+  A%iw(:)      = B%iw(:)
+end subroutine kb_contour_gf_equality_gf_gf_main
+!
+subroutine kb_contour_gf_equality_gf_gf_Nso(A,B)
+  type(kb_contour_gf),intent(inout) :: A(:,:,:,:)
+  type(kb_contour_gf),intent(in)    :: B(size(A,1),size(A,2),size(A,3),size(A,4))
+  integer                           :: i1,i2,i3,i4
+  forall(i1=1:size(A,1), i2=1:size(A,2), i3=1:size(A,3), i4=1:size(A,4))
+     A(i1,i2,i3,i4)%less(:,:)  = B(i1,i2,i3,i4)%less(:,:)
+     A(i1,i2,i3,i4)%ret(:,:)   = B(i1,i2,i3,i4)%ret(:,:)
+     A(i1,i2,i3,i4)%lmix(:,0:) = B(i1,i2,i3,i4)%lmix(:,0:)
+     A(i1,i2,i3,i4)%mats(0:)   = B(i1,i2,i3,i4)%mats(0:)
+     A(i1,i2,i3,i4)%iw(:)      = B(i1,i2,i3,i4)%iw(:)
+  end forall
+end subroutine kb_contour_gf_equality_gf_gf_Nso
+
+
+
+
+subroutine kb_contour_dgf_equality_dgf_scalar_main(dG1,C)
+  type(kb_contour_dgf),intent(inout) :: dG1
+  complex(8),intent(in)             :: C
+  dG1%less(:)  = C
+  dG1%ret(:)   = C
+  dG1%lmix(0:) = C
+end subroutine kb_contour_dgf_equality_dgf_scalar_main
+!
+subroutine kb_contour_dgf_equality_dgf_scalar_Nso(dG1,C)
+  type(kb_contour_dgf),intent(inout) :: dG1(:,:,:,:)
+  complex(8),intent(in)              :: C
+  integer                           :: i1,i2,i3,i4
+  forall(i1=1:size(dG1,1), i2=1:size(dG1,2), i3=1:size(dG1,3), i4=1:size(dG1,4))
+     dG1(i1,i2,i3,i4)%less(:)  = C
+     dG1(i1,i2,i3,i4)%ret(:)   = C
+     dG1(i1,i2,i3,i4)%lmix(0:) = C
+  end forall
+end subroutine kb_contour_dgf_equality_dgf_scalar_Nso
+
+
+
+subroutine kb_contour_dgf_equality_dgf_dgf_main(dG1,dG2)
+  type(kb_contour_dgf),intent(inout) :: dG1
+  type(kb_contour_dgf),intent(in)    :: dG2
+  dG1%less(:)  = dG2%less(:)
+  dG1%ret(:)   = dG2%ret(:)
+  dG1%lmix(0:) = dG2%lmix(0:)
+end subroutine kb_contour_dgf_equality_dgf_dgf_main
+
+subroutine kb_contour_dgf_equality_dgf_dgf_Nso(dG1,dG2)
+  type(kb_contour_dgf),intent(inout) :: dG1(:,:,:,:)
+  type(kb_contour_dgf),intent(in)    :: dG2(size(dG1,1),size(dG1,2),size(dG1,3),size(dG1,4))
+  integer                            :: i1,i2,i3,i4
+  forall(i1=1:size(dG1,1), i2=1:size(dG1,2), i3=1:size(dG1,3), i4=1:size(dG1,4))
+     dG1(i1,i2,i3,i4)%less(:)  = dG2(i1,i2,i3,i4)%less(:)
+     dG1(i1,i2,i3,i4)%ret(:)   = dG2(i1,i2,i3,i4)%ret(:)
+     dG1(i1,i2,i3,i4)%lmix(0:) = dG2(i1,i2,i3,i4)%lmix(0:)
+  end forall
+end subroutine kb_contour_dgf_equality_dgf_dgf_Nso
+
+
+
+
+
+
+
+function kb_contour_gf_ScalarProdLeft_d_main(C,G) result(F)
+  real(8),intent(in)             :: C
+  type(kb_contour_gf),intent(in) :: G
+  type(kb_contour_gf)            :: F
+  F%less(:,:) = C*G%less(:,:)
+  F%ret(:,:)  = C*G%ret(:,:)
+  F%lmix(:,0:)= C*G%lmix(:,0:)
+  F%mats(0:)  = C*G%mats(0:)
+  F%iw(:)     = C*G%iw(:)
+end function kb_contour_gf_ScalarProdLeft_d_main
+function kb_contour_gf_ScalarProdLeft_c_main(C,G) result(F)
+  complex(8),intent(in)          :: C
+  type(kb_contour_gf),intent(in) :: G
+  type(kb_contour_gf)            :: F
+  F%less(:,:) = C*G%less(:,:)
+  F%ret(:,:)  = C*G%ret(:,:)
+  F%lmix(:,0:)= C*G%lmix(:,0:)
+  F%mats(0:)  = C*G%mats(0:)
+  F%iw(:)     = C*G%iw(:)
+end function kb_contour_gf_ScalarProdLeft_c_main
+function kb_contour_gf_ScalarProdLeft_d_Nso(C,G) result(F)
+  real(8),intent(in)             :: C
+  type(kb_contour_gf),intent(in) :: G(:,:,:,:)
+  type(kb_contour_gf)            :: F(size(G,1),size(G,2),size(G,3),size(G,4))
+  integer                        :: i1,i2,i3,i4
+  forall(i1=1:size(G,1), i2=1:size(G,2), i3=1:size(G,3), i4=1:size(G,4))
+     F(i1,i2,i3,i4)%less(:,:) = C*G(i1,i2,i3,i4)%less(:,:)
+     F(i1,i2,i3,i4)%ret(:,:)  = C*G(i1,i2,i3,i4)%ret(:,:)
+     F(i1,i2,i3,i4)%lmix(:,0:)= C*G(i1,i2,i3,i4)%lmix(:,0:)
+     F(i1,i2,i3,i4)%mats(0:)  = C*G(i1,i2,i3,i4)%mats(0:)
+     F(i1,i2,i3,i4)%iw(:)     = C*G(i1,i2,i3,i4)%iw(:)
+  end forall
+end function kb_contour_gf_ScalarProdLeft_d_Nso
+function kb_contour_gf_ScalarProdLeft_c_Nso(C,G) result(F)
+  complex(8),intent(in)          :: C
+  type(kb_contour_gf),intent(in) :: G(:,:,:,:)
+  type(kb_contour_gf)            :: F(size(G,1),size(G,2),size(G,3),size(G,4))
+  integer                        :: i1,i2,i3,i4
+  forall(i1=1:size(G,1), i2=1:size(G,2), i3=1:size(G,3), i4=1:size(G,4))
+     F(i1,i2,i3,i4)%less(:,:) = C*G(i1,i2,i3,i4)%less(:,:)
+     F(i1,i2,i3,i4)%ret(:,:)  = C*G(i1,i2,i3,i4)%ret(:,:)
+     F(i1,i2,i3,i4)%lmix(:,0:)= C*G(i1,i2,i3,i4)%lmix(:,0:)
+     F(i1,i2,i3,i4)%mats(0:)  = C*G(i1,i2,i3,i4)%mats(0:)
+     F(i1,i2,i3,i4)%iw(:)     = C*G(i1,i2,i3,i4)%iw(:)
+  end forall
+end function kb_contour_gf_ScalarProdLeft_c_Nso
+
+
+
+
+
+
+
+
+function  kb_contour_dgf_ScalarProdLeft_d_main(C,dG) result(dF)
+  real(8),intent(in)              :: C
+  type(kb_contour_dgf),intent(in) :: dG
+  type(kb_contour_dgf)            :: dF
+  dF%less(:) = C*dG%less(:)
+  dF%ret(:)  = C*dG%ret(:)
+  dF%lmix(0:)= C*dG%lmix(0:)
+end function kb_contour_dgf_ScalarProdLeft_d_main
+function  kb_contour_dgf_ScalarProdLeft_c_main(C,dG) result(dF)
+  complex(8),intent(in)           :: C
+  type(kb_contour_dgf),intent(in) :: dG
+  type(kb_contour_dgf)            :: dF
+  dF%less(:) = C*dG%less(:)
+  dF%ret(:)  = C*dG%ret(:)
+  dF%lmix(0:)= C*dG%lmix(0:)
+end function kb_contour_dgf_ScalarProdLeft_c_main
+function kb_contour_dgf_ScalarProdLeft_d_Nso(C,dG) result(dF)
+  real(8),intent(in)              :: C
+  type(kb_contour_dgf),intent(in) :: dG(:,:,:,:)
+  type(kb_contour_dgf)            :: dF(size(dG,1),size(dG,2),size(dG,3),size(dG,4))
+  integer                         :: i1,i2,i3,i4
+  forall(i1=1:size(dG,1), i2=1:size(dG,2), i3=1:size(dG,3), i4=1:size(dG,4))
+     dF(i1,i2,i3,i4)%less(:) = C*dG(i1,i2,i3,i4)%less(:)
+     dF(i1,i2,i3,i4)%ret(:)  = C*dG(i1,i2,i3,i4)%ret(:)
+     dF(i1,i2,i3,i4)%lmix(0:)= C*dG(i1,i2,i3,i4)%lmix(0:)
+  end forall
+end function kb_contour_dgf_ScalarProdLeft_d_Nso
+function kb_contour_dgf_ScalarProdLeft_c_Nso(C,dG) result(dF)
+  complex(8),intent(in)           :: C
+  type(kb_contour_dgf),intent(in) :: dG(:,:,:,:)
+  type(kb_contour_dgf)            :: dF(size(dG,1),size(dG,2),size(dG,3),size(dG,4))
+  integer                         :: i1,i2,i3,i4
+  forall(i1=1:size(dG,1), i2=1:size(dG,2), i3=1:size(dG,3), i4=1:size(dG,4))
+     dF(i1,i2,i3,i4)%less(:) = C*dG(i1,i2,i3,i4)%less(:)
+     dF(i1,i2,i3,i4)%ret(:)  = C*dG(i1,i2,i3,i4)%ret(:)
+     dF(i1,i2,i3,i4)%lmix(0:)= C*dG(i1,i2,i3,i4)%lmix(0:)
+  end forall
+end function kb_contour_dgf_ScalarProdLeft_c_Nso
+
+
+
+
+

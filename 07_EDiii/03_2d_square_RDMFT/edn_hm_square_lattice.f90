@@ -82,7 +82,6 @@ program ed_hm_square_lattice
   call ed_init_solver(Bath_ineq,Hloc_ineq)
 
 
-
   !DMFT loop
   iloop=0;converged=.false.
   do while(.not.converged.AND.iloop<nloop)

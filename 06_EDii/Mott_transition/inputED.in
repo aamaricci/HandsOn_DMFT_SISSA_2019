@@ -32,11 +32,11 @@
  CUTOFF=1.000000000E-09                        !Spectrum cut-off, used to determine the number states to be retained.
  GS_THRESHOLD=1.000000000E-09                  !Energy threshold for ground state degeneracy loop up
  HWBAND=2.000000000                            !half-bandwidth for the bath initialization: flat in -hwband:hwband
- LANC_NSTATES_SECTOR=6                         !Initial number of states per sector to be determined.
+ LANC_NSTATES_SECTOR=1                         !Initial number of states per sector to be determined.
  LANC_NSTATES_TOTAL=1                          !Initial number of total states to be determined.
  LANC_NSTATES_STEP=2                           !Number of states added to the spectrum at each step.
- LANC_NCV_FACTOR=3                             !Set the size of the block used in Lanczos-Arpack by multiplying the required Neigen (Ncv=lanc_ncv_factor*Neigen+lanc_ncv_add)
- LANC_NCV_ADD=5                                !Adds up to the size of the block to prevent it to become too small (Ncv=lanc_ncv_factor*Neigen+lanc_ncv_add)
+ LANC_NCV_FACTOR=10                             !Set the size of the block used in Lanczos-Arpack by multiplying the required Neigen (Ncv=lanc_ncv_factor*Neigen+lanc_ncv_add)
+ LANC_NCV_ADD=0                                !Adds up to the size of the block to prevent it to become too small (Ncv=lanc_ncv_factor*Neigen+lanc_ncv_add)
  LANC_NITER=512                                !Number of Lanczos iteration in spectrum determination.
  LANC_NGFITER=200                              !Number of Lanczos iteration in GF determination. Number of momenta.
  LANC_TOLERANCE=1.000000000E-12                !Tolerance for the Lanczos iterations as used in Arpack and plain lanczos.

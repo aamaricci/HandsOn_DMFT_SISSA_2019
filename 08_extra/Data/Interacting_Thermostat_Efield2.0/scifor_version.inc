@@ -1,0 +1,3 @@
+SCIFOR VERSION (GIT): f40d12bb505d9282b2a3fc74bede17f3de331f8e
+Timestamp: + 9 May 2018  16:09:09.569
+ 

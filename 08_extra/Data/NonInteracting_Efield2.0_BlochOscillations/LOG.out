@@ -1,0 +1,613 @@
+ TS=1.000000000                                !hopping
+ NX=21                                         !Number of k-points
+ SOLVE_NEQ=T                                   !Flag to solve the non-equilibrium dynamics
+ NORB=1                                        !Number of impurity orbitals.
+ NSPIN=1                                       !Number of spin degeneracy (max 2)
+ NTIME=100                                     !Number of Real-Time steps
+ NTAU=128                                      !Number of Imag-Time steps
+ NIW=8192                                      !Number of Matsubara Frequencies
+ DT=1.000000000E-01                            !Real-time step
+ BETA=10.000000000                             !Inverse temperature
+ UI=0.d0                                       !equilibrium local interaction
+ U=0.d0                                        !non-equilibrium local interaction
+ XMU=0.d0                                      !chemical potential
+ EPS=1.000000000E-02                           !broadening
+ NLOOP=30                                      !Max number of DMFT loop
+ DMFT_ERROR=1.000000000E-05                    !DMFT convergence threshold
+ NSUCCESS=1                                    !number of consecutive successes on convergence
+ VBATH=0.d0                                    !coupling to the thermostat
+ LBATH=1000                                    !number of frequencies in the thermostat DOS
+ BATH_TYPE=flat                                !thermostat DOS type [flat,gauss,bethe,...]
+ WBATH=20.000000000                            !Width of the thermostat DOS
+ WALPHA=1.000000000                            !exponent of the pseudo-gapped thermostat
+ WGAP=5.000000000                              !gap of the gapped thermostat
+ FIELD_TYPE=dc                                 !profile type of the electric field
+ EFIELD=2.000000000                            !electric field strength
+ EVECT=1.000000000,0.d0,0.d0                   !electric field direction (normalized)
+ TON=0.d0                                      !turn on time or center of the pulse
+ TOFF=10000.000000000                          !turn off time
+ NCYCLES=1                                     !number of cycles in pulsed light signal
+ OMEGA0=3.141592654                            !parameter for the Oscilatting field and Pulsed light
+ E1=0.d0                                       !Electric field strenght for the AC+DC case (tune to resonate)
+ SIGMA_FILE=Sigma.restart                      !File with Sigma(iw) + header
+SCIFOR VERSION (GIT): f40d12bb505d9282b2a3fc74bede17f3de331f8e
+Timestamp: + 9 May 2018  16:25:17.084
+ 
+CODE VERSION: 152294010ed45e52e6944ab5b896b66c05fc5653
+Timestamp: + 9 May 2018  16:25:17.085
+ 
+     Ntime=            100
+      Ntau=            128
+       Niw=           8192
+       Nt =              1
+      time=     0.00000000
+        dt=     0.10000000
+      dtau=     0.07812500
+      beta=    10.00000000
+      tmax=     9.90000000
+         t=     0.00000000     0.10000000     0.20000000   ...      9.70000000     9.80000000     9.90000000
+       tau=     0.00000000     0.07812500     0.15625000   ...      9.84375000     9.92187500    10.00000000
+ Using Nk_total=441
+Using Reciprocal Lattice vectors:
+bk_x = [  6.2832  0.0000  0.0000]
+bk_y = [  0.0000  6.2832  0.0000]
+bk_z = [  0.0000  0.0000  6.2832]
+Using Reciprocal Lattice vectors:
+bk_x = [  6.2832  0.0000  0.0000]
+bk_y = [  0.0000  6.2832  0.0000]
+bk_z = [  0.0000  0.0000  6.2832]
+dmft loop= 1 
+Get local Matsubara Green's function (no print)
+ 
+  +ETA --> fort.6
+  10% |ETA: 0:00:01.814 @ 9 May 2018  16:25:17
+  20% |ETA: 0:00:01.707
+  30% |ETA: 0:00:01.619
+  40% |ETA: 0:00:01.533
+  50% |ETA: 0:00:00.889 @ 9 May 2018  16:25:17
+  60% |ETA: 0:00:00.713
+  70% |ETA: 0:00:00.536
+  80% |ETA: 0:00:00.713
+  90% |ETA: 0:00:00.713
+ 100% |ETA: 0:00:00.000
+Total time [h:m:s.ms]:   0:00:01.789
+Gloc matsubara: write spin-orbital diagonal elements.
+    0.500014477
+[1;91merror=[0m  1.0000000E+00
+dmft loop= 2 
+Get local Matsubara Green's function (no print)
+ 
+  +ETA --> fort.6
+  10% |ETA: 0:00:01.809 @ 9 May 2018  16:25:19
+  20% |ETA: 0:00:01.721
+  30% |ETA: 0:00:01.632
+  40% |ETA: 0:00:01.543
+  50% |ETA: 0:00:00.904 @ 9 May 2018  16:25:19
+  60% |ETA: 0:00:00.723
+  70% |ETA: 0:00:00.544
+  80% |ETA: 0:00:00.725
+  90% |ETA: 0:00:00.724
+ 100% |ETA: 0:00:00.500
+Total time [h:m:s.ms]:   0:00:01.814
+Gloc matsubara: write spin-orbital diagonal elements.
+    0.500014477
+[1;93merror=[0m  0.0000000E+00
+dmft loop= 3 
+Get local Matsubara Green's function (no print)
+ 
+  +ETA --> fort.6
+  10% |ETA: 0:00:01.822 @ 9 May 2018  16:25:21
+  20% |ETA: 0:00:01.729
+  30% |ETA: 0:00:01.640
+  40% |ETA: 0:00:01.549
+  50% |ETA: 0:00:00.917 @ 9 May 2018  16:25:21
+  60% |ETA: 0:00:00.734
+  70% |ETA: 0:00:00.551
+  80% |ETA: 0:00:00.735
+  90% |ETA: 0:00:00.735
+ 100% |ETA: 0:00:00.***
+Total time [h:m:s.ms]:   0:00:01.843
+Gloc matsubara: write spin-orbital diagonal elements.
+    0.500014477
+[1;92merror=[0m  0.0000000E+00
+ |E|=E0=2.000000
+Bath coupling is:0.000000
+Bath hopping, width are:0.000000,40.000000
+Bath levels are:1000
+ 
+ time step=           2
+dmft loop= 1 [1;91merror=[0m  1.0000000E+00
+dmft loop= 2 [1;93merror=[0m  0.0000000E+00
+dmft loop= 3 [1;92merror=[0m  0.0000000E+00
+ 
+ time step=           3
+dmft loop= 1 [1;91merror=[0m  1.0000000E+00
+dmft loop= 2 [1;93merror=[0m  0.0000000E+00
+dmft loop= 3 [1;92merror=[0m  0.0000000E+00
+ 
+ time step=           4
+dmft loop= 1 [1;91merror=[0m  1.0000000E+00
+dmft loop= 2 [1;93merror=[0m  0.0000000E+00
+dmft loop= 3 [1;92merror=[0m  0.0000000E+00
+ 
+ time step=           5
+dmft loop= 1 [1;91merror=[0m  1.0000000E+00
+dmft loop= 2 [1;93merror=[0m  0.0000000E+00
+dmft loop= 3 [1;92merror=[0m  0.0000000E+00
+ 
+ time step=           6
+dmft loop= 1 [1;91merror=[0m  1.0000000E+00
+dmft loop= 2 [1;93merror=[0m  0.0000000E+00
+dmft loop= 3 [1;92merror=[0m  0.0000000E+00
+ 
+ time step=           7
+dmft loop= 1 [1;91merror=[0m  1.0000000E+00
+dmft loop= 2 [1;93merror=[0m  0.0000000E+00
+dmft loop= 3 [1;92merror=[0m  0.0000000E+00
+ 
+ time step=           8
+dmft loop= 1 [1;91merror=[0m  1.0000000E+00
+dmft loop= 2 [1;93merror=[0m  0.0000000E+00
+dmft loop= 3 [1;92merror=[0m  0.0000000E+00
+ 
+ time step=           9
+dmft loop= 1 [1;91merror=[0m  1.0000000E+00
+dmft loop= 2 [1;93merror=[0m  0.0000000E+00
+dmft loop= 3 [1;92merror=[0m  0.0000000E+00
+ 
+ time step=          10
+dmft loop= 1 [1;91merror=[0m  1.0000000E+00
+dmft loop= 2 [1;93merror=[0m  0.0000000E+00
+dmft loop= 3 [1;92merror=[0m  0.0000000E+00
+ 
+ time step=          11
+dmft loop= 1 [1;91merror=[0m  1.0000000E+00
+dmft loop= 2 [1;93merror=[0m  0.0000000E+00
+dmft loop= 3 [1;92merror=[0m  0.0000000E+00
+ 
+ time step=          12
+dmft loop= 1 [1;91merror=[0m  1.0000000E+00
+dmft loop= 2 [1;93merror=[0m  0.0000000E+00
+dmft loop= 3 [1;92merror=[0m  0.0000000E+00
+ 
+ time step=          13
+dmft loop= 1 [1;91merror=[0m  1.0000000E+00
+dmft loop= 2 [1;93merror=[0m  0.0000000E+00
+dmft loop= 3 [1;92merror=[0m  0.0000000E+00
+ 
+ time step=          14
+dmft loop= 1 [1;91merror=[0m  1.0000000E+00
+dmft loop= 2 [1;93merror=[0m  0.0000000E+00
+dmft loop= 3 [1;92merror=[0m  0.0000000E+00
+ 
+ time step=          15
+dmft loop= 1 [1;91merror=[0m  1.0000000E+00
+dmft loop= 2 [1;93merror=[0m  0.0000000E+00
+dmft loop= 3 [1;92merror=[0m  0.0000000E+00
+ 
+ time step=          16
+dmft loop= 1 [1;91merror=[0m  1.0000000E+00
+dmft loop= 2 [1;93merror=[0m  0.0000000E+00
+dmft loop= 3 [1;92merror=[0m  0.0000000E+00
+ 
+ time step=          17
+dmft loop= 1 [1;91merror=[0m  1.0000000E+00
+dmft loop= 2 [1;93merror=[0m  0.0000000E+00
+dmft loop= 3 [1;92merror=[0m  0.0000000E+00
+ 
+ time step=          18
+dmft loop= 1 [1;91merror=[0m  1.0000000E+00
+dmft loop= 2 [1;93merror=[0m  0.0000000E+00
+dmft loop= 3 [1;92merror=[0m  0.0000000E+00
+ 
+ time step=          19
+dmft loop= 1 [1;91merror=[0m  1.0000000E+00
+dmft loop= 2 [1;93merror=[0m  0.0000000E+00
+dmft loop= 3 [1;92merror=[0m  0.0000000E+00
+ 
+ time step=          20
+dmft loop= 1 [1;91merror=[0m  1.0000000E+00
+dmft loop= 2 [1;93merror=[0m  0.0000000E+00
+dmft loop= 3 [1;92merror=[0m  0.0000000E+00
+ 
+ time step=          21
+dmft loop= 1 [1;91merror=[0m  1.0000000E+00
+dmft loop= 2 [1;93merror=[0m  0.0000000E+00
+dmft loop= 3 [1;92merror=[0m  0.0000000E+00
+ 
+ time step=          22
+dmft loop= 1 [1;91merror=[0m  1.0000000E+00
+dmft loop= 2 [1;93merror=[0m  0.0000000E+00
+dmft loop= 3 [1;92merror=[0m  0.0000000E+00
+ 
+ time step=          23
+dmft loop= 1 [1;91merror=[0m  1.0000000E+00
+dmft loop= 2 [1;93merror=[0m  0.0000000E+00
+dmft loop= 3 [1;92merror=[0m  0.0000000E+00
+ 
+ time step=          24
+dmft loop= 1 [1;91merror=[0m  1.0000000E+00
+dmft loop= 2 [1;93merror=[0m  0.0000000E+00
+dmft loop= 3 [1;92merror=[0m  0.0000000E+00
+ 
+ time step=          25
+dmft loop= 1 [1;91merror=[0m  1.0000000E+00
+dmft loop= 2 [1;93merror=[0m  0.0000000E+00
+dmft loop= 3 [1;92merror=[0m  0.0000000E+00
+ 
+ time step=          26
+dmft loop= 1 [1;91merror=[0m  1.0000000E+00
+dmft loop= 2 [1;93merror=[0m  0.0000000E+00
+dmft loop= 3 [1;92merror=[0m  0.0000000E+00
+ 
+ time step=          27
+dmft loop= 1 [1;91merror=[0m  1.0000000E+00
+dmft loop= 2 [1;93merror=[0m  0.0000000E+00
+dmft loop= 3 [1;92merror=[0m  0.0000000E+00
+ 
+ time step=          28
+dmft loop= 1 [1;91merror=[0m  1.0000000E+00
+dmft loop= 2 [1;93merror=[0m  0.0000000E+00
+dmft loop= 3 [1;92merror=[0m  0.0000000E+00
+ 
+ time step=          29
+dmft loop= 1 [1;91merror=[0m  1.0000000E+00
+dmft loop= 2 [1;93merror=[0m  0.0000000E+00
+dmft loop= 3 [1;92merror=[0m  0.0000000E+00
+ 
+ time step=          30
+dmft loop= 1 [1;91merror=[0m  1.0000000E+00
+dmft loop= 2 [1;93merror=[0m  0.0000000E+00
+dmft loop= 3 [1;92merror=[0m  0.0000000E+00
+ 
+ time step=          31
+dmft loop= 1 [1;91merror=[0m  1.0000000E+00
+dmft loop= 2 [1;93merror=[0m  0.0000000E+00
+dmft loop= 3 [1;92merror=[0m  0.0000000E+00
+ 
+ time step=          32
+dmft loop= 1 [1;91merror=[0m  1.0000000E+00
+dmft loop= 2 [1;93merror=[0m  0.0000000E+00
+dmft loop= 3 [1;92merror=[0m  0.0000000E+00
+ 
+ time step=          33
+dmft loop= 1 [1;91merror=[0m  1.0000000E+00
+dmft loop= 2 [1;93merror=[0m  0.0000000E+00
+dmft loop= 3 [1;92merror=[0m  0.0000000E+00
+ 
+ time step=          34
+dmft loop= 1 [1;91merror=[0m  1.0000000E+00
+dmft loop= 2 [1;93merror=[0m  0.0000000E+00
+dmft loop= 3 [1;92merror=[0m  0.0000000E+00
+ 
+ time step=          35
+dmft loop= 1 [1;91merror=[0m  1.0000000E+00
+dmft loop= 2 [1;93merror=[0m  0.0000000E+00
+dmft loop= 3 [1;92merror=[0m  0.0000000E+00
+ 
+ time step=          36
+dmft loop= 1 [1;91merror=[0m  1.0000000E+00
+dmft loop= 2 [1;93merror=[0m  0.0000000E+00
+dmft loop= 3 [1;92merror=[0m  0.0000000E+00
+ 
+ time step=          37
+dmft loop= 1 [1;91merror=[0m  1.0000000E+00
+dmft loop= 2 [1;93merror=[0m  0.0000000E+00
+dmft loop= 3 [1;92merror=[0m  0.0000000E+00
+ 
+ time step=          38
+dmft loop= 1 [1;91merror=[0m  1.0000000E+00
+dmft loop= 2 [1;93merror=[0m  0.0000000E+00
+dmft loop= 3 [1;92merror=[0m  0.0000000E+00
+ 
+ time step=          39
+dmft loop= 1 [1;91merror=[0m  1.0000000E+00
+dmft loop= 2 [1;93merror=[0m  0.0000000E+00
+dmft loop= 3 [1;92merror=[0m  0.0000000E+00
+ 
+ time step=          40
+dmft loop= 1 [1;91merror=[0m  1.0000000E+00
+dmft loop= 2 [1;93merror=[0m  0.0000000E+00
+dmft loop= 3 [1;92merror=[0m  0.0000000E+00
+ 
+ time step=          41
+dmft loop= 1 [1;91merror=[0m  1.0000000E+00
+dmft loop= 2 [1;93merror=[0m  0.0000000E+00
+dmft loop= 3 [1;92merror=[0m  0.0000000E+00
+ 
+ time step=          42
+dmft loop= 1 [1;91merror=[0m  1.0000000E+00
+dmft loop= 2 [1;93merror=[0m  0.0000000E+00
+dmft loop= 3 [1;92merror=[0m  0.0000000E+00
+ 
+ time step=          43
+dmft loop= 1 [1;91merror=[0m  1.0000000E+00
+dmft loop= 2 [1;93merror=[0m  0.0000000E+00
+dmft loop= 3 [1;92merror=[0m  0.0000000E+00
+ 
+ time step=          44
+dmft loop= 1 [1;91merror=[0m  1.0000000E+00
+dmft loop= 2 [1;93merror=[0m  0.0000000E+00
+dmft loop= 3 [1;92merror=[0m  0.0000000E+00
+ 
+ time step=          45
+dmft loop= 1 [1;91merror=[0m  1.0000000E+00
+dmft loop= 2 [1;93merror=[0m  0.0000000E+00
+dmft loop= 3 [1;92merror=[0m  0.0000000E+00
+ 
+ time step=          46
+dmft loop= 1 [1;91merror=[0m  1.0000000E+00
+dmft loop= 2 [1;93merror=[0m  0.0000000E+00
+dmft loop= 3 [1;92merror=[0m  0.0000000E+00
+ 
+ time step=          47
+dmft loop= 1 [1;91merror=[0m  1.0000000E+00
+dmft loop= 2 [1;93merror=[0m  0.0000000E+00
+dmft loop= 3 [1;92merror=[0m  0.0000000E+00
+ 
+ time step=          48
+dmft loop= 1 [1;91merror=[0m  1.0000000E+00
+dmft loop= 2 [1;93merror=[0m  0.0000000E+00
+dmft loop= 3 [1;92merror=[0m  0.0000000E+00
+ 
+ time step=          49
+dmft loop= 1 [1;91merror=[0m  1.0000000E+00
+dmft loop= 2 [1;93merror=[0m  0.0000000E+00
+dmft loop= 3 [1;92merror=[0m  0.0000000E+00
+ 
+ time step=          50
+dmft loop= 1 [1;91merror=[0m  1.0000000E+00
+dmft loop= 2 [1;93merror=[0m  0.0000000E+00
+dmft loop= 3 [1;92merror=[0m  0.0000000E+00
+ 
+ time step=          51
+dmft loop= 1 [1;91merror=[0m  1.0000000E+00
+dmft loop= 2 [1;93merror=[0m  0.0000000E+00
+dmft loop= 3 [1;92merror=[0m  0.0000000E+00
+ 
+ time step=          52
+dmft loop= 1 [1;91merror=[0m  1.0000000E+00
+dmft loop= 2 [1;93merror=[0m  0.0000000E+00
+dmft loop= 3 [1;92merror=[0m  0.0000000E+00
+ 
+ time step=          53
+dmft loop= 1 [1;91merror=[0m  1.0000000E+00
+dmft loop= 2 [1;93merror=[0m  0.0000000E+00
+dmft loop= 3 [1;92merror=[0m  0.0000000E+00
+ 
+ time step=          54
+dmft loop= 1 [1;91merror=[0m  1.0000000E+00
+dmft loop= 2 [1;93merror=[0m  0.0000000E+00
+dmft loop= 3 [1;92merror=[0m  0.0000000E+00
+ 
+ time step=          55
+dmft loop= 1 [1;91merror=[0m  1.0000000E+00
+dmft loop= 2 [1;93merror=[0m  0.0000000E+00
+dmft loop= 3 [1;92merror=[0m  0.0000000E+00
+ 
+ time step=          56
+dmft loop= 1 [1;91merror=[0m  1.0000000E+00
+dmft loop= 2 [1;93merror=[0m  0.0000000E+00
+dmft loop= 3 [1;92merror=[0m  0.0000000E+00
+ 
+ time step=          57
+dmft loop= 1 [1;91merror=[0m  1.0000000E+00
+dmft loop= 2 [1;93merror=[0m  0.0000000E+00
+dmft loop= 3 [1;92merror=[0m  0.0000000E+00
+ 
+ time step=          58
+dmft loop= 1 [1;91merror=[0m  1.0000000E+00
+dmft loop= 2 [1;93merror=[0m  0.0000000E+00
+dmft loop= 3 [1;92merror=[0m  0.0000000E+00
+ 
+ time step=          59
+dmft loop= 1 [1;91merror=[0m  1.0000000E+00
+dmft loop= 2 [1;93merror=[0m  0.0000000E+00
+dmft loop= 3 [1;92merror=[0m  0.0000000E+00
+ 
+ time step=          60
+dmft loop= 1 [1;91merror=[0m  1.0000000E+00
+dmft loop= 2 [1;93merror=[0m  0.0000000E+00
+dmft loop= 3 [1;92merror=[0m  0.0000000E+00
+ 
+ time step=          61
+dmft loop= 1 [1;91merror=[0m  1.0000000E+00
+dmft loop= 2 [1;93merror=[0m  0.0000000E+00
+dmft loop= 3 [1;92merror=[0m  0.0000000E+00
+ 
+ time step=          62
+dmft loop= 1 [1;91merror=[0m  1.0000000E+00
+dmft loop= 2 [1;93merror=[0m  0.0000000E+00
+dmft loop= 3 [1;92merror=[0m  0.0000000E+00
+ 
+ time step=          63
+dmft loop= 1 [1;91merror=[0m  1.0000000E+00
+dmft loop= 2 [1;93merror=[0m  0.0000000E+00
+dmft loop= 3 [1;92merror=[0m  0.0000000E+00
+ 
+ time step=          64
+dmft loop= 1 [1;91merror=[0m  1.0000000E+00
+dmft loop= 2 [1;93merror=[0m  0.0000000E+00
+dmft loop= 3 [1;92merror=[0m  0.0000000E+00
+ 
+ time step=          65
+dmft loop= 1 [1;91merror=[0m  1.0000000E+00
+dmft loop= 2 [1;93merror=[0m  0.0000000E+00
+dmft loop= 3 [1;92merror=[0m  0.0000000E+00
+ 
+ time step=          66
+dmft loop= 1 [1;91merror=[0m  1.0000000E+00
+dmft loop= 2 [1;93merror=[0m  0.0000000E+00
+dmft loop= 3 [1;92merror=[0m  0.0000000E+00
+ 
+ time step=          67
+dmft loop= 1 [1;91merror=[0m  1.0000000E+00
+dmft loop= 2 [1;93merror=[0m  0.0000000E+00
+dmft loop= 3 [1;92merror=[0m  0.0000000E+00
+ 
+ time step=          68
+dmft loop= 1 [1;91merror=[0m  1.0000000E+00
+dmft loop= 2 [1;93merror=[0m  0.0000000E+00
+dmft loop= 3 [1;92merror=[0m  0.0000000E+00
+ 
+ time step=          69
+dmft loop= 1 [1;91merror=[0m  1.0000000E+00
+dmft loop= 2 [1;93merror=[0m  0.0000000E+00
+dmft loop= 3 [1;92merror=[0m  0.0000000E+00
+ 
+ time step=          70
+dmft loop= 1 [1;91merror=[0m  1.0000000E+00
+dmft loop= 2 [1;93merror=[0m  0.0000000E+00
+dmft loop= 3 [1;92merror=[0m  0.0000000E+00
+ 
+ time step=          71
+dmft loop= 1 [1;91merror=[0m  1.0000000E+00
+dmft loop= 2 [1;93merror=[0m  0.0000000E+00
+dmft loop= 3 [1;92merror=[0m  0.0000000E+00
+ 
+ time step=          72
+dmft loop= 1 [1;91merror=[0m  1.0000000E+00
+dmft loop= 2 [1;93merror=[0m  0.0000000E+00
+dmft loop= 3 [1;92merror=[0m  0.0000000E+00
+ 
+ time step=          73
+dmft loop= 1 [1;91merror=[0m  1.0000000E+00
+dmft loop= 2 [1;93merror=[0m  0.0000000E+00
+dmft loop= 3 [1;92merror=[0m  0.0000000E+00
+ 
+ time step=          74
+dmft loop= 1 [1;91merror=[0m  1.0000000E+00
+dmft loop= 2 [1;93merror=[0m  0.0000000E+00
+dmft loop= 3 [1;92merror=[0m  0.0000000E+00
+ 
+ time step=          75
+dmft loop= 1 [1;91merror=[0m  1.0000000E+00
+dmft loop= 2 [1;93merror=[0m  0.0000000E+00
+dmft loop= 3 [1;92merror=[0m  0.0000000E+00
+ 
+ time step=          76
+dmft loop= 1 [1;91merror=[0m  1.0000000E+00
+dmft loop= 2 [1;93merror=[0m  0.0000000E+00
+dmft loop= 3 [1;92merror=[0m  0.0000000E+00
+ 
+ time step=          77
+dmft loop= 1 [1;91merror=[0m  1.0000000E+00
+dmft loop= 2 [1;93merror=[0m  0.0000000E+00
+dmft loop= 3 [1;92merror=[0m  0.0000000E+00
+ 
+ time step=          78
+dmft loop= 1 [1;91merror=[0m  1.0000000E+00
+dmft loop= 2 [1;93merror=[0m  0.0000000E+00
+dmft loop= 3 [1;92merror=[0m  0.0000000E+00
+ 
+ time step=          79
+dmft loop= 1 [1;91merror=[0m  1.0000000E+00
+dmft loop= 2 [1;93merror=[0m  0.0000000E+00
+dmft loop= 3 [1;92merror=[0m  0.0000000E+00
+ 
+ time step=          80
+dmft loop= 1 [1;91merror=[0m  1.0000000E+00
+dmft loop= 2 [1;93merror=[0m  0.0000000E+00
+dmft loop= 3 [1;92merror=[0m  0.0000000E+00
+ 
+ time step=          81
+dmft loop= 1 [1;91merror=[0m  1.0000000E+00
+dmft loop= 2 [1;93merror=[0m  0.0000000E+00
+dmft loop= 3 [1;92merror=[0m  0.0000000E+00
+ 
+ time step=          82
+dmft loop= 1 [1;91merror=[0m  1.0000000E+00
+dmft loop= 2 [1;93merror=[0m  0.0000000E+00
+dmft loop= 3 [1;92merror=[0m  0.0000000E+00
+ 
+ time step=          83
+dmft loop= 1 [1;91merror=[0m  1.0000000E+00
+dmft loop= 2 [1;93merror=[0m  0.0000000E+00
+dmft loop= 3 [1;92merror=[0m  0.0000000E+00
+ 
+ time step=          84
+dmft loop= 1 [1;91merror=[0m  1.0000000E+00
+dmft loop= 2 [1;93merror=[0m  0.0000000E+00
+dmft loop= 3 [1;92merror=[0m  0.0000000E+00
+ 
+ time step=          85
+dmft loop= 1 [1;91merror=[0m  1.0000000E+00
+dmft loop= 2 [1;93merror=[0m  0.0000000E+00
+dmft loop= 3 [1;92merror=[0m  0.0000000E+00
+ 
+ time step=          86
+dmft loop= 1 [1;91merror=[0m  1.0000000E+00
+dmft loop= 2 [1;93merror=[0m  0.0000000E+00
+dmft loop= 3 [1;92merror=[0m  0.0000000E+00
+ 
+ time step=          87
+dmft loop= 1 [1;91merror=[0m  1.0000000E+00
+dmft loop= 2 [1;93merror=[0m  0.0000000E+00
+dmft loop= 3 [1;92merror=[0m  0.0000000E+00
+ 
+ time step=          88
+dmft loop= 1 [1;91merror=[0m  1.0000000E+00
+dmft loop= 2 [1;93merror=[0m  0.0000000E+00
+dmft loop= 3 [1;92merror=[0m  0.0000000E+00
+ 
+ time step=          89
+dmft loop= 1 [1;91merror=[0m  1.0000000E+00
+dmft loop= 2 [1;93merror=[0m  0.0000000E+00
+dmft loop= 3 [1;92merror=[0m  0.0000000E+00
+ 
+ time step=          90
+dmft loop= 1 [1;91merror=[0m  1.0000000E+00
+dmft loop= 2 [1;93merror=[0m  0.0000000E+00
+dmft loop= 3 [1;92merror=[0m  0.0000000E+00
+ 
+ time step=          91
+dmft loop= 1 [1;91merror=[0m  1.0000000E+00
+dmft loop= 2 [1;93merror=[0m  0.0000000E+00
+dmft loop= 3 [1;92merror=[0m  0.0000000E+00
+ 
+ time step=          92
+dmft loop= 1 [1;91merror=[0m  1.0000000E+00
+dmft loop= 2 [1;93merror=[0m  0.0000000E+00
+dmft loop= 3 [1;92merror=[0m  0.0000000E+00
+ 
+ time step=          93
+dmft loop= 1 [1;91merror=[0m  1.0000000E+00
+dmft loop= 2 [1;93merror=[0m  0.0000000E+00
+dmft loop= 3 [1;92merror=[0m  0.0000000E+00
+ 
+ time step=          94
+dmft loop= 1 [1;91merror=[0m  1.0000000E+00
+dmft loop= 2 [1;93merror=[0m  0.0000000E+00
+dmft loop= 3 [1;92merror=[0m  0.0000000E+00
+ 
+ time step=          95
+dmft loop= 1 [1;91merror=[0m  1.0000000E+00
+dmft loop= 2 [1;93merror=[0m  0.0000000E+00
+dmft loop= 3 [1;92merror=[0m  0.0000000E+00
+ 
+ time step=          96
+dmft loop= 1 [1;91merror=[0m  1.0000000E+00
+dmft loop= 2 [1;93merror=[0m  0.0000000E+00
+dmft loop= 3 [1;92merror=[0m  0.0000000E+00
+ 
+ time step=          97
+dmft loop= 1 [1;91merror=[0m  1.0000000E+00
+dmft loop= 2 [1;93merror=[0m  0.0000000E+00
+dmft loop= 3 [1;92merror=[0m  0.0000000E+00
+ 
+ time step=          98
+dmft loop= 1 [1;91merror=[0m  1.0000000E+00
+dmft loop= 2 [1;93merror=[0m  0.0000000E+00
+dmft loop= 3 [1;92merror=[0m  0.0000000E+00
+ 
+ time step=          99
+dmft loop= 1 [1;91merror=[0m  1.0000000E+00
+dmft loop= 2 [1;93merror=[0m  0.0000000E+00
+dmft loop= 3 [1;92merror=[0m  0.0000000E+00
+ 
+ time step=         100
+dmft loop= 1 [1;91merror=[0m  1.0000000E+00
+dmft loop= 2 [1;93merror=[0m  0.0000000E+00
+dmft loop= 3 [1;92merror=[0m  0.0000000E+00
+ splot3d_animate 3dFSVSpiVSt.neqipt (21,21,100)
+ BRAVO
